@@ -5,11 +5,10 @@ permalink: /index
 ---
 # Data Science For Business
 
-Welcome to my Data Science for Business (DSB) web site.
+Welcome to my Data Science for Business (DSB) web site. You might have come here from the main website [drmaseway](https://www.drmaseway.com) which covers broadly Data Science or because you are searching for specific details on Data Science in Python. 
 
-Find an introduction to this topic and to my passion on [Data Science for Business]()
+Here we walk through many examples and give many - hopefully helpful - details on how to create tables Python for Data Science, i.e. Pandas Dataframes, how to visualize data and how to model typical business scenarios.
 
-I also make the point that at eventually a skill set must be mastered to actually **do** data science.
 
 ## Pandas
 
