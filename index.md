@@ -26,6 +26,20 @@ For visualization
 ## Models
 
 
+## Example
+
+As a picture is stronger than 1000 words: This is what we are talking about here:
+
+<br/>
+<br/>
+
+{% include images/image.html imagePath = "../dssb/assets/images/img_blog/dssb_example_2.png"%}
+
+<br/>
+<br/>
+Here, we go through how to create such models and graphs.
+
+
 
 
 

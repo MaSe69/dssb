@@ -51,7 +51,7 @@ Given these parameters, the function call can be made to write the file in csv-f
 As a result, we find a new csv-file created on the file system.
 
 **Image**
-{% include images/image.html imagePath = "../images/img_blog/Accounts.png" imageCaption =  "Table saved as csv-file."%}
+{% include images/image.html imagePath = "../dssb/assets/images/img_blog/Accounts.png" imageCaption =  "Table saved as csv-file."%}
 
 ## Step 2: Read from a CSV-File
 
@@ -81,7 +81,7 @@ A few particularities:
 - we can specify the Sheet in Excel.
 
 **Image**
-{% include images/image.html imagePath = "../images/img_blog/Accounts_as_Excel.png" imageCaption =  "Table saved in Excel-Format but displayed with LibreCalc."%}
+{% include images/image.html imagePath = "../dssb/assets/images/img_blog/Accounts_as_Excel.png" imageCaption =  "Table saved in Excel-Format but displayed with LibreCalc."%}
 
 ## Step 4: Read from an Excel
 
@@ -95,7 +95,7 @@ Reading an external table available in Excel-Format might be the most common use
 Before reading the table, I edited the first column to make it more plausible that it was edited in between saving and reading.
 
 **Image**
-{% include images/image.html imagePath = "../images/img_blog/Excel_as_read.png" imageCaption =  "Table as read from Excel-Formatted file."%}
+{% include images/image.html imagePath = "../dssb/assets/images/img_blog/Excel_as_read.png" imageCaption =  "Table as read from Excel-Formatted file."%}
 
 ## Summary
 

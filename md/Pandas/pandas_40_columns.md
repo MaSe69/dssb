@@ -27,7 +27,7 @@ You can use such a list to re-order the columns.
     newOrder =  ['Jan', 'Mar', 'May', 'Feb', 'Apr', 'Jun']
     df = df[newOrder]
 
-{% include images/image.html imagePath = "../images/img_blog/Re-order_Columns.png" imageCaption = "
+{% include images/image.html imagePath = "../dssb/assets/images/img_blog/Re-order_Columns.png" imageCaption = "
 Our standard table with the longer months to the left."%}
 
 A helpful feature is to reverse the sequence of the columns. 
@@ -82,7 +82,7 @@ If you want to work only on a subset of columns, specify that subset and work on
     colSel = ["Jan", "Feb"]
     dfcolSel[colSel] = dfcolSel[colSel] * 100.0
 
-{% include images/image.html imagePath = "../images/img_blog/Added_column.png" imageCaption = "
+{% include images/image.html imagePath = "../dssb/assets/images/img_blog/Added_column.png" imageCaption = "
 A column for July added. Jan and Feb multiplied by 100."%}
 
 Another column holding the sum of the complete row can be added.
