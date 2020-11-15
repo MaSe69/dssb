@@ -25,10 +25,11 @@ For visualization
 
 ## Models
 
+We should understand which are common and helpful [models](models).
 
 ## Example
 
-As a picture is stronger than 1000 words: This is what we are talking about here:
+Let me show an intermediate result on the journey to business modelling:
 
 <br/>
 <br/>
@@ -37,10 +38,5 @@ As a picture is stronger than 1000 words: This is what we are talking about here
 
 <br/>
 <br/>
-Here, we go through how to create such models and graphs.
-
-
-
-
-
+On this web site, we go through the details on how to create such models and graphs.
 
