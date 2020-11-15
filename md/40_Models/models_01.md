@@ -26,4 +26,5 @@ permalink: /models
 
 ## Models References
 
-
+- [Logictic Distribution - Numpy](https://numpy.org/doc/stable/reference/random/generated/numpy.random.logistic.html)
+- [Poisson Distribution - Scipy](https://numpy.org/doc/stable/reference/random/generated/numpy.random.logistic.html)
