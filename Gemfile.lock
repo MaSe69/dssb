@@ -73,10 +73,6 @@ PLATFORMS
 DEPENDENCIES
   jekyll (~> 4.1.1)
   jekyll-feed (~> 0.12)
-<<<<<<< HEAD
-=======
-  jekyll-sitemap
->>>>>>> 074b2ebd9aedde979a1c02d0a8bf250b88599ae1
   minima (~> 2.5)
   tzinfo (~> 1.2)
   tzinfo-data

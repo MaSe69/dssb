@@ -1,2 +1,2 @@
-# mase
-Leadership theory by MaSe
+# dssb
+Leadership theory by dssb
