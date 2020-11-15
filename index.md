@@ -1,6 +1,6 @@
 ---
 layout: 01_landing
-title: Dr. Marcus Semling
+title: Data Science
 permalink: /index
 ---
 # Data Science For Business
