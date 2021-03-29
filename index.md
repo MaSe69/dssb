@@ -10,7 +10,11 @@ Welcome,
 this site is dedcicated to data science.<br>
 The focus is currently on **dataframes**. 
 
-You might have come here from the main website [drmaseway](https://www.drmaseway.com). 
+You might have come here from the main website 
+- [drmaseway](https://www.drmaseway.com). 
+
+Much of the code described here is available as Jupyter notebooks on Github
+- [dataframes](https://github.com/MaSe69/dataframes/tree/master)
 
 
 ## Dataframes in Python (Pandas)
