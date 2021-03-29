@@ -1,10 +1,10 @@
 ---
 layout: 20_topic
-title: Seaborn
-permalink: /seaborn
+title: Dataframes Julia
+permalink: /dfJulia
 ---
 
-# Seaborn + Matplotlib
+# Julia
 
 Let me show an intermediate result 
 

@@ -107,8 +107,7 @@ For time series, it is possible to parse the column holding the time directly in
 For more elaborate cases, a converter can be added to the read function that directly acts on the data on input.
 For performance reasons, it is possible and recommendable to limit the number of rows or columns on input. 
 
-
-## Data
+## Some Data
 
 A data scientist can't do his or her job without data.
 Reportedly, there are more open-source data around than secret data. Good data are also needed to push algorithms and models further.
