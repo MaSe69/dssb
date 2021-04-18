@@ -7,19 +7,14 @@ permalink: /pandas_createDF
 
 # Pandas
 
-## Create Tables
+## Create dataframes
 
+It seems to be natural to start with an empty dataframe and then fill it later. 
+My intuition is backed by a highly voted question on Stackoverflow: [Creating an empty pandas dataframe - then filling it](
+https://stackoverflow.com/questions/13784192/creating-an-empty-pandas-dataframe-then-filling-it).
 
-Tables are the building blocks of data science.
-Let's start to create some tables.
-Then, we quickly move on to embed such tables into full-scale programs.
-
-We will focus on tables for two scenarios:
-- an accounting scenario
-- a ranking scenario.
-
-For the accounting scenario, we start with costs in various accounts over months.
-For the rating scenario, we start with persons and their ratings of certain things.
+There is a 'world' before dataframes. You should have that matrix first, before you wrap it into columns and rows. Later, for performance reasons, you might extract that matrix again and work on it and convert it back to a dataframe.
+Creating dataframes from scratch is for good reason hence not supported by Pandas.
 
 
 ## Step 1: A First Table

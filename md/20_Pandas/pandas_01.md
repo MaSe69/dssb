@@ -4,7 +4,114 @@ title: Pandas
 permalink: /pandas
 ---
 
-# Pandas
+# Cheat Sheat
+
+You can find on Github complete solutions as Jupyter Lab. 
+
+- [Jupyter Lab - Pandas on Github](https://github.com/MaSe69/dataframes/tree/master/dfPython)
+
+For a quick reference (or cheat sheet), I put the essential parts of code here.
+Often, you (and I) just need to look up the exact syntax.
+
+## Getting Started
+
+### Python Refresher
+
+- Type conversions in Python
+- How to handle unchangeable strings?
+
+
+### Numpy
+
+- Lists: Fast creating and operating
+- Create multi-dimensional arrays and work with them
+- Random Numbers
+
+
+## One Dataframe
+
+### [Create dataframes](pandas_createDF)
+
+Create a new dataframe within the program
+- from lists or arrays (created with Numpy)
+- from a dictionary
+- get to the same dataframe as with Julia
+
+
+### Download Data From External Sources
+
+Download from the web,
+- when download into a dataframe works smoothly
+- when the 'object' first has to be downloaded using HTTP
+
+Explore data 
+- get to know some data sources
+- describe (to get some statistics
+- shape (to get the number or columns or rows)
+
+### [Read datafrome from local disc](pandas_saveDF)
+
+Read to 
+- limit the data: rows / columns
+- deal with missing values
+- read dates to get a timeseries
+
+### [Operations on the entire dataframe](pandas_operateOnDF)
+
+Some of the operation of this type are: 
+- Change all values of the dataframe simultaneously (except the index)
+- Multiplying the dataframe with a number
+- Adding or subtracting one dataframe from another dataframe
+- Transpose a dataframe
+
+
+### [Operate on Columns](pandas_columns)
+
+Some of the operation on columns are: 
+- Rename the columns
+- Re-order the columns
+- Add columns (at the end)
+- Insert columns at a specific position
+- Delete columns
+
+
+### Operate on Rows
+
+Sorting is one of the most frequent operations on rows. (There is rarely the need for sorting columns).
+
+Some further operation on rows are: 
+- selecting a subset on row by slicing or on condition
+- deleting rows
+- adding or copying rows
+
+
+### Operate on Cells
+
+Changing the cell (i,j) should be avoided when ever possible.
+There is almost always a way to get around addressing a particular cell.
+Almost always, but in rare cases, you really need to get to the one or other odd cell in a big dataframe, typically on given conditions. Though possible, it is cumbersome. 
+
+## Two Dataframes
+
+### Aggregation
+
+Grouping is usually done in two steps. First, you group by one or several columns. Second, you apply a statistical operation, which might be as simple as a sum or a mean to that grouping. 
+
+
+### Merge
+
+After having cleansed and wrangled one dataframe, you might want to continue to aggregate. 
+After having soaked out all info from that one dataframe, you might continue with merging it with one or several other dataframes. Merging with other dataframes can also become a business of mass production, particularly for time series.
+
+
+
+A revealed pattern in data science consists of 3 steps
+- split
+- operate (aggregate)
+- merge
+
+
+# General Info on Python + Pandas
 
 
 The Python library Pandas had its initial release in 2008, [see Wikipedia](https://en.wikipedia.org/wiki/Pandas_(software)). 
@@ -17,17 +124,6 @@ The coding of this book is available on Gibhub:
 Wes McKinney was employed at that time at a financial department which might explain the good support of time series in Pandas. Pandas grew in an environment of Excel, Matplab and R.  
 
 
-# Python
-
-Admittedly, you cannot jump straight into data frames without knowing a bit about Python and its environment. 
-
-You therefore find a refresher on Python as  on my Github. 
-Find here my respective coding on Github in Jupyter Lab. 
-
-- [Jupyter Lab - Pandas on Github](https://github.com/MaSe69/dataframes/tree/master/dfPython)
-
-I worked through most of Wec McKinneys book and coding. As said before, I just need one solution that works in my context. If my solution does not work for you, you will find it easily in the comprehensive literature.
-
 ## Reference and Python community
 
 The official documentation is good and helpful
@@ -38,37 +134,4 @@ There is no need to shy away from it and to search first in secondary sources (a
 
 Stackoverflow has emerged as THE reference for Python and Pandas. This might not be noteworthy, if true for Julia dataframes. Julia dataframes can be found on stackoverflow, but rather rarely. The dataframe tag in stackoverflow is about hundred thousand questions, with predominantly Pandas dataframes being asked for.
 
-
-## Create dataframes
-
-It seems to be natural to start with an empty dataframe and then fill it later. 
-My intuition is backed by a highly voted question on Stackoverflow: [Creating an empty pandas dataframe - then filling it](
-https://stackoverflow.com/questions/13784192/creating-an-empty-pandas-dataframe-then-filling-it).
-
-There is a 'world' before dataframes. You should have that matrix first, before you wrap it into columns and rows. Later, for performance reasons, you might extract that matrix again and work on it and convert it back to a dataframe.
-Creating dataframes from scratch is for good reason hence not supported by Pandas.
-
-In Python, you have typically lists or dictionaries from which dataframes can be easily created.
-
-- [Create dataframes](pandas_createDF)
-
-
-## Save and read dataframes
-
-[save and read dataframe](pandas_saveDF)
-
-
-## Operate on the whole dataframe
-
-[operate on whole dataframe](pandas_operateOnDF)
-
-## Columns
-
-[columns](pandas_columns)
-
-
-## Grouping
-
-
-## Merging
 
