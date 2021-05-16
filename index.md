@@ -14,7 +14,7 @@ For free, you find on this site plenty of knowledge for immediate benefit to you
 
 New information is constantly added to this site. 
 
-## Why should you be using dataframes?
+## Why using dataframes?
 
 - Using dataframes, you can reach goals that might have looked out of scope for you so far.
 - Dataframes can help you to look at familiar problems from new angles, and to come to surprising insights.
@@ -28,20 +28,29 @@ We consider a dataframe here as an entity.
 An entity that can be beautiful or ugly.
 
 
-
-
 ## What is beauty?
 
-
-
+Beauty comprises
 - Authenticty
 - Consistency (symmetry)
 - Simplicity
 
 
-# How to get to a Dataframe?
+# How to get to a beautiful dataframe?
 
 - You can [create dataframes](pandas_createDF) yourself
 - Can load existing data directly into a dataframe.
 
-# What to do with a Dataframe?
+# How to make your dataframe more beautiful?
+
+
+- Operations on columns
+- Operations on rows
+
+Working on subsets of your dataframe.
+
+
+
+
+
+
