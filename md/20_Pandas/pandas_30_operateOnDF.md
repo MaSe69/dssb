@@ -68,7 +68,7 @@ It might be not enough to get rid of the decimals, which in the scenario here ca
     dfInt = dfInt.astype('int32').round(-1)
 
 **Image**
-{% include images/image.html imagePath = "../dssb/assets/images/img_blog/opTables_Integers.png" imageCaption = "All values converted to integers and rounded to 10s."%}
+{% include images/image.html imagePath = "../assets/images/img_blog/opTables_Integers.png" imageCaption = "All values converted to integers and rounded to 10s."%}
 
 ## Step 4: Meta data about the dataframe
 
@@ -84,7 +84,7 @@ Often, we just need the number of columns or rows. Using 'shape' is one of sever
 The command 'describe' returns meta data on the dataframe.
 
 **Image**
-{% include images/image.html imagePath = "../dssb/assets/images/img_blog/Meta_data.png" imageCaption = "The mean values of the columns and much more statistics."%}
+{% include images/image.html imagePath = "../assets/images/img_blog/Meta_data.png" imageCaption = "The mean values of the columns and much more statistics."%}
 
 ## Step 5: Basic operations on the whole table
 
@@ -122,7 +122,7 @@ Dataframes can be transposed.
     df = df.transpose()
 
 **Image**
-{% include images/image.html imagePath = "../dssb/assets/images/img_blog/Table_Transposed.png" imageCaption = "The transposed table has the months as rows."%}
+{% include images/image.html imagePath = "../assets/images/img_blog/Table_Transposed.png" imageCaption = "The transposed table has the months as rows."%}
 
 ### Out of Scope
 

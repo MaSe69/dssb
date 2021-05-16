@@ -11,7 +11,7 @@ Let me show an intermediate result
 <br/>
 <br/>
 
-{% include images/image.html imagePath = "../dssb/assets/images/img_blog/dssb_example_2.png"%}
+{% include images/image.html imagePath = "../assets/images/img_blog/dssb_example_2.png"%}
 
 <br/>
 <br/>
