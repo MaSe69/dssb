@@ -18,12 +18,11 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Beautiful Dataframes
+title: drmaseway.com
 email: your-email@example.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Data Science. Beauty. Dataframe. Pandas. Matplotlib. Seaborn. 
-# baseurl: "/dssb" # the subpath of your site, e.g. /blog
-baseurl: "" # the subpath of your site, e.g. /blog
+description: Main page of drmaseway.com | Personality tests | HEXACO | Pandas dataframes | German | Deutsch
+# baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
