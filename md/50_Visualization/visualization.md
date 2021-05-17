@@ -6,49 +6,40 @@ permalink: /visualization
 
 # Visualizations
 
-# Matplotlib
-
-[Matplotlib](https://matplotlib.org/) is the standard library for Pandas dataframe visualization.
-
-The [pyplot](https://matplotlib.org/2.0.2/api/pyplot_api.html) - API give programatically access from a Python program to the rich functionality of Matplotlib.
-
->
-    import matplotlib.pyplot as plt
-
-Moveover, Pandas integrates Matplotlib such that the plot functionality can be directly called as a method of the dataframe.
-
->
-    df.plot()
+Several libraries can be used to visualize the content of a dataframe, see the [visualization library](visualization_libraries)
 
 
-# Seaborn
+## Example: 
+### The CARS Dataframe
 
-[Seaborn](https://seaborn.pydata.org/) is a Python data visualization library based on matplotlib. 
+This dataframe "cars" can be easily found and downloaded.
+
+It contains information about features of cars presumably available in the USA between 1970 and 1982.
+
+It has features that make it to a somehow beautiful dataframe, though there are also shortcomings.
+
+{% include images/image.html imagePath = "../assets/images/img_blog/cars_dataframe.PNG" imageCaption =  ""%}
+
+This dataframe has
+- clear focus on a small set of cars
+- clearly named columns (in one word, starting with capital letters)
+- a unique key
+- appropriately formatted figures
+- a standard date format
+- a categorical attribute (=Origin)
+
+A shortcoming of this dataframe is to not contain info on the percentage of cars sold during this period. Without info outside of it, the coverage could be near to complete or too small to draw any conclusions. It also does not indicate the selection criteria for a car to be included.
 
 
+### A visualization of this dataframe
 
-# Vegalite
+A possibly interesting question could be, if the fuel consumption by cars originating from the US decreased during this time span.
+Cars from Japan and Europe have been assumed to be lighter and 'less thirsty'.
+<br><br>
+Does the data back this assumption?
+<br><br>
+{% include images/image.html imagePath = "../assets/images/img_blog/54_SAC_Cars_TS_Reg.png" imageCaption =  ""%}
 
-(Vegalite)[https://vega.github.io/) is a visualization library independent of Matplotlib and not necessarily the natural option to be used with Python. However, there are libraries to enable the use of Vegalite from Pandas. 
-
-
-# Gadfly.jl
-
-[Gadfly.jl](http://gadflyjl.org/stable/) is a system for plotting and visualization written in Julia.
-Apparantly, there is not readily available library to use it from Python.
-
-# Plotly
-
-Plotly
-
-
-## Further References
-
-### Matplotlib
-
-- [Matplotlib](https://numpy.org/doc/stable/reference/random/generated/numpy.random.logistic.html)
-
-### Seaborn
-
-- [Seaborn - BarPlot](https://seaborn.pydata.org/generated/seaborn.barplot.html)
+The Split-Apply-Combine-pattern together with linear regression shows three lines, one for each region of origin. 
+Obviously, the number of miles per gallon increased as a trend for all cars or a region. At a closer look, the line for the USA has a sligthly steeper slope. 
 
