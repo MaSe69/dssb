@@ -30,7 +30,7 @@ Most approaches in data science seem to focus on the model. Models are fine, but
 Reportedly, a sculptor said: "The lion was inside the stone all the time. I just had to remove everything that did not look like it."
 Similarly, the beautiful dataframe is in the data. All you have to do is to put the data into a dataframe and then operate on it until it becomes that beautiful dataframe.
 
-When seeing a child drawing a few lines and dots on a paper, you might ask: "What is it?". The child might be buffled, because the image seems to be so clear. Similarly, an experienced data scientists 'sees' structures in raw data. The difficulty is to make this structure visible to any interested person. Visualization in this sense is just a tool to point out clearly features of the dataframe.  
+When seeing a child drawing a few lines and dots on a paper, you might ask: "What is it?". The child might be bewildered, because the image seems to be so clear. Similarly, an experienced data scientists 'sees' structures in raw data. The difficulty is to make this structure visible to any interested person. Visualization in this sense is just a tool to point out clearly features of the dataframe.  
 
 ### Benefits of dataframe focused approach
 
