@@ -15,7 +15,7 @@ A beautiful dataframe is a technical dataframe containing specific data and shap
 You can find here an approach to 'think in dataframes', 
 but you are welcome to just use it as an info source.
 
-- For free, you find on this site plenty of knowledge for immediate benefit to your dataframes, i.e. for use as a [Pandas Cheat Sheet](Pandas_Cheat_Sheet)
+- For free, you find on this site plenty of knowledge for immediate benefit to your dataframes, i.e. for use as a [Pandas Cheat Sheet](pandas)
 - Technical documentation is mostly available, but scarce are resources to combine the pieces.
 - New insights emerging from in real life projects are constantly added. 
 
@@ -26,9 +26,13 @@ This site is particularly meant to express gratitude towards all the inventors a
  
 ## Focus on dataframes
 
-The approach taken here is to focus on a dataframes as entity in its own right. 
+The approach taken here is to focus on a dataframes as entity in its own right.
+It is a dataframe-centric approach. Dataframes with data are the heroes of this show.
 
-Most approaches in data science seem to focus on the model. Models are fine, but they are here only seens as tools to describe the dataframe. 
+Out-of-scope are the topics 'before' and 'after' the dataframe of a typical lifecylce in data science.
+This focus on dataframe excludes fundamental programming skills in any of the languages, and the many little helpers commonly used, e.g. Numpy.
+It also excludes models. Apparantely, most approaches in data science focus on the model, from regression to deep learning in AI. Models are fine, but if they appear here then only as tools to describe or describe the dataframe.
+
 
 ### Comparing to other areas
 
@@ -65,18 +69,12 @@ These are
 
 ## Mastering dataframes
 
-At first, let's cover the fundamental skill sets
+First things first. Let's introduce or repeat how to
 
-- You can [create dataframes](pandas_createDF) yourself
-- Can load existing data directly into a dataframe
-- Operations on columns
-- Operations on rows
-- Merging with other dataframes 
-- Working on subsets of a dataframe
-
-A next step can include
-- Extracting features within the dataframe, particularly using grouping
-- Fitting models to (parts of) the dataframe
+- create dataframes or download existting data into a dataframe
+- operate on columns
+- operate on rows
+- merge or split dataframes 
 
 ### Programming languages
 

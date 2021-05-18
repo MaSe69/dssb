@@ -9,15 +9,10 @@ permalink: /pandas_createDF
 
 ## Create dataframes
 
-It seems to be natural to start with an empty dataframe and then fill it later. 
-My intuition is backed by a highly voted question on Stackoverflow: [Creating an empty pandas dataframe - then filling it](
-https://stackoverflow.com/questions/13784192/creating-an-empty-pandas-dataframe-then-filling-it).
-
-There is a 'world' before dataframes. You should have that matrix first, before you wrap it into columns and rows. Later, for performance reasons, you might extract that matrix again and work on it and convert it back to a dataframe.
-Creating dataframes from scratch is for good reason hence not supported by Pandas.
 
 
-## Step 1: A First Table
+## Table From Arrays
+
 
 We want to create a table with accounts and months. All values shall be 0.
 Let's put the months as columns and accounts as rows.
@@ -142,6 +137,15 @@ The output is a table with six days as columns and with an additional row.
 
 
 In summary, we can call a function in any program that returns a table with a specified number of time periods, accounts and some random values in the rows.
+
+### Create an Empty Pandas Dataframe - Not Really Possible
+
+It seems to be natural to start with an empty dataframe and then fill it later. 
+
+This assumptoin is backed by a highly voted question on Stackoverflow: [Creating an empty pandas dataframe - then filling it](
+https://stackoverflow.com/questions/13784192/creating-an-empty-pandas-dataframe-then-filling-it).
+
+As a workaround you can fill the cells with random numbers which are replaced with the real entries later.
 
 ## Summary and conclusion
 

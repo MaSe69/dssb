@@ -1,16 +1,12 @@
 ---
 layout: 20_topic
-title: Pandas
-permalink: /pandas
+title: Julia
+permalink: /julia
 ---
 
->
-    You don't need to know all solutions. Just one that works for you.
+# Julia (Dataframes.jl)
 
-# Python (Pandas)
-
-[Pandas](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html) is the library for dataframes in Python.<br>
-Consult the [Pandas Jupyter](https://github.com/wesm/pydata-book) examples provided by the master of Pandas, [Wes McKinney](https://wesmckinney.com/), for  many solutions.
+In Julia, the library for dataframes is fittingly clalled Dataframes.jl. 
 
 ## [Create dataframes](pandas_createDF)
 
