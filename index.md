@@ -15,10 +15,15 @@ A beautiful dataframe is a technical dataframe containing specific data and shap
 You can find here an approach to 'think in dataframes', 
 but you are welcome to just use it as an info source.
 
-- For free, you find on this site plenty of knowledge for immediate benefit to your dataframes, like this [Pandas Cheat Sheet](Pandas_Cheat_Sheet)
-- Technical documentation is mostly available [in many references](references), but scarce are resources to combine the pieces.
+- For free, you find on this site plenty of knowledge for immediate benefit to your dataframes, i.e. for use as a [Pandas Cheat Sheet](Pandas_Cheat_Sheet)
+- Technical documentation is mostly available, but scarce are resources to combine the pieces.
 - New insights emerging from in real life projects are constantly added. 
 
+<br>
+This site is particularly meant to express gratitude towards all the inventors and contributors in this area.<br>
+[The references on a sub page](references) take care mention the individuals to which we owe the great tools used here. Without Wes McKinney and his outstanding book on 'Python for Data Analysis' this site here would certainly not exist.
+
+ 
 ## Focus on dataframes
 
 The approach taken here is to focus on a dataframes as entity in its own right. 

@@ -1,5 +1,5 @@
 ---
-layout: 30_topic
+layout: 20_topic
 title: Visualization
 permalink: /visualization
 ---
