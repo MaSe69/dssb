@@ -1,6 +1,6 @@
 ---
 layout: 10_topic
-title: Pandas
+title: Pandas - Columns
 permalink: /pandas_columns
 
 ---

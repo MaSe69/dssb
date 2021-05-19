@@ -10,7 +10,7 @@ Dataframes are great.<br>
 Beautiful dataframes are even better, because they lead to many more insights!<br><br>
 A beautiful dataframe is a technical dataframe containing specific data and shaped to perfection.
 
-### About this site
+### About This Site
 
 You can find here an approach to 'think in dataframes', 
 but you are welcome to just use it as an info source.
@@ -24,7 +24,7 @@ This site is particularly meant to express gratitude towards all the inventors a
 [The references on a sub page](references) take care mention the individuals to which we owe the great tools used here. Without Wes McKinney and his outstanding book on 'Python for Data Analysis' this site here would certainly not exist.
 
  
-## Focus on dataframes
+## Focus on Dataframes
 
 The approach taken here is to focus on a dataframes as entity in its own right.
 It is a dataframe-centric approach. Dataframes with data are the heroes of this show.
@@ -33,41 +33,41 @@ Out-of-scope are the topics 'before' and 'after' the dataframe of a typical life
 This focus on dataframe excludes fundamental programming skills in any of the languages, and the many little helpers commonly used, e.g. Numpy.
 It also excludes models. Apparantely, most approaches in data science focus on the model, from regression to deep learning in AI. Models are fine, but if they appear here then only as tools to describe or describe the dataframe.
 
-
-### Comparing to other areas
-
-Reportedly, a sculptor said: "The lion was inside the stone all the time. I just had to remove everything that did not look like it."
-Similarly, the beautiful dataframe is in the data. All you have to do is to put the data into a dataframe and then operate on it until it becomes that beautiful dataframe.
-
-When seeing a child drawing a few lines and dots on a paper, you might ask: "What is it?". The child might be bewildered, because the image seems to be so clear. Similarly, an experienced data scientists 'sees' structures in raw data. The difficulty is to make this structure visible to any interested person. Visualization in this sense is just a tool to point out clearly features of the dataframe.  
-
-### Benefits of dataframe focused approach
+### Benefits of Dataframe Focused Approach
 
 - Focusing on dataframes, you can reach goals that might have looked out of scope for you so far.
 - Shaping a dataframes can help you to look at familiar problems from new angles, and to come to surprising insights.
 - Good skills in Dataframes make you more flexible when switching between most popular languages in data science: Python, Julia, R and more. 
 
-### Benefits of beautiful dataframes
+### The Idea of Beauty in Other Areas
+
+The point here is to apply the idea of beauty from other areas to dataframes.
+
+Reportedly, a famous sculptor once said: "The lion was inside the stone all the time. I just had to remove everything that did not look like it."
+Similarly, the beautiful dataframe is in the data. All you have to do is to put the data into a dataframe and then operate on it until it becomes that beautiful dataframe.
+
+When seeing a child drawing a few lines and dots on a paper, you might ask: "What is it?". The child might be bewildered, because the image seems to be so clear. Similarly, an experienced data scientists 'sees' structures in raw data. The difficulty is to make this structure visible to any interested person. Visualization in this sense is just a tool to point out clearly features of the dataframe.  
+
+
+### Benefits of Beautiful Dataframes
 
 Creating a beautiful dataframe takes time and effort.
 Time and effort are always limited. Hence, a beautiful dataframe is a bit of a luxury.
 
-However, luxury is important. Luxury makes the owner feel more imporant. Luxury leeds to envy from competitors.
+However, luxury is important. Luxury makes the owner feel more imporant. Luxury leads to envy from competitors.
 
-Similarly, if your business competitors get to know about your beautiful dataframes - describing your operations, your prospects or your profits - they might want to have access to it or to get to a similar or better ones, or all of it. 
+Imagine your business competitors to get to know of your beautiful dataframes - describing your operations or your profits or your plans  - they might want to have access to it or to get to a similar or better ones, or all of it. It would be more than just data, it would be a representation of your understanding of your world, of your actual and possible insights.
 
-### What is beauty for dataframes?
+### What is Beauty?
 
-Beauty can be defined as the 'place to be'
-Beauty deals with fundamental elements and their relationships to each others.
+Beauty can be defined as the 'place to be'. <br>
+There is stability in beauty. A desire to preserve it as it is. <br>
+Beauty deals with fundamental elements and their relationships to each other.
 There are requirements towards these elements and towards their respective positioning.
 
-There are other dimensions of importance, but we regard them here as independent from beauty.
-These are 
-- Being in control
-- Simplicity
+There are other dimensions of importance, e.g. simplicity and 'being in control', but we regard them here as independent from beauty. A beautiful dataframe does not need to be simple, like a beautiful castle might not be simple. 
 
-## Mastering dataframes
+## Mastering Dataframes
 
 First things first. Let's introduce or repeat how to
 
@@ -76,7 +76,7 @@ First things first. Let's introduce or repeat how to
 - operate on rows
 - merge or split dataframes 
 
-### Programming languages
+### Programming Languages
 
 The choice of programming language does matter.  
 Certainly, there is a mutual understanding in the programming community about 'what is a dataframe and what is not'.
@@ -86,7 +86,13 @@ Following the respective guideline of the language, the implementation of even t
 A bit more advanced operations, e.g. transposing or inverting a dataframe, can be supported to various degrees.
 Increasing the chain of operations and thus deepening the complexity of your program, you might increasingly worry about having chosen the right programming language.
 
-## Beautiful dataframes
+### Why more than one programming language?
+
+If a dataframe is an idea, it needs to be independent of the implementation in a specific programming language.<br>
+Programming languages in practice restrict by their intrinsic philosophy or available tooling.
+Comparing the implementation in at least two languages is necessary to get closer to the 'true nature' of dataframes. 
+
+## Creating Beautiful Dataframes
 
 Fundamentally,  there must be an 'idea' of a dataframe.
 
@@ -122,7 +128,7 @@ Further, you might start with available data that are far away from the desired 
 As a remedy, at least the occasional dump as a csv-file should get the unique, fitting name. Adding a version, e.g. "_v0.23" indicates the closeness to the desired result.
 
 
-### Relevance, comprehensiveness and potential for surprises
+### Relevance and Comprehensiveness
 
 Data are meant to map reality.
 Only a part of reality is decisive for the future.
@@ -176,3 +182,8 @@ Here, the idea and the benefits of the concept of a 'beautiful dataframe' was di
 Fundamentally, this is a dataframe-centric approach. It promotes the dataframe from a 'transitional tool' on the way from data to a model, to an entity in its own right. It also leads to a constructive approach to improve data quality.
 
 Possibly you might want now to see some examples and browse through the skill sets used.
+
+As next steps you might want to get an overview on 
+- [dataframes in Python](pandas)
+- [Dataframes in Julia](julia) 
+- [Comparison of Python vs. Julia](python_julia) 

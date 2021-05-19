@@ -4,10 +4,11 @@ title: Pandas
 permalink: /pandas
 ---
 
+# Python (Pandas)
+
 >
     You don't need to know all solutions. Just one that works for you.
 
-# Python (Pandas)
 
 [Pandas](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html) is the library for dataframes in Python.<br>
 Consult the [Pandas Jupyter](https://github.com/wesm/pydata-book) examples provided by the master of Pandas, [Wes McKinney](https://wesmckinney.com/), for  many solutions.
@@ -15,8 +16,15 @@ Consult the [Pandas Jupyter](https://github.com/wesm/pydata-book) examples provi
 ## [Create dataframes](pandas_createDF)
 
 Create a new dataframe within the program
-- from lists or arrays (created with Numpy)
+- from lists or arrays
 - from a dictionary
+
+## [Read data from from local disc](pandas_saveDF)
+
+Read to 
+- limit the data: rows / columns
+- deal with missing values
+- read dates to get a timeseries
 
 ## Download Data From External Sources
 
@@ -29,12 +37,7 @@ Explore data
 - describe (to get some statistics
 - shape (to get the number or columns or rows)
 
-## [Read datafrome from local disc](pandas_saveDF)
 
-Read to 
-- limit the data: rows / columns
-- deal with missing values
-- read dates to get a timeseries
 
 ## [Operations on the entire dataframe](pandas_operateOnDF)
 
@@ -55,7 +58,7 @@ Some of the operation on columns are:
 - Delete columns
 
 
-### Operate on Rows
+## Operate on Rows
 
 Sorting is one of the most frequent operations on rows. (There is rarely the need for sorting columns).
 

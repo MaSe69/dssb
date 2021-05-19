@@ -1,36 +1,13 @@
 ---
 layout: 10_topic
-title: Pandas
-permalink: /pandas_operateOnDF
+title: Pandas DF Ops
+permalink: /pandas_dfops
 
 ---
 
-In this section, we explore operations on the complete tables. This includes operations to describe the table and to modify the table.
+# Operations on the Entire Dataframe
 
-In the previous sections, we saw how to
-
-- create tables
-- save tables to the file system - and read them again
-- plot tables
-
-In the following sections, we will see how to operate
-
-- on columns
-- on rows
-- on cells
-
-but as for now let's focus on the whole table, i.e. the Pandas dataframe.
-
-As in all section, we follow the paradigm to operate on an 'original' table that we read from the file system before saving the modified table again to the file system.
-The sequence is always:
-
-- Read the table from file system. The 'Alpha'-Step.
-- Modify the table by applying some operations to it.
-- Write the modified table to the file system using another name or even into another folder. The 'Omega'-Step.
-
-Just remember to start with Alpha and to end with Omega.
-
-## Step 1: Rename columns + Set index
+## Rename columns + Set index
 
 The column names of our table saved on the file system originate from the automated creation of time periods.
 Such names are unlikely to 'sound nice'. Let's make it a bit more comfortable and give them shorter names that are easier to digest.
