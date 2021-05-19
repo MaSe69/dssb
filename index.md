@@ -4,8 +4,6 @@ title: Beautiful Dataframes
 permalink: /index
 ---
 
-# Beautiful Dataframes
-
 Dataframes are great.<br>
 Beautiful dataframes are even better, because they lead to many more insights!<br><br>
 A beautiful dataframe is a technical dataframe containing specific data and shaped to perfection.
@@ -176,14 +174,13 @@ The identity of the dataframe shall be kept over time, so it remains clear which
 
 # Summary
 
-Dataframes are well-established in the context of data science and [references](references) were given.
+Dataframes are [well-established in the context of data science](references).
 
-Here, the idea and the benefits of the concept of a 'beautiful dataframe' was discussed.
-Fundamentally, this is a dataframe-centric approach. It promotes the dataframe from a 'transitional tool' on the way from data to a model, to an entity in its own right. It also leads to a constructive approach to improve data quality.
+Here, the idea  of 'beautiful dataframes' was introduced.<br>
 
-Possibly you might want now to see some examples and browse through the skill sets used.
+Fundamentally, this idea leads to a dataframe-centric approach. It promotes the dataframe from a 'transitional tool' on the way from data to a model, to an entity in its own right. It also leads to a constructive approach to improve data quality.
 
 As next steps you might want to get an overview on 
-- [dataframes in Python](pandas)
+- [Dataframes in Python](pandas)
 - [Dataframes in Julia](julia) 
 - [Comparison of Python vs. Julia](python_julia) 
