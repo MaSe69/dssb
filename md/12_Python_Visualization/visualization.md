@@ -1,7 +1,7 @@
 ---
-layout: 20_topic
-title: Visualization
-permalink: /visualization
+layout: 20_generic
+title: Python Visualization
+permalink: /python_visualization
 ---
 
 # Visualizations

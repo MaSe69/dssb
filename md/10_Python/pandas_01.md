@@ -1,5 +1,5 @@
 ---
-layout: 20_topic
+layout: 21_python
 title: Pandas
 permalink: /pandas
 ---

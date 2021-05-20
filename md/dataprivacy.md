@@ -1,5 +1,5 @@
 ---
-layout: 20_topic
+layout: 20_generic
 title: Impressum
 permalink: /impressum2
 ---
