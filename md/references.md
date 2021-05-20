@@ -41,12 +41,18 @@ Further deep and brilliantly worked out solutions to concreate problems in Panda
 # Julia
 
 
-## Visualization
+[Dataframes Package](https://dataframes.juliadata.org/stable/)
+
+
+## Visualization - Python
 
 ### Seaborn 
 
 - [Michael Waskom - Seaborn: Statistical Data Visualization - YouTube](https://www.youtube.com/watch?v=wCKHT4BQkqA)
 
+## Visualization - Julia
+
+## Programming
 
 ## Resources used here
 

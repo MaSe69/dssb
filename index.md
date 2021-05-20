@@ -183,4 +183,4 @@ Fundamentally, this idea leads to a dataframe-centric approach. It promotes the 
 As next steps you might want to get an overview on 
 - [Dataframes in Python](pandas)
 - [Dataframes in Julia](julia) 
-- [Comparison of Python vs. Julia](python_julia) 
+- [Comparison of Python vs. Julia](python_julia_comparison) 

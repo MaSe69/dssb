@@ -16,27 +16,21 @@ Consult the [Pandas Jupyter](https://github.com/wesm/pydata-book) examples provi
 ## [Create dataframes](pandas_createDF)
 
 Create a new dataframe within the program
-- from lists or arrays
-- from a dictionary
+- from arrays or lists
+- to compare with Julia
 
-## [Read data from from local disc](pandas_saveDF)
-
-Read to 
-- limit the data: rows / columns
-- deal with missing values
-- read dates to get a timeseries
-
-## Download Data From External Sources
+## [Download Data](pandas_downloads)
 
 Download from the web,
 - when download into a dataframe works smoothly
 - when the 'object' first has to be downloaded using HTTP
 
-Explore data 
-- get to know some data sources
-- describe (to get some statistics
-- shape (to get the number or columns or rows)
+## [Read data](pandas_saveDF)
 
+Read to 
+- limit the data: rows / columns
+- read timeseries
+- deal with missing values
 
 
 ## [Operations on the entire dataframe](pandas_operateOnDF)

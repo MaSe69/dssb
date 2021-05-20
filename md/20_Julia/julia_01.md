@@ -4,33 +4,28 @@ title: Julia
 permalink: /julia
 ---
 
-# Julia (Dataframes.jl)
+# Dataframes in Julia
 
-In Julia, the library for dataframes is fittingly clalled Dataframes.jl. 
+In Julia, the fundamental package for dataframes is fittingly called Dataframes.jl, please find details here [dataframes.juliadata.org](https://dataframes.juliadata.org/stable/). 
 
 ## [Create dataframes](julia_createDF)
 
 Create a new dataframe within the program
-- from lists or arrays (created with Numpy)
-- from a dictionary
+- from arrays or lists
+- to compare with Python
 
-## Download Data From External Sources
+## [Download Data](julia_downloads)
 
 Download from the web,
 - when download into a dataframe works smoothly
 - when the 'object' first has to be downloaded using HTTP
 
-Explore data 
-- get to know some data sources
-- describe (to get some statistics
-- shape (to get the number or columns or rows)
-
-## [Read datafrome from local disc](julia_saveDF)
+## [Read data](julia_saveDF)
 
 Read to 
 - limit the data: rows / columns
+- read timeseries
 - deal with missing values
-- read dates to get a timeseries
 
 ## [Operations on the entire dataframe](julia_operateOnDF)
 

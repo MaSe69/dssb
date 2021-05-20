@@ -115,12 +115,16 @@ This classical problem of transposing a matrix can be easiyl solved in Pandas
 >
     df = df.T
 
+Done.
+
+See here for [the comparison to the same data in a Python dataframe](python_julia_comparison)
+
 
 ## Not Possible - Create an Empty Dataframe
 
 It seems to be natural to start with an empty dataframe and then fill it later. 
 
-This assumptoin is backed by a highly voted question on Stackoverflow: [Creating an empty pandas dataframe - then filling it](
+This assumption is backed by a highly voted question on Stackoverflow: [Creating an empty pandas dataframe - then filling it](
 https://stackoverflow.com/questions/13784192/creating-an-empty-pandas-dataframe-then-filling-it).
 
 As a workaround, as indicated, you can fill the cells with NaN, zeros or random numbers which are replaced with the real entries later.

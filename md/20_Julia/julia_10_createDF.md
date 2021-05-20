@@ -14,10 +14,14 @@ As with most 'Hello Worlds', in real programs, you rarely use it.
 Dataframes are usually created when importing data.
 
 The coding used here is available as Jupyter lab: 
-[Create_DF.ipynb](https://github.com/MaSe69/dataframes/blob/master/dfPython/JL_11_Create_DF.ipynb)
+[Create_DF.ipynb](https://github.com/MaSe69/dataframes/tree/master/dfJulia)
 
+## Import the package for dataframes
 
-## Import Dataframes.jl
+Dataframes are not included in the Julia as such.
+The full functionality is split to several packages, particularly to minimize the coding you need to import.
+
+For a start, the pacakge Dataframes.jl is sufficient.
 
 Installing dataframes in Julia:
 
@@ -86,7 +90,7 @@ Given are the data as arrays:
     price = [100, 10, 50]
     cost = [30, 7, 25]
 
-Similarly as above, you would put the columns into a list and create a dataframe from it.
+You can create this dataframe as simple as that:
 
 >
     df = DataFrame(
@@ -98,6 +102,9 @@ Similarly as above, you would put the columns into a list and create a dataframe
     )
 
 Done.
+
+See here for [the comparison to the same data in a Python dataframe](python_julia_comparison)
+
 
 
 
