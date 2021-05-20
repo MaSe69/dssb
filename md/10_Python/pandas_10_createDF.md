@@ -4,7 +4,7 @@ title: Pandas
 permalink: /pandas_createDF
 
 ---
-# Create Dataframes Locally
+# Python - Create Dataframes Locally
 
 This is kind of 'Hello World' for Dataframes.
 
@@ -12,13 +12,13 @@ It is mainly used to check that the setup is complete and working.
 As with most 'Hello Worlds', in real programs, you rarely use it.
 Dataframes are usually created when importing data.
 
-The coding used here is avaialbe as Jupyter lab: 
+The coding used here is available as Jupyter lab: 
 [Create_DF.ipynb](https://github.com/MaSe69/dataframes/blob/master/dfPython/PY_11_Create_DF.ipynb)
 
 
 ## Import Pandas
 
-Using Pandas, it certainly has to be imported.
+In order to use Pandas, after installation, you need to import it, which is done by 
 
 > 
     import pandas as pd
@@ -57,10 +57,16 @@ Your result should be similar to:
 
 Certainly, though technically a dataframe, this is just mere 'list' or 'table', still a bit away from a 'beautiful dataframe'.
 
-## Reference of Copy of a Dataframe
+Dataframes can be created in an elegant way from a dict.
 
-The default should be and is to keep working on the same technical object representing the dataframe.
-Sometimes, however, you want to work on a copy, e.g. when transforming a subset of a dataframe.
+>
+    pd.DataFrame.from_dict(myDict)
+
+In practice, however, this is found to be rarely needed. 
+
+## Copy of a Dataframe
+
+The default should be and is to keep working on the same technical object representing the dataframe. Sometimes, however, you want to work on a copy, e.g. when transforming a subset of a dataframe.
 
 Make a copy of your dataframe using
 
@@ -80,10 +86,15 @@ Note that there are two ways to change a dataframe:
 There are quite some reasons to not use the inplace option, see [in-pandas-is-inplace-true-considered-harmful-or-not](
 https://stackoverflow.com/questions/45570984/in-pandas-is-inplace-true-considered-harmful-or-not)
 
-Here, only the assignment variant is used, particularly due to the importance of chaining. Unfortunately, this often leads to quite some cumbersome typing effort.
+ Particularly due to the importance of chaining, only the variant using the equal sign is used here. Unfortunately, this oftenleads to quite some cumbersome typing effort.
 
+## An Example to Compare Dataframes in Python and in Julia
 
-## An Example to Compare Dataframe in Python and in Julia
+The task shall be to get to a dataframe that looks like this
+
+{% include images/image.html imagePath = "../assets/images/img_blog/createDF_02_Python_Julia_Comparison.PNG" imageCaption =  ""%}
+
+Given are the data as arrays:
 
 >
     service = ["Consulting", "Installation", "Operation"]
@@ -91,6 +102,18 @@ Here, only the assignment variant is used, particularly due to the importance of
     quantity = [10, 100, 50]
     price = [100, 10, 50]
     cost = [30, 7, 25]
+
+Similarly as above, you would put the columns into a list and create a dataframe from it.
+
+>
+    myList = [service, account, quantity, price, cost]
+    df = pd.DataFrame(myList, columns = colNames)
+
+Problem is that you end up with the 'services' in the columns, though they should be in the rows.
+This classical problem of transposing a matrix can be easiyl solved in Pandas
+
+>
+    df = df.T
 
 
 ## Not Possible - Create an Empty Dataframe
@@ -101,9 +124,4 @@ This assumptoin is backed by a highly voted question on Stackoverflow: [Creating
 https://stackoverflow.com/questions/13784192/creating-an-empty-pandas-dataframe-then-filling-it).
 
 As a workaround, as indicated, you can fill the cells with NaN, zeros or random numbers which are replaced with the real entries later.
-
-
-
-
-
 

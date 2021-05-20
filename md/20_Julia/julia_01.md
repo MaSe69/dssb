@@ -8,7 +8,7 @@ permalink: /julia
 
 In Julia, the library for dataframes is fittingly clalled Dataframes.jl. 
 
-## [Create dataframes](pandas_createDF)
+## [Create dataframes](julia_createDF)
 
 Create a new dataframe within the program
 - from lists or arrays (created with Numpy)
@@ -25,14 +25,14 @@ Explore data
 - describe (to get some statistics
 - shape (to get the number or columns or rows)
 
-## [Read datafrome from local disc](pandas_saveDF)
+## [Read datafrome from local disc](julia_saveDF)
 
 Read to 
 - limit the data: rows / columns
 - deal with missing values
 - read dates to get a timeseries
 
-## [Operations on the entire dataframe](pandas_operateOnDF)
+## [Operations on the entire dataframe](julia_operateOnDF)
 
 Some of the operation of this type are: 
 - Change all values of the dataframe simultaneously (except the index)
@@ -41,7 +41,7 @@ Some of the operation of this type are:
 - Transpose a dataframe
 
 
-## [Operate on Columns](pandas_columns)
+## [Operate on Columns](julia_columns)
 
 Some of the operation on columns are: 
 - Rename the columns
