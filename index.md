@@ -27,9 +27,12 @@ This site is particularly meant to express gratitude towards all the inventors a
 The approach taken here is to focus on a dataframes as entity in its own right.
 It is a dataframe-centric approach. Dataframes with data are the heroes of this show.
 
+The dataframe here is also persisted as such. This is in contrast to a data analysis in which the data are dynamically retrieved from multiple data sources.
+
 Out-of-scope are the topics 'before' and 'after' the dataframe of a typical lifecylce in data science.
 This focus on dataframe excludes fundamental programming skills in any of the languages, and the many little helpers commonly used, e.g. Numpy.
 It also excludes models. Apparantely, most approaches in data science focus on the model, from regression to deep learning in AI. Models are fine, but if they appear here then only as tools to describe or describe the dataframe.
+
 
 ### Benefits of Dataframe Focused Approach
 
@@ -131,11 +134,12 @@ As a remedy, at least the occasional dump as a csv-file should get the unique, f
 Data are meant to map reality.
 Only a part of reality is decisive for the future.
 Getting to this decisive - and hence relevant - part of reality is a non-trivial task.
+The data should be complex - or 'deep' - enough to hold surprising indights even for a domain expert.
 
-Further, the data should be complex - or 'deep' - enough to be incomprehesible by just looking at them. 
+Comprehensive coverage of the topic of interest is absolutely decisive! <br>
+Particularly in the context of decision-making. 
+You need to ensure that the data covers all relevant aspects. 
 
-For example, there is no point in adding or keeping data in the dataframe that is irrevant to its purpose.
-You could add the color of cars to a dataframe on cars. However, if your purpose is to investigate fuel consumption over time, such information is not relevant. 
 
 ### Balance
 
@@ -143,6 +147,8 @@ A face is seldomly assessed as beautiful, if parts of it are disproportionate. A
 
 Often, data are available in abundance on a specific part of the topic, but scarce on other parts.
 It is tempting to keep all available data in one dataframe, rather than to 'balance' the various independent dimensions.
+
+More advanced, you need to find the Eigen vectors of your topic to focus data gathering and analsis on them.
 
 
 ### Readability and Appearance

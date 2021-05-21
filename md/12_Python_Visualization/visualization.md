@@ -8,6 +8,45 @@ permalink: /python_visualization
 
 Several libraries can be used to visualize the content of a dataframe, see the [visualization library](visualization_libraries)
 
+## The Visualization Lifecylce
+
+Visualization Lifecycle can be roughly subdivided into 3 areas:
+- Explorative Data Analysis
+- Reporting
+- Forecast
+
+
+
+## Tooling
+
+The available plots are in practice dominated by 
+- scatter
+- bar charts (both horizaontally and vertically)
+- line charts
+- geo maps
+
+There is an abandunce of other charts, which is used in practice rarely.
+Though their usage can be very thoughful in special cases, seemlingly they are often used for the sake of using them, e.g. heat maps, violin charts.
+
+## Beauty in Visualization
+
+Certainly a beautiful dataframe should be visualized in a beautiful way.
+The definition of beauty holds true here as well, i.e. beauty does not mean to use an exotic and colorful plot.
+
+Visualization is in the service of insight.
+The point to be made by a visualization should become as clear as possible. It must not be obscured or even falsified by any concept of beauty.
+
+Aspect ratio is important. A 4:3 ratio is a good starting point, deviate only for good reason.
+
+Surprises shall be pointed out, expected information should be softened.
+
+Texts should be readible by persons with normal eyesight.
+
+Colors should be limited to two to three.
+There are extensive theories on fitting colors, and many designers who already applied them successfully.
+At least, do not mix pale and bright colors, except for good reason.
+
+
 
 ## Example: 
 ### The CARS Dataframe

@@ -1,8 +1,7 @@
 ---
 layout: 10_topic
 title: Pandas
-permalink: /pandas_createDF
-
+permalink: /pandas_create
 ---
 # Python - Create Dataframes Locally
 

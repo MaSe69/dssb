@@ -13,25 +13,21 @@ permalink: /pandas
 [Pandas](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html) is the library for dataframes in Python.<br>
 Consult the [Pandas Jupyter](https://github.com/wesm/pydata-book) examples provided by the master of Pandas, [Wes McKinney](https://wesmckinney.com/), for  many solutions.
 
-## [Create dataframes](pandas_createDF)
+## [Create dataframes](pandas_create)
 
-Create a new dataframe within the program
-- from arrays or lists
-- to compare with Julia
+- create dataframes either from arrays or lists
+- compare with Julia dataframe creation
 
-## [Download Data](pandas_downloads)
+## [Download Data](pandas_download)
 
-Download from the web,
-- when download into a dataframe works smoothly
-- when the 'object' first has to be downloaded using HTTP
+- Download from the web using a request
+- Convert the downloaded data to a dataframe
 
-## [Read data](pandas_saveDF)
+## [Read data](pandas_read)
 
-Read to 
-- limit the data: rows / columns
-- read timeseries
-- deal with missing values
-
+- read only limited data
+- read tricky data
+- save the dataframe locally
 
 ## [Operations on the entire dataframe](pandas_operateOnDF)
 
