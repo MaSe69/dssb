@@ -43,10 +43,9 @@ permalink: /pandas
 
 - Sort
 - Add and Delete
-- Rename cell values
-- Add columns with values on condition
+- Modifying values
 
 ## [Merge dataframes](pandas_merge)
 
-- Concatenate
-- Join
+- Concatenate horizontally
+- Merge by key
