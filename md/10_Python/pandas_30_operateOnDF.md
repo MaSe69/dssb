@@ -1,112 +1,116 @@
 ---
 layout: 10_topic
 title: Pandas DF Ops
-permalink: /pandas_dfops
+permalink: /pandas_df
 
 ---
 
 # Operations on the Entire Dataframe
 
-## Rename columns + Set index
+You can make some operations on the entire dataframe.
 
-The column names of our table saved on the file system originate from the automated creation of time periods.
-Such names are unlikely to 'sound nice'. Let's make it a bit more comfortable and give them shorter names that are easier to digest.
+As a prerequesite, apart from the index, all cells need to fulfill the prerequites of the operation.
+## Preparing the dataframe
 
-We define a list of the same length as the number of columns. Then, we set the columns of the dataframe to that list.
+As the prerequesite of suitabililty of the dataframe might only hold true for small dataframes, as preparation
+you have at least these option:
 
-**Coding**
+- Move all other columns to temporarily to the index.
+- Slice the dataframe
+
+### Indices
+
+The first column of a Pandas dataframe is the index - just integer numbers.
+You can specify one or more columns as this index, which then substitute Pandas' index.
+
 >
-    myColumns = ['Account', 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun']
-    df.columns = myColumns
-    df = df.set_index("Account")
+    df = df.set_index(myColumns[:k])
 
-Finally, we set the index from the default created by Pandas to the dedicated column.
+with k being the column number that ends the index.
+Perform the operation and then reset the index.
 
-## Step 2: Local Copy
+See the section [Operate on Columns](pandas_columns) for further details.
 
-At first, we should make a local copy of the table that we read from the database. Be aware to make a real copy.
+Applying an operation on the dataframe, only the non-indexed columns are affected. 
 
-**Coding**
+### Slice
+
+You can define a 'rectangle' of your dataframe to be a new dataframe - and apply the operation only to that new .
+
 >
-    df_New = df.copy()   # Create a copy 
+    dfSlice = df[r1:r2; c1:c2].copy()
+
+with r1 and r2 being the first and last row, c1 and c2 being the first and last column.
+
+Mind that without the copy your operation might also affect the original dataframe. 
+
+## Rename or Copy
+
+You might want to rename your dataframe or to make a real copy.
+
 >
     df_New = df          # Does not create a copy, just another name
+    df_New = df.copy()   # Create a real copy 
 
-A new window pops up that contains the plot.
+### Transpose a dataframe
 
-## Step 3: Convert all numerical values
-
-There is no need to convert entries like "123.45" on the csv-file into float.
-Sometimes, another type, particularly integers are required.
-It might be not enough to get rid of the decimals, which in the scenario here can represent cents, but also to round the integers to larger amounts.
-
-**Coding**
 >
-    dfInt = dfInt.astype('int32').round(-1)
+    df = df.T
 
-**Image**
-{% include images/image.html imagePath = "../assets/images/img_blog/opTables_Integers.png" imageCaption = "All values converted to integers and rounded to 10s."%}
+However, there is no inversion of a dataframe.
+Possible workaround: extract to a Numpy array. 
 
-## Step 4: Meta data about the dataframe
+## Meta data about the dataframe
 
-Often, we just need the number of columns or rows. Using 'shape' is one of several possibilities.
+'shape' returns the number of columns or rows. 
 
-**Coding**
 >
     print("Number of (rows, columns):", df.shape)
+
+'describe' returns meta data on the dataframe.
+
 >
     dfMetaData = df.describe()
-    dfMetaData = dfMetaData.astype('int32')
 
-The command 'describe' returns meta data on the dataframe.
+## Operations on numerical values
 
-**Image**
-{% include images/image.html imagePath = "../assets/images/img_blog/Meta_data.png" imageCaption = "The mean values of the columns and much more statistics."%}
+### Fill all NaN with a different value
+>
+    df = df.fillna(0)
 
-## Step 5: Basic operations on the whole table
+### Change the type of all columns
 
-Sometimes, all numerical values in a table shall be multiplied with a constant. For instance, we have currency values in Euro, but we need them in Dollar.
-Multiplying the dataframe with a constant works. Similarly, a constant value can be added or subtracted.
+Convert floats to a currency-like format, i.e. two decimals only,
+>
+    df = df.astype(float).round(2)
 
-**Coding**
+Convert all numbers  to integers.
+>
+    df = df.astype(int)
+
+Convert all numbers to integers and round to 1000s. 
+>
+    df = df.astype('int32').round(-3)
+
+Examples: 
+{% include images/image.html imagePath = "../assets/images/img_blog/opTables_Integers.png" imageCaption = "All values converted to integers and rounded to 10s."%}
+
+### Fundamental Operatoins
+
+Multiply (or divide) by a number
+
 >
     df = 3.141529 * df
 
-If you wan the decimals, the modulo operator is also available.
+Modulo operation
 >
     df = df % 1
 
-Hence, this notation seems to be as easy as it could be.
-
-## Step 6: Table and Table
-
-If this works for a single value, i.e. a scalar, you might wonder, if it also works for a table.
-
-**Coding**
+Adding or subtracting a suitable other dataframe
 >
-    df = df - df
-    df = df / df
+    df = df2 + df1
+    df = df2 - df1
 
-We get a table full of zeros or ones, respectively, when subtracting with or dividing by the same table.
 
-### Step 7: Transpose Table
 
-Sometimes, it is of advantage to have the time periods in the rows instead of the columns.
-Dataframes can be transposed.
 
-**Coding**
->
-    df = df.transpose()
-
-**Image**
-{% include images/image.html imagePath = "../assets/images/img_blog/Table_Transposed.png" imageCaption = "The transposed table has the months as rows."%}
-
-### Out of Scope
-
-You would not compute the inversion of such a table using Pandas, i.e. compute dfI with df * dfI = 1. Instead, use Numpy directly for matrix inversion.
-
-## Summary
-
-The task was to explore the table structure and its content in more detail.
-
-Further, operations that affect the whole table were described here.

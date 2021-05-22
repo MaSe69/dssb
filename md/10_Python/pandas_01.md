@@ -9,13 +9,12 @@ permalink: /pandas
 >
     You don't need to know all solutions. Just one that works for you.
 
-
-[Pandas](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html) is the library for dataframes in Python.<br>
-Consult the [Pandas Jupyter](https://github.com/wesm/pydata-book) examples provided by the master of Pandas, [Wes McKinney](https://wesmckinney.com/), for  many solutions.
+- Consult the [Pandas Jupyter](https://github.com/wesm/pydata-book) examples provided by the master of Pandas, [Wes McKinney](https://wesmckinney.com/), for many solutions.
+- and check the [Reference on Pandas Dataframe](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html) 
 
 ## [Create dataframes](pandas_create)
 
-- create dataframes either from arrays or lists
+- Create dataframes rom arrays or lists
 - compare with Julia dataframe creation
 
 ## [Download Data](pandas_download)
@@ -29,36 +28,25 @@ Consult the [Pandas Jupyter](https://github.com/wesm/pydata-book) examples provi
 - read tricky data
 - save the dataframe locally
 
-## [Operations on the entire dataframe](pandas_operateOnDF)
+## [Operations on the entire dataframe](pandas_df)
 
-Some of the operation of this type are: 
-- Change all values of the dataframe simultaneously (except the index)
-- Multiplying the dataframe with a number
-- Adding or subtracting one dataframe from another dataframe
-- Transpose a dataframe
-
+- Get more info about dataframe 
+- Copy, transpose, re-index
+- Change all numerical values
 
 ## [Operate on Columns](pandas_columns)
 
-Some of the operation on columns are: 
-- Rename the columns
-- Re-order the columns
-- Add columns (at the end)
-- Insert columns at a specific position
-- Delete columns
+- Rename and Re-order
+- Insert and Delete
 
+## [Operate on Rows](pandas_rows)
 
-## Operate on Rows
+- Sort
+- Add and Delete
+- Rename cell values
+- Add columns with values on condition
 
-Sorting is one of the most frequent operations on rows. (There is rarely the need for sorting columns).
+## [Merge dataframes](pandas_merge)
 
-Some further operation on rows are: 
-- selecting a subset on row by slicing or on condition
-- deleting rows
-- adding or copying rows
-
-## Merge dataframes
-
-After having cleansed and wrangled one dataframe, you might want to continue to aggregate. 
-After having soaked out all info from that one dataframe, you might continue with merging it with one or several other dataframes. Merging with other dataframes can also become a business of mass production, particularly for time series.
-
+- Concatenate
+- Join
