@@ -54,9 +54,9 @@ Then, you are ready to plot the data
         ci=67,
     )
 
-- There is a good recommendation on saturation (of the color of the bars), with "0.5" being a value that subjectively adds to the beauty of the plot
 - The palette "Blues" contains a fine-tuned pattern of blue colors.
-- The horizontal orientation is specified with 'h'
+- There is a good recommendation on saturation (of the color of the bars), with "0.5" being a value that subjectively adds to the beauty of the plot.
+- The vertical orientation is specified with 'v' for sake of completeness as it is the default.
 - The confidence interval (ci) was chosen to be about 1 sigma.
 
     
@@ -65,15 +65,17 @@ Then, you are ready to plot the data
 
 It might be of interest, which cars actually do provde the best miles per gallon ratio.
 
-- As a vertial bar plot is a transposed horizontal bar plot, mind when defining x-value and y-value that the x-value must be a numerical one.
+- As a horizontal bar plot is a transposed vertical bar plot, mind when defining x-value and y-value that the x-value must be a numerical one.
 - As 300+ names hardly fit into a plot, the number of detail shown should be limited. Provided you use it in other places as well, you might want the number of entries used variable.
+- It looks nicer when the names are capitalized. This works for most, but fails oddly for 'VW'. This could be rectified with a rename though. 
 
 >
     df = df.sort_values(by=[xValue], ascending=False)
     number = 20
     df = df.head(number)
+    df[yValue] = df[yValue].str.capitalize()
 
-df[yValue] = df[yValue].str.capitalize()
+The horizontal bar plot is called just the same as vertical bar plot
 
 >
     myPlot = sns.barplot(
@@ -83,7 +85,7 @@ df[yValue] = df[yValue].str.capitalize()
             orient="h",
             edgecolor="k",
             palette="Blues_r",
-            saturation=0.49,
+            saturation=0.5,
             ci=None,
         )
 
@@ -91,3 +93,4 @@ df[yValue] = df[yValue].str.capitalize()
 - The horizontal orientation is specified with 'h'
 - The palette "Blues_r" is the reversed palette, which in this case puts more emphasis (darker blue) to the 'winner' of this ranking.
 - The grid lines were here altered to make it easier to extract the numerical value.
+- As there is (mostly) only one data point for the same name, the confidence interval is omitted.
