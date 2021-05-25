@@ -9,8 +9,8 @@ permalink: /pandas
 >
     You don't need to know all solutions. Just one that works for you.
 
-- Consult the [Pandas Jupyter](https://github.com/wesm/pydata-book) examples provided by the master of Pandas, [Wes McKinney](https://wesmckinney.com/), for many solutions.
-- and check the [Reference on Pandas Dataframe](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html) 
+- Read the [Reference on Pandas Dataframe](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html) 
+- Consult the [Pandas Jupyter](https://github.com/wesm/pydata-book) examples provided by the inventor of Pandas, [Wes McKinney](https://wesmckinney.com/), for many more solutions.
 
 ## [Create dataframes](pandas_create)
 
@@ -28,7 +28,7 @@ permalink: /pandas
 - read tricky data
 - save the dataframe locally
 
-## [Operations on the entire dataframe](pandas_df)
+## [Operations on the Dataframe](pandas_df)
 
 - Get more info about dataframe 
 - Copy, transpose, re-index
@@ -45,7 +45,7 @@ permalink: /pandas
 - Add and Delete
 - Modifying values
 
-## [Merge dataframes](pandas_merge)
+## [Merge Dataframes](pandas_merge)
 
 - Concatenate horizontally
-- Merge by key
+- Merge by common fields

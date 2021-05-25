@@ -6,7 +6,7 @@ permalink: /python_visualization
 
 # Visualizations
 
-Several libraries can be used to visualize the content of a dataframe, see the [visualization library](visualization_libraries)
+Several libraries can be used to visualize the content of a dataframe, see the [visualization library](visualization_python_references)
 
 ## The Visualization Lifecylce
 
@@ -20,7 +20,7 @@ Visualization Lifecycle can be roughly subdivided into 3 areas:
 ## Tooling
 
 The available plots are in practice dominated by 
-- scatter
+- [Scatter Plot](scatter_plot)
 - bar charts (both horizaontally and vertically)
 - line charts
 - geo maps
@@ -53,7 +53,7 @@ At least, do not mix pale and bright colors, except for good reason.
 
 This dataframe "cars" can be easily found and downloaded.
 
-It contains information about features of cars presumably available in the USA between 1970 and 1982.
+It con20_genericesumably available in the USA between 1970 and 1982.
 
 It has features that make it to a somehow beautiful dataframe, though there are also shortcomings.
 

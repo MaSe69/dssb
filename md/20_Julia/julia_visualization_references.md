@@ -1,7 +1,7 @@
 ---
 layout: 30_topic
-title: Visualization Libraries
-permalink: /visualization_libraries
+title: Visualization Julia References
+permalink: /visualization_julia_references
 ---
 
 # Visualizations
