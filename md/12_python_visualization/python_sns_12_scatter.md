@@ -13,6 +13,17 @@ We use the following approach here:
 
 Check the [Documentation on the Seaborn Scatter Plot](https://seaborn.pydata.org/generated/seaborn.scatterplot.html) for further parameters.
 
+
+Two numerical columns of the dataframe based on the data 'cars':
+<br><br>
+<center>
+
+{% include images/image.html imagePath = "../assets/images/img_blog/Python/41_BDF_Scatter.png" imageCaption =  ""%}
+
+A heavier car runs less miles for a gallon - good that data also shows this.
+
+</center>
+
 ## Scatter Plot in Seaborn
 
 These are all imports needed
@@ -98,19 +109,6 @@ Optimizing proportions is rather an art, which might depend on the number of dat
 >
     fig, ax = plt.subplots(figsize=(8, 5))
     plt.subplots_adjust(left=0.12, right=0.91, top=0.80, bottom=0.15)
-
-
-## Result
-
-Scatterplot for two numerical columns of the dataframe:
-<br><br>
-<center>
-
-{% include images/image.html imagePath = "../assets/images/img_blog/Python/41_BDF_Scatter.png" imageCaption =  ""%}
-
-A heavier car runs less miles for a gallon - good that data also shows this.
-
-</center>
 
 
 

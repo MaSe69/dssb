@@ -21,7 +21,7 @@ Visualization Lifecycle can be roughly subdivided into 3 areas:
 
 The available plots are in practice dominated by 
 - [Scatter Plot](scatter_plot)
-- bar charts (both horizaontally and vertically)
+- [Bar Plot](bar_plot) (both horizaontally and vertically)
 - line charts
 - geo maps
 
