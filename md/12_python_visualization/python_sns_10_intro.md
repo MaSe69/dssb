@@ -15,18 +15,18 @@ Visualization Lifecycle can be roughly subdivided into 3 areas:
 - Reporting
 - Forecast
 
-
-
 ## Tooling
 
 The available plots are in practice dominated by 
 - [Scatter Plot](scatter_plot)
 - [Bar Plot](bar_plot) (both horizaontally and vertically)
-- line charts
-- geo maps
+- [Line Plot](line_plot)
+- [Geo Plot]()
 
-There is an abandunce of other charts, which is used in practice rarely.
-Though their usage can be very thoughful in special cases, seemlingly they are often used for the sake of using them, e.g. heat maps, violin charts.
+There is an abandunce of other charts, which in practice are used rather rarely.
+- [Box Plot with Additonal Strip Plot](box_plot)
+- heat maps
+- violin charts
 
 ## Beauty in Visualization
 
@@ -69,16 +69,4 @@ This dataframe has
 
 A shortcoming of this dataframe is to not contain info on the percentage of cars sold during this period. Without info outside of it, the coverage could be near to complete or too small to draw any conclusions. It also does not indicate the selection criteria for a car to be included.
 
-
-### A visualization of this dataframe
-
-A possibly interesting question could be, if the fuel consumption by cars originating from the US decreased during this time span.
-Cars from Japan and Europe have been assumed to be lighter and 'less thirsty'.
-<br><br>
-Does the data back this assumption?
-<br><br>
-{% include images/image.html imagePath = "../assets/images/img_blog/54_SAC_Cars_TS_Reg.png" imageCaption =  ""%}
-
-The Split-Apply-Combine-pattern together with linear regression shows three lines, one for each region of origin. 
-Obviously, the number of miles per gallon increased as a trend for all cars or a region. At a closer look, the line for the USA has a sligthly steeper slope. 
 

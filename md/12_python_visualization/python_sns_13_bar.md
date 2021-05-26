@@ -6,10 +6,6 @@ permalink: /bar_plot
 
 # Bar Plot
 
-- Check the [scatter plot](scatter_plot) for the framework. Identitcal parts are not repeated here. Differences only are pointed out.
-
-- Check the [Documentation on the Seaborn Bar Plot](https://seaborn.pydata.org/generated/seaborn.barplot.html) for further parameters.
-
 
 For the horizonal bar chart, we chose the number of cylinders for the data 'cars':
 <br><br>
@@ -63,7 +59,7 @@ Then, you are ready to plot the data
 ## Comments on the Horizontal Bar Plot
 
 
-It might be of interest, which cars actually do provde the best miles per gallon ratio.
+It might be of interest, which cars actually do provide the best miles per gallon ratio.
 
 - As a horizontal bar plot is a transposed vertical bar plot, mind when defining x-value and y-value that the x-value must be a numerical one.
 - As 300+ names hardly fit into a plot, the number of detail shown should be limited. Provided you use it in other places as well, you might want the number of entries used variable.
@@ -94,3 +90,10 @@ The horizontal bar plot is called just the same as vertical bar plot
 - The palette "Blues_r" is the reversed palette, which in this case puts more emphasis (darker blue) to the 'winner' of this ranking.
 - The grid lines were here altered to make it easier to extract the numerical value.
 - As there is (mostly) only one data point for the same name, the confidence interval is omitted.
+
+
+## References 
+
+- Check the [scatter plot on this site](scatter_plot) for the framework. Identical parts are not repeated here. Only differences and noteworthy are pointed out.
+
+- Check the [Documentation on the Seaborn Bar Plot](https://seaborn.pydata.org/generated/seaborn.barplot.html) for further parameters.
