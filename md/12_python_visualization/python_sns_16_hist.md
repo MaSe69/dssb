@@ -6,10 +6,10 @@ permalink: /hist_plot
 
 # Histogram
 
-A histogram is a great way to explore an unknown data set and hence a standard tool in explorative data analysis (EDA)-
+A histogram is a great way to explore an unknown data set and hence a standard tool in explorative data analysis (EDA). <br>
 Particularly, changing the so-called bin sizes can lead to a good first impression on the information hidden in the data.
 <br>
-From the plot for the dataframe based on 'cars', we would like to know the distribution of horsepower of all car.
+From the dataframe based on 'cars', we would like to know the distribution of horsepower of all cars.
 
 <center>
 <br>
