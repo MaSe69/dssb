@@ -19,14 +19,15 @@ Visualization Lifecycle can be roughly subdivided into 3 areas:
 
 The available plots are in practice dominated by 
 - [Scatter Plot](scatter_plot)
+- [Histogram Plot](hist_plot)
 - [Bar Plot](bar_plot) (both horizaontally and vertically)
 - [Line Plot](line_plot)
-- [Geo Plot]()
 
 There is an abandunce of other charts, which in practice are used rather rarely.
 - [Box Plot with Additonal Strip Plot](box_plot)
 - heat maps
 - violin charts
+- [Geo Plot]()
 
 ## Beauty in Visualization
 
