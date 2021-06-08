@@ -1,5 +1,5 @@
 ---
-layout: 10_topic
+layout: 22_python_deep
 title: Pandas - Downloads
 permalink: /pandas_download
 

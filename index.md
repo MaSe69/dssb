@@ -40,36 +40,6 @@ It also excludes models. Apparantely, most approaches in data science focus on t
 - Shaping a dataframes can help you to look at familiar problems from new angles, and to come to surprising insights.
 - Good skills in Dataframes make you more flexible when switching between most popular languages in data science: Python, Julia, R and more. 
 
-### The Idea of Beauty in Other Areas
-
-The point here is to apply the idea of beauty from other areas to dataframes.
-
-Reportedly, a famous sculptor once said: "The lion was inside the stone all the time. I just had to remove everything that did not look like it."
-Similarly, the beautiful dataframe is in the data. All you have to do is to put the data into a dataframe and then operate on it until it becomes that beautiful dataframe.
-
-When seeing a child drawing a few lines and dots on a paper, you might ask: "What is it?". The child might be bewildered, because the image seems to be so clear. Similarly, an experienced data scientists 'sees' structures in raw data. The difficulty is to make this structure visible to any interested person. 
-
-[Visualization](python_visualization) in this sense is just a tool to point out clearly features of the dataframe.  
-
-
-### Benefits of Beautiful Dataframes
-
-Creating a beautiful dataframe takes time and effort.
-Time and effort are always limited. Hence, a beautiful dataframe is a bit of a luxury.
-
-However, luxury is important. Luxury makes the owner feel more imporant. Luxury leads to envy from competitors.
-
-Imagine your business competitors to get to know of your beautiful dataframes - describing your operations or your profits or your plans  - they might want to have access to it or to get to a similar or better ones, or all of it. It would be more than just data, it would be a representation of your understanding of your world, of your actual and possible insights.
-
-### What is Beauty?
-
-Beauty can be defined as the 'place to be'. <br>
-There is stability in beauty. A desire to preserve it as it is. <br>
-Beauty deals with fundamental elements and their relationships to each other.
-There are requirements towards these elements and towards their respective positioning.
-
-There are other dimensions of importance, e.g. simplicity and 'being in control', but we regard them here as independent from beauty. A beautiful dataframe does not need to be simple, like a beautiful castle might not be simple. 
-
 ## Mastering Dataframes
 
 First things first. Let's introduce or repeat how to
@@ -94,6 +64,37 @@ Increasing the chain of operations and thus deepening the complexity of your pro
 If a dataframe is an idea, it needs to be independent of the implementation in a specific programming language.<br>
 Programming languages in practice restrict by their intrinsic philosophy or available tooling.
 Comparing the implementation in at least two languages is necessary to get closer to the 'true nature' of dataframes. 
+
+# Beauty and Dataframes
+### The Idea of Beauty in Other Areas
+
+The point here is to apply the idea of beauty from other areas to dataframes.
+
+Reportedly, a famous sculptor once said: "The lion was inside the stone all the time. I just had to remove everything that did not look like it."
+Similarly, the beautiful dataframe is in the data. All you have to do is to put the data into a dataframe and then operate on it until it becomes that beautiful dataframe.
+
+When seeing a child drawing a few lines and dots on a paper, you might ask: "What is it?". The child might be bewildered, because the image seems to be so clear. Similarly, an experienced data scientists 'sees' structures in raw data. The difficulty is to make this structure visible to any interested person. 
+
+[Visualization](python_visualization) in this sense is just a tool to point out clearly features of the dataframe.  
+
+### What is Beauty?
+
+Beauty can be defined as the 'place to be'. <br>
+There is stability in beauty. A desire to preserve it as it is. <br>
+Beauty deals with fundamental elements and their relationships to each other.
+There are requirements towards these elements and towards their respective positioning.
+
+There are other dimensions of importance, e.g. simplicity and 'being in control', but we regard them here as independent from beauty. A beautiful dataframe does not need to be simple, like a beautiful castle might not be simple. 
+
+### Benefits of Beautiful Dataframes
+
+Creating a beautiful dataframe takes time and effort.
+Time and effort are always limited. Hence, a beautiful dataframe is a bit of a luxury.
+
+However, luxury is important. Luxury makes the owner feel more imporant. Luxury leads to envy from competitors.
+
+Imagine your business competitors to get to know of your beautiful dataframes - describing your operations or your profits or your plans  - they might want to have access to it or to get to a similar or better ones, or all of it. It would be more than just data, it would be a representation of your understanding of your world, of your actual and possible insights.
+
 
 ## Creating Beautiful Dataframes
 
