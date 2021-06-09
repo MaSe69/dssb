@@ -112,13 +112,11 @@ Certainly, this is better than to append at the end and then re-order the column
 
 
 
-### Special cases
+### Special case
 
 Append a column with the sum of all columns (that are not in the index)
-
 >
-    df.loc[:, 'Sum'] = df.sum(axis=1) 
-
+    df["Sum"] = df.sum(axis=1)  
 
 
 ## Deleting Columns

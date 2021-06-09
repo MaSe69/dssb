@@ -3,10 +3,10 @@ layout: 01_landing
 title: Beautiful Dataframes
 permalink: /index
 ---
-
+<br>
 I am passionate about dataframes.
 <br>
-Beautiful dataframes provide their technical means and contain domain knowledge shaped to perfection.
+**Beautiful dataframes** provide their technical means and contain domain knowledge shaped to perfection.
 
 ## Mastering Dataframes
 
@@ -21,21 +21,20 @@ In addition, you find on this site for free:
 - Some very powerful dataframe operations of high value in practice.
 - A comparison between Python and Julia dataframes, meant to switch efficiently between these languages.
 
-<br><br>
+<br>
 Please continue reading for
 
 - [A cheat sheet for dataframes in Python-Pandas](pandas)
 - [A cheat sheet for dataframes in Julia](julia)
 
-<br><br>
-You'd find there: 
+<br>
+because you'd find there: 
 
 - Download data into dataframes
 - Create new dataframes 
 - Merge or split them
 - Column operations
 - Row operations
-
 
 <br>
 This site has grown as a collection of my personal cheat sheets. Saving my time to look up powerful, but hard to remember syntax. It might also save your time and make it more fun working with dataframes.

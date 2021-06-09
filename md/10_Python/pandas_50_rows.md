@@ -5,14 +5,22 @@ permalink: /pandas_rows
 
 ---
 
-# Operations on Rows
+# Main Operations on Rows
 
-In this section, we explore operations on the rows. This includes adding, sorting and deleting (filtering) rows in a table of fixed column sructure.
+- Get a sub-dataframe
+- Sort rows by
+    - A single column
+    - Multiple columns
+- Adding rows
+    - Append at the end
+    - Append a row with sums
+    - Add many rows
+- Deleting rows
+- Modifying rows
 
+## General comments on rows in Pandas
 
-## Operate only on selected columns
-
-You can address a row with the (unique) name of its index in square brackets directly after the dataframe variable **and** the key word "loc"
+You can address a row with the (unique) name of its index in square brackets directly after the dataframe variable **and** the key word "loc" - in semantic coding:
 
 >
     df.loc["index"]
@@ -24,7 +32,7 @@ Further, you can address a row with its position given as an integer
     n = 5
     row = df.iloc[[n]]
 
-## Address some rows
+## Get a sub-dataframe
 
 Very often used is the function to print out the first few or last few rows. You can also defined new data sets in this way:
 
@@ -44,16 +52,16 @@ For very long files, you might want to get an impression of the data by getting 
 
 ## Sorting
 
-### Sort by a single column
+### Single column
 
 The syntax is a bit cumbersome, i.e. one that might need to be looked up again.
-It comprises a "sort_values" and - inside the parathesis - a "by="
+It comprises a "sort_values" and - inside the parenthesis - a "by="
 
 > 
     df = df.sort_values(by="column1", ascending=True)
 
 
-### Sort by multiple columns in various directions
+### Multiple columns - in various directions
 
 Certainly, you can also sort by multiple column and in various directions, e.g. 
 
@@ -77,8 +85,14 @@ This leads to a two step process
     dfNewRows.loc[0] = ["myNewCar"] + list((np.random.uniform(20, 80, 3)).round(1))
 
 
-### Concatenating many rows
+### Special case
 
+Append a row with the sum of all rows (that are not in the index)
+
+>
+    df.loc["Sum"] = df.sum()
+
+### Concatenating many rows
 
 For performance reasons, for instance, for many rows you should create and fill a new dataframe
 
@@ -118,7 +132,7 @@ However, you can also drop specific rows, e.g. using the index
 
 Warning: If deletion reduces the Pandas dataframe to just one column, Pandas regards it as a vector. A vector can have different properties, possibly leading to error messages.
 
-## Modifing rows
+## Modifying rows
 
 In fact, cells are changed and technically columns are specified, but it rather feels like changing rows.
 
