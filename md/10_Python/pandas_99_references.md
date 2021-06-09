@@ -10,9 +10,9 @@ permalink: /pandas_references
 
 The library for dataframes in Python is Pandas.
 
-- [Pandas Documentaton on Dataframe](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html)
+- [Pandas Documentation on Dataframe](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html)
 
-The inventor of Pandas, Wes McKinney, was employed at that time at a financial department which might explain the good support of time series in Pandas. Pandas grew in an environment of Excel, Matplab and R.  
+The inventor of Pandas, Wes McKinney, was employed at that time at a financial department which might explain the good support of time series in Pandas. Pandas grew in an environment of Excel, Matlab and R.  
 
 Parts of the history of Pandas is described by its inventor 
 
@@ -34,7 +34,7 @@ See also Wikipedia for details
 Stackoverflow has emerged as THE reference for Python and Pandas. This might not be noteworthy, if true for Julia dataframes. Julia dataframes can be found on stackoverflow, but rather rarely. The dataframe tag in stackoverflow is about hundred thousand questions, with predominantly Pandas dataframes being asked for.
 
 You can find on Github complete solutions as Jupyter Lab.
-Further deep and brilliantly worked out solutions to concreate problems in Pandas can be found on Kaggle.
+Further deep and brilliantly worked out solutions to concrete problems in Pandas can be found on Kaggle.
 
 
 ## Visualization - Python

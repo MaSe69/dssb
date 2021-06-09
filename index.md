@@ -4,35 +4,52 @@ title: Beautiful Dataframes
 permalink: /index
 ---
 
-Dataframes are great.<br>
-Beautiful dataframes are even better, because they lead to many more insights!<br><br>
-A beautiful dataframe is a technical dataframe containing specific data and shaped to perfection.
+I am passionate about dataframes.
+<br>
+Beautiful dataframes provide their technical means and contain domain knowledge shaped to perfection.
 
-### About This Site
+## Mastering Dataframes
 
-You can find here an approach to 'think in dataframes', 
-but you are welcome to just use it as an info source.
-
-- For free, you find on this site plenty of knowledge for immediate benefit to your dataframes, i.e. for use as a [Pandas Cheat Sheet](pandas)
-- Technical documentation is mostly available, but scarce are resources to combine the pieces.
-- New insights emerging from in real life projects are constantly added. 
+You can find the official documentations for Python and Julia, respectively, here
+- [Python - Pandas (Dataframes)](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html)
+- [Julia - Package on Dataframes](https://dataframes.juliadata.org/stable/)
 
 <br>
-This site is particularly meant to express gratitude towards all the inventors and contributors in this area.<br>
-[The references on a sub page](references) take care mention the individuals to which we owe the great tools used here. Without Wes McKinney and his outstanding book on 'Python for Data Analysis' this site here would certainly not exist.
+In addition, you find on this site for free:
 
- 
+- Essential operations to work with dataframes from a user perspective. 
+- Some very powerful dataframe operations of high value in practice.
+- A comparison between Python and Julia dataframes, meant to switch efficiently between these languages.
+
+<br><br>
+Please continue reading for
+
+- [A cheat sheet for dataframes in Python-Pandas](pandas)
+- [A cheat sheet for dataframes in Julia](julia)
+
+<br><br>
+You'd find there: 
+
+- Download data into dataframes
+- Create new dataframes 
+- Merge or split them
+- Column operations
+- Row operations
+
+
+<br>
+This site has grown as a collection of my personal cheat sheets. Saving my time to look up powerful, but hard to remember syntax. It might also save your time and make it more fun working with dataframes.
+
 ## Focus on Dataframes
+
+First of all, this site is particularly meant to express gratitude towards all the inventors and contributors in this area.<br>
+
+[The references on a sub page](references) take care mention the individuals to which we owe the great tools used here. Without Wes McKinney and his outstanding book on 'Python for Data Analysis' this site here would certainly not exist.
 
 The approach taken here is to focus on a dataframes as entity in its own right.
 It is a dataframe-centric approach. Dataframes with data are the heroes of this show.
 
 The dataframe here is also persisted as such. This is in contrast to a data analysis in which the data are dynamically retrieved from multiple data sources.
-
-Out-of-scope are the topics 'before' and 'after' the dataframe of a typical lifecylce in data science.
-This focus on dataframe excludes fundamental programming skills in any of the languages, and the many little helpers commonly used, e.g. Numpy.
-It also excludes models. Apparantely, most approaches in data science focus on the model, from regression to deep learning in AI. Models are fine, but if they appear here then only as tools to describe or describe the dataframe.
-
 
 ### Benefits of Dataframe Focused Approach
 
@@ -40,16 +57,14 @@ It also excludes models. Apparantely, most approaches in data science focus on t
 - Shaping a dataframes can help you to look at familiar problems from new angles, and to come to surprising insights.
 - Good skills in Dataframes make you more flexible when switching between most popular languages in data science: Python, Julia, R and more. 
 
-## Mastering Dataframes
 
-First things first. Let's introduce or repeat how to
+### Out of Scope
 
-- create dataframes or download existting data into a dataframe
-- operate on columns
-- operate on rows
-- merge or split dataframes 
+Out-of-scope are the topics 'before' and 'after' the dataframe of a typical life cycle in data science.
+This focus on dataframe excludes fundamental programming skills in any of the languages, and the many little helpers commonly used, e.g. Numpy.
+It also excludes models. Apparently, most approaches in data science focus on the model, from regression to deep learning in AI. Models are fine, but if they appear here then only as tools to describe or describe the dataframe.
 
-### Programming Languages
+
 
 The choice of programming language does matter.  
 Certainly, there is a mutual understanding in the programming community about 'what is a dataframe and what is not'.
@@ -91,7 +106,7 @@ There are other dimensions of importance, e.g. simplicity and 'being in control'
 Creating a beautiful dataframe takes time and effort.
 Time and effort are always limited. Hence, a beautiful dataframe is a bit of a luxury.
 
-However, luxury is important. Luxury makes the owner feel more imporant. Luxury leads to envy from competitors.
+However, luxury is important. Luxury makes the owner feel more important. Luxury leads to envy from competitors.
 
 Imagine your business competitors to get to know of your beautiful dataframes - describing your operations or your profits or your plans  - they might want to have access to it or to get to a similar or better ones, or all of it. It would be more than just data, it would be a representation of your understanding of your world, of your actual and possible insights.
 
@@ -108,7 +123,7 @@ As for faces or landscapes, our brains constructs a representation of beauty, al
 We recognize a beautiful dataframe, when we see one. Any ugliness sticks out.
 
 However, we need also a constructive checklist for beauty. 
-- Authenticty (Identity)
+- Authenticity (Identity)
 - Relevance, comprehensiveness and potential for surprises
 - Balance (Relationships)
 - Readability and Appearance
@@ -137,7 +152,7 @@ As a remedy, at least the occasional dump as a csv-file should get the unique, f
 Data are meant to map reality.
 Only a part of reality is decisive for the future.
 Getting to this decisive - and hence relevant - part of reality is a non-trivial task.
-The data should be complex - or 'deep' - enough to hold surprising indights even for a domain expert.
+The data should be complex - or 'deep' - enough to hold surprising insights even for a domain expert.
 
 Comprehensive coverage of the topic of interest is absolutely decisive! <br>
 Particularly in the context of decision-making. 
@@ -151,7 +166,7 @@ A face is seldomly assessed as beautiful, if parts of it are disproportionate. A
 Often, data are available in abundance on a specific part of the topic, but scarce on other parts.
 It is tempting to keep all available data in one dataframe, rather than to 'balance' the various independent dimensions.
 
-More advanced, you need to find the Eigen vectors of your topic to focus data gathering and analsis on them.
+More advanced, you need to find the Eigen vectors of your topic to focus data gathering and analysis on them.
 
 
 ### Readability and Appearance
@@ -173,7 +188,7 @@ For words, often the same meaning is covered by the different words. Long words 
 ### Robustness (Symmetry)
 
 Reportedly, a symmetric face, particularly for older persons, shows robustness against the odds of live.
-Further, the sense of beauty is meant to increase when the impression of beautifulness persists over time. 
+Further, the sense of beauty is meant to increase when the impression of beauty persists over time. 
 
 Similarly, once made beautiful, a dataframe should not loose its beauty over time. If a beautiful dataframe becomes popular, contributors tend to add all kind of data to it. 
 
