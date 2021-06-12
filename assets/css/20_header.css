@@ -6,38 +6,27 @@
 .header_left {
   display: flex;
   text-align: justify;
-  width: 500px;
+  width: 400px;
   justify-content: space-between;
 }
-.header_leftleft {
+.header_leftmost {
   width: 150px;
   height: 50px;
-  text-align: justify;
+  justify-content: space-between;
 }
 
 .header_right {
-  flex-basis: 1 1 200px;
   display: flex;
-  text-align: justify;
-  width: 150px;
-  min-width: 100px;
-  justify-content: space-between;
+  min-width: 800px;
   justify-content: right;
 }
-.header_rightright {
-  width: 150px;
-  height: 50px;
-  min-width: 150px;
-  text-align: justify;
+
+.header_rightmost {
+  flex-basis: 1 1 400px;
+  min-width: 200px;
+  justify-content: space-between;
 }
 
-
-/* .header_right {
-  flex-basis: 1 1 300px;
-  Parent: login_container
-  flex: 1;
-  text-align: right;
-} */
 
 a.header, a.header:visited  {
   text-decoration: none;
