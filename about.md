@@ -1,5 +1,5 @@
 ---
-layout: 20_generic
+layout: 10_generic
 title: About Beatiful Dataframes
 permalink: /about
 ---

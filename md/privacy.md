@@ -1,5 +1,5 @@
 ---
-layout: 10_topic
+layout: 10_generic
 title: Privacy
 permalink: /privacy
 ---

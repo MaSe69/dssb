@@ -1,5 +1,5 @@
 ---
-layout: 30_topic
+layout: 10_generic
 title: Models
 permalink: /models
 ---
