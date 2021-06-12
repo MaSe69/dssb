@@ -204,6 +204,6 @@ Here, the idea  of 'beautiful dataframes' was introduced.<br>
 Fundamentally, this idea leads to a dataframe-centric approach. It promotes the dataframe from a 'transitional tool' on the way from data to a model, to an entity in its own right. It also leads to a constructive approach to improve data quality.
 
 As next steps you might want to get an overview on 
-- [Dataframes in Python](pandas)
+- [Dataframes in Python](python)
 - [Dataframes in Julia](julia) 
 - [Comparison of Python vs. Julia](python_julia_comparison) 
