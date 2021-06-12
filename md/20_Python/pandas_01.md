@@ -1,7 +1,7 @@
 ---
 layout: 20_python
-title: Pandas
-permalink: /pandas
+title: Python (Pandas)
+permalink: /python
 ---
 
 
