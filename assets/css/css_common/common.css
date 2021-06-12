@@ -9,16 +9,37 @@
 * {
   margin: 0px 0px 0px 0px;
   padding: 0px 0px 0px 0px;
-  font: 16px;
+
 }
 
 body {
-  font-size: 16px;
+  font-size: 22px;
   line-height: 28px;
   color: black;
   text-align: justify;
   font-family: Arial, Helvetica, sans-serif;
 }
+
+p {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+ul {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: black;
+  padding-left: 64px;
+}
+
+li {
+  color: black;
+  list-style-type: disc;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+
 h1 {
   font-size: 34px;
   font-weight: 800;
@@ -55,18 +76,6 @@ img {
 strong {
   color: var(--blue90);
   font-weight: 900;
-}
-
-ul {
-  color: black;
-  padding-left: 64px;
-}
-
-li {
-  color: black;
-  list-style-type: disc;
-  padding-top: 10px;
-  padding-bottom: 10px;
 }
 
 
