@@ -1,5 +1,5 @@
 ---
-layout: 10_generic
+layout: 20_python
 title: Python Julia Comparison
 permalink: /python_julia_comparison
 

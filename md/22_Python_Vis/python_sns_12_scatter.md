@@ -1,5 +1,5 @@
 ---
-layout: 10_generic
+layout: 20_python
 title: Scatter Plot
 permalink: /scatter_plot
 ---

@@ -1,5 +1,5 @@
 ---
-layout: 10_generic
+layout: 20_python
 title: Box Plot
 permalink: /hist_plot
 ---

@@ -1,5 +1,5 @@
 ---
-layout: 10_generic
+layout: 20_python
 title: Visualization Python References
 permalink: /visualization_python_references
 ---

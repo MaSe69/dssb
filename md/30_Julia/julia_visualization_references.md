@@ -1,5 +1,5 @@
 ---
-layout: 10_generic
+layout: 20_python
 title: Visualization Julia References
 permalink: /visualization_julia_references
 ---

@@ -24,7 +24,7 @@ In addition, you find on this site for free:
 <br>
 Please continue reading for
 
-- [A cheat sheet for dataframes in Python-Pandas](pandas)
+- [A cheat sheet for dataframes in Python-Pandas](python)
 - [A cheat sheet for dataframes in Julia](julia)
 
 <br>

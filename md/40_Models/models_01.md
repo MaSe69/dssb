@@ -1,5 +1,5 @@
 ---
-layout: 10_generic
+layout: 20_python
 title: Models
 permalink: /models
 ---
