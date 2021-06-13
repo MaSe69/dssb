@@ -10,6 +10,7 @@ permalink: /pandas_columns
 Columns
 
 - [Address](#address-columns)
+- [Change Numerical Values](#change-numerical-values)
 - [Subsets](#work-on-subsets)
 - [Rename](#rename-columns)
 - [Reorder](#reorder-columns)
@@ -40,6 +41,25 @@ If you do not know the column names, get their names
 >
     columnNames = df.columns.values
     listOfColumnNames = list(df.columns.values)
+
+## Change Numerical Values
+
+For scalars, just use the normal symbols: 
+
+>
+    df["Acceleration"] = df["Acceleration"] / 17
+
+For columns, use the methods, e.g. add, subtract, multiply or divide, 
+
+>
+    df["Ratio"] = df[["Weight_in_lbs"]].divide(df["Acceleration"], axis=0)    
+
+
+Round floats or convert floats to integers
+>
+    df["Ratio"] = round(df["Ratio"],2)
+    df["Ratio"] = round(df["Ratio"],0).astype(int)  
+
     
 ## Work on Subsets
 
@@ -130,7 +150,7 @@ For columns that should go to a specific position, you can directly insert a new
     colPosition = 3
     df.insert(colPosition, column='columns3', value=df.column1 * 0.7457)
 
-Certainly, this is better than to append at the end and then re-order the columns.
+This is more efficient than to append at the end and then re-order the columns.
 
 
 # Special 
@@ -165,7 +185,7 @@ Mind the alternative to continue to work on the relevant subset of columns inste
 
 ### Replace an existing value in a specific column
 
-In an existing row, you can specify the column and replace the value in that row.
+Name the column and replace the value in a row for a specified condition
 
 >
     df["Name"] = df["Name"].str.replace("myNewCar", "SportsCar")
@@ -173,11 +193,13 @@ In an existing row, you can specify the column and replace the value in that row
 
 ### Modify column B based on values in column A
 
-Change the value in a column, here Environment,  for some rows on condition of values in another column, here Miles_per_Gallon. 
+Change the value in a column, here 'Environment', for some rows on condition of values in another column, here 'Miles_per_Gallon' 
 
 > 
     df.loc[df['Miles_per_Gallon'] > 20, ['Environment']] = 'Ok'
 
+
+All cars with more than 20 miles per gallon get the ok here.
 
 ### Create a new column B based on values in column A
 
@@ -187,3 +209,5 @@ Create a new column with values specified in a dictionary before.
     newValues = {"Consulting": "Cons", "Installation": "Inst", "Operation": "Ops"}
     for key, value in newValues.items():
         df.loc[df["Service"].str.contains(key, na=False), "Abbreviation"] = value
+
+A new column with abbreviations was created.
