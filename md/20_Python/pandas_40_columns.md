@@ -13,7 +13,7 @@ Columns
 - [Subsets](#work-on-subsets)
 - [Rename](#rename-columns)
 - [Reorder](#reorder-columns)
-- [Create](#create-new-columns)
+- [Create](#create-columns)
 - [Delete](#delete-columns)
 
 
@@ -95,11 +95,11 @@ You can reverse the sequence of the columns as follows
 - Mind the correct number of list elements. If you add too many items to the list for the new order, you get an error. However, adding fewer items executes without error.
 - Working with indices, e.g.  df = df[:, [2, 1]], does not work in Python (but in Julia)
 
-## Create New Columns
+## Create Columns
 
 ### Add a column at the end
 
-Specify a new name in square brackets and quotes.
+Specify a unique name in square brackets and quotes.
 
 >
     df["June"] = 500
@@ -148,7 +148,7 @@ Alternative notation,
     deleteCols = ["Feb","Apr"]
     df = df.drop(deleteCols, axis=1)
 
+
+Warning: If deletion reduces the Pandas dataframe to just one column, Pandas regards it as a vector. A vector can have different properties, possibly leading to error messages.
+
 Mind the alternative to continue to work on the relevant subset of columns instead of deleting the obsolete columns.
-
-
-

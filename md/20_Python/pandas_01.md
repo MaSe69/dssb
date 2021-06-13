@@ -7,9 +7,6 @@ permalink: /python
 
 # Python (Pandas)
 
-- Read the [Reference on Pandas Dataframe](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html) 
-- Consult the [Pandas Jupyter](https://github.com/wesm/pydata-book) examples provided by the inventor of Pandas, [Wes McKinney](https://wesmckinney.com/), for many more solutions.
-
 ## [Create dataframes](pandas_create)
 
 - Create dataframes rom arrays or lists
@@ -49,6 +46,13 @@ permalink: /python
 - Concatenate horizontally
 - Merge by common fields
 - Group by fields
+
+## [References](python_references)
+
+- [Reference on Pandas Dataframe](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html) 
+- [Pandas Jupyter](https://github.com/wesm/pydata-book) -  Examples provided by the inventor of Pandas [Wes McKinney](https://wesmckinney.com/)
+
+## My favorite slogan here
 
 >
     You don't need to know all solutions. Just one that works for you.

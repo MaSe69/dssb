@@ -5,22 +5,21 @@ permalink: /pandas_rows
 
 ---
 
-# Main Operations on Rows
+# Pandas - Rows
 
-- Get a sub-dataframe
-- Sort rows by
-    - A single column
-    - Multiple columns
-- Adding rows
-    - Append at the end
-    - Append a row with sums
-    - Add many rows
-- Deleting rows
-- Modifying rows
+Rows
 
-## General comments on rows in Pandas
+- [Address](#address-rows)
+- [Subsets](#work-on-subsets)
+- [Rename](#rename-rows)
+- [Sort](#sorting)
+- [Create](#create-rows)
+- [Delete](#delete-rows)
+- [Modify](#modify-rows)
 
-You can address a row with the (unique) name of its index in square brackets directly after the dataframe variable **and** the key word "loc" - in semantic coding:
+## Address Rows
+
+Address a row with the (unique) name of its index in square brackets directly after the dataframe variable **and** the key word "loc" - in semantic coding:
 
 >
     df.loc["index"]
@@ -32,9 +31,11 @@ Further, you can address a row with its position given as an integer
     n = 5
     row = df.iloc[[n]]
 
-## Get a sub-dataframe
+## Work on Subsets
 
-Very often used is the function to print out the first few or last few rows. You can also defined new data sets in this way:
+### First or Last Rows
+
+For a bulk of rows from the begining or the end of the existing dataframe, you can create a new dataframe:
 
 >
     dfFirst_7_Rows = df.head(7)
@@ -42,7 +43,10 @@ Very often used is the function to print out the first few or last few rows. You
 >
     dfLast_7_Rows = df.tail(7)
 
-For very long files, you might want to get an impression of the data by getting some representative data.
+
+### Generic Subsets
+
+Get a deliberately defined subset using iloc:
 
 >
     start = 10
@@ -50,6 +54,7 @@ For very long files, you might want to get an impression of the data by getting 
     k = 37
     rows = df.iloc[start:end:k,:]    
 
+For instance, for very long files, you might want to get an impression of the data by getting some representative data.
 ## Sorting
 
 ### Single column
@@ -71,7 +76,7 @@ Certainly, you can also sort by multiple column and in various directions, e.g.
     df = df.sort_values(by=sortCols, ascending=direction)    
 
 
-## Adding rows
+## Create Rows
 ### Append one new row
 
 New rows need to have the same column structure as the dataframe. 
@@ -112,7 +117,7 @@ Actually, Pandas is 'row-based'. This implies that working on rows is the defaul
     axis="rows"
     axis=0    
 
-## Deleting rows
+## Delete rows
 
 You would typically slice the existing dataframe and continue working with the remaining dataframe. Examples:
 
@@ -130,9 +135,9 @@ However, you can also drop specific rows, e.g. using the index
     df = df.set_index("Name")
     df = df.drop(index = 'myNewCar1')
 
-Warning: If deletion reduces the Pandas dataframe to just one column, Pandas regards it as a vector. A vector can have different properties, possibly leading to error messages.
 
-## Modifying rows
+
+## Modify Rows
 
 In fact, cells are changed and technically columns are specified, but it rather feels like changing rows.
 

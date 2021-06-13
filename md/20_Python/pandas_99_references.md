@@ -1,7 +1,7 @@
 ---
 layout: 20_python
-title: Pandas
-permalink: /pandas_references
+title: Python References
+permalink: /python_references
 
 ---
 

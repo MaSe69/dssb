@@ -81,6 +81,7 @@ strong {
 
 a, a:visited  {
   color: var(--blue70);
+  color: var(--blue50);
   text-decoration: underline;
 }
 a:hover, a:active {
