@@ -11,11 +11,10 @@ Rows
 
 - [Address](#address-rows)
 - [Subsets](#work-on-subsets)
-- [Rename](#rename-rows)
-- [Sort](#sorting)
+- [Sort](#sort)
 - [Create](#create-rows)
 - [Delete](#delete-rows)
-- [Modify](#modify-rows)
+
 
 ## Address Rows
 
@@ -55,7 +54,7 @@ Get a deliberately defined subset using iloc:
     rows = df.iloc[start:end:k,:]    
 
 For instance, for very long files, you might want to get an impression of the data by getting some representative data.
-## Sorting
+## Sort
 
 ### Single column
 
@@ -134,32 +133,6 @@ However, you can also drop specific rows, e.g. using the index
 >
     df = df.set_index("Name")
     df = df.drop(index = 'myNewCar1')
-
-
-
-## Modify Rows
-
-In fact, cells are changed and technically columns are specified, but it rather feels like changing rows.
-
-### Replace an existing value in a specific column
-
-In an existing row, you can specify the column and replace the value in that row.
-
->
-    df["Name"] = df["Name"].str.replace("myNewCar", "SportsCar")
-
-
-### Modify column Z based on values in column A
-
-This is a very helpful application for all kind of analysis. 
-
-- Create a new column (with any value)
-- Change the value in that column for some rows on condition of values in other columns. 
-
-> 
-    df["Environment"] = "NaN"
-    df.loc[df['Miles_per_Gallon'] > 20, ['Environment']] = 'Ok'
-
 
 
 

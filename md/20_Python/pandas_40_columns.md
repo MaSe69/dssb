@@ -15,6 +15,7 @@ Columns
 - [Reorder](#reorder-columns)
 - [Create](#create-columns)
 - [Delete](#delete-columns)
+- [Modify](#modify-columns)
 
 
 ## Address Columns
@@ -66,7 +67,13 @@ Create a new dataframe using sliced columns
 ## Rename columns
 
 
-Specify a list of values of your liking and use these new names as the column names.
+Rename specific single columns, e.g. A to Alpha and B to Beta:
+
+>
+    df = df.rename(columns={'A':'Alpha', 'B':'Beta'})
+
+
+Rename all columns, by specifying a list of unique values
 
 >
     newColNames = ["Column_1", "Column_2", "Column_3", "Column_4"]
@@ -152,3 +159,31 @@ Alternative notation,
 Warning: If deletion reduces the Pandas dataframe to just one column, Pandas regards it as a vector. A vector can have different properties, possibly leading to error messages.
 
 Mind the alternative to continue to work on the relevant subset of columns instead of deleting the obsolete columns.
+
+
+## Modify Columns
+
+### Replace an existing value in a specific column
+
+In an existing row, you can specify the column and replace the value in that row.
+
+>
+    df["Name"] = df["Name"].str.replace("myNewCar", "SportsCar")
+
+
+### Modify column B based on values in column A
+
+Change the value in a column, here Environment,  for some rows on condition of values in another column, here Miles_per_Gallon. 
+
+> 
+    df.loc[df['Miles_per_Gallon'] > 20, ['Environment']] = 'Ok'
+
+
+### Create a new column B based on values in column A
+
+Create a new column with values specified in a dictionary before.
+
+>
+    newValues = {"Consulting": "Cons", "Installation": "Inst", "Operation": "Ops"}
+    for key, value in newValues.items():
+        df.loc[df["Service"].str.contains(key, na=False), "Abbreviation"] = value
