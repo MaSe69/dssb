@@ -18,7 +18,7 @@
   min-height: 40px;
   flex: 0 0 36px;
   display: flex;
-  padding: 15px 0 10px 0;
+  padding: 10px 0 2px 0;
   border-bottom: 1.52px solid var(--blue40);
   background-color: var(--blue20);
 }
