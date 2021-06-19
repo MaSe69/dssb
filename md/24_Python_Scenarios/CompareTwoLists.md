@@ -1,5 +1,5 @@
 ---
-layout: 10_topic
+layout: 20_python
 title: Data Science
 permalink: /comparetwolists
 ---

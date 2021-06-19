@@ -52,6 +52,12 @@ permalink: /python
 - [Reference on Pandas Dataframe](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html) 
 - [Pandas Jupyter](https://github.com/wesm/pydata-book) -  Examples provided by the inventor of Pandas [Wes McKinney](https://wesmckinney.com/)
 
+## Misc
+
+In one of the projects I needed to compare lengthy lists with partially overlapping key. Here is my solution in both Excel and Python:
+
+- [Compare two lists](comparetwolists)
+
 ## My favorite slogan here
 
 >
