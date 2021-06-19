@@ -1,6 +1,6 @@
 ---
 layout: 20_python
-title: Data Science
+title: Compare Two Lists
 permalink: /comparetwolists
 ---
 
@@ -92,7 +92,8 @@ There are several traps, you might run into when using this command.
 - Next trap is to forget the "$" to fix the range specification of the searched column. If you forget that before expanding the equation to the complete column, the IDs searched get increasingly fewer - leading to a wrong result.
 - Finally, you need to have the searched list sorted before you execute the vlookup command.
 
-![Screenshot of Excel solution](./md/10_DataScience/Intersection_Excel.PNG)
+{% include images/image.html imagePath = "../assets/images/img_blog/Intersection_Excel.PNG" imageCaption = "All values converted to integers and rounded to 10s."%}
+
 
 <p class="capture">Complete problem and solution in Excel: Lists A, B, S1, S2 and S3.</p>
 
