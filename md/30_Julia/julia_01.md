@@ -8,6 +8,13 @@ permalink: /julia
 
 In Julia, the fundamental package for dataframes is fittingly called Dataframes.jl, please find details here [dataframes.juliadata.org](https://dataframes.juliadata.org/stable/). 
 
+## [Getting Started](julia_gettingStarted)
+
+- Setup Julia language
+- Comparison to Python
+- Relevant Julia language specifics
+
+
 ## [Create dataframes](julia_createDF)
 
 Create a new dataframe within the program

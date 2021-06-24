@@ -1,16 +1,16 @@
 ---
 layout: 10_generic
-title: References
-permalink: /references
+title: Julia_References
+permalink: /julia_references
 ---
 
-# References
+# Julia References
 
 Please find here a careful selection of recommended resources.
 
-# Julia
+# Getting started
 
-find2
+[Download a specific Julia version](https://ferrolho.github.io/blog/2019-01-26/how-to-install-julia-on-ubuntu). 
 
 
 [Dataframes Package](https://dataframes.juliadata.org/stable/)
