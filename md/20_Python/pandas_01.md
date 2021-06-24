@@ -4,36 +4,40 @@ title: Python (Pandas)
 permalink: /python
 ---
 
+# Part 1: From Zero to Pandas Dataframes
 
-# Python (Pandas)
+
+For more see on this site [Python (Pandas) References](python_references)
 
 ## [Getting Started](python_gettingStarted)
 
 - Before starting with dataframes
-- Comparison to Julia
-
+- Comparison Python to Julia
 
 ## [Create dataframes](pandas_create)
 
-- Create dataframes rom arrays or lists
-- compare with Julia dataframe creation
+- Create dataframes from arrays or lists
+- Comparison Pandas to Julia DataFrames
 
-## [Download Data](pandas_download)
+## [Download](pandas_download)
 
 - Download from the web using a request
 - Convert the downloaded data to a dataframe
 
-## [Read data](pandas_read)
+## [Read + Save](pandas_read)
 
-- read only limited data
-- read tricky data
-- save the dataframe locally
+- Read only limited data
+- Read tricky data
+- Save the dataframe locally
+
+# Part 2: Common Dataframe Operations
 
 ## [Dataframe](pandas_df)
 
-- Get more info about dataframe 
-- Copy, transpose, re-index
-- Change all numerical values
+- Basic arithmetics
+- Slice + Merge
+- Group by fields
+
 
 ## [Column](pandas_columns)
 
@@ -49,14 +53,7 @@ permalink: /python
 
 ## [Merge + Group](pandas_merge)
 
-- Concatenate horizontally
-- Merge by common fields
-- Group by fields
 
-## [References](python_references)
-
-- [Reference on Pandas Dataframe](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html) 
-- [Pandas Jupyter](https://github.com/wesm/pydata-book) -  Examples provided by the inventor of Pandas [Wes McKinney](https://wesmckinney.com/)
 
 ## Misc
 

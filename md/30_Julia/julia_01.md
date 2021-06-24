@@ -1,69 +1,76 @@
 ---
 layout: 30_julia
-title: Julia
+title: Julia DataFrames
 permalink: /julia
 ---
 
-# Dataframes in Julia
 
-In Julia, the fundamental package for dataframes is fittingly called Dataframes.jl, please find details here [dataframes.juliadata.org](https://dataframes.juliadata.org/stable/). 
+# Part 1: From Zero to Julia Dataframes
+
+
+For more see on this site [Julia (DataFrames) References](julia_references)
 
 ## [Getting Started](julia_gettingStarted)
 
 - Setup Julia language
-- Comparison to Python
 - Relevant Julia language specifics
-
+- Comparison to Python
 
 ## [Create dataframes](julia_createDF)
 
-Create a new dataframe within the program
-- from arrays or lists
-- to compare with Python
+- Create dataframes from arrays or lists
+- Comparison Julia DataFrames to Pandas
 
 ## [Download Data](julia_downloads)
 
-Download from the web,
-- when download into a dataframe works smoothly
-- when the 'object' first has to be downloaded using HTTP
+- Download from the web using a request
+- Convert the downloaded data to a dataframe
+
 
 ## [Read data](julia_saveDF)
 
-Read to 
-- limit the data: rows / columns
-- read timeseries
-- deal with missing values
+- Read only limited data
+- Read tricky data
+- Save the dataframe locally
+
+# Part 2: Common Dataframe Operations
 
 ## [Operations on the entire dataframe](julia_operateOnDF)
 
-Some of the operation of this type are: 
-- Change all values of the dataframe simultaneously (except the index)
-- Multiplying the dataframe with a number
-- Adding or subtracting one dataframe from another dataframe
-- Transpose a dataframe
+- Basic arithmetics
+- Slice + Merge
+- Group by fields
 
 
 ## [Operate on Columns](julia_columns)
 
-Some of the operation on columns are: 
-- Rename the columns
-- Re-order the columns
-- Add columns (at the end)
-- Insert columns at a specific position
-- Delete columns
+- Rename and Re-order
+- Insert and Delete
+- Modify
 
 
-### Operate on Rows
+### [Operate on Rows](julia_rows)
 
-Sorting is one of the most frequent operations on rows. (There is rarely the need for sorting columns).
+- Sort
+- Append and Delete
+- Modify 
 
-Some further operation on rows are: 
-- selecting a subset on row by slicing or on condition
-- deleting rows
-- adding or copying rows
 
-## Merge dataframes
 
-After having cleansed and wrangled one dataframe, you might want to continue to aggregate. 
-After having soaked out all info from that one dataframe, you might continue with merging it with one or several other dataframes. Merging with other dataframes can also become a business of mass production, particularly for time series.
+## Table: Python vs. Julia
+<br>
+
+|  Category   | Python | Julia |
+|-------------|--------|-------|
+| Dataframe   | Basic arithmetics | Basic arithmetics  |
+| Dataframe   | Slice | Slice |
+| Dataframe   | Merge | Merge |
+| Dataframe   | Transpose | Transpose  |
+| Columns     | Insert | Insert |
+| Columns     | Delete | Delete |
+| Columns     | Rename | Rename |
+| Columns     | Reorder | Reorder |
+| Rows        | Sort   | Sort |
+| Rows        | Append | Append |
+| Rows        | Modify | Modify |
 

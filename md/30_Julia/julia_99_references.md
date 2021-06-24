@@ -22,7 +22,6 @@ On official site:
 - [Download a specific Julia version](https://ferrolho.github.io/blog/2019-01-26/how-to-install-julia-on-ubuntu). 
 
 
-
 ## "Before Dataframes"
 
 ### Julia Tutorials
@@ -32,12 +31,17 @@ Thankfully, I learned a lot from the following sites and tutorials
 - [Julia Academy](https://juliaacademy.com/)
 
 
-
 ## Dataframes
 
 - [Dataframes Package](https://dataframes.juliadata.org/stable/)
+
+
+### Dataframe Tutorials
+
 - [Julia for talented amateurs - Series 02 - Dataframes Lesson 2](https://www.youtube.com/watch?v=TGFNEwVB9DU&list=PLhQ2JMBcfAsjZTA8_jGhz3BVqYgOeyyeu&index=7)
 
 
+## Visualization Used in Julia
 
-## Visualization
+
+

@@ -22,8 +22,7 @@ Wes McKinney book on Pandas shall be recommended here:
 
 - [Python for Data Analysis](https://www.amazon.com/-/de/dp/1449319793/ref=sr_1_3?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=mckinney+data+analysis&qid=1621350519&sr=8-3)
 
--  [The coding of McKinney's book is available on GitHub](https://github.com/wesm/pydata-book)
-
+- [Pandas Jupyter](https://github.com/wesm/pydata-book) -  Examples provided by the inventor of Pandas [Wes McKinney](https://wesmckinney.com/)
 
 
 See also Wikipedia for details 

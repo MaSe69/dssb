@@ -8,16 +8,17 @@ permalink: /python_julia_before_dataframes
 
 Just a little 'reminder' table
 
-| What do you want to do? | Python | Julia |
-| Start counting | with 0 | with 1 |
-| Mark as Text | " or ' | " only |
-| print to console | print | println |
-| print value of variable v | print("Text ", v)  | print("Text $v)
-| Slice string or array | str[1:] | str[1:end] |
-| Convert float to int | int(f) | convert(Int64, f)|
+|  What do you want to do?   | Python | Julia |
+|-------------|-------------|------------|
+| Print to console | print | println |
+| Mark as text | " or ' | " only |
+| Print value of variable v | print("Text ", v)  | print("Text $v)
 | Concatenate 2 strings | operator: + | operator: * |
+| Slice string or array | str[1:] | str[2:end] |
+| Start counting | with 0 | with 1 |
+| Convert float to int | int(f) | convert(Int64, f)|
 | Get type of variable | type | typeof |
-| 
+
 
 Remember: 
 

@@ -44,7 +44,7 @@ h1 {
   font-size: 34px;
   font-weight: 800;
   letter-spacing: 4px;
-  padding: 40px 0px  20px  0px;
+  padding: 60px 0px  20px  0px;
   color: black;
 
 }
@@ -103,4 +103,32 @@ a:hover, a:active {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     border-left: 8px solid var(--blue10);
+}
+
+
+/*  Table */
+table {
+  width: 80%;
+  border: 5px solid var(--blue30); 
+  padding:10px;
+  border-collapse: collapse;
+}
+
+/*  Table Header */
+th {
+  height: 76px;
+  border: 2px solid var(--blue10); 
+  padding:10px;
+  background-color: var(--blue50);
+  text-align: center;
+  color: var(--blue10);
+}
+
+/*  Table Body */
+td {
+  color: var(--blue90);
+  border: 1px solid  var(--blue50); 
+  padding:5px  20px 5px 20px;
+  text-align: left; 
+  /* text-align: right;  */
 }
