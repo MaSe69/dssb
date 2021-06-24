@@ -7,6 +7,12 @@ permalink: /python
 
 # Python (Pandas)
 
+## [Getting Started](python_gettingStarted)
+
+- Before starting with dataframes
+- Comparison to Julia
+
+
 ## [Create dataframes](pandas_create)
 
 - Create dataframes rom arrays or lists

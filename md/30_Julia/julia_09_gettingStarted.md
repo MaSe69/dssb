@@ -50,12 +50,12 @@ Though the focus is on dataframes here, a very brief introduction should be prov
 
 In fact, it might be easy to get lost on the way towards the dataframes. Here is what you might want to be aware of before starting with dataframes:
 
-- [Julia - Pre-Dataframes](julia_before_dataframes)
+- [Julia - Before Dataframes](julia_before_dataframes)
 
 
 As a point on this site is to help to switch between Python and Julia smoothly, I put a summary of some relevant differences in the context here:
 
-- [Python vs. Julia - Pre-Dataframes](python_julia_before_dataframes)
+- [Python vs. Julia - Before Dataframes](python_julia_before_dataframes)
 
 
 

@@ -1,10 +1,10 @@
 ---
 layout: 30_julia
-title: Julia Pre Dataframes
+title: Julia Before Dataframes
 permalink: /julia_before_dataframes
 ---
 
-# Julia - Pre Dataframes
+# Julia - Before Dataframes
 
 
 ## Text output to console
