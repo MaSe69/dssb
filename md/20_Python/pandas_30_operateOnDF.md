@@ -9,6 +9,9 @@ permalink: /pandas_df
 
 Here are some selected operations on the entire dataframe.
 
+
+
+
 ## Copy of a Dataframe
 
 The default should be and is to keep working on the same technical object representing the dataframe. Sometimes, however, you want to work on a copy, e.g. when transforming a subset of a dataframe.

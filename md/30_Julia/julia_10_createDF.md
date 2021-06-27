@@ -5,46 +5,32 @@ permalink: /julia_create
 
 ---
 
-# Julia - Create Dataframes Locally
+# Julia - Create Dataframes
 
-This is kind of 'Hello World' for Dataframes.
+Let's start with creating dataframes in Julia.. 
 
-It is mainly used to check that the setup is complete and working.
-As with most 'Hello Worlds', in real programs, you rarely use it.
-Dataframes are usually created when importing data.
+Dataframes are not included in the Julia as such. The full functionality is split to several packages, particularly to minimize the coding you need to import. For a start, the package Dataframes.jl is sufficient.
 
-The coding used here is available as Jupyter lab: 
-[Create_DF.ipynb](https://github.com/MaSe69/dataframes/tree/master/dfJulia)
-
-## Import the package for dataframes
-
-Dataframes are not included in the Julia as such.
-The full functionality is split to several packages, particularly to minimize the coding you need to import.
-
-For a start, the package Dataframes.jl is sufficient.
-
-Installing dataframes in Julia:
+Installing dataframes in Julia (On the console, enter julia followed by ] ):
 
 >
-    using Pkg
-    Pkg.add("DataFrames")
+    add DataFrames.jl
 
-In order to use Dataframes, you need to import it, which is done by 
+
+For using Dataframes in a program, declare to be using DataFrames at the top of your program. Mind the capital F.
 
 > 
     using DataFrames
 
 
-## A Simple Dataframe
+## Start from an Empty Dataframe
 
-It seems to be natural to start with an empty dataframe and then fill it later.
-Such a creation 'from nothing' is possible in Julia. 
-
+It seems to be natural to start with an empty dataframe and then fill it as data becomes available. 
 
 >
     df = DataFrame()
 
-You can add easily add columns to the empty data frame
+You can add easily columns to the empty dataframe
 
 >
     df = DataFrame(a=1, b=1.0)
@@ -56,6 +42,47 @@ Alternatively,
     df = DataFrame(Accounts=accounts)
 
 Seeing the dataframe growing in this way, i.e. column by column, you certainly figure out quickly how to get to your goal.
+
+
+
+
+## An Example to Compare Dataframes in Python and in Julia
+
+Task: Put these arrays as columns to a dataframe with the capitalized array name as column name. 
+
+>
+    service = ["Consulting", "Installation", "Operation"]
+    account = ["0815", "1234", "9876"]
+    quantity = [10, 100, 50]
+    price = [100, 10, 50]
+    cost = [30, 7, 25]
+
+
+
+
+<center>
+<br>
+{% include images/image.html imagePath = "../assets/images/img_blog/Julia/Julia_11_Comparison_DF.png" thisWidth ="400px"%}
+Simple dataframe for comparison with Julia dataframe creation.
+</center>    
+
+You can create this dataframe as simple as that:
+
+>
+    dfPJ = DataFrame(
+    Service = service,
+    Account = account,
+    Quantity = quantity,
+    Price = price,
+    Cost = cost]
+
+Done.
+
+
+See here for
+- [How to create dataframes in Python](pandas_create)
+- [Python vs. Julia comparison for dataframes](python_julia_comparison)
+
 
 
 ## Copy of a Dataframe
@@ -73,40 +100,3 @@ Note that
     dfCopy = copy(df)
 
 only makes a "shallow copy" of the dataframe.
-
-
-## An Example to Compare Dataframes in Python and in Julia
-
-The task shall be to get to a dataframe that looks like this
-
-{% include images/image.html imagePath = "../assets/images/img_blog/createDF_02_Python_Julia_Comparison.PNG" imageCaption =  ""%}
-
-Given are the data as arrays:
-
->
-    service = ["Consulting", "Installation", "Operation"]
-    account = ["0815", "1234", "9876"]
-    quantity = [10, 100, 50]
-    price = [100, 10, 50]
-    cost = [30, 7, 25]
-
-You can create this dataframe as simple as that:
-
->
-    df = DataFrame(
-        Service = service,
-        Account = account,
-        Quantity = quantity,
-        Price = price,
-        Cost = cost
-    )
-
-Done.
-
-See here for [the comparison to the same data in a Python dataframe](python_julia_comparison)
-
-
-
-
-
-

@@ -11,7 +11,7 @@ This dataframe-focused approach is based on the a common idea of 'dataframes' th
 
 The same (simple) data can be put to a dataframe in both langauges, see
 - [Create a dataframe in Python](pandas_createDF)
-- [Create a dataframe in Julia](julia_createDF)
+- [Create a dataframe in Julia](julia_create)
 
 On these data frames you can then carry out operations as outlined for dataframes.
 

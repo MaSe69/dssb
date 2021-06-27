@@ -13,14 +13,15 @@ First of all, you need to download the library Pandas
 >
     pip3 install pandas
 
-and to import Pandas at the top of your program.
+For using Pandas in a program, import Pandas typically at the top.
 
 > 
     import pandas as pd
 
+It is convention to use the variable pd for Pandas.
 
 
-## Create an Empty Dataframe
+## Start from an Empty Dataframe
 
 It seems to be natural to start with an empty dataframe and then fill it as data becomes available. 
 
@@ -76,7 +77,7 @@ Your result should be similar to:
 
 <center>
 <br>
-{% include images/image.html imagePath = "../assets/images/img_blog/createDF_01_First_Dataframe.PNG" thisWidth ="600px"%}
+{% include images/image.html imagePath = "../assets/images/img_blog/createDF_01_First_Dataframe.PNG" thisWidth ="400px"%}
 </center>
 
 Certainly, though technically a dataframe, this is just mere 'list' or 'table', still a bit away from a 'beautiful dataframe'.
@@ -102,7 +103,7 @@ Task: Put these arrays as columns to a dataframe with the capitalized array name
 
 <center>
 <br>
-{% include images/image.html imagePath = "../assets/images/img_blog/Python/Pandas_11_Comparison_DF.png"  thisWidth =600px%}
+{% include images/image.html imagePath = "../assets/images/img_blog/Python/Pandas_11_Comparison_DF.png"  thisWidth ="800px"%}
 Simple dataframe for comparison with Julia dataframe creation.
 </center>
 
