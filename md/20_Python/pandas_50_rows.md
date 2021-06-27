@@ -75,7 +75,8 @@ Certainly, you can also sort by multiple column and in various directions, e.g.
     df = df.sort_values(by=sortCols, ascending=direction)    
 
 
-## Create Rows
+## Append
+
 ### Append one new row
 
 New rows need to have the same column structure as the dataframe. 
@@ -116,7 +117,7 @@ Actually, Pandas is 'row-based'. This implies that working on rows is the defaul
     axis="rows"
     axis=0    
 
-## Delete rows
+## Delete
 
 You would typically slice the existing dataframe and continue working with the remaining dataframe. Examples:
 

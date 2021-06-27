@@ -6,23 +6,15 @@ permalink: /pandas_slice_merge
 ---
 
 
-## Rename or Copy
+## Copy
 
 You might want to rename your dataframe or to make a real copy.
 
 >
-    df_New = df          # Does not create a copy, just another name
-    df_New = df.copy()   # Create a real copy 
+    df_Diff_Name = df     # Does not create a copy, just adds another name to the existing dataframe
+    df_Copy = df.copy()   # Create a real copy 
 
-
-The default should be and is to keep working on the same technical object representing the dataframe. Sometimes, however, you want to work on a copy, e.g. when transforming a subset of a dataframe.
-
-Make a copy of your dataframe using
-
->
-    dfCopy = df.copy()
-
-Changes to dfCopy do not affect df. Without the ".copy()", you change df as well. 
+When you transform a subset of a dataframe, you might better be working on a copy. Changes to df_Copy do not affect df. Without the ".copy()", you change df as well. 
 
 Note that there are two ways to change a dataframe: 
 - using the equal sign
@@ -37,12 +29,10 @@ https://stackoverflow.com/questions/45570984/in-pandas-is-inplace-true-considere
 
  Particularly due to the importance of chaining, only the variant using the equal sign is used here. Unfortunately, this often leads to quite some cumbersome typing effort.
 
-
 Apart from the index, all cells need to fulfill the prerequesite of the operation.
 
 
-
-### Slice
+## Slice
 
 You can define a 'rectangle' of your dataframe to be a new dataframe - and apply the operation only to that new .
 
@@ -54,15 +44,14 @@ with r1 and r2 being the first and last row, c1 and c2 being the first and last 
 Mind that without the copy your operation might also affect the original dataframe. 
 
 
-# Merging Different Dataframes Column-wise
-
-We limit ourselves here to columns, because adding dataframes by rows has already been treated in the rows section.
+## Merge
 
 Two possibilities are described here:
 - concatenate
 - merge
 
-## Concatenate Dataframes
+
+### Concatenate Dataframes
 
 You can concatenate dataframes column-wise similiarly to row-wise.
 
@@ -76,7 +65,7 @@ In many cases, however, the rows do match, e.g. when getting more data on a fixe
 Mind to specify the axis for the concatenation to be columns.
 You can merge more than one dataframe at once.
 
-## Merging Dataframes
+### Merging on Index or Column Name
 
 If concatenation is not an option, merge usually is sufficient.
 Merging is limited to two dataframes at a time, a 'left' dataframe and a 'right' dataframe.

@@ -42,7 +42,7 @@ If you do not know the column names, get their names
     columnNames = df.columns.values
     listOfColumnNames = list(df.columns.values)
 
-## Change Numerical Values
+### Change Numerical Values
 
 For scalars, just use the normal symbols: 
 
@@ -61,7 +61,7 @@ Round floats or convert floats to integers
     df["Ratio"] = round(df["Ratio"],0).astype(int)  
 
     
-## Work on Subsets
+### Work on Subsets
 
 Select a subset of columns and apply an operation on it. 
 
@@ -84,7 +84,7 @@ Create a new dataframe using sliced columns
     dfNew = df.iloc[:,2:5]
 
 
-## Rename columns
+## Rename
 
 
 Rename specific single columns, e.g. A to Alpha and B to Beta:
@@ -107,7 +107,7 @@ Capitalize names (or lower, upper, etc.)
     columnNames = [x.capitalize() for x in columnNames]    
 
 
-## Reorder Columns
+## Reorder 
 
 Use the of **existing column names** to re-order the columns, by specifying your sequence
 >
@@ -122,7 +122,7 @@ You can reverse the sequence of the columns as follows
 - Mind the correct number of list elements. If you add too many items to the list for the new order, you get an error. However, adding fewer items executes without error.
 - Working with indices, e.g.  df = df[:, [2, 1]], does not work in Python (but in Julia)
 
-## Create Columns
+## Insert
 
 ### Add a column at the end
 
@@ -153,7 +153,8 @@ For columns that should go to a specific position, you can directly insert a new
 This is more efficient than to append at the end and then re-order the columns.
 
 
-# Special 
+## Special 
+
 ### Special case
 
 Append a column with the sum of all columns (that are not in the index)
@@ -161,7 +162,7 @@ Append a column with the sum of all columns (that are not in the index)
     df["Sum"] = df.sum(axis=1)  
 
 
-## Delete Columns
+## Delete
 
 
 Delete columns with the drop command:
@@ -181,7 +182,7 @@ Warning: If deletion reduces the Pandas dataframe to just one column, Pandas reg
 Mind the alternative to continue to work on the relevant subset of columns instead of deleting the obsolete columns.
 
 
-## Modify Columns
+## Modify
 
 ### Replace an existing value in a specific column
 
@@ -211,3 +212,4 @@ Create a new column with values specified in a dictionary before.
         df.loc[df["Service"].str.contains(key, na=False), "Abbreviation"] = value
 
 A new column with abbreviations was created.
+

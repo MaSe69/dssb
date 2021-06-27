@@ -79,7 +79,7 @@ Examples:
 {% include images/image.html imagePath = "../assets/images/img_blog/opTables_Integers.png" imageCaption = "All values converted to integers and rounded to 10s."%}
 
 
-### Transpose a dataframe
+### Transpose
 
 >
     df = df.T
