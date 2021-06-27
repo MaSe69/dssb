@@ -4,13 +4,13 @@ title: Beautiful Dataframes
 permalink: /index
 ---
 <br>
-I am passionate about dataframes.
+Dataframes are a cornerstone of data science.
 <br>
-**Beautiful dataframes** provide their technical means and contain domain knowledge shaped to perfection.
+**Beautiful dataframes** provide not only the technical means of dataframes, but also contain domain knowledge shaped to perfection.
 
 ## Mastering Dataframes
 
-You can find the official documentations for Python and Julia, respectively, here
+You can find the official documentations for Python and Julia programming language, respectively, here
 - [Python - Pandas (Dataframes)](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html)
 - [Julia - Package on Dataframes](https://dataframes.juliadata.org/stable/)
 
@@ -89,11 +89,11 @@ Similarly, the beautiful dataframe is in the data. All you have to do is to put 
 
 When seeing a child drawing a few lines and dots on a paper, you might ask: "What is it?". The child might be bewildered, because the image seems to be so clear. Similarly, an experienced data scientists 'sees' structures in raw data. The difficulty is to make this structure visible to any interested person. 
 
-[Visualization](python_visualization) in this sense is just a tool to point out clearly features of the dataframe.  
+:chart_with_upwards_trend: [Visualization](python_visualization) in this sense is just a tool to point out clearly features of the dataframe.  
 
 ### What is Beauty?
 
-Beauty can be defined as the 'place to be'. <br>
+:sunrise_over_mountains: Beauty can be defined as the 'place to be'. <br>
 There is stability in beauty. A desire to preserve it as it is. <br>
 Beauty deals with fundamental elements and their relationships to each other.
 There are requirements towards these elements and towards their respective positioning.
