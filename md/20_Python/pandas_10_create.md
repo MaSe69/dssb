@@ -35,16 +35,21 @@ For getting a print out of the result,
     df          ### Jupyter
     print(df)   ### Coding
 
+
+Fill the dataframe column by column.
+
 >
     df["Col_C1"] = [11, 12]
     df["Col_C2"] = [21, 22]
+
+Fill the dataframe row by row.
 
 >
     df = pd.DataFrame(columns=["Col_R1", "Col_R2"])
     df.loc["Col_R1"] = [11, 12]
     df.loc["Col_R2"] = [21, 22]
 
-As it is correctly pointed out in a highly voted question on Stackoverflow: [Creating an empty pandas dataframe - then filling it](
+But do not loop over dataframes! As it is correctly pointed out in a highly voted question on Stackoverflow: [Creating an empty pandas dataframe - then filling it](
 https://stackoverflow.com/questions/13784192/creating-an-empty-pandas-dataframe-then-filling-it), though you can create and fill dataframes by looping over data, particularly for performance reasons, you should not do so. Get your data first into an efficient structure, e.g. lists, then create the (final) dataframe.
 
 
@@ -69,7 +74,10 @@ You should be able to copy and paste the coding below. It should run, using the 
 
 Your result should be similar to:
 
-{% include images/image.html imagePath = "../assets/images/img_blog/createDF_01_First_Dataframe.PNG" imageCaption =  ""%}
+<center>
+<br>
+{% include images/image.html imagePath = "../assets/images/img_blog/createDF_01_First_Dataframe.PNG" thisWidth ="600px"%}
+</center>
 
 Certainly, though technically a dataframe, this is just mere 'list' or 'table', still a bit away from a 'beautiful dataframe'.
 
@@ -80,37 +88,10 @@ Dataframes can be created in an elegant way from a dict.
 
 In practice, however, this is found to be rarely needed. 
 
-## Copy of a Dataframe
-
-The default should be and is to keep working on the same technical object representing the dataframe. Sometimes, however, you want to work on a copy, e.g. when transforming a subset of a dataframe.
-
-Make a copy of your dataframe using
-
->
-    dfCopy = df.copy()
-
-Changes to dfCopy do not affect df. Without the ".copy()", you change df as well. 
-
-Note that there are two ways to change a dataframe: 
-- using the equal sign
-- using the parameter "inplace=True"
-
->
-    df = <operate on the df>
-    <operate on the df, "inplace=True">
-
-There are quite some reasons to not use the inplace option, see [in-pandas-is-inplace-true-considered-harmful-or-not](
-https://stackoverflow.com/questions/45570984/in-pandas-is-inplace-true-considered-harmful-or-not)
-
- Particularly due to the importance of chaining, only the variant using the equal sign is used here. Unfortunately, this often leads to quite some cumbersome typing effort.
 
 ## An Example to Compare Dataframes in Python and in Julia
 
-The task shall be to get to a dataframe that looks like this
-
-{% include images/image.html imagePath = "../assets/images/img_blog/createDF_02_Python_Julia_Comparison.PNG" imageCaption =  ""%}
-
-Given are the data as arrays:
+Task: Put these arrays as columns to a dataframe with the capitalized array name as column name. 
 
 >
     service = ["Consulting", "Installation", "Operation"]
@@ -119,20 +100,33 @@ Given are the data as arrays:
     price = [100, 10, 50]
     cost = [30, 7, 25]
 
-Similarly as above, you would put the columns into a list and create a dataframe from it.
+<center>
+<br>
+{% include images/image.html imagePath = "../assets/images/img_blog/Python/Pandas_11_Comparison_DF.png"  thisWidth =600px%}
+Simple dataframe for comparison with Julia dataframe creation.
+</center>
+
+One (of many) solutions is to create a dataframe using the rows as they are given in the task
 
 >
-    myList = [service, account, quantity, price, cost]
-    df = pd.DataFrame(myList, columns = colNames)
+    rows = [service, account, quantity, price, cost]
 
-Problem is that you end up with the 'services' in the columns, though they should be in the rows.
-This classical problem of transposing a matrix can be easily solved in Pandas
+Then, create a dataframe based on these rows. I called it "dfPJ" abbreviating "dataframe for Python Julia comparison".
+>    
+    dfPJ = pd.DataFrame(data=rows)
 
+Transpose the dataframe
 >
-    df = df.T
+    dfPJ = dfPJ.T
 
-Done.
+Rename the columns
+>
+    colNames = ["Service", "Account", "Quantity", "Price", "Cost"]
+    dfPJ.columns = colNames
 
-See here for [the comparison to the same data in a Python dataframe](python_julia_comparison)
+Stay tuned for the introduction on transpose dataframes and renaming columns.
 
 
+See here for
+- [How to create dataframes in Julia](julia_create)
+- [Python vs. Julia comparison for dataframes](python_julia_comparison)

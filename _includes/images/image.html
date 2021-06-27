@@ -2,10 +2,12 @@
 {% endcapture %}
 {% capture imageCaption %}
 {% endcapture %}
+{% capture thisWidth %}
+{% endcapture %}
 
 <figure class="page_figure_container">
     <div class="page_image_container">
-        <img src="{{ site.baseUrl }}{{ include.imagePath  }}" alt="{{ include.imagePath }}">
+        <img src="{{ site.baseUrl }}{{ include.imagePath  }}" alt="{{ include.imagePath }}" width=thisWidth>
     </div>
     <div class="page_caption">
         {{ include.imageCaption }}

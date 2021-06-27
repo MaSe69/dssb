@@ -7,16 +7,34 @@ permalink: /pandas_df
 
 # Operations on the Entire Dataframe
 
-You can make some operations on the entire dataframe.
+Here are some selected operations on the entire dataframe.
 
-As a prerequesite, apart from the index, all cells need to fulfill the prerequites of the operation.
-## Preparing the dataframe
+## Copy of a Dataframe
 
-As the prerequesite of suitabililty of the dataframe might only hold true for small dataframes, as preparation
-you have at least these option:
+The default should be and is to keep working on the same technical object representing the dataframe. Sometimes, however, you want to work on a copy, e.g. when transforming a subset of a dataframe.
 
-- Move all other columns to temporarily to the index.
-- Slice the dataframe
+Make a copy of your dataframe using
+
+>
+    dfCopy = df.copy()
+
+Changes to dfCopy do not affect df. Without the ".copy()", you change df as well. 
+
+Note that there are two ways to change a dataframe: 
+- using the equal sign
+- using the parameter "inplace=True"
+
+>
+    df = <operate on the df>
+    <operate on the df, "inplace=True">
+
+There are quite some reasons to not use the inplace option, see [in-pandas-is-inplace-true-considered-harmful-or-not](
+https://stackoverflow.com/questions/45570984/in-pandas-is-inplace-true-considered-harmful-or-not)
+
+ Particularly due to the importance of chaining, only the variant using the equal sign is used here. Unfortunately, this often leads to quite some cumbersome typing effort.
+
+
+Apart from the index, all cells need to fulfill the prerequesite of the operation.
 
 ### Indices
 
@@ -95,7 +113,7 @@ Convert all numbers to integers and round to 1000s.
 Examples: 
 {% include images/image.html imagePath = "../assets/images/img_blog/opTables_Integers.png" imageCaption = "All values converted to integers and rounded to 10s."%}
 
-### Fundamental Operatoins
+### Basic Arithmetics
 
 Multiply (or divide) by a number
 
@@ -110,7 +128,3 @@ Adding or subtracting a suitable other dataframe
 >
     df = df2 + df1
     df = df2 - df1
-
-
-
-
