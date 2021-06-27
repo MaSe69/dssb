@@ -4,7 +4,7 @@ title: Julia - Downloads
 permalink: /julia_download
 
 ---
-# Python - Download Dataframes from the Internet
+# Julia - Download Dataframes from the Internet
 
 ## Installation
 
@@ -22,14 +22,19 @@ At the top of your program, add
 
 ### First example: Some Programming Languages
 
-At first, we make the request to get the content from a specified URL.
-Mostly, the content is in utf8.  
+At first, you make the request to get the content from a specified URL.
 
 >
     url = "https://raw.githubusercontent.com/nassarhuda/easy_data/master/programming_languages.csv"
     D = download(url, "programming_languages.csv")
+
+Then, you convert the download to a dataframe
+
+>
     df = CSV.read(D, DataFrame)
     print(first(df,5))
+
+The CSV functionality converted the data to a dataframe.
 
 ### Save the csv-file to the local file system
 
@@ -52,10 +57,18 @@ If you want to use the current path, you can get it from
 >
     absPath = @__DIR__
     absPath = pwd()
-    
-println(absPath)
-thisFile = @__FILE__
-println("This File: $thisFile")
 
 
-## CO2 Concentration
+
+### Example: Some CO2 - concentration
+
+Just to make another example:
+
+>   
+    url2 ="https://raw.githubusercontent.com/vega/vega-datasets/master/data/co2-concentration.csv"
+    D = download(url, "co2.csv")
+    df = CSV.read(D, DataFrame)
+    filename = "co2.csv"
+    CSV.write(filename, df)
+    println("\nFile written to $filename")
+

@@ -16,7 +16,7 @@ For streaming the downloaded content into a dataframe, it helps to use the libra
     import requests
     import io
 
-### First example: Some Programming Languages
+### Example: Some Programming Languages
 
 At first, we make the request to get the content from a specified URL.
 Mostly, the content is in utf8.  
@@ -34,16 +34,13 @@ Then, we read the data into a dataframe - and check its first rows.
 
 This example is actually from a great Julia tutorial.
 
-### Second example: CO2 Concentration
+### Example: CO2 Concentration
 
 Vega is graphics package commonly used with Julia. It also provides data, for the sake of its visualization.
-It can also be downloaded with Python, of course:
+Data from Vega can also be downloaded with Python, of course:
 
 >
     url2 ="https://raw.githubusercontent.com/vega/vega-datasets/master/data/co2-concentration.csv"
     req = requests.get(url2).content
     data = req.decode('utf8')
     df = pd.read_csv(io.StringIO(data))
-    df.head(5)
-
-

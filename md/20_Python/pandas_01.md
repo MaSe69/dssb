@@ -19,16 +19,15 @@ For more see on this site [Python (Pandas) References](python_references)
 - Create dataframes from arrays or lists
 - Comparison Pandas to Julia DataFrames
 
-## [Download](pandas_download)
+## [Download + Save](pandas_download)
 
-- Download from the web using a request
-- Convert the downloaded data to a dataframe
+- Download with a url into a dataframe
+- Save the dataframe locally
 
-## [Read + Save](pandas_read)
+## [Read](pandas_read)
 
 - Read only limited data
 - Read tricky data
-- Save the dataframe locally
 
 # Part 2: Common Dataframe Operations
 

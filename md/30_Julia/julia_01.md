@@ -21,17 +21,16 @@ For more see on this site [Julia (DataFrames) References](julia_references)
 - Create dataframes from arrays or lists
 - Comparison Julia DataFrames to Pandas
 
-## [Download Data](julia_downloads)
+## [Download + Save](julia_download)
 
-- Download from the web using a request
-- Convert the downloaded data to a dataframe
+- Download with a url into a dataframe
+- Save the dataframe locally
 
-
-## [Read data](julia_saveDF)
+## [Read](julia_read)
 
 - Read only limited data
 - Read tricky data
-- Save the dataframe locally
+
 
 # Part 2: Common Dataframe Operations
 
