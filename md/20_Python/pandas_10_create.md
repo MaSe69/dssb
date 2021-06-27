@@ -3,24 +3,49 @@ layout: 20_python
 title: Pandas
 permalink: /pandas_create
 ---
-# Python - Create Dataframes Locally
 
-This is kind of 'Hello World' for Dataframes.
+# Python - Create Dataframes
 
-It is mainly used to check that the setup is complete and working.
-As with most 'Hello Worlds', in real programs, you rarely use it.
-Dataframes are usually created when importing data.
+Let's start with creating dataframes in Python using Pandas. 
 
-The coding used here is available as Jupyter lab: 
-[Create_DF.ipynb](https://github.com/MaSe69/dataframes/blob/master/dfPython/PY_11_Create_DF.ipynb)
+First of all, you need to download the library Pandas 
 
+>
+    pip3 install pandas
 
-## Import Pandas
-
-In order to use Pandas, after installation, you need to import it, which is done by 
+and to import Pandas at the top of your program.
 
 > 
     import pandas as pd
+
+
+
+## Create an Empty Dataframe
+
+It seems to be natural to start with an empty dataframe and then fill it as data becomes available. 
+
+>
+    df = pd.DataFrame()
+
+For getting a print out of the result, 
+- in Jupyter, you need to add a line to get the print out
+- in Visual Studio Code (VSC), you need to print the dataframe to the console
+
+>
+    df          ### Jupyter
+    print(df)   ### Coding
+
+>
+    df["Col_C1"] = [11, 12]
+    df["Col_C2"] = [21, 22]
+
+>
+    df = pd.DataFrame(columns=["Col_R1", "Col_R2"])
+    df.loc["Col_R1"] = [11, 12]
+    df.loc["Col_R2"] = [21, 22]
+
+As it is correctly pointed out in a highly voted question on Stackoverflow: [Creating an empty pandas dataframe - then filling it](
+https://stackoverflow.com/questions/13784192/creating-an-empty-pandas-dataframe-then-filling-it), though you can create and fill dataframes by looping over data, particularly for performance reasons, you should not do so. Get your data first into an efficient structure, e.g. lists, then create the (final) dataframe.
 
 
 ## A Simple Dataframe
@@ -41,14 +66,6 @@ You should be able to copy and paste the coding below. It should run, using the 
     df = pd.DataFrame(index=accounts, columns=months)
     df = df.fillna(0)
 
-
-For getting a print out of the result, 
-- in Jupyter, you need to add a line to get the print out
-- in coding, e.g in Visual Studio Code (VSC), you can print it out to the console
-
->
-    df          ### Jupyter
-    print(df)   ### Coding
 
 Your result should be similar to:
 
@@ -85,7 +102,7 @@ Note that there are two ways to change a dataframe:
 There are quite some reasons to not use the inplace option, see [in-pandas-is-inplace-true-considered-harmful-or-not](
 https://stackoverflow.com/questions/45570984/in-pandas-is-inplace-true-considered-harmful-or-not)
 
- Particularly due to the importance of chaining, only the variant using the equal sign is used here. Unfortunately, this oftenleads to quite some cumbersome typing effort.
+ Particularly due to the importance of chaining, only the variant using the equal sign is used here. Unfortunately, this often leads to quite some cumbersome typing effort.
 
 ## An Example to Compare Dataframes in Python and in Julia
 
@@ -109,7 +126,7 @@ Similarly as above, you would put the columns into a list and create a dataframe
     df = pd.DataFrame(myList, columns = colNames)
 
 Problem is that you end up with the 'services' in the columns, though they should be in the rows.
-This classical problem of transposing a matrix can be easiyl solved in Pandas
+This classical problem of transposing a matrix can be easily solved in Pandas
 
 >
     df = df.T
@@ -118,13 +135,4 @@ Done.
 
 See here for [the comparison to the same data in a Python dataframe](python_julia_comparison)
 
-
-## Not Possible - Create an Empty Dataframe
-
-It seems to be natural to start with an empty dataframe and then fill it later. 
-
-This assumption is backed by a highly voted question on Stackoverflow: [Creating an empty pandas dataframe - then filling it](
-https://stackoverflow.com/questions/13784192/creating-an-empty-pandas-dataframe-then-filling-it).
-
-As a workaround, as indicated, you can fill the cells with NaN, zeros or random numbers which are replaced with the real entries later.
 

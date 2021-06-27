@@ -27,6 +27,11 @@ Wes McKinney book on Pandas shall be recommended here:
 
 See also Wikipedia for details 
 - [Pandas on  Wikipedia](https://en.wikipedia.org/wiki/Pandas_(software)). 
+
+The coding used here is available as Jupyter lab: 
+[Create_DF.ipynb](https://github.com/MaSe69/dataframes/blob/master/dfPython/PY_11_Create_DF.ipynb)
+
+
   
 ## Python Community and Resources
 

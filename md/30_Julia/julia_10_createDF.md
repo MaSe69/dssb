@@ -1,7 +1,7 @@
 ---
 layout: 10_generic
 title: Julia
-permalink: /julia_createDF
+permalink: /julia_create
 
 ---
 
@@ -21,7 +21,7 @@ The coding used here is available as Jupyter lab:
 Dataframes are not included in the Julia as such.
 The full functionality is split to several packages, particularly to minimize the coding you need to import.
 
-For a start, the pacakge Dataframes.jl is sufficient.
+For a start, the package Dataframes.jl is sufficient.
 
 Installing dataframes in Julia:
 
