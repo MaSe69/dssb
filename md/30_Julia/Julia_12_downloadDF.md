@@ -50,14 +50,13 @@ If you want to use the name of this current file, you can get it from
 
 >
     CSV.write(filename, df)
-    println("\nFile wrtten to $filename")
+    println("\nFile written to $filename")
 
 If you want to use the current path, you can get it from 
 
 >
     absPath = @__DIR__
     absPath = pwd()
-
 
 
 ### Example: Some CO2 - concentration

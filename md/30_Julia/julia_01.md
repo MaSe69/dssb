@@ -31,29 +31,35 @@ For more see on this site [Julia (DataFrames) References](julia_references)
 - Read only limited data
 - Read tricky data
 
+You should now have sufficient own or other dataframes at your disposition.
+
 
 # Part 2: Common Dataframe Operations
 
-## [Operations on the entire dataframe](julia_operateOnDF)
+## [Dataframe Operations](julia_df_ops)
 
 - Basic arithmetics
-- Slice + Merge
-- Group by fields
 
+## [Slice  + Merge](julia_merge)
 
-## [Operate on Columns](julia_columns)
+- Merge two dataframes
+
+## [Column Operations](julia_columns)
 
 - Rename and Re-order
 - Insert and Delete
 - Modify
 
-
-### [Operate on Rows](julia_rows)
+## [Row Operations](julia_rows)
 
 - Sort
 - Append and Delete
 - Modify 
 
+
+## [Group](julia_group)
+
+- Sums, Means, etc.
 
 
 ## Table: Python vs. Julia

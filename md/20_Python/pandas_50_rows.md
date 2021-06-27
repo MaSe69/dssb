@@ -1,6 +1,6 @@
 ---
 layout: 20_python
-title: Pandas - Rows
+title: Pandas Rows
 permalink: /pandas_rows
 
 ---

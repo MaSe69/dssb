@@ -1,6 +1,6 @@
 ---
 layout: 20_python
-title: Pandas - Columns
+title: Pandas Columns
 permalink: /pandas_columns
 
 ---

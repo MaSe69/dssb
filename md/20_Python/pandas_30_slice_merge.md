@@ -1,9 +1,57 @@
 ---
 layout: 20_python
-title: Pandas - Merge
-permalink: /pandas_merge
+title: Pandas Slice Merge
+permalink: /pandas_slice_merge
 
 ---
+
+
+## Rename or Copy
+
+You might want to rename your dataframe or to make a real copy.
+
+>
+    df_New = df          # Does not create a copy, just another name
+    df_New = df.copy()   # Create a real copy 
+
+
+The default should be and is to keep working on the same technical object representing the dataframe. Sometimes, however, you want to work on a copy, e.g. when transforming a subset of a dataframe.
+
+Make a copy of your dataframe using
+
+>
+    dfCopy = df.copy()
+
+Changes to dfCopy do not affect df. Without the ".copy()", you change df as well. 
+
+Note that there are two ways to change a dataframe: 
+- using the equal sign
+- using the parameter "inplace=True"
+
+>
+    df = <operate on the df>
+    <operate on the df, "inplace=True">
+
+There are quite some reasons to not use the inplace option, see [in-pandas-is-inplace-true-considered-harmful-or-not](
+https://stackoverflow.com/questions/45570984/in-pandas-is-inplace-true-considered-harmful-or-not)
+
+ Particularly due to the importance of chaining, only the variant using the equal sign is used here. Unfortunately, this often leads to quite some cumbersome typing effort.
+
+
+Apart from the index, all cells need to fulfill the prerequesite of the operation.
+
+
+
+### Slice
+
+You can define a 'rectangle' of your dataframe to be a new dataframe - and apply the operation only to that new .
+
+>
+    dfSlice = df[r1:r2; c1:c2].copy()
+
+with r1 and r2 being the first and last row, c1 and c2 being the first and last column.
+
+Mind that without the copy your operation might also affect the original dataframe. 
 
 
 # Merging Different Dataframes Column-wise
@@ -45,10 +93,3 @@ For the kind of merge, there are several options in for the 'how' parameter. As 
 Instead of taking the index, you can save some coding and directly merge on columns that are semantically identical, i.e. they even can have different names. Just to give an example from existing coding: 
 >
     dfMerged = pd.merge(df1, df2, how="left", left_on=para["KeyLeft"], right_on=para["KeyRight"])
-
-
-## Conclusion
-
-Merging dataframes together with splitting, in particular, slicing, them, provides you with the tools to transform a dataframe semantically to exactly the shape that you want it to be.
-
-

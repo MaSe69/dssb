@@ -22,7 +22,6 @@ It might be considered a good idea to *not* store* the data in the same folder a
     df = pd.read_csv(filename)
     df.head(3)
 
- 
 
 ## Limiting the data
 
@@ -36,7 +35,6 @@ Let's say, we only want to have two dedicated columns and the first three rows f
 >
     colsIwannaUse = ["Name", "Cylinders"]
     df = pd.read_csv(filename, usecols = colsIwannaUse, nrows = 3)
-    df    
 
 
 ## Tricky raw data
@@ -50,7 +48,7 @@ Further, there might be more 'leading' columns, e.g. having some well-intentione
     df = pd.read_csv(filename, delimiter = "|", header=7)
     df.head(3)
 
-Similarly, there is a tail functionality to cut off superflous data at the end of a file. 
+Similarly, there is a tail functionality to cut off superfluous data at the end of a file. 
 
 Check the documentation on [read](https://pandas.pydata.org/docs/reference/api/pandas.read_csv.html) for other helpful parameters for your data.
 
@@ -87,19 +85,25 @@ A datetime can be used, for instance, to add a number of days.
     df["DatePlus"]= df.Date + timedelta(days=180)
     df.head(10)    
 
-# Save dataframes
 
-Saving locally is much easier.
-Being in the dataframe, the data are already in a convinient format.
+##  Read from an Excel
+
+For working with Microsoft Excel, you need to install a library 
+>
+    pip3 install xlrd
 
 
-The central command to save dataframes in csv-format is simply the [to_csv](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.to_csv.html) function
-
-Some thoughts though:
-- Think about a convinient name to save the file. Mind to not accidently overwrite the original file.
-- Do not save the index, you might end up with two indices after re-reading the file again.
-- Mind that some people have good reason for not using comma as the delimiter.
+Reading an external table available in Excel-Format is a common use case.
 
 >
-    df.to_csv('filenameSave', index=False, delimiter=";")
+    df = pd.read_excel(fileAbsPath, index_col=0)
+
+## Save to an Excel
+
+Working with the Excel-Format is pretty much the same as working with csv-files.
+
+A few particularities:
+
+- you do not need to specify a deliminator or separator
+- you can specify the Sheet in Excel.
 

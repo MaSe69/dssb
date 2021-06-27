@@ -29,29 +29,34 @@ For more see on this site [Python (Pandas) References](python_references)
 - Read only limited data
 - Read tricky data
 
+You should now have sufficient own or other dataframes at your disposition.
+
+
 # Part 2: Common Dataframe Operations
 
-## [Dataframe](pandas_df)
+## [Dataframe Operations](pandas_df_ops)
 
 - Basic arithmetics
-- Slice + Merge
-- Group by fields
 
+## [Slice  + Merge](pandas_slice_merge)
 
-## [Column](pandas_columns)
+- Merge two dataframes
+
+## [Column Operations](pandas_columns)
 
 - Rename and Re-order
 - Insert and Delete
 - Modify
 
-## [Row](pandas_rows)
+## [Row Operations](pandas_rows)
 
 - Sort
 - Append and Delete
 - Modify 
 
-## [Merge + Group](pandas_merge)
+## [Group](pandas_group)
 
+- Sums, Means, etc.
 
 
 ## Misc
