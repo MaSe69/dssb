@@ -10,5 +10,13 @@ permalink: /julia_df_ops
 Here are some selected operations on the entire dataframe.
 
 
-## Copy of a Dataframe
+### Meta Data
+
+
+### Basic Arithmetics
+
+
+### Transpose
+
+
 

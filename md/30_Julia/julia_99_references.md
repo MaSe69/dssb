@@ -34,6 +34,7 @@ Thankfully, I learned a lot from the following sites and tutorials
 ## Dataframes
 
 - [Dataframes Package](https://dataframes.juliadata.org/stable/)
+- [CSV Package](https://csv.juliadata.org/stable/)
 
 
 ### Dataframe Tutorials

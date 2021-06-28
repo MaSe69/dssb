@@ -9,6 +9,20 @@ permalink: /pandas_df_ops
 
 Here are some selected operations on the entire dataframe.
 
+
+## Meta data about the dataframe
+
+'shape' returns the number of columns or rows. 
+
+>
+    print("Number of (rows, columns):", df.shape)
+
+'describe' returns meta data on the dataframe.
+
+>
+    dfMetaData = df.describe()
+
+
 ### Basic Arithmetics
 
 Multiply (or divide) by a number
@@ -26,17 +40,13 @@ Adding or subtracting a suitable other dataframe
     df = df2 - df1
 
 
-## Meta data about the dataframe
-
-'shape' returns the number of columns or rows. 
+### Transpose
 
 >
-    print("Number of (rows, columns):", df.shape)
+    df = df.T
 
-'describe' returns meta data on the dataframe.
-
->
-    dfMetaData = df.describe()
+However, there is no inversion of a dataframe.
+Possible workaround: extract to a Numpy array.     
 
 
 ### Indices
@@ -78,11 +88,3 @@ Convert all numbers to integers and round to 1000s.
 Examples: 
 {% include images/image.html imagePath = "../assets/images/img_blog/opTables_Integers.png" imageCaption = "All values converted to integers and rounded to 10s."%}
 
-
-### Transpose
-
->
-    df = df.T
-
-However, there is no inversion of a dataframe.
-Possible workaround: extract to a Numpy array. 
