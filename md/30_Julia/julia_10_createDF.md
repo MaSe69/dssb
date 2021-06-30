@@ -84,19 +84,3 @@ See here for
 - [Python vs. Julia comparison for dataframes](python_julia_comparison)
 
 
-
-## Copy of a Dataframe
-
-The default should be and is to keep working on the same technical object representing the dataframe. Sometimes, however, you want to work on a copy, e.g. when transforming a subset of a dataframe.
-
-For Making a real, independent copy of your dataframe use
-
->
-    dfDeepCopy = deepcopy(df)
-
-Changes to dfDeepCopy do not affect df.
-Note that 
->
-    dfCopy = copy(df)
-
-only makes a "shallow copy" of the dataframe.

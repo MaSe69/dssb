@@ -28,12 +28,6 @@ At first, you make the request to get the content from a specified URL.
     url = "https://raw.githubusercontent.com/nassarhuda/easy_data/master/programming_languages.csv"
     D = download(url, "programming_languages.csv")
 
-Then, you convert the download to a dataframe
-
->
-    df = CSV.read(D, DataFrame)
-    print(first(df,5))
-
 The CSV functionality converted the data to a dataframe.
 
 ### Save the csv-file to the local file system
@@ -61,13 +55,15 @@ If you want to use the current path, you can get it from
 
 ### Example: Some CO2 - concentration
 
-Just to make another example:
+Just to make another example. This time using a relative path for saving the downloaded data.
+
+>
+    path = "./ZZ_Data/"
+    filename = "co2.csv"
+    relname = path * filename
+
+The proceed as usual:
 
 >   
     url2 ="https://raw.githubusercontent.com/vega/vega-datasets/master/data/co2-concentration.csv"
-    D = download(url, "co2.csv")
-    df = CSV.read(D, DataFrame)
-    filename = "co2.csv"
-    CSV.write(filename, df)
-    println("\nFile written to $filename")
-
+    D = download(url2, relname)
