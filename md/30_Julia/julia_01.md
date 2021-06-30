@@ -38,10 +38,14 @@ You should now have sufficient own or other dataframes at your disposition.
 
 ## [Dataframe Operations](julia_df_ops)
 
+- Meta data
 - Basic arithmetics
+- Transpose or Invert
 
 ## [Slice  + Merge](julia_slice_merge)
 
+- Rename vs. Copy
+- Slice a dataframe
 - Merge two dataframes
 
 ## [Column Operations](julia_columns)
@@ -66,6 +70,7 @@ You should now have sufficient own or other dataframes at your disposition.
 
 |  Category   | Python | Julia |
 |-------------|--------|-------|
+| Dataframe   | [Meta Data](pandas_df_ops#meta-data) | [Meta Data](julia_df_ops#meta-data) |
 | Dataframe   | [Basic arithmetics](pandas_df_ops#basic-arithmetics) | [Basic arithmetics](julia_df_ops#basic-arithmetics)  |
 | Dataframe   | [Transpose](pandas_df_ops#transpose) | [Transpose](julia_df_ops#transpose) |
 | Slice + Merge  | [Copy](pandas_slice_merge#copy)  | [Copy](julia_slice_merge#copy)  | 

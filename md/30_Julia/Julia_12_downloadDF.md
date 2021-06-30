@@ -1,5 +1,5 @@
 ---
-layout: 10_generic
+layout: 30_julia
 title: Julia - Downloads
 permalink: /julia_download
 

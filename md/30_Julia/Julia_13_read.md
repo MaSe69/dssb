@@ -121,3 +121,4 @@ the first part of timeseries can be read as follows:
     df = CSV.read(relname, DataFrame, dateformat="$myDateFormat", limit=3)
 
 The column 'Date' is then of type **date**.
+

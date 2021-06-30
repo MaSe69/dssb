@@ -1,5 +1,5 @@
 ---
-layout: 20_python
+layout: 30_julia
 title: Julia DF Ops
 permalink: /julia_df_ops
 
@@ -30,7 +30,6 @@ Get the columns, their types and some statistics, when you describe the Julia da
 
 ## Basic Arithmetics
 
-
 Let's define a new, small dataframe df1. A dataframe based on a 2x2 unity matrix might do.
 
 >
@@ -47,29 +46,27 @@ Subtract the square root of 2.
 
 Mind the broadcasting operator!
 
-### Multiply with a vector
+### Multiply with a column to get an additional column
 
 Particularly, multiplying two columns to yield a third one in the same dataframe.
 
 >
     df2[!,:C] = df2[!,:A] .* df2[!,:B]
 
-The result is an additional column with column name C that is the row-wise product of columns A and B.
+The result here is an additional column with column name C that is the row-wise product of columns A and B.
 
-Such column with column multiplication is of utmost practical value.
+Such column-with-column-multiplications have a lot of practical use cases.
 
 
-### Multiply with a column (or other suitable vector)
+### Multiply two columns to get an array
 
 >
     df3 = df2.A .* df2.B 
     println("df3 $df3")
 
+The result here is a 1x2 array.
 
-The result is a 1x2 array.
-
-Such a multiplication might be rather rare. It is listed here to clarify confusion, if you in fact intended to do a column by column multiplication to get a third column.
-
+Such a multiplication might be rather rare in practice. It is listed here to clarify confusion, if you in fact intended to do a column by column multiplication to get a third column.
 
 
 ## Matrix operations
@@ -80,7 +77,9 @@ Some operations on a Julia dataframe are not available, but can be retrieved by 
 
 ### Transpose
 
-You can get the matrix from the dataframe with the **matrix** command
+There is no built-in transpose command in Julia Dataframes. You need to extract the matrix, transpose the matrix and re-built a dataframe. 
+
+You can get the matrix, ma, from the dataframe with the **matrix** command
 
 >
     ma = Matrix(df)
@@ -91,14 +90,14 @@ Then, you transpose the matrix
     mat = transpose(ma)
     mat = ma'
 
+The matrix mat holds the transposed matrix. 
 
-Finally, you need to get back to a dataframe
+Finally, you need to get back to a new dataframe, dfT, 
 
 >
     dfT = DataFrame(mat, :auto)
 
-and to adjust the column names.
-Mind the second parameter ("auto") which is required in higher versions of DataFrames.
+and to adjust the column names later. Mind the second parameter ("auto") which is required in higher versions of DataFrames.
 
 
 ### Invert

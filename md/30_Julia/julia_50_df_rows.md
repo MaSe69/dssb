@@ -1,5 +1,5 @@
 ---
-layout: 20_python
+layout: 30_julia
 title: Julia DF Rows
 permalink: /julia_rows
 ---
