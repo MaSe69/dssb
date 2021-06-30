@@ -56,6 +56,8 @@ Particularly, multiplying two columns to yield a third one in the same dataframe
 
 The result is an additional column with column name C that is the row-wise product of columns A and B.
 
+Such column with column multiplication is of utmost practical value.
+
 
 ### Multiply with a column (or other suitable vector)
 
@@ -66,7 +68,44 @@ The result is an additional column with column name C that is the row-wise produ
 
 The result is a 1x2 array.
 
+Such a multiplication might be rather rare. It is listed here to clarify confusion, if you in fact intended to do a column by column multiplication to get a third column.
 
 
+
+## Matrix operations
+
+A matrix contains the body of a dataframe. 
+Some operations on a Julia dataframe are not available, but can be retrieved by extracting this matrix and then re-assembling the dataframe.
+
+
+### Transpose
+
+You can get the matrix from the dataframe with the **matrix** command
+
+>
+    ma = Matrix(df)
+
+Then, you transpose the matrix
+
+>
+    mat = transpose(ma)
+    mat = ma'
+
+
+Finally, you need to get back to a dataframe
+
+>
+    dfT = DataFrame(mat, :auto)
+
+and to adjust the column names.
+Mind the second parameter ("auto") which is required in higher versions of DataFrames.
+
+
+### Invert
+
+Do the same as for transpose, but invert the matrix.
+
+>
+    mai = inv(ma)
 
 
