@@ -46,28 +46,6 @@ Subtract the square root of 2.
 
 Mind the broadcasting operator!
 
-### Multiply with a column to get an additional column
-
-Particularly, multiplying two columns to yield a third one in the same dataframe.
-
->
-    df2[!,:C] = df2[!,:A] .* df2[!,:B]
-
-The result here is an additional column with column name C that is the row-wise product of columns A and B.
-
-Such column-with-column-multiplications have a lot of practical use cases.
-
-
-### Multiply two columns to get an array
-
->
-    df3 = df2.A .* df2.B 
-    println("df3 $df3")
-
-The result here is a 1x2 array.
-
-Such a multiplication might be rather rare in practice. It is listed here to clarify confusion, if you in fact intended to do a column by column multiplication to get a third column.
-
 
 ## Matrix operations
 

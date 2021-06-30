@@ -43,7 +43,7 @@ This site has grown as a collection of my personal cheat sheets. Saving my time 
 
 First of all, this site is particularly meant to express gratitude towards all the inventors and contributors in this area.<br>
 
-[The references on a sub page](references) take care mention the individuals to which we owe the great tools used here. Without Wes McKinney and his outstanding book on 'Python for Data Analysis' this site here would certainly not exist.
+[The references on a sub page](python_references) take care mention the individuals to which we owe the great tools used here. Without Wes McKinney and his outstanding book on 'Python for Data Analysis' this site here would certainly not exist.
 
 The approach taken here is to focus on a dataframes as entity in its own right.
 It is a dataframe-centric approach. Dataframes with data are the heroes of this show.

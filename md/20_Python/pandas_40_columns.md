@@ -42,14 +42,14 @@ If you do not know the column names, get their names
     columnNames = df.columns.values
     listOfColumnNames = list(df.columns.values)
 
-### Change Numerical Values
+### Basic Arithmetics On Columns
 
 For scalars, just use the normal symbols: 
 
 >
     df["Acceleration"] = df["Acceleration"] / 17
 
-For columns, use the methods, e.g. add, subtract, multiply or divide, 
+For columns, use the methods, e.g. add, subtract, multiply or divide. 
 
 >
     df["Ratio"] = df[["Weight_in_lbs"]].divide(df["Acceleration"], axis=0)    
