@@ -4,10 +4,14 @@ title: Julia DF Rows
 permalink: /julia_rows
 ---
 
-# Operations on the Entire Dataframe
+# Julia Dataframes - Rows
 
-Here are some selected operations on the entire dataframe.
+Rows
 
+- [Address](#address-rows)
+- [Subsets](#work-on-subsets)
+- [Sort](#sort)
+- [Create](#create-rows)
+- [Delete](#delete-rows)
 
-## Copy of a Dataframe
 

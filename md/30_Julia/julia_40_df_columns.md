@@ -5,10 +5,18 @@ permalink: /julia_columns
 
 ---
 
-# Operations on the Entire Dataframe
+# Julia Dataframes - Columns
 
-Here are some selected operations on the entire dataframe.
+Columns
+
+- [Address](#address-columns)
+- [Change Numerical Values](#change-numerical-values)
+- [Subsets](#work-on-subsets)
+- [Rename](#rename-columns)
+- [Reorder](#reorder-columns)
+- [Create](#create-columns)
+- [Delete](#delete-columns)
+- [Modify](#modify-columns)
 
 
-## Copy of a Dataframe
-
+## Address Columns
