@@ -1,5 +1,5 @@
 ---
-layout: 10_generic
+layout: 30_julia
 title: Julia Read
 permalink: /julia_read
 
@@ -68,13 +68,56 @@ This way comes natural, when you are chaining a lot of pipes anyway.
 
 ## Limiting the data
 
+Limit the number of rows read from the csv-file, by setting a **limit**.
+
+>
+    df = CSV.read(relname, DataFrame, limit=3)
 
 
 
+You can limit the number of columns. <br>
+Using **select**, you can specify the column names.
+
+>
+    df = CSV.read(relname, DataFrame, select=[:Horsepower, :Cylinders])
+
+Alternatively, you can specify the column number.
+
+>
+    df = CSV.read(relname, DataFrame, select=[1, 3])
 
 
 ## Tricky raw data
 
 
+Other parameters that proved helpful for reading real world data were:
+- header
+- skipto
+- footerskip
+- transpose
+- comment
+- ignoreemptylines
+- decimal
+
+
 ## Timeseries
 
+For using dates, you need to add the package ("Dates") and declare its usage.
+>
+    using Dates
+
+Use **dateformat** to specify the format, in which the date is held in the csv-file.
+For the co2-example used on this site,
+
+>
+    filename = "co2.csv"
+    path = "./ZZ_Data/"
+    relname = path * filename
+
+the first part of timeseries can be read as follows:
+
+>
+    myDateFormat="yyyy-mm-dd"
+    df = CSV.read(relname, DataFrame, dateformat="$myDateFormat", limit=3)
+
+The column 'Date' is then of type **date**.
