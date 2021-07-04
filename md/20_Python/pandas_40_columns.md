@@ -11,7 +11,6 @@ Columns
 
 - [Address](#address-columns)
 - [Basic Arithmetics On Columns](#Basic-arithmetics-on-columns)
-- [Subsets](#work-on-subsets)
 - [Rename](#rename-columns)
 - [Reorder](#reorder-columns)
 - [Create](#create-columns)
@@ -30,11 +29,6 @@ Alternatively, an existing column with a suitable columnName can be addressed
 >
     df.myColName
 
-More Examples:
-
->
-    df.myColName2 = round(df.myColName, 3)
-
 
 If you do not know the column names, get their names
 
@@ -43,55 +37,53 @@ If you do not know the column names, get their names
     listOfColumnNames = list(df.columns.values)
 
 
-### Basic Arithmetics On Columns
+## Basic Arithmetics On Columns
 
 Often, you cannot apply an operation on the complete dataframe, but only a set of selected rows. 
+Alternatively, you can create a new dataframe with the specified columns and merge the result back later.
 
-Then, you can 
-- create a new dataframe with these rows and merge it back later.
-- select the columns for that operation only
+### Multiplying with a scalar
 
-Create a new dataframe with a subset of existing columns.
+For scalars, just use the normal symbols: 
 >
-    keepCols = ["Jan","Mar", "May"]
-    dfNew = df[keepCols]
-
-Mind the two pairs of square brackets when you enter the values as a one liner.
->
-    dfNew = df[["Jan","Mar", "May"]]
-
-Create a new dataframe using sliced columns
->
-    dfNew = df.iloc[:,2:5]
+    df.Acceleration = df.Acceleration" / 17
+    df["Acceleration"] = df["Acceleration"] / 17
 
 Select a subset of columns and apply an operation on it. 
+
 >
     selectedColumns = ["colname1", "colname2"]
     df[selectedColumns] = df[selectedColumns] * 100.0    
 
 
-For scalars, just use the normal symbols: 
->
-    df["Acceleration"] = df["Acceleration"] / 17
-
-For columns, use the methods, e.g. add, subtract, multiply or divide. 
+You can also use the name of the operations, e.g. add, subtract, multiply or divide. 
 
 >
-    df["Ratio"] = df[["Weight_in_lbs"]].divide(df["Acceleration"], axis=0)    
+    df["Ratio"] = df[["Weight_in_lbs"]].divide(df["Acceleration"], axis=0)
 
 
-Round floats or convert floats to integers
+### Multiply a column with a column to get an additional column
+
+Particularly, multiplying two columns to yield a third one in the same dataframe.
+
+>
+    df2.C. = df2.A + df2.B
+    df2[C] = df2[A] * df2[B]
+
+The result here is an additional column with column name C that is the row-wise product of columns A and B.
+
+Such column-with-column-multiplications have a lot of practical use cases.
+
+
+### Converting a type
+
+Often used, round floats or convert floats to integers
 >
     df["Ratio"] = round(df["Ratio"],2)
     df["Ratio"] = round(df["Ratio"],0).astype(int)  
 
-Modulo operation
->
-    df[selectedColumns] = [selectedColumns] % 1
-
 
 ## Rename
-
 
 Rename specific single columns, e.g. A to Alpha and B to Beta:
 

@@ -34,7 +34,20 @@ Apart from the index, all cells need to fulfill the prerequesite of the operatio
 
 ## Slice
 
-You can define a 'rectangle' of your dataframe to be a new dataframe - and apply the operation only to that new .
+You can a new dataframe with a subset of existing columns.
+>
+    keepCols = ["Jan","Mar", "May"]
+    dfNew = df[keepCols]
+
+Mind the two pairs of square brackets when you enter the values as a one liner.
+>
+    dfNew = df[["Jan","Mar", "May"]]    
+
+If know the positions of the columns, i.e. the 'integer location', you can also create a new dataframe using iloc
+>
+    dfNew = df.iloc[:,2:5]    
+
+In general, you can define a 'rectangle' of your dataframe to be a new dataframe - and apply the operation only to that new .
 
 >
     dfSlice = df[r1:r2; c1:c2].copy()
@@ -53,11 +66,11 @@ Two possibilities are described here:
 
 ### Concatenate Dataframes
 
-You can concatenate dataframes column-wise similiarly to row-wise.
+You can concatenate dataframes column-wise similarly to row-wise.
 
 As a prerequesite, the rows should reasonably match. If the rows do not match, the second dataframe as appended 'below' the first one, filling many cells with NaN. Usually, this is not what you want.
 
-In many cases, however, the rows do match, e.g. when getting more data on a fixed dateime format and the datetime is in the index. 
+In many cases, however, the rows do match, e.g. when getting more data on a fixed datetime format and the datetime is in the index. 
 
 >
     df = pd.concat([df1, df2], axis=1)

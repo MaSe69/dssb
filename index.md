@@ -18,7 +18,7 @@ Mastering dataframes is an essential skill in practical data science.
 | Slice + Merge  | [Copy](pandas_slice_merge#copy)  | [Copy](julia_slice_merge#copy)  | 
 | Slice + Merge  | [Slice](pandas_slice_merge#slice)  | [Slice](julia_slice_merge#slice) |
 | Slice + Merge  | [Merge](pandas_slice_merge#merge) | [Merge](julia_slice_merge#merge) |
-| Columns   | [Basic Arithmetics](pandas_columns#basic-arithmetics-on-columns) | [Basic Arithmetics](julia_df_ops#basic-arithmetics-on-columns)  |
+| Columns   | [Basic Arithmetics On Columns](pandas_columns#basic-arithmetics-on-columns) | [Basic Arithmetics  On Columns](julia_columns#basic-arithmetics-on-columns)  |
 | Columns     | [Rename columns](pandas_columns#rename)  | [Rename columns](julia_columns#rename) |
 | Columns     | [Reorder columns](pandas_columns#reorder) | [Reorder columns](julia_columns#reorder) |
 | Columns     | [Insert columns](pandas_columns#insert) | [Insert columns](julia_columns#insert) |
