@@ -30,14 +30,13 @@ Multiply (or divide) by a number
 >
     df = 3.141529 * df
 
-Modulo operation
->
-    df = df % 1
 
 Adding or subtracting a suitable other dataframe
 >
     df = df2 + df1
     df = df2 - df1
+
+The index in Pandas provides a convenient possibility to put all columns that shall not be subjected to an operation temporarily to that index. After the operation, you can then reset the index.
 
 
 ### Transpose

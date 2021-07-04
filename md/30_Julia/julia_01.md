@@ -64,25 +64,3 @@ You should now have sufficient own or other dataframes at your disposition.
 
 - Sums, Means, etc.
 
-
-## Table: Python vs. Julia
-<br>
-
-|  Category   | Python | Julia |
-|-------------|--------|-------|
-| Dataframe   | [Meta Data](pandas_df_ops#meta-data) | [Meta Data](julia_df_ops#meta-data) |
-| Dataframe   | [Basic arithmetics](pandas_df_ops#basic-arithmetics) | [Basic arithmetics](julia_df_ops#basic-arithmetics)  |
-| Dataframe   | [Transpose](pandas_df_ops#transpose) | [Transpose](julia_df_ops#transpose) |
-| Slice + Merge  | [Copy](pandas_slice_merge#copy)  | [Copy](julia_slice_merge#copy)  | 
-| Slice + Merge  | [Slice](pandas_slice_merge#slice)  | [Slice](julia_slice_merge#slice) |
-| Slice + Merge  | [Merge](pandas_slice_merge#merge) | [Merge](julia_slice_merge#merge) |
-| Columns     | [Rename columns](pandas_columns#rename)  | [Rename columns](julia_columns#rename) |
-| Columns     | [Reorder columns](pandas_columns#reorder) | [Reorder columns](julia_columns#reorder) |
-| Columns     | [Insert columns](pandas_columns#insert) | [Insert columns](julia_columns#insert) |
-| Columns     | [Delete columns](pandas_columns#delete) | [Delete columns](julia_columns#delete) |
-| Columns     | [Modify](pandas_columns#modify) | [Modify](julia_columns#modify) |
-| Rows        | [Sort](pandas_rows#sort)   | [Sort](julia_rows#sort)  |
-| Rows        | [Append](pandas_rows#append) | [Append](julia_rows#append) |
-| Rows        | [Delete rows](pandas_rows#delete) | [Delete rows](julia_rows#delete)  |
-| Group       | [Group](pandas_group#group) | [Group](julia_group#group) |
-

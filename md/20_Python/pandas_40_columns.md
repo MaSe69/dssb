@@ -10,7 +10,7 @@ permalink: /pandas_columns
 Columns
 
 - [Address](#address-columns)
-- [Change Numerical Values](#change-numerical-values)
+- [Basic Arithmetics On Columns](#Basic-arithmetics-on-columns)
 - [Subsets](#work-on-subsets)
 - [Rename](#rename-columns)
 - [Reorder](#reorder-columns)
@@ -42,10 +42,35 @@ If you do not know the column names, get their names
     columnNames = df.columns.values
     listOfColumnNames = list(df.columns.values)
 
+
 ### Basic Arithmetics On Columns
 
-For scalars, just use the normal symbols: 
+Often, you cannot apply an operation on the complete dataframe, but only a set of selected rows. 
 
+Then, you can 
+- create a new dataframe with these rows and merge it back later.
+- select the columns for that operation only
+
+Create a new dataframe with a subset of existing columns.
+>
+    keepCols = ["Jan","Mar", "May"]
+    dfNew = df[keepCols]
+
+Mind the two pairs of square brackets when you enter the values as a one liner.
+>
+    dfNew = df[["Jan","Mar", "May"]]
+
+Create a new dataframe using sliced columns
+>
+    dfNew = df.iloc[:,2:5]
+
+Select a subset of columns and apply an operation on it. 
+>
+    selectedColumns = ["colname1", "colname2"]
+    df[selectedColumns] = df[selectedColumns] * 100.0    
+
+
+For scalars, just use the normal symbols: 
 >
     df["Acceleration"] = df["Acceleration"] / 17
 
@@ -60,28 +85,9 @@ Round floats or convert floats to integers
     df["Ratio"] = round(df["Ratio"],2)
     df["Ratio"] = round(df["Ratio"],0).astype(int)  
 
-    
-### Work on Subsets
-
-Select a subset of columns and apply an operation on it. 
-
+Modulo operation
 >
-    colSel = ["colname1", "colname2"]
-    dfcolSel[colSel] = dfcolSel[colSel] * 100.0    
-
-Create a new dataframe with a subset of existing columns.
-
->
-    keepCols = ["Jan","Mar", "May"]
-    dfNew = df[keepCols]
-
-Mind the two pairs of square brackets when you enter the values as a one liner.
->
-    dfNew = df[["Jan","Mar", "May"]]
-
-Create a new dataframe using sliced columns
->
-    dfNew = df.iloc[:,2:5]
+    df[selectedColumns] = [selectedColumns] % 1
 
 
 ## Rename

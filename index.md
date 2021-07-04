@@ -4,44 +4,58 @@ title: Beautiful Dataframes
 permalink: /index
 ---
 <br>
-Dataframes are a cornerstone of data science.
-<br>
-**Beautiful dataframes** provide not only the technical means of dataframes, but also contain domain knowledge shaped to perfection.
+Mastering dataframes is an essential skill in practical data science.
+
+**Beautiful dataframes** comprise the technical means of dataframes and their data of domain knowledge shaped to perfection.
+
+## Python | Julia
+
+|  Category   | Python | Julia |
+|-------------|--------|-------|
+| Dataframe   | [Meta Data](pandas_df_ops#meta-data) | [Meta Data](julia_df_ops#meta-data) |
+| Dataframe   | [Basic Arithmetics](pandas_df_ops#basic-arithmetics) | [Basic Arithmetics](julia_df_ops#basic-arithmetics)  |
+| Dataframe   | [Transpose](pandas_df_ops#transpose) | [Transpose](julia_df_ops#transpose) |
+| Slice + Merge  | [Copy](pandas_slice_merge#copy)  | [Copy](julia_slice_merge#copy)  | 
+| Slice + Merge  | [Slice](pandas_slice_merge#slice)  | [Slice](julia_slice_merge#slice) |
+| Slice + Merge  | [Merge](pandas_slice_merge#merge) | [Merge](julia_slice_merge#merge) |
+| Columns   | [Basic Arithmetics](pandas_columns#basic-arithmetics-on-columns) | [Basic Arithmetics](julia_df_ops#basic-arithmetics-on-columns)  |
+| Columns     | [Rename columns](pandas_columns#rename)  | [Rename columns](julia_columns#rename) |
+| Columns     | [Reorder columns](pandas_columns#reorder) | [Reorder columns](julia_columns#reorder) |
+| Columns     | [Insert columns](pandas_columns#insert) | [Insert columns](julia_columns#insert) |
+| Columns     | [Delete columns](pandas_columns#delete) | [Delete columns](julia_columns#delete) |
+| Columns     | [Modify](pandas_columns#modify) | [Modify](julia_columns#modify) |
+| Rows        | [Sort](pandas_rows#sort)   | [Sort](julia_rows#sort)  |
+| Rows        | [Append](pandas_rows#append) | [Append](julia_rows#append) |
+| Rows        | [Delete rows](pandas_rows#delete) | [Delete rows](julia_rows#delete)  |
+| Group       | [Group](pandas_group#group) | [Group](julia_group#group) |
+
 
 ## Mastering Dataframes
 
-You can find the official documentations for Python and Julia programming language, respectively, here
+Please consult official documentations for Python and Julia programming language: 
 - [Python - Pandas (Dataframes)](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html)
 - [Julia - Package on Dataframes](https://dataframes.juliadata.org/stable/)
 
 <br>
 In addition, you find on this site for free:
 
-- Essential operations to work with dataframes from a user perspective. 
-- Some very powerful dataframe operations of high value in practice.
-- A comparison between Python and Julia dataframes, meant to switch efficiently between these languages.
+- A selection from all possibilities based on practical experience.
+- Comments on best practices and potential traps.
+- A comparison between Python and Julia dataframes, meant to switch more efficiently between these languages.
 
 <br>
-Please continue reading for
+Please find the details on this site here
 
-- [A cheat sheet for dataframes in Python-Pandas](python)
-- [A cheat sheet for dataframes in Julia](julia)
+- [Dataframes in Python-Pandas](python)
+- [Dataframes in Julia](julia)
 
-<br>
-because you'd find there: 
-
-- Download data into dataframes
-- Create new dataframes 
-- Merge or split them
-- Column operations
-- Row operations
-
-<br>
-This site has grown as a collection of my personal cheat sheets. Saving my time to look up powerful, but hard to remember syntax. It might also save your time and make it more fun working with dataframes.
 
 ## Focus on Dataframes
 
 First of all, this site is particularly meant to express gratitude towards all the inventors and contributors in this area.<br>
+
+<br>
+This site has grown as a collection of my personal cheat sheets. Saving my time to look up powerful, but hard to remember syntax. It might also save your time and make it more fun working with dataframes.
 
 [The references on a sub page](python_references) take care mention the individuals to which we owe the great tools used here. Without Wes McKinney and his outstanding book on 'Python for Data Analysis' this site here would certainly not exist.
 
