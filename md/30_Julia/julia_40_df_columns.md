@@ -33,6 +33,13 @@ Address an existing column **with** copying,
 >
     df[:, :col1]
 
+In Julia, you can select all columns of a specific type.
+>
+    dfText = df[!, names(df, String)]
+    dfFloats = df[!, names(df, Float64)]
+
+Such a selection can substitute for the missing index features in Python, i.e. before applying an operation that is not possible for Strings, you can first de-select all columns holding Strings.
+
 
 ## Basic Arithmetics
 
@@ -112,11 +119,14 @@ All column names capitalized or in upper case
 
 ## Reorder 
 
-Use the of **existing column names** to re-order the columns, by specifying your sequence
+Use the of **existing column names** to re-order the columns, by specifying a new, complete sequence
 >
+    reorderedCols = [:col9, :col8, :col3, :col4, :col5, :col6, :col7, :col2, :col1]
+    df = df[1,reorderedCols]
 
 You can reverse the sequence of the columns as follows
 >
+    df = df[:,reverse(names(df))]
 
 
 
