@@ -12,14 +12,14 @@ An integration between dataframes and the graphics solution is key.
 
 ## Many solutions
 
-For Julia, many packages are available for visualization. S
+For Julia, many packages are available for visualization.
 
 In fact, there are so many possibilities for visualization that it is difficult to choose from.
 After some investigation, my choice came down to 
 - Plots
 - Vegalite
 
-Other solutions that I looked into but did not investigate further are: 
+Other solutions that I looked into but do not describe here include
 - Gadfly
 - Makie
 
