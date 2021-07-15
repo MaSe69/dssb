@@ -14,8 +14,8 @@ Columns
 - [Rename](#rename-columns)
 - [Reorder](#reorder-columns)
 - [Create](#create-columns)
-- [Delete](#delete-columns)
 - [Modify](#modify-columns)
+- [Delete](#delete-columns)
 
 
 ## Address Columns
@@ -160,26 +160,6 @@ Append a column with the sum of all columns (that are not in the index)
     df["Sum"] = df.sum(axis=1)  
 
 
-## Delete
-
-
-Delete columns with the drop command:
-
->
-    df = df.drop(["Feb","Apr"], axis="columns")
-
-Alternative notation,
-
-> 
-    deleteCols = ["Feb","Apr"]
-    df = df.drop(deleteCols, axis=1)
-
-
-Warning: If deletion reduces the Pandas dataframe to just one column, Pandas regards it as a vector. A vector can have different properties, possibly leading to error messages.
-
-Mind the alternative to continue to work on the relevant subset of columns instead of deleting the obsolete columns.
-
-
 ## Modify
 
 ### Replace an existing value in a specific column
@@ -211,3 +191,21 @@ Create a new column with values specified in a dictionary before.
 
 A new column with abbreviations was created.
 
+
+## Delete
+
+Delete columns with the drop command:
+
+>
+    df = df.drop(["Feb","Apr"], axis="columns")
+
+Alternative notation,
+
+> 
+    deleteCols = ["Feb","Apr"]
+    df = df.drop(deleteCols, axis=1)
+
+
+Warning: If deletion reduces the Pandas dataframe to just one column, Pandas regards it as a vector. A vector can have different properties, possibly leading to error messages.
+
+Mind the alternative to continue to work on the relevant subset of columns instead of deleting the obsolete columns.

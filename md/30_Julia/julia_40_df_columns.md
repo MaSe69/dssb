@@ -14,8 +14,8 @@ Here are the same basic functions as for Python:
 - [Rename](#rename)
 - [Reorder](#reorder)
 - [Insert](#insert)
-- [Delete](#delete)
 - [Modify](#modify)
+- [Delete](#delete)
 
 
 ## Address Columns
@@ -93,7 +93,6 @@ The result here is a 1x2 array.
 Such a multiplication might be rather rare in practice. It is listed here to clarify confusion, if you in fact intended to do a column by column multiplication to get a third column.     
 
 
-
 ## Rename
 
 Rename specific single columns, 
@@ -128,7 +127,6 @@ You can reverse the sequence of the columns as follows
     df = df[:,reverse(names(df))]
 
 
-
 ## Insert
 
 ### Insert ( =add ) a column at the end
@@ -141,6 +139,10 @@ Specify a unique name in square brackets and quotes.
 You can use existing columns to create new ones, including more complex computations
 >
     df[!,:E] = 7 * df.A + df.D
+
+Alternatively, a function can be used. Here, the new column Y is the sum of columns A and B.
+>
+    df = transform(df, [:A, :B] => (+) => :Y)
 
 ### Insert a new column at specific position
 
@@ -160,46 +162,44 @@ Append a column with the sum or the mean of all columns (that are not in the ind
     df[!,:Sum] = sum(eachcol(df))
     df[!,:Mean] = mean(eachcol(df))
 
-## Delete
-
-
-Delete columns with the drop command:
-
->
-
-Alternative notation,
-
-> 
-
-
-Warning: If deletion reduces the Pandas dataframe to just one column, Pandas regards it as a vector. A vector can have different properties, possibly leading to error messages.
-
-Mind the alternative to continue to work on the relevant subset of columns instead of deleting the obsolete columns.
-
 
 ## Modify
 
-### Replace an existing value in a specific column
+### Replace all values in a columns
 
-Name the column and replace the value in a row for a specified condition
+Often, you just want to replace one value in a given column by another value
 
 >
+    df.A = replace(df[!,:A], 2 => 33)
 
 
 ### Modify column B based on values in column A
 
-Change the value in a column, here 'Environment', for some rows on condition of values in another column, here 'Miles_per_Gallon' 
+Sometimes, you want to modify a value in a specific column depending on the value in another column. 
+For instance, if the value in column C equals 1, you want the respective value in column A to equal 17.
 
 > 
+    df[!,:A][df[!,:C] .== 1] .= 17
 
+Here, all values in column C are set to 18, if column B has value 1.
+>    
+    df[df.B .== 1,:C] .= 18
 
-All cars with more than 20 miles per gallon get the ok here.
 
 ### Create a new column B based on values in column A
 
-Create a new column with values specified in a dictionary before.
+I have not found a Julia solution so far. All found solutions first create a column and then change it.
+
+## Delete
+
+Delete columns with the select command combined with Not
+>
+    dropCols = [:B, :C] 
+    df = select!(df, Not(dropCols))
+
+Mind the alternative to continue to work on the relevant subset of columns instead of deleting the obsolete columns.
+For, instance, if you just want to keep the columns D and E.
 
 >
-
-A new column with abbreviations was created.
+    df = df[:, [:D, :E]]
 
