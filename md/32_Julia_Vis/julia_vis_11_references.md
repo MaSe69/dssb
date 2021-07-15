@@ -10,13 +10,13 @@ permalink: /julia_visualization_references
 There are the few packages that I looked into.
 
 
-## Plots
+## Plots / StatsPlots
 
 - [Plots](https://docs.juliaplots.org/latest/examples/inspectdr)
 - [StatsPlots](https://github.com/JuliaPlots/StatsPlots.jl)
 
 
-# Vegalite.jl
+## Vega
 
 - [Vega](https://vega.github.io/)
 - [Vegalite on Queryverse](https://www.queryverse.org/VegaLite.jl/stable/)
@@ -24,12 +24,12 @@ There are the few packages that I looked into.
 There are libraries to enable the use of Vegalite from Pandas. 
 
 
-# Gadfly.jl
+## Gadfly
 
-[Gadfly.jl](http://gadflyjl.org/stable/) is a system for plotting and visualization written in Julia. Apparently, there is not readily available library to use it from Python.
+[Gadfly](http://gadflyjl.org/stable/) is a system for plotting and visualization written in Julia. Apparently, there is not readily available library to use it from Python.
 
 
-## Makie.jl
+## Makie
 
 [Makie](https://github.com/JuliaPlots/Makie.jl) points out its interactive capabilities.
 

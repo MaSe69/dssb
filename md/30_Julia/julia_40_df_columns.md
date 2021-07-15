@@ -11,12 +11,11 @@ Here are the same basic functions as for Python:
 
 - [Address](#address-columns)
 - [Basic Arithmetics](#basic-arithmetics)
-- [Rename](#rename-columns)
-- [Reorder](#reorder-columns)
-- [Create](#create-columns)
-- [Delete](#delete-columns)
-- [Modify](#modify-columns)
-
+- [Rename](#rename)
+- [Reorder](#reorder)
+- [Insert](#insert)
+- [Delete](#delete)
+- [Modify](#modify)
 
 
 ## Address Columns
@@ -132,34 +131,34 @@ You can reverse the sequence of the columns as follows
 
 ## Insert
 
-### Add a column at the end
+### Insert ( =add ) a column at the end
 
 Specify a unique name in square brackets and quotes.
 
 >
+    df[!,:D] .= 17
 
-You can use existing columns to create new ones. 
-
-More complex computations are possible.
-
+You can use existing columns to create new ones, including more complex computations
 >
+    df[!,:E] = 7 * df.A + df.D
 
 ### Insert a new column at specific position
 
 For columns that should go to a specific position, you can directly insert a new column at a position.
-
 >
+    arr = [1,1,1]
+    insertcols!(df, 2, :I => arr)
+
 
 This is more efficient than to append at the end and then re-order the columns.
 
 
-## Special 
-
 ### Special case
 
-Append a column with the sum of all columns (that are not in the index)
+Append a column with the sum or the mean of all columns (that are not in the index)
 >
-
+    df[!,:Sum] = sum(eachcol(df))
+    df[!,:Mean] = mean(eachcol(df))
 
 ## Delete
 

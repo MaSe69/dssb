@@ -8,6 +8,9 @@ permalink: /julia_visualization
 # Julia Visualizations
 
 Many packages are available for visualization.
-The links are given in the [Julia Visualization References](julia_visualization_references)
+
+Some links are given in the [Julia Visualization References](julia_visualization_references)
+
+
 
 
