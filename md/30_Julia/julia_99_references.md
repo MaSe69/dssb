@@ -10,7 +10,6 @@ Please find here a careful selection of recommended resources.
 
 ## Python vs. Julia
 
-
 - [Python References on this site](python_references)
 
 On official site:
@@ -31,18 +30,24 @@ Thankfully, I learned a lot from the following sites and tutorials
 - [Julia Academy](https://juliaacademy.com/)
 
 
-## Dataframes
+## Julia Dataframes and Its Universe
+
+### Packages
 
 - [Dataframes Package](https://dataframes.juliadata.org/stable/)
 - [CSV Package](https://csv.juliadata.org/stable/)
+- [Queryverse](https://www.queryverse.org/)
+- [Query](https://github.com/queryverse/Query.jl)
+- [Julia VS Code extension](https://github.com/julia-vscode/julia-vscode)
 
 
 ### Dataframe Tutorials
 
 - [Julia for talented amateurs - Series 02 - Dataframes Lesson 2](https://www.youtube.com/watch?v=TGFNEwVB9DU&list=PLhQ2JMBcfAsjZTA8_jGhz3BVqYgOeyyeu&index=7)
 
+### Experts in this area
 
-## Visualization Used in Julia
+People you might want to follow
 
-
-
+-[Bogumił Kamiński](http://bogumilkaminski.pl/about/)
+-[David Anthoff](https://www.david-anthoff.com/)
