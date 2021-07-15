@@ -49,5 +49,6 @@ Thankfully, I learned a lot from the following sites and tutorials
 
 People you might want to follow
 
--[Bogumił Kamiński](http://bogumilkaminski.pl/about/)
--[David Anthoff](https://www.david-anthoff.com/)
+- [Bogumił Kamiński](http://bogumilkaminski.pl/about/)
+- [David Anthoff](https://www.david-anthoff.com/)
+
