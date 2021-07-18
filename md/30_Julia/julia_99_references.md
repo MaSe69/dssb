@@ -25,9 +25,11 @@ On official site:
 
 ### Julia Tutorials
 
-Thankfully, I learned a lot from the following sites and tutorials
+I have been thankful that the following tutorials were created and made available.
 
 - [Julia Academy](https://juliaacademy.com/)
+- [julia for talented amateurs](https://www.youtube.com/watch?v=5pX1PrM-RvI&list=PLhQ2JMBcfAsjZTA8_jGhz3BVqYgOeyyeu&index=6)
+ 
 
 
 ## Julia Dataframes and Its Universe
