@@ -10,10 +10,10 @@ permalink: /pandas_rows
 Rows
 
 - [Address](#address-rows)
-- [Subsets](#work-on-subsets)
+- [Subsets](#subsets)
 - [Sort](#sort)
-- [Create](#create-rows)
-- [Delete](#delete-rows)
+- [Create](#create)
+- [Delete](#delete)
 
 
 ## Address Rows
@@ -31,7 +31,7 @@ Further, you can address a row with the (unique) name of its index in square bra
     df.loc["index"]
 
 
-## Work on Subsets
+## Subsets
 
 ### First or Last Rows
 
@@ -75,7 +75,7 @@ For changing the direction of sorting, use the key word **ascending**.
     df = df.sort_values(by=sortColumns, ascending=direction)    
 
 
-## Append
+## Create
 
 ### Append one new row
 
@@ -99,7 +99,8 @@ Append a row with the sum of all rows (that are not in the index)
 
 ### Concatenating many rows
 
-For performance reasons, for instance, for many rows you should create and fill a new dataframe
+For many rows, you should create a new dataframe and concatenate it, rather than appending single rows in a loop.
+
 
 > 
     dfMultiRows = pd.DataFrame(columns=columnNames)
@@ -116,6 +117,7 @@ Actually, Pandas is 'row-based'. This implies that working on rows is the defaul
 >
     axis="rows"
     axis=0    
+
 
 ## Delete
 
@@ -134,16 +136,3 @@ However, you can also drop specific rows, e.g. using the index
 >
     df = df.set_index("Name")
     df = df.drop(index = 'myNewCar1')
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -25,8 +25,8 @@ Mastering dataframes is an essential skill in practical data science.
 | Columns     | [Modify](pandas_columns#modify) | [Modify](julia_columns#modify) |
 | Columns     | [Delete columns](pandas_columns#delete) | [Delete columns](julia_columns#delete) |
 | Rows        | [Sort](pandas_rows#sort)   | [Sort](julia_rows#sort)  |
-| Rows        | [Append](pandas_rows#append) | [Append](julia_rows#append) |
-| Rows        | [Delete rows](pandas_rows#delete) | [Delete rows](julia_rows#delete)  |
+| Rows        | [Create](pandas_rows#create) | [Create](julia_rows#create) |
+| Rows        | [Delete](pandas_rows#delete) | [Delete](julia_rows#delete)  |
 | Group       | [Group](pandas_group#group) | [Group](julia_group#group) |
 
 

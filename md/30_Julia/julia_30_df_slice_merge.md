@@ -117,11 +117,12 @@ Let's work with an example that is not too trivial. Three accounts with data for
     df1Feb = DataFrame(Accounts = ["Account_1", "Account_2", "Account_3"], Feb = [1122, 2222, 3322])
 
 #### Horizontal Concatenation
+
 As both dataframes contain the same column name, which is not allowed in the resulting dataframe, Julia must be enabled to make the columns unique.
 
 > 
-
     dfHJanFeb = hcat(df1Jan, df1Feb, makeunique=true)
+
 
 #### Vertical Concatenation
 
