@@ -18,61 +18,61 @@ Rows
 
 ## Address Rows
 
-Address a row with the (unique) name of its index in square brackets directly after the dataframe variable **and** the key word "loc" - in semantic coding:
-
->
-    df.loc["index"]
-
-
-Further, you can address a row with its position given as an integer
+You can address a row with its position given as an integer
 
 >
     n = 5
     row = df.iloc[[n]]
 
+
+Further, you can address a row with the (unique) name of its index in square brackets directly after the dataframe variable **and** the key word "loc" - in semantic coding:
+
+>
+    df.loc["index"]
+
+
 ## Work on Subsets
 
 ### First or Last Rows
 
-For a bulk of rows from the begining or the end of the existing dataframe, you can create a new dataframe:
+For a bulk of rows from the beginning or the end of the existing dataframe, you can create a new dataframe:
 
 >
     dfFirst_7_Rows = df.head(7)
 
 >
-    dfLast_7_Rows = df.tail(7)
+    dfLast_4_Rows = df.tail(4)
 
 
 ### Generic Subsets
 
-Get a deliberately defined subset using iloc:
+Get a subset defined by a start row and end row and the step in-between using iloc:
 
 >
     start = 10
-    end = 80
-    k = 37
-    rows = df.iloc[start:end:k,:]    
+    stop = 380
+    step = 37
+    dfSample = df.iloc[start:stop:step:]    
 
 For instance, for very long files, you might want to get an impression of the data by getting some representative data.
+
+
 ## Sort
 
 ### Single column
 
-The syntax is a bit cumbersome, i.e. one that might need to be looked up again.
-It comprises a "sort_values" and - inside the parenthesis - a "by="
+The syntax is a bit cumbersome. Don't worry, if you can't memorize.
+It comprises **sort_values** and - inside the parenthesis - **by=**
 
 > 
     df = df.sort_values(by="column1", ascending=True)
 
-
-### Multiple columns - in various directions
-
-Certainly, you can also sort by multiple column and in various directions, e.g. 
+For changing the direction of sorting, use the key word **ascending**.
 
 >
-    sortCols = ["column1", "column2"]
+    sortColumns = ["column1", "column2"]
     direction =[True, False]
-    df = df.sort_values(by=sortCols, ascending=direction)    
+    df = df.sort_values(by=sortColumns, ascending=direction)    
 
 
 ## Append

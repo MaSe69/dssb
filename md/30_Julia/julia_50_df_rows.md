@@ -15,3 +15,116 @@ Rows
 - [Delete](#delete-rows)
 
 
+
+## Address Rows
+
+You can address a row with its position given as an integer
+
+>
+    n = 5
+    row = df[n,:])
+
+
+## Work on Subsets
+
+### First or Last Rows
+
+For a bulk of rows from the beginning or the end of the existing dataframe, you can create a new dataframe:
+
+>
+    dfFirst_7_Rows = first(df,7)
+
+>
+    dfLast_4_Rows = last(df,4)
+
+
+### Generic Subsets
+
+Get a subset defined by a start row and end row and the step in-between:
+
+>
+    start = 10
+    step = 37
+    stop = 380
+    dfSample = df[start:step:stop,:]   
+
+Minor notes:
+    - The position of the step is different from Python
+    - 'end' is a key word in Julia.
+
+For instance, for very long files, you might want to get an impression of the data by getting some representative data.
+
+
+## Sort
+
+### Single column
+
+The syntax is very neat.
+> 
+    df = sort(df, :Cylinders)
+
+For changing the direction of sorting, use the key word **rev**.
+>
+    df = sort(df, [:Cylinders, :Acceleration], rev=[true, false])
+
+
+## Append
+
+### Append one new row
+
+New rows need to have the same column structure as the dataframe. 
+This leads to a two step process
+- create the row based on the existing dataframe
+- add it to the existing dataframe
+
+>
+    columnNames = list(df.columns.values)
+    dfNewRows = pd.DataFrame(columns=columnNames)
+    dfNewRows.loc[0] = ["myNewCar"] + list((np.random.uniform(20, 80, 3)).round(1))
+
+
+### Special case
+
+Append a row with the sum of all rows (that are not in the index)
+
+>
+    df.loc["Sum"] = df.sum()
+
+### Concatenating many rows
+
+For performance reasons, for instance, for many rows you should create and fill a new dataframe
+
+> 
+    dfMultiRows = pd.DataFrame(columns=columnNames)
+    for i in range(3):
+        dfMultiRows.loc[i] = ['myNewCar' + str(i)] + list((np.random.uniform(20, 80, 3)).round(1))
+
+Concatenate the new dataframe to the existing one. Mind the square brackets for the list. You can concatenate more than two dataframes at once.
+
+>
+    df = pd.concat([df, dfMultiRows], axis=0)
+
+Actually, Pandas is 'row-based'. This implies that working on rows is the default. You can, but do not have to, specify 
+
+>
+    axis="rows"
+    axis=0    
+
+## Delete
+
+You would typically slice the existing dataframe and continue working with the remaining dataframe. Examples:
+
+>
+    df = df.loc[df[df.column7] > 17]
+    df = df.tail(7)
+    df = df.iloc[3:7,:]
+
+However, you can also drop specific rows, e.g. using the index
+
+>
+    df = df.drop(df[df.Name == "myNewCar2"].index)
+
+>
+    df = df.set_index("Name")
+    df = df.drop(index = 'myNewCar1')
+
