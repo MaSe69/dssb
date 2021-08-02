@@ -11,11 +11,11 @@ Columns
 
 - [Address](#address-columns)
 - [Basic Arithmetics On Columns](#Basic-arithmetics-on-columns)
-- [Rename](#rename-columns)
-- [Reorder](#reorder-columns)
-- [Create](#create-columns)
-- [Modify](#modify-columns)
-- [Delete](#delete-columns)
+- [Rename](#rename)
+- [Reorder](#reorder)
+- [Insert](#insert)
+- [Modify](#modify)
+- [Delete](#delete)
 
 
 ## Address Columns
