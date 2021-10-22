@@ -90,10 +90,11 @@ a:hover, a:active {
 }
 
 myCodingCell {
-  color:red;
+  background-color: #ebebf3;
+  color: black;
 }
 
-blockquote, code {
+blockquote {
     background-color: #ebebf3;
     page-break-inside: auto;
     page-break-inside: inherit ;
