@@ -31,7 +31,9 @@ As I spent most of my time with dataframes, I was looking forward to the contrib
 Bogumił Kamiński gave a 3 hours [tutorial on dataframes](https://www.youtube.com/watch?v=tJf24gfcSto).
 He also gave a 15 minutes update on the [current state of Dataframes](https://live.juliacon.org/talk/VSMCQG).
 
-## Various Interesting Talks
+## Various Talks of My Interest
+
+These are just the ones that overlap with my genuine interests, there were surely other great talks.
 
 ### Dictionaries
 

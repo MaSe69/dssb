@@ -4,9 +4,47 @@ title: Beautiful Dataframes
 permalink: /index
 ---
 <br>
-Mastering dataframes is an essential skill in practical data science.
+Dataframes are a corner stone data science.<br>
+Dataframes are popular, because they can store all kinds of data - provided they are tabular.<br>
+Dataframes have columns with names and rows typically with indices. 
 
-**Beautiful dataframes** comprise the technical means of dataframes and their data of domain knowledge shaped to perfection.
+## Transpose a dataframe in Julia or Python
+
+Sometimes, the columns and rows are just the other way round than needed.
+My standard use case is a downloaded dataframe with dates in its columns. 
+However, I need the dates in the rows to merge it with another dataframe.
+
+In Python, the solution to this problem is as easy as to apply the Pandas transformation T to a dataframe df
+
+>
+    df_Transposed = df.T
+
+In Julia, however, there is no equivalent like df_Transposed = transpose(df).
+In the discussion, severe problems were pointed out. The usual workaround is to extract a matrix and to rebuild the dataframe, as I pointed out here: [Transpose a dataframe in Julia](julia_df_ops#transpose).
+For many cases, these hints might be sufficient to struggle on and to end up with a transposed dataframe.
+
+For a language developer, the problem to transpose a matrix might be remote. Possibly, when you 'own' the data, you can create the dataframe in the way you need it.
+When you have to combine information from many dataframes from other sources, however, chances are that you need to transpose at least one of them.
+
+Let's work out an example and deep-dive into the respective literature.
+
+
+### Transpose a dataframe in Python
+
+Question is: When transposing a dataframe is so 'difficult' in Julia, why is it so easy in Python?
+Well, there is at least one noteworthy issue which you might run into when setting the index on the transposed matrix.
+
+Find here, how to
+[Transpose a dataframe in Python](pandas_transpose)
+
+
+### Transpose a dataframe in Julia
+
+Find here, how to
+[Transpose a dataframe in Julia](julia_transpose)
+
+
+
 
 ## Python | Julia
 
@@ -94,6 +132,9 @@ Programming languages in practice restrict by their intrinsic philosophy or avai
 Comparing the implementation in at least two languages is necessary to get closer to the 'true nature' of dataframes. 
 
 # Beauty and Dataframes
+
+**Beautiful dataframes** comprise the technical means of dataframes and their data of domain knowledge shaped to perfection.
+
 ### The Idea of Beauty in Other Areas
 
 The point here is to apply the idea of beauty from other areas to dataframes.
