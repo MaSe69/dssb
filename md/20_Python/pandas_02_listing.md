@@ -9,7 +9,11 @@ permalink: /pandas_listing
 Status: October 2021
 
 
-|  Object | Operation  | Coding |  Link | 
+|  Object | How to  | Coding Hint |  Link to Details | 
 | :---            |    :--------   |  :--- |  :--- |  
-| Dataframe | Create| df=pd.Dataframe |[Create]([Some](Link))| 
+| Dataframe | create a dataframe| <myCodingCell>df=pd.Dataframe(columns)</myCodingCell> |[create a dataframe](pandas_create)| 
+| Dataframe | make a real copy| <myCodingCell>df2=df.copy()</myCodingCell> |[make a real copy](pandas_slice_merge#copy)| 
+| Dataframe | reduce the columns| <myCodingCell>df2=df[[col1, col3,...]]</myCodingCell> |[reduce the columns](pandas_slice_merge#slice)| 
+| Dataframe | merge two dataframes| <myCodingCell>df=pd.merge(df1, df2, ...)</myCodingCell> |[merge two dataframes](pandas_slice_merge#merge)| 
 
+... to be continued ... 

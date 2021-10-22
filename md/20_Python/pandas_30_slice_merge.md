@@ -34,7 +34,7 @@ Apart from the index, all cells need to fulfill the prerequesite of the operatio
 
 ## Slice
 
-You can a new dataframe with a subset of existing columns.
+You can reduce an existing dataframe by keeping only a subset of the existing columns.
 >
     keepCols = ["Jan","Mar", "May"]
     dfNew = df[keepCols]

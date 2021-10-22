@@ -6,7 +6,18 @@ permalink: /index
 <br>
 Dataframes are a corner stone data science.<br>
 Dataframes are popular, because they can store all kinds of data - provided they are tabular.<br>
-Dataframes have columns with names and rows typically with indices. 
+
+
+In this late 2021 update, I would like to focus on
+- add Altair for a visualization of dataframes in Python.
+- extended listings of fundamental operations on dataframes in Python
+- deep dive a bit into how to transpose a dataframe.
+
+
+## Python - Pandas
+
+Please find here a growing [Pandas list](pandas_listing) of fundamental operations on dataframes.
+
 
 ## Transpose a dataframe in Julia or Python
 
@@ -26,8 +37,6 @@ For many cases, these hints might be sufficient to struggle on and to end up wit
 For a language developer, the problem to transpose a matrix might be remote. Possibly, when you 'own' the data, you can create the dataframe in the way you need it.
 When you have to combine information from many dataframes from other sources, however, chances are that you need to transpose at least one of them.
 
-Let's work out an example and deep-dive into the respective literature.
-
 
 ### Transpose a dataframe in Python
 
@@ -44,9 +53,10 @@ Find here, how to
 [Transpose a dataframe in Julia](julia_transpose)
 
 
-
-
 ## Python | Julia
+
+Please find here my first attempt to list some fundamental operations on dataframes in both Python and Julia.
+
 
 |  Category   | Python | Julia |
 |-------------|--------|-------|
