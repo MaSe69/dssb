@@ -4,26 +4,30 @@ title: Beautiful Dataframes
 permalink: /index
 ---
 <br>
-Dataframes are a corner stone data science.<br>
+Dataframes are a corner stone of data science.<br>
 Dataframes are popular, because they can store all kinds of data - provided they are tabular.<br>
-
+Dataframes often hold the data of the graphs on the internet.<br>
 
 In this late 2021 update, I would like to focus on
-- add Altair for a visualization of dataframes in Python.
-- extended listings of fundamental operations on dataframes in Python
-- deep dive a bit into how to transpose a dataframe.
+- adding Altair for a visualization of dataframes in Python.
+- expanding the listing of operations on dataframes that I have been using in Python.
+- a comparison on how to transpose a dataframe in Python vs. in Julia.
+
+## Altair - Dataframe Visualization in Python
+
+After the JuliaCon2021, I migrated my dataframe visualizations in Python from Seaborn to Altair. A main trigger was my experience with the Vegalite.jl package in Julia. Vegalite is based on Vega which in turn is based on the powerful D3 (Data-Driven Documents) library. Altair is the Python equivalent to make use of Vegalite. 
+
+Here is a listing of my usage of Altair to visualize dataframes, including saving charts, using themes, applying time series specifics,
+- [Altair list](altair_listing).
 
 
 ## Python - Pandas
 
-Please find here a growing [Pandas list](pandas_listing) of fundamental operations on dataframes.
+Here is a listing of my usage of Pandas to visualize dataframes, including changes to column, row, cells.
+- [Pandas list](pandas_listing).
 
 
 ## Transpose a dataframe in Julia or Python
-
-Sometimes, the columns and rows are just the other way round than needed.
-My standard use case is a downloaded dataframe with dates in its columns. 
-However, I need the dates in the rows to merge it with another dataframe.
 
 In Python, the solution to this problem is as easy as to apply the Pandas transformation T to a dataframe df
 
