@@ -4,11 +4,13 @@ title: Time Series
 permalink: /timeseries
 ---
 
-# Altair: Time Series
+# Altair: Time Series - Lines
 
-A standard use case in accounting are costs over time.
+A standard use case in accounting are the values of accounts over time. You see here three accounts - A, B and C - with artificial data (incl. trend and Gaussian noise)
 
+<center>
 {% include images/image.html imagePath = "../assets/images/img_blog/img_altair/Timeseries.png" imageCaption =  ""%}
+</center>
 
 The chart is based on a theme such that all charts have the same background, grid line width or dash, etc..
 
@@ -123,11 +125,33 @@ On the coloring, you might want to set the colors of your choice, e.g. you might
 
 >
     alt.Color('Type:O', title="Type", 
-        sort=myLegend,
+        sort=df.columns.values,
         scale={"range": [
-            para["color_steelblue"],
-            para["color_indianred"],
-            para["color_darkseagreen"] 
+            "blue"],
+            "red"],
+            "green"] 
             ]
             },
-        ),          
+        ),   
+
+
+The sorting is done along the columns of the dataframe.
+
+### Format the Lines, Points
+
+Formatting of the lines is directly done as parameters of the mark_line command.
+You can set there the opacity level of the line, which softens the colors.<br>
+You can change the lind from solid to dashed.<br>
+You can configure a point for the data.
+
+>
+    mark_line(
+        opacity=0.85,
+        strokeDash=[4,2],
+        point=alt.OverlayMarkDef(
+            filled=False, 
+            size=80, 
+            fill='white',   
+            ), 
+
+

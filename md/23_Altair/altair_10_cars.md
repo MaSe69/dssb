@@ -7,9 +7,9 @@ permalink: /vega_cars
 # Altair: Modified Cars Example
 
 Find here the result. The details are described below.
-
+<center>
 {% include images/image.html imagePath = "../assets/images/img_blog/img_altair/myCars.png" imageCaption =  ""%}
-
+</center>
 You can find the 'standard cars example' in many places. I modified it here to make the point that there is a good correlation between the weight of a car and its fuel consumption. As a European, I am more familiar with the units kilogram and liters per 100 km. 
 
 
