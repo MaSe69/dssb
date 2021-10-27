@@ -1,6 +1,6 @@
 ---
 layout: 20_python
-title: Altair Listing
+title: Altair References
 permalink: /altair_references
 ---
 
@@ -11,6 +11,7 @@ permalink: /altair_references
 
 - [Vega and Vegalite](https://vega.github.io/)
 - [Vega Datasets](https://pypi.org/project/vega-datasets/)
+- [Vega Color Schemes](https://vega.github.io/vega/docs/schemes/)
 
 ## Altair
 

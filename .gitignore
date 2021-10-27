@@ -1,5 +1,8 @@
+*.csv
 _site
 .sass-cache
 .jekyll-cache
 .jekyll-metadata
 vendor
+assets/images/img_blog/img_altair/myCars.png
+assets/images/img_blog/img_altair/myCars.png
