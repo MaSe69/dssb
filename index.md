@@ -18,13 +18,16 @@ In this late 2021 update, I would like to focus on
 After the JuliaCon2021, I migrated my dataframe visualizations in Python from Seaborn to Altair. A main trigger was my experience with the Vegalite.jl package in Julia. Vegalite is based on Vega which in turn is based on the powerful D3 (Data-Driven Documents) library. Altair is the Python equivalent to make use of Vegalite. 
 
 Here is a listing of my usage of Altair to visualize dataframes, including saving charts, using themes, applying time series specifics,
-- [Altair list](altair_listing).
+- [Altair listing](altair_listing).
+
+More background:
+- [Altair About](altair_about).
 
 
 ## Python - Pandas
 
 Here is a listing of my usage of Pandas to visualize dataframes, including changes to column, row, cells.
-- [Pandas list](pandas_listing).
+- [Pandas listing](pandas_listing).
 
 
 ## Transpose a dataframe in Julia or Python
