@@ -154,4 +154,40 @@ You can configure a point for the data.
             fill='white',   
             ), 
 
+### Change the line chart to an area chart
 
+
+All you need to do is to change the decisive command from **mark_line** to **mark_area**.
+
+>
+    myChart = alt.Chart(df).mark_area(
+        opacity=0.55,
+        strokeDash=[4,2],
+        point=alt.OverlayMarkDef(
+        filled=False, 
+        size=80, 
+        fill='white',            
+        ), 
+    ).encode(...)
+
+
+All the other coding can remain. There are some specific line features though and some specific area features.
+
+<center>
+{% include images/image.html imagePath = "../assets/images/img_blog/img_altair/TimeseriesArea.png" imageCaption =  ""%}
+</center>
+
+
+The advantage of an area charge is particularly showing implicitely the sum when stacking the areas on top of each other.
+This stacking is done when setting the stack parameter to true.
+
+>
+    alt.Y('Measurement:Q', 
+            ...
+            stack=True,
+            ), 
+
+By the way, this area chart is an independent chart from the line chart and it already profits from the re-used theme.            
+
+This concludes the timeseries here. <br>
+But wouldn't it be nice to see some values at the data points? Not all, but some. Interactively?

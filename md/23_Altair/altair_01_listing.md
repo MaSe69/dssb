@@ -22,3 +22,10 @@ permalink: /altair_listing
 | Axis | set scale and tick count| axis=alt.Axis(tickCount=10),scale=alt.Scale(domain=(...) |[Time series](timeseries)| 
 | Axis | set custom colors| scale={"range": (...)]) |[Time series](timeseries)| 
 | Lines | format the line and points| strokeDash=[4,2], point=alt.OverlayMarkDef(...) |[Time series](timeseries)| 
+| Area | change from line to area graph| alt.Chart(df).mark_area(...) |[Time series](timeseries)| 
+
+## Altair Listing Interactive
+
+|  Object |  How to | Coding Hint | Link to Example | 
+| :---            |    :--------   |  :--- |  :--- |  
+| Tooltips | add tooltips to a scatter plot| tooltip=['Name', ...] .interactive(),  |[Vega Cars Tooltips](vega_cars_interactive)| 
