@@ -20,8 +20,19 @@ After the JuliaCon2021, I migrated my dataframe visualizations in Python from Se
 Here is a listing of my usage of Altair to visualize dataframes, including saving charts, using themes, applying time series specifics,
 - [Altair listing](altair_listing).
 
-More background:
+Comments on the Altair listing:
 - [Altair About](altair_about).
+
+
+## Python - Fundamentals For Dataframes
+
+Some plain Python is definitely needed. Recently, I expanded this quite a bit to compose column headers for new dataframes more efficiently.
+
+Here is a listing of my usage of Python when using dataframes, including working with strings, arrays, dictionaries, comprehensions.
+- [Python listing](python_listing).
+
+Comments on the Python listing:
+- [Python About](python_about).
 
 
 ## Python - Pandas
