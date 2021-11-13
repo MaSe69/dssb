@@ -26,6 +26,7 @@ Unlike Altair, in Julia, the JSON notation is used.
 
 Currently, I provide the following examples:
 - [Vega Cars](vega_cars)
+- [Vega Cars Interactive](vega_cars_interactive)
 - [Time series](timeseries)
 - [Time series area](timeseriesarea)
 
