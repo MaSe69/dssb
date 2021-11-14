@@ -6,7 +6,7 @@ permalink: /python_about
 
 # Python About
 
-Some thoughts beyond my Python listing.
+Some explanations and deeper thoughts on my Python listing.
 
 ## Strings
 
@@ -41,7 +41,7 @@ For instance, between the second and forth of my specified cities, keep every se
 >
     SomeCities = myCities[1:4:2]
 
-When looping, when you do no need the value, you can replace the variable with an underscope "_".
+When looping and not needing the key, you can replace the variable with an underscore "_".
 >
     for _ , value in myDict.items():
 

@@ -4,7 +4,7 @@ title: Python Listing
 permalink: /python_listing
 ---
 
-## Altair Listing
+## Python Listing
 
 These are just some hopefully useful hints when using Python with Pandas.
 
@@ -18,3 +18,5 @@ These are just some hopefully useful hints when using Python with Pandas.
 | Dictionary | create a dict in a loop| myDict[city[:1]] = city |
 | Dictionary | loop over array| for key, value in myDict.items(): |
 | Comprehension | get list elements for a condition| [city for city in myCities if "r" in city] |
+
+This table was generated using a dataframe. Find here explanations [about Python](python_about).

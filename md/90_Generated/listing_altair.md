@@ -29,3 +29,6 @@ permalink: /altair_listing
 |  Object |  How to | Coding Hint | Link to Example | 
 | :---            |    :--------   |  :--- |  :--- |  
 | Tooltips | add tooltips to a scatter plot| tooltip=['Name', ...] .interactive(),  |[Vega Cars Tooltips](vega_cars_interactive)| 
+
+This table was generated using a dataframe. Find here explanations [about Altair](altair_about).
+
