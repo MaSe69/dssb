@@ -6,25 +6,34 @@ permalink: /models
 
 # Models
 
-## Type of models
 
+## Logistic Function for Timeseries
 
-### Constant Model
-
-
-
-### Linear Model
-
-
-### Logistic Distribution
-
-
-### Poisson Distribution
+[Logistic_Function](logistic)
 
 
 
 
-## Models References
 
-- [Logictic Distribution - Numpy](https://numpy.org/doc/stable/reference/random/generated/numpy.random.logistic.html)
-- [Poisson Distribution - Scipy](https://numpy.org/doc/stable/reference/random/generated/numpy.random.logistic.html)
+## Categorizations
+
+### K-Means
+
+
+
+### Decision Tree
+
+
+
+
+### Random Forest
+
+
+
+
+
+
+
+
+
+

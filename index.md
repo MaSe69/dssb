@@ -144,9 +144,7 @@ The dataframe here is also persisted as such. This is in contrast to a data anal
 
 Out-of-scope are the topics 'before' and 'after' the dataframe of a typical life cycle in data science.
 This focus on dataframe excludes fundamental programming skills in any of the languages, and the many little helpers commonly used, e.g. Numpy.
-It also excludes models. Apparently, most approaches in data science focus on the model, from regression to deep learning in AI. Models are fine, but if they appear here then only as tools to describe or describe the dataframe.
-
-
+Many approaches in data science focus on models, from regression to deep learning in AI. Models are fine, but this site focuses on dataframes. Nevertheless, something about dataframes can also be demonstrated when applying [models](models).
 
 The choice of programming language does matter.  
 Certainly, there is a mutual understanding in the programming community about 'what is a dataframe and what is not'.
