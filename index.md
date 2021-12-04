@@ -99,13 +99,10 @@ Get an overview on the content, deep dive into coding, find some more details:
 - [Transpose Julia dataframes](julia_transpose)
 
 
-## Comment on "Transpose a dataframe in Julia or Python"
+
+### Transpose function in Julia?
 
 Many developers apparently have experienced a surprise when facing the task to transpose a dataframe in Julia. 
-Find my best current solution here [Transpose a dataframe in Julia](julia_transpose)
-
-### A case for a transpose function in Julia
-
 Migrating from Python to Julia, you might expect something like df_Transposed = transpose(df), which however does not exist.
 In Python, the solution to this problem is as easy as to apply the Pandas transformation T to a dataframe df
 
