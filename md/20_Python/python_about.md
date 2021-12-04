@@ -1,12 +1,12 @@
 ---
 layout: 20_python
 title: Python About
-permalink: /python_about
+permalink: /python_annotations
 ---
 
-# Python About
+# Annotations On Python Listing
 
-Some explanations and deeper thoughts on my Python listing.
+Some deeper thoughts on the Python listing.
 
 ## Strings
 
@@ -47,6 +47,8 @@ When looping and not needing the key, you can replace the variable with an under
 
 ## Comprehensions
 
+Comprehensions can be used to compose column headers for new dataframes more efficiently.
+
 Extracting elements by a specific condition from an array can be tricky, but it's often doable.
 For instance, put every city to upper case that contains in its name either the letter r or l:
 
@@ -54,4 +56,4 @@ For instance, put every city to upper case that contains in its name either the 
     cities_r = [city.upper() if "r" in city or "l" in city else city.capitalize() for city in myCities]
 
 
-
+## Files

@@ -4,6 +4,13 @@ title: Python References
 permalink: /python_references
 
 ---
+  
+## Python
+
+Stackoverflow has emerged as THE reference for Python and Pandas. This might not be noteworthy, if true for Julia dataframes. Julia dataframes can be found on stackoverflow, but rather rarely. The dataframe tag in stackoverflow is about hundred thousand questions, with predominantly Pandas dataframes being asked for.
+
+You can find on Github complete solutions as Jupyter Lab.
+Further deep and brilliantly worked out solutions to concrete problems in Pandas can be found on Kaggle.
 
 
 ## Pandas
@@ -32,16 +39,15 @@ The coding used here is available as Jupyter lab:
 [Create_DF.ipynb](https://github.com/MaSe69/dataframes/blob/master/dfPython/PY_11_Create_DF.ipynb)
 
 
-  
-## Python Community and Resources
 
-Stackoverflow has emerged as THE reference for Python and Pandas. This might not be noteworthy, if true for Julia dataframes. Julia dataframes can be found on stackoverflow, but rather rarely. The dataframe tag in stackoverflow is about hundred thousand questions, with predominantly Pandas dataframes being asked for.
-
-You can find on Github complete solutions as Jupyter Lab.
-Further deep and brilliantly worked out solutions to concrete problems in Pandas can be found on Kaggle.
+## Altair
 
 
-## Visualization - Python
+
+
+## Models
+
+
 
 ### Seaborn 
 
