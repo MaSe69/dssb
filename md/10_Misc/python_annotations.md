@@ -21,7 +21,7 @@ For efficiency with conversion to Julia, here only double quotation marks are us
     print("Hello, ", language)
 
 
-## Strings
+## Primitives
 
 Let's start the Python journey with a console output like
 
@@ -48,12 +48,11 @@ In Python, "String concatenation can simply be done with a plus ( + ) sign.
     print(stringConcat)
 
 
-## Float and Integer
-
-Mind that 
+On Float and Integer, mind that 
 
 >
     int(myFloat)
+
 truncates the float, i.e. 123456,89 becomes 123456. Hence, in the context here, round it first.
 
 Implicit type definition by representative + Type conversion
@@ -68,7 +67,7 @@ Implicit type definition by representative + Type conversion
     print(type(language), type(n), type(y), type(myInt))
 
 
-## Arrays
+## Array
 
 There are two ways to reverse the order of the array elements. The [::-1]-notation is convenient to use in Pandas.
 
@@ -77,9 +76,12 @@ For instance, between the second and forth of my specified cities, keep every se
 >
     SomeCities = myCities[1:4:2]
 
+## Dictionary
+
 When looping and not needing the key, you can replace the variable with an underscore "_".
 >
     for _ , value in myDict.items():
+    
 
 ### Loops
 

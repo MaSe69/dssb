@@ -12,11 +12,11 @@ Stories can make you to want to be involved.
 Cheat sheets increase your efficiency when being involved.
 
 Stories:
-- [Dataframes for Entrepreneurs](df_entrepreneurs) - How to model essential business KPIs using dataframes?
+- [Dataframes for Entrepreneurs](entrepreneurs) - How to model essential business KPIs using dataframes?
 - [Dataframes for Knowledge]() - How to store content knowledge in dataframes?
 
 Python
-- [Python - outside dataframes]() - How to complete tasks that cannot be addressed by dataframes?
+- [Python - outside dataframes](python_overview) - How to complete tasks that cannot be addressed by dataframes?
 - [Pandas - Working on Python Dataframes]() - How to create, change, etc. Python dataframes?
 - [Altair for Dataframes]() - How to plot dataframes in an up-to-date way?
 - [Models with Dataframes](models) - How to enhance knowledge about the content of a dataframe? 
@@ -28,10 +28,12 @@ Julia
 - [References on Julia Dataframes](julia_references) - Which other sources should be used for Julia as well?
 
 
-Finally, 
-- [Thoughts on 'beauty of dataframes']()
+Great dataframes are not just technical means, but also fulfill criteria of beauty, see [Beautiful Dataframes](beautiful_dataframes)
+
 
 ## Python
+
+All coding here is taken from own working code. Copy&Paste errors may occur.
 
 ### Python Outside Dataframes
 
@@ -50,9 +52,9 @@ Get an overview on the content, deep dive into coding, find some more details:
 ### Python Dataframes - Pandas
 
 Examples:
-- Dataframes: Slice, Transpose, Concatenate, Merge, ...
-- Columns: Add, Delete, Rename, Re-order, ...
-- Rows: Add, Filter, Sort, ...
+- Dataframes: Slice, Subset, Transpose, Concatenate, Merge, ...
+- Columns: Create new column, Delete columns, Rename, Re-order, ...
+- Rows: Add, Filter, Select, Sort, ...
 
 Get an overview on the content, deep dive into coding, find some more details:
 
@@ -84,9 +86,9 @@ Here is a listing of my usage of Altair to visualize dataframes, including savin
 ## Julia Dataframes 
 
 Examples:
-- Dataframes: Slice, Transpose, Concatenate, Merge, ...
-- Columns: Add, Delete, Rename, Re-order, ...
-- Rows: Add, Filter, Sort, ...
+- Dataframes: Slice, Subset, Transpose, Concatenate, Merge, ...
+- Columns: Create new column, Delete columns, Rename, Re-order, ...
+- Rows: Add, Filter, Select, Sort, ...
 
 Get an overview on the content, deep dive into coding, find some more details:
 
