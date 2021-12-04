@@ -10,7 +10,7 @@ Dataframes are popular, because they can store all kinds of tabular data.<br>
 
 Stories can make you to want to be involved, listings of knowledge (as above) empower you to get involved.
 Stories:
-- [Dataframes for Entrepreneurs]() - How to model essential business KPIs using dataframes?
+- [Dataframes for Entrepreneurs](df_entrepreneurs) - How to model essential business KPIs using dataframes?
 - [Dataframes for Knowledge]() - How to store content knowledge in dataframes?
 
 Python
@@ -38,9 +38,11 @@ Some plain Python is definitely needed. Examples:
 - Working with comprehensions
 - Working with Files
 
-- [Overview on Pre-Dataframe Python Usage](python_overview).
-- [A listing of helpful Python info](python_listing).
-- [Annotations to this Python info](python_annotations).
+Get an overview on the content, deep dive into coding, find some more details:
+
+- [Overview on Pre-Dataframe Python Usage](python_overview)
+- [A listing of helpful Python info](python_listing)
+- [Annotations to this Python info](python_annotations)
 
 
 ### Python Dataframes - Pandas
@@ -49,6 +51,8 @@ Examples:
 - Dataframes: Slice, Transpose, Concatenate, Merge, ...
 - Columns: Add, Delete, Rename, Re-order, ...
 - Rows: Add, Filter, Sort, ...
+
+Get an overview on the content, deep dive into coding, find some more details:
 
 - [Overview on Pandas Usage](python_listing).
 - [Pandas Listing](pandas_listing).
@@ -61,6 +65,8 @@ Examples:
 - Charts: Types (Scatter, Line, Area, ...), Size, Titles, ...
 - Axis: Labels, Ticks, Scaling
 - Complex info: Color, Shape, Trellis, ... 
+
+Get an overview on the content, deep dive into coding, find some more details:
 
 - [Overview on Altair Usage](python_listing).
 - [Altair Listing](altair_listing).
@@ -80,20 +86,27 @@ Examples:
 - Columns: Add, Delete, Rename, Re-order, ...
 - Rows: Add, Filter, Sort, ...
 
+Get an overview on the content, deep dive into coding, find some more details:
+
 - [Overview on Julia Dataframe Usage](python_listing).
 - [Julia Dataframe Listing](pandas_listing).
 - [A Julia Overview For Pre-Pandas Usage](python_listing).
 
 
-# Top 3 Pages 2021
+# Top Pages 2021
 
-- [Transpose Julia dataframes](julia_transpose))
-- [Julia dataframes](julia_)
 - [Pandas Columns](pandas_columns)
+- [Transpose Julia dataframes](julia_transpose)
 
 
-## Special topic: Transpose a dataframe in Julia or Python
+## Comment on "Transpose a dataframe in Julia or Python"
 
+Many developers apparently have experienced a surprise when facing the task to transpose a dataframe in Julia. 
+Find my best current solution here [Transpose a dataframe in Julia](julia_transpose)
+
+### A case for a transpose function in Julia
+
+Migrating from Python to Julia, you might expect something like df_Transposed = transpose(df), which however does not exist.
 In Python, the solution to this problem is as easy as to apply the Pandas transformation T to a dataframe df
 
 >
@@ -101,15 +114,4 @@ In Python, the solution to this problem is as easy as to apply the Pandas transf
 
 Find some more details on [Transpose a dataframe in Python](pandas_transpose)
 
-In Julia, however, there is no equivalent like df_Transposed = transpose(df).
-In the discussion, severe problems were pointed out. The usual workaround is to extract a matrix and to rebuild the dataframe, as I pointed out here: [Transpose a dataframe in Julia](julia_df_ops#transpose).
-For many cases, these hints might be sufficient to struggle on and to end up with a transposed dataframe.
-
-For a language developer, the problem to transpose a matrix might be remote. Possibly, when you 'own' the data, you can create the dataframe in the way you need it.
-When you have to combine information from many dataframes from other sources, however, chances are that you need to transpose at least one of them.
-
-### Transpose a dataframe in Julia
-
-Find here, how to
-[Transpose a dataframe in Julia](julia_transpose)
-
+In the discussion, severe problems were pointed out. For a language developer, the problem to transpose a matrix might be remote. Possibly, when you 'own' the data, you can create the dataframe in the way you need it. When you have to combine information from many dataframes from other sources, however, chances are that you need to transpose at least one of them.

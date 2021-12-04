@@ -19,4 +19,5 @@ These are just some hopefully useful hints when using Python with Pandas.
 | Dictionary | loop over array| for key, value in myDict.items(): |
 | Comprehension | get list elements for a condition| [city for city in myCities if "r" in city] |
 
-This table was generated using a dataframe. Find here explanations [about Python](python_about).
+This table was generated using a dataframe. 
+For details, see [Python Listing Annotations](python_annotations).
