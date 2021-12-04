@@ -1,7 +1,7 @@
 ---
 layout: 20_python
 title: Python Listing
-permalink: /python_listing
+permalink: /python_overview
 ---
 
 # Python Overview
