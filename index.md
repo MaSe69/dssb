@@ -8,7 +8,9 @@ Dataframes are the focus this webpage.<br>
 Dataframes are a corner stone of data science.<br>
 Dataframes are popular, because they can store all kinds of tabular data.<br>
 
-Stories can make you to want to be involved, listings of knowledge (as above) empower you to get involved.
+Stories can make you to want to be involved. 
+Cheat sheets increase your efficiency when being involved.
+
 Stories:
 - [Dataframes for Entrepreneurs](df_entrepreneurs) - How to model essential business KPIs using dataframes?
 - [Dataframes for Knowledge]() - How to store content knowledge in dataframes?
@@ -21,7 +23,7 @@ Python
 - [References on Python Dataframes](python_references) - Which other sources should be used as well?
 
 Julia
-- [Julia Dataframes](julia) - How to accomplish the same changes to dataframes in Julia?
+- [Julia Dataframes](julia_df) - How to accomplish the same changes to dataframes in Julia?
 - [A comparison of Pandas to Julia Dataframes]() - Where are similarities and where are differences?
 - [References on Julia Dataframes](julia_references) - Which other sources should be used for Julia as well?
 
@@ -93,11 +95,15 @@ Get an overview on the content, deep dive into coding, find some more details:
 - [A Julia Overview For Pre-Pandas Usage](python_listing).
 
 
-# Top Pages 2021
+# Top Pages
 
+So far in 2021:
+
+- [Pandas Dataframes](pandas)
 - [Pandas Columns](pandas_columns)
 - [Transpose Julia dataframes](julia_transpose)
-
+- [Julia Columns](julia_columns)
+- [Julia Dataframes](julia_df)
 
 
 ### Transpose function in Julia?

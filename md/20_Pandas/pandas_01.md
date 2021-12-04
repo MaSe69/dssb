@@ -1,13 +1,11 @@
 ---
 layout: 20_python
 title: Python (Pandas)
-permalink: /python
+permalink: /pandas
 ---
 
 # Part 1: From Zero to Pandas Dataframes
 
-
-For more see on this site [Python (Pandas) References](python_references)
 
 ## [Getting Started](python_gettingStarted)
 

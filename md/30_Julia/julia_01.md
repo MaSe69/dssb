@@ -1,7 +1,7 @@
 ---
 layout: 30_julia
 title: Julia DataFrames
-permalink: /julia
+permalink: /julia_df
 ---
 
 

@@ -45,9 +45,8 @@ In addition, you find on this site for free:
 <br>
 Please find the details on this site here
 
-- [Dataframes in Python-Pandas](python)
-- [Dataframes in Julia](julia)
-
+- [Dataframes in Python-Pandas](pandas)
+- [Dataframes in Julia](julia_df)
 
 
 ---
