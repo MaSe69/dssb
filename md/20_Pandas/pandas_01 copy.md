@@ -1,16 +1,11 @@
 ---
 layout: 20_python
 title: Python (Pandas)
-permalink: /pandas
+permalink: /pandas_overview
 ---
 
 # Part 1: From Zero to Pandas Dataframes
 
-
-## [Getting Started](python_gettingStarted)
-
-- Before starting with dataframes
-- Comparison Python to Julia
 
 ## [Create dataframes](pandas_create)
 

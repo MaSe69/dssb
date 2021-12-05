@@ -1,18 +1,19 @@
 ---
 layout: 20_python
 title: Pandas Listing
-permalink: /pandas_listing
+permalink: /pandas_create_listing
 ---
 
-## Pandas Listing
+## Pandas Listing on "Create"
 
-Here are just some hopefully useful hints working with the complete dataframe.
+These are just some hopefully useful hints when working with Pandas dataframes.
 
-|  How to |  Coding Hint | Link to Details | 
+|  Object |  Action |  Operate | Details | 
 | :---            |    :--------   |  :--- |  :--- |  
-| create a dataframe | df=pd.Dataframe(columns)| <myCodingCell>create a dataframe</myCodingCell> |[Dataframe](pandas_create)| 
-| make a real copy | df2=df.copy()| <myCodingCell>make a real copy</myCodingCell> |[Dataframe](pandas_slice_merge#copy)| 
-| reduce the columns | df2=df[[col1, col3,...]]| <myCodingCell>reduce the columns</myCodingCell> |[Dataframe](pandas_slice_merge#slice)| 
-| merge two dataframes | df=pd.merge(df1, df2, ...)| <myCodingCell>merge two dataframes</myCodingCell> |[Dataframe](pandas_slice_merge#merge)| 
+| Dataframe | Create| Create a dataframe from an array|[Create a dataframe from an array](pandas_create_annotations#create a dataframe from an array)| 
+| Dataframe | Create| Create a dataframe from a dictionary|[Create a dataframe from a dictionary](pandas_create_annotations#create a dataframe from a dictionary)| 
+| Dataframe | Download| Download a dataframe from the internet|[Download a dataframe from the internet](pandas_create_annotations#download a dataframe from the internet)| 
+| Dataframe | Merge| Merge dataframes|[Merge dataframes](pandas_create_annotations#merge dataframes)| 
 
-This table was generated using a dataframe. Find here explanations [about Pandas](pandas_about).
+This page was automatically generated using a dataframe.  
+Find all details in the [Annotation on Pandas Create](pandas_create_annotations).

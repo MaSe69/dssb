@@ -17,7 +17,7 @@ Stories:
 
 Python
 - [Python - outside dataframes](python_overview) - How to complete tasks that cannot be addressed by dataframes?
-- [Pandas - Working on Python Dataframes]() - How to create, change, etc. Python dataframes?
+- [Using Python Dataframes - Pandas](pandas) - How to create, change, etc. Python dataframes?
 - [Altair for Dataframes]() - How to plot dataframes in an up-to-date way?
 - [Models with Dataframes](models) - How to enhance knowledge about the content of a dataframe? 
 - [References on Python Dataframes](python_references) - Which other sources should be used as well?
@@ -58,7 +58,7 @@ Examples:
 
 Get an overview on the content, deep dive into coding, find some more details:
 
-- [Overview on Pandas Usage](python_listing).
+- [Overview on Pandas Usage](pandas).
 - [Pandas Listing](pandas_listing).
 - [Pandas Listing Annotations](pandas_annotations).
 
@@ -120,3 +120,7 @@ In Python, the solution to this problem is as easy as to apply the Pandas transf
 Find some more details on [Transpose a dataframe in Python](pandas_transpose)
 
 In the discussion, severe problems were pointed out. For a language developer, the problem to transpose a matrix might be remote. Possibly, when you 'own' the data, you can create the dataframe in the way you need it. When you have to combine information from many dataframes from other sources, however, chances are that you need to transpose at least one of them.
+
+>
+    You don't need to know all solutions. Just one that works for you.
+    

@@ -29,13 +29,18 @@ We start here by creating an array with investment increments. It shall start wi
         invest = i * incr 
         investArr.append(invest)
 
+For more technical details, see [Python_Listing](python_listing)
+
 ## Dataframe
 
-Next, we create a dataframe using this array.
+Next, we create a dataframe using this array and "Investment" as the column name.
 
 >
-    df = pd.DataFrame(columns=["Investment"])
-    df.Investment = investArr
+    df = pd.DataFrame(columns=["Investment"], data=investArr)
+
+For more technical details, see [Pandas_Listing](pandas_listing)
+
+
 
 
 
