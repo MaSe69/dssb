@@ -21,7 +21,7 @@ For using Pandas in a program, import Pandas typically at the top.
 It is convention to use the variable pd for Pandas.
 
 
-## Start from an Empty Dataframe
+## Create a dataframe from an array
 
 It seems to be natural to start with an empty dataframe and then fill it as data becomes available. 
 
@@ -54,7 +54,7 @@ But do not loop over dataframes! As it is correctly pointed out in a highly vote
 https://stackoverflow.com/questions/13784192/creating-an-empty-pandas-dataframe-then-filling-it), though you can create and fill dataframes by looping over data, particularly for performance reasons, you should not do so. Get your data first into an efficient structure, e.g. lists, then create the (final) dataframe.
 
 
-## A Simple Dataframe
+### Example 2: A Simple Accounting
 
 Getting started, we create a table with accounts and months. All values shall be 0.
 Let's put the months as columns and accounts as rows.
@@ -90,7 +90,7 @@ Dataframes can be created in an elegant way from a dict.
 In practice, however, this is found to be rarely needed. 
 
 
-## An Example to Compare Dataframes in Python and in Julia
+### An Example to Compare Dataframes in Python and in Julia
 
 Task: Put these arrays as columns to a dataframe with the capitalized array name as column name. 
 
@@ -131,3 +131,23 @@ Stay tuned for the introduction on transpose dataframes and renaming columns.
 See here for
 - [How to create dataframes in Julia](julia_create)
 - [Python vs. Julia comparison for dataframes](python_julia_comparison)
+
+
+## Create a dataframe from a dictionary
+
+Often, you have an array of dictionary that you want to convert into a dataframe.
+
+>
+    myDict = [
+        {"Email": "Joe@abc.com", "Title": "Mr.", "Firstname": "Joe"},
+        {"Email": "Sarah@abc.com", "Title": "Mrs.", "Firstname": "Sarah"},
+    ]
+
+
+You can create this dataframe as simple as that:
+
+>
+    df = pd.DataFrame(myDict)
+
+Done.
+

@@ -80,13 +80,17 @@ strong {
 }
 
 
-a, a:visited  {
+a {
   color: var(--blue70);
+  text-decoration: underline;
+}
+a:visited  {
   color: var(--blue50);
   text-decoration: underline;
 }
 a:hover, a:active {
   color: var(--green70);
+  color: var(--green50);
   text-decoration: underline;
 }
 
@@ -122,8 +126,8 @@ table {
 
 /*  Table Header */
 th {
-  height: 76px;
-  border: 2px solid var(--blue10); 
+  height: 36px;
+  border: 2px solid var(--blue90); 
   padding:10px;
   background-color: var(--blue50);
   text-align: center;

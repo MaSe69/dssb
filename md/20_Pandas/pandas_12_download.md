@@ -4,7 +4,10 @@ title: Pandas - Downloads
 permalink: /pandas_download
 
 ---
-# Python - Download Dataframes from the Internet
+
+# Download
+
+## Download a dataframe from a URL
 
 ### Requested libraries
 
@@ -32,7 +35,7 @@ Then, we read the data into a dataframe - and check its first rows.
     df = pd.read_csv(io.StringIO(data))
     df.head(5)    
 
-This example is actually from a great Julia tutorial.
+This example is actually from a great Julia tutorial, see [Julia References](julia_references).
 
 ### Example: CO2 Concentration
 
@@ -44,3 +47,18 @@ Data from Vega can also be downloaded with Python, of course:
     req = requests.get(url2).content
     data = req.decode('utf8')
     df = pd.read_csv(io.StringIO(data))
+
+
+## Download a dataframe from vega data sets
+
+You need first to install the respective library.
+
+>
+    pip3 install vega_datasets
+
+
+The dataframe can be downloaded very easily.
+
+>
+    from vega_datasets import data
+    df = data.cars()

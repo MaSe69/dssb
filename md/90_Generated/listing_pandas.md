@@ -10,10 +10,18 @@ These are just some hopefully useful hints when working with Pandas dataframes.
 
 |  Item |  Category |  Task |
 | :---            |    :--------   |  :--- |  :--- |  
-| Dataframe | Create| [Create a dataframe from an array](pandas_df_ops#create-a-dataframe-from-an-array)| 
-| Dataframe | Create| [Create a dataframe from a dictionary](pandas_df_ops#create-a-dataframe-from-a-dictionary)| 
-| Dataframe | Download| [Download a dataframe from a URL](pandas_df_ops#download-a-dataframe-from-a-url)| 
-| Dataframe | Download| [Download a dataframe from vega data sets](pandas_df_ops#download-a-dataframe-from-vega-data-sets)| 
+| Dataframe | Create| [Create a dataframe from an array](pandas_create#create-a-dataframe-from-an-array)| 
+| Dataframe | Create| [Create a dataframe from a dictionary](pandas_create#create-a-dataframe-from-a-dictionary)| 
+| Dataframe | Download| [Download a dataframe from a URL](pandas_download#download-a-dataframe-from-a-url)| 
+| Dataframe | Download| [Download a dataframe from vega data sets](pandas_download#download-a-dataframe-from-vega-data-sets)| 
+| Dataframe | Read| [Read a dataframe from a csv file](pandas_create#read-a-dataframe-from-a-csv-file)| 
+| Dataframe | Read| [Read a dataframe from an Excel file](pandas_create#read-a-dataframe-from-an-excel-file)| 
+| Dataframe | Read| [Read with conditoins on columns](pandas_create#read-with-conditoins-on-columns)| 
+| Dataframe | Read| [Read with conditions on rows](pandas_create#read-with-conditions-on-rows)| 
+| Dataframe | Read| [Read using a converter](pandas_create#read-using-a-converter)| 
+| Dataframe | Read| [Read time series](pandas_create#read-time-series)| 
+| Dataframe | Save| [Save a dataframe to a file in csv format](pandas_save#save-a-dataframe-to-a-file-in-csv-format)| 
+| Dataframe | Save| [Save a dataframe to a file in Excel format](pandas_save#save-a-dataframe-to-a-file-in-excel-format)| 
 
 This table was generated using a dataframe. 
 

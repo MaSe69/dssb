@@ -39,7 +39,7 @@ Let's say, we only want to have two dedicated columns and the first three rows f
 
 ## Tricky raw data
 
-In practice, raw data seldomly comes in the format of our choice.
+In practice, raw data seldomly comes in the format of your choice.
 
 The delimiter might not be a comma. A comma might be expected to be the default in a comma separated values, but in European notation, decimals are written with a comma, leading to a mess on in a comma separated format.
 Further, there might be more 'leading' columns, e.g. having some well-intentioned text.

@@ -19,6 +19,9 @@ Once you have one or several dataframes, you might want to
 
 Finally, you probably want to save dataframes locally.
 
+:construction: Sorry, not all content online. Working on it ... 
+
+
 For the details, see [Listing on Create Pandas Dataframes](listing_pandas)
 
 

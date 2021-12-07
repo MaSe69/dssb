@@ -61,11 +61,8 @@ Get an overview on the content, deep dive into coding, find some more details:
 - [Overview on Pandas Usage](pandas).
 
 For getting started, particularly to create dataframes:
-- [Listing Pandas Create](pandas_listing).
-- [Pandas Listing Annotations](pandas_annotations).
-
-For working on Pandas dataframes:
-- [Listing Pandas Operate](listing_pandas_operate).
+- [Listing - Create Pandas Dataframes](listing_pandas).
+- [Listing - Work with Pandas Dataframes](listing_pandas_operate).
 
 
 ### Dataframe Visualization - Altair
