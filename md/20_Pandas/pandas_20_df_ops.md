@@ -43,3 +43,30 @@ The function 'describe' - to be used with parenthesis - returns some statistics 
 >
     someStatistics = df.describe()
 
+## Application to all cells
+
+### Transpose dataframe
+
+In Python, there is a transpose operator 'T'. 
+
+>
+    dfT = df.T
+
+In the transposed dataframe, the element [i,j] in df is at [j,i] in the transposed dataframe dfT.<br>
+When there is an automatically created index, i.e. 0, 1, 2, ... , it will be moved to the column names. Usually, this is not wanted, so set the index first to the requested new header.
+In the cars, this would mean:
+
+> 
+    df = df.set_index("Name")
+    dfT = df.T
+
+As a result, the names of the cars, which were in the rows of the first column, are in the column names.
+
+### Fill all missing values
+
+Some dataframes contain only numerical values, except maybe for the index.
+Then, it can be efficient to set all missing values to zero.
+
+>
+    df = df.fillna(0)
+

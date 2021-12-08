@@ -24,3 +24,6 @@ Let's distinguish the following options:
 :construction: Sorry, not all content online. Working on it ... 
 
 For the details, see [Listing on Operate on Pandas Dataframes](listing_pandas_operate)
+
+
+

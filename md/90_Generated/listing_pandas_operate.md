@@ -14,12 +14,9 @@ These are just some hopefully useful hints when working with Pandas dataframes.
 | Dataframe | Meta data| [Get number of columns](pandas_df_ops#get-number-of-columns)| 
 | Dataframe | Meta data| [Get data types of columns](pandas_df_ops#get-data-types-of-columns)| 
 | Dataframe | Meta data| [Get some statistics on the dataframe content](pandas_df_ops#get-some-statistics-on-the-dataframe-content)| 
-| Dataframe | Meta data| [Get type of columns](pandas_df_ops#get-type-of-columns)| 
 | Dataframe | Application to all cells| [Transpose dataframe](pandas_df_ops#transpose-dataframe)| 
-| Dataframe | Application to all cells| [Invert (numerical) dataframe](pandas_df_ops#invert-(numerical)-dataframe)| 
-| Dataframe | Application to all cells| [Fill NaN with anything](pandas_df_ops#fill-nan-with-anything)| 
-| Dataframe | Application to all cells| [Convert type](pandas_df_ops#convert-type)| 
-| Dataframe | Application to all cells| [Round float](pandas_df_ops#round-float)| 
+| Dataframe | Application to all cells| [Fill all missing values](pandas_df_ops#fill-all-missing-values)| 
+| Dataframe | Application to all cells| [Round all](pandas_df_ops#round-all)| 
 | Dataframe | Application to all cells| [Replace String](pandas_df_ops#replace-string)| 
 | Dataframe | Application to all cells| [Add, multiply, ... with value](pandas_df_ops#add,-multiply,-...-with-value)| 
 | Dataframe | Index| [Set index](pandas_df_ops#set-index)| 
