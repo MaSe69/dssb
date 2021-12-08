@@ -7,6 +7,25 @@ permalink: /pandas_read
 
 # Read Dataframes
 
+## Read a dataframe from a csv file
+
+You need to specify the name of the full path to the file holding the data and the name of the file including the extension.
+After having installed Pandas and imported it, you can read the comma separated data using the command "read_csv".
+
+>
+    import pandas as pd
+    ...
+    fullPathName = <your path> +  "cars.csv"
+    df = pd.read_csv(fullPathName, delimiter=",")
+
+This works for simple file formats right out of the box.
+The imported dataframe can be checked, for instance, by looking at the first and last rows.
+
+>
+    print(df.head(3))
+    print(df.tail(3))
+
+
 The central command to read data frames is simply the [read](https://pandas.pydata.org/docs/reference/api/pandas.read_csv.html) function
 >
     pd.read_<file_format>
@@ -18,9 +37,17 @@ This issues can be left to 'data governance' and is outside the scope here.
 It might be considered a good idea to *not* store* the data in the same folder as the coding, but in a separate folder.
 
 >
-    filename = "../Data/cars.csv"
-    df = pd.read_csv(filename)
+    fullPathName = "../Data/cars.csv"
+    df = pd.read_csv(fullPathName)
     df.head(3)
+
+
+## Read a dataframe from an Excel file
+## Read with conditions on columns
+## Read with conditions on rows
+## Read and change values when reading
+
+
 
 
 ## Limiting the data
@@ -34,7 +61,7 @@ Let's say, we only want to have two dedicated columns and the first three rows f
 
 >
     colsIwannaUse = ["Name", "Cylinders"]
-    df = pd.read_csv(filename, usecols = colsIwannaUse, nrows = 3)
+    df = pd.read_csv(fullPathName, usecols = colsIwannaUse, nrows = 3)
 
 
 ## Tricky raw data
@@ -45,7 +72,7 @@ The delimiter might not be a comma. A comma might be expected to be the default 
 Further, there might be more 'leading' columns, e.g. having some well-intentioned text.
 
 >
-    df = pd.read_csv(filename, delimiter = "|", header=7)
+    df = pd.read_csv(fullPathName, delimiter = "|", header=7)
     df.head(3)
 
 Similarly, there is a tail functionality to cut off superfluous data at the end of a file. 
@@ -68,7 +95,7 @@ Program the functions of your choice.
 Call them with the syntax of the converter.
 
 >
-    df = pd.read_csv(filename, converters={"Cylinders": square, "Horsepower": extract})
+    df = pd.read_csv(fullPathName, converters={"Cylinders": square, "Horsepower": extract})
     df.head(3)
 
 Well a bit meaningless here, just for the sake of demonstration.
@@ -80,7 +107,7 @@ For timeseries, you can directly read the column holding the date or time into a
 A datetime can be used, for instance, to add a number of days. 
 
 > 
-    df = pd.read_csv(filename, parse_dates=["Date"])
+    df = pd.read_csv(fullPathName, parse_dates=["Date"])
     from datetime import timedelta, date
     df["DatePlus"]= df.Date + timedelta(days=180)
     df.head(10)    

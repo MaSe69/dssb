@@ -49,7 +49,7 @@ Data from Vega can also be downloaded with Python, of course:
     df = pd.read_csv(io.StringIO(data))
 
 
-## Download a dataframe from vega data sets
+## Download a dataframe from vega datasets
 
 You need first to install the respective library.
 
