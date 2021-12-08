@@ -7,6 +7,14 @@ permalink: /pandas_read
 
 # Read Dataframes
 
+The central command to read Pandas dataframes is the function "read", see the [Official Reference on read](https://pandas.pydata.org/docs/reference/api/pandas.read_csv.html) .
+
+>
+    pd.read_<file_format>
+
+Though different file formats are supported, here only csv and Excel formats are described.
+
+
 ## Read a dataframe from a csv file
 
 You need to specify the name of the full path to the file holding the data and the name of the file including the extension.
@@ -15,8 +23,8 @@ After having installed Pandas and imported it, you can read the comma separated 
 >
     import pandas as pd
     ...
-    fullPathName = <your path> +  "cars.csv"
-    df = pd.read_csv(fullPathName, delimiter=",")
+    fullPathName = <your path> + "cars.csv"
+    df = pd.read_csv(fullPathName)
 
 This works for simple file formats right out of the box.
 The imported dataframe can be checked, for instance, by looking at the first and last rows.
@@ -25,25 +33,31 @@ The imported dataframe can be checked, for instance, by looking at the first and
     print(df.head(3))
     print(df.tail(3))
 
-
-The central command to read data frames is simply the [read](https://pandas.pydata.org/docs/reference/api/pandas.read_csv.html) function
->
-    pd.read_<file_format>
-
-There are many file formats, e.g. excel, json. However, here we stick to csv. 
-
-One of the most time consuming issues in practice might be to re-find the files.
-This issues can be left to 'data governance' and is outside the scope here.
-It might be considered a good idea to *not* store* the data in the same folder as the coding, but in a separate folder.
+If the columns of your data are not delimited by a comma, but by an other sign, e.g. a semi-colon, then you need to specify this delimiter. 
 
 >
-    fullPathName = "../Data/cars.csv"
-    df = pd.read_csv(fullPathName)
-    df.head(3)
+    df = pd.read_csv(fullPathName, delimiter=";")
 
 
 ## Read a dataframe from an Excel file
+
+
+
 ## Read with conditions on columns
+
+You can restrict the columns imported to those that you really want to use.
+
+>
+    colsIwannaUse = ["Name", "Cylinders"]
+    df = pd.read_csv(fullPathName, usecols = colsIwannaUse)
+
+Alteratively, you can specify the positions of the columns. 
+
+>
+    colsIwannaUse = fullPathName = stem +  "/ZZ_Data/co2.csv"[0, 2, 6]
+    df = pd.read_csv(fullPathName, usecols = colsIwannaUse)
+
+
 ## Read with conditions on rows
 ## Read and change values when reading
 
