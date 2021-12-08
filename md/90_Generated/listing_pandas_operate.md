@@ -12,7 +12,8 @@ These are just some hopefully useful hints when working with Pandas dataframes.
 | :---            |    :--------   |  :--- |  :--- |  
 | Dataframe | Meta data| [Get number of rows](pandas_df_ops#get-number-of-rows)| 
 | Dataframe | Meta data| [Get number of columns](pandas_df_ops#get-number-of-columns)| 
-| Dataframe | Meta data| [Get statistics on the dataframe](pandas_df_ops#get-statistics-on-the-dataframe)| 
+| Dataframe | Meta data| [Get data types of columns](pandas_df_ops#get-data-types-of-columns)| 
+| Dataframe | Meta data| [Get some statistics on the dataframe content](pandas_df_ops#get-some-statistics-on-the-dataframe-content)| 
 | Dataframe | Meta data| [Get type of columns](pandas_df_ops#get-type-of-columns)| 
 | Dataframe | Application to all cells| [Transpose dataframe](pandas_df_ops#transpose-dataframe)| 
 | Dataframe | Application to all cells| [Invert (numerical) dataframe](pandas_df_ops#invert-(numerical)-dataframe)| 
@@ -74,4 +75,4 @@ These are just some hopefully useful hints when working with Pandas dataframes.
 
 This table was generated using a dataframe. 
 
-Find more details in the [Annotation on Pandas Operate](pandas_operate_annotations).
+This table was generated using a dataframe. You find much more info on the pages linked to above.

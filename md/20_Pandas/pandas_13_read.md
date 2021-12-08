@@ -41,6 +41,19 @@ If the columns of your data are not delimited by a comma, but by an other sign, 
 
 ## Read a dataframe from an Excel file
 
+For working with Microsoft Excel, you need to install a library  called 'xlrd'.
+>
+    pip3 install xlrd
+
+
+Reading an external table available in Excel-Format is a common use case.
+
+>
+    fullPathName = <your path> + "cars.xlsx"
+    df = pd.read_excel(fileAbsPath, index_col=0)
+
+External References:
+- ["Datatofish - Read Excel"](https://datatofish.com/read_excel/)
 
 
 ## Read with conditions on columns
@@ -59,45 +72,29 @@ Alteratively, you can specify the positions of the columns.
 
 
 ## Read with conditions on rows
-## Read and change values when reading
 
-
-
-
-## Limiting the data
-
-The 'read_csv' command has many parameters. 
-Limiting the amount of data when reading it to local memory is a usually recommended practice in performance.
-Though there are special cases when it is better to read everything and throw away the irrelevant parts later.
-According to the concept of a beautiful dataframe, you should only have in the dataframe exactly what you want to have.
-
-Let's say, we only want to have two dedicated columns and the first three rows from the 'cars'-data.
+You can specify the row in which the column names (or the 'header') is positioned, if they are not in the uppermost row.<br>
+Further, you can limit the number of rows to be imported to the dataframe with the parameter 'nrows'. 
 
 >
-    colsIwannaUse = ["Name", "Cylinders"]
-    df = pd.read_csv(fullPathName, usecols = colsIwannaUse, nrows = 3)
+    df = pd.read_csv(fullPathName, header=17, nrows=4)
 
-
-## Tricky raw data
-
-In practice, raw data seldomly comes in the format of your choice.
-
-The delimiter might not be a comma. A comma might be expected to be the default in a comma separated values, but in European notation, decimals are written with a comma, leading to a mess on in a comma separated format.
-Further, there might be more 'leading' columns, e.g. having some well-intentioned text.
+You can skip the first n rows or the last m rows
 
 >
-    df = pd.read_csv(fullPathName, delimiter = "|", header=7)
-    df.head(3)
+    df = pd.read_csv(fullPathName, skiprows=10, skipfooter=11)
 
-Similarly, there is a tail functionality to cut off superfluous data at the end of a file. 
+Certainly, you can combine most of these parameters, though not all of these combination make sense.
 
-Check the documentation on [read](https://pandas.pydata.org/docs/reference/api/pandas.read_csv.html) for other helpful parameters for your data.
 
-## Converter
+## Read and change values while reading
 
-If no parameter available, you can still write your own converter. 
-Program the functions of your choice. 
+For the cars dataset, you might want the number of cylinders to be an integer. 
 
+>
+    df = pd.read_csv(fullPathName, converters={"Cylinders": int()})
+
+You can define so-called converters, i.e. functions that you include to the read function.
 
 >
     def square(x):
@@ -112,39 +109,4 @@ Call them with the syntax of the converter.
     df = pd.read_csv(fullPathName, converters={"Cylinders": square, "Horsepower": extract})
     df.head(3)
 
-Well a bit meaningless here, just for the sake of demonstration.
-
-
-## Timeseries
-
-For timeseries, you can directly read the column holding the date or time into a datetime type.
-A datetime can be used, for instance, to add a number of days. 
-
-> 
-    df = pd.read_csv(fullPathName, parse_dates=["Date"])
-    from datetime import timedelta, date
-    df["DatePlus"]= df.Date + timedelta(days=180)
-    df.head(10)    
-
-
-##  Read from an Excel
-
-For working with Microsoft Excel, you need to install a library 
->
-    pip3 install xlrd
-
-
-Reading an external table available in Excel-Format is a common use case.
-
->
-    df = pd.read_excel(fileAbsPath, index_col=0)
-
-## Save to an Excel
-
-Working with the Excel-Format is pretty much the same as working with csv-files.
-
-A few particularities:
-
-- you do not need to specify a deliminator or separator
-- you can specify the Sheet in Excel.
-
+Well, a bit meaningless here, just for the sake of demonstration.

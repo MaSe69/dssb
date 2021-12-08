@@ -7,20 +7,9 @@ permalink: /pandas
 ## Getting to Pandas Dataframes
 
 First of all, you need dataframes.
-
-Options include:
 - Create a dataframe yourself
-- Create a dataframe from a file
-- Download data from the internet to a dataframe
-
-Once you have one or several dataframes, you might want to
-- work only on a subset of the original dataframe
-- merge different dataframe to a new one
-
-Finally, you probably want to save dataframes locally.
-
-:construction: Sorry, not all content online. Working on it ... 
-
+- Read it from a file or download it from the internet
+- Finally, you probably want to save dataframes locally.
 
 For the details, see [Listing on Create Pandas Dataframes](listing_pandas)
 
@@ -31,5 +20,7 @@ Let's distinguish the following options:
 - Working on the complete dataframe
 - Working on columns
 - Working on rows
+
+:construction: Sorry, not all content online. Working on it ... 
 
 For the details, see [Listing on Operate on Pandas Dataframes](listing_pandas_operate)

@@ -18,7 +18,7 @@ These are just some hopefully useful hints when working with Pandas dataframes.
 | Dataframe | Read| [Read a dataframe from an Excel file](pandas_read#read-a-dataframe-from-an-excel-file)| 
 | Dataframe | Read| [Read with conditions on columns](pandas_read#read-with-conditions-on-columns)| 
 | Dataframe | Read| [Read with conditions on rows](pandas_read#read-with-conditions-on-rows)| 
-| Dataframe | Read| [Read and change values when reading](pandas_read#read-and-change-values-when-reading)| 
+| Dataframe | Read| [Read and change values while reading](pandas_read#read-and-change-values-while-reading)| 
 | Dataframe | Save| [Save a dataframe to a file in csv format](pandas_save#save-a-dataframe-to-a-file-in-csv-format)| 
 | Dataframe | Save| [Save a dataframe to a file in Excel format](pandas_save#save-a-dataframe-to-a-file-in-excel-format)| 
 
