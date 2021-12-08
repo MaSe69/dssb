@@ -14,21 +14,20 @@ These are just some hopefully useful hints when working with Pandas dataframes.
 | Dataframe | Meta data| [Get number of columns](pandas_df_ops#get-number-of-columns)| 
 | Dataframe | Meta data| [Get data types of columns](pandas_df_ops#get-data-types-of-columns)| 
 | Dataframe | Meta data| [Get some statistics on the dataframe content](pandas_df_ops#get-some-statistics-on-the-dataframe-content)| 
+| Dataframe | Index| [Set index](pandas_df_ops#set-index)| 
 | Dataframe | Application to all cells| [Transpose dataframe](pandas_df_ops#transpose-dataframe)| 
 | Dataframe | Application to all cells| [Fill all missing values](pandas_df_ops#fill-all-missing-values)| 
-| Dataframe | Application to all cells| [Round all](pandas_df_ops#round-all)| 
-| Dataframe | Application to all cells| [Replace String](pandas_df_ops#replace-string)| 
-| Dataframe | Application to all cells| [Add, multiply, ... with value](pandas_df_ops#add,-multiply,-...-with-value)| 
-| Dataframe | Index| [Set index](pandas_df_ops#set-index)| 
-| Dataframe | Index| [Reset index](pandas_df_ops#reset-index)| 
+| Dataframe | Application to all cells| [Round all floats](pandas_df_ops#round-all-floats)| 
+| Dataframe | Application to all cells| [Multiply with a value](pandas_df_ops#multiply-with-a-value)| 
+| Dataframe | Application to all cells| [Convert from long to wide format](pandas_df_ops#convert-from-long-to-wide-format)| 
+| Dataframe | Application to all cells| [Convert from wide to long format](pandas_df_ops#convert-from-wide-to-long-format)| 
+| Dataframe | More dataframes| [Vertically concatenate dataframes](pandas_df_ops#vertically-concatenate-dataframes)| 
+| Dataframe | More dataframes| [Horizontally concatenate dataframes](pandas_df_ops#horizontally-concatenate-dataframes)| 
+| Dataframe | More dataframes| [Merge dataframes](pandas_df_ops#merge-dataframes)| 
+| Dataframe | More dataframes| [Add another dataframe](pandas_df_ops#add-another-dataframe)| 
 | Dataframe | Group| [Group and sum](pandas_df_ops#group-and-sum)| 
 | Dataframe | Group| [Group mean](pandas_df_ops#group-mean)| 
 | Dataframe | Group| [Group and other functions](pandas_df_ops#group-and-other-functions)| 
-| Dataframe | Convert| [Convert from long to wide format](pandas_df_ops#convert-from-long-to-wide-format)| 
-| Dataframe | Convert| [Convert from wide to long format](pandas_df_ops#convert-from-wide-to-long-format)| 
-| Dataframe | More dataframes| [Concatenate dataframes](pandas_df_ops#concatenate-dataframes)| 
-| Dataframe | More dataframes| [Merge dataframes](pandas_df_ops#merge-dataframes)| 
-| Dataframe | More dataframes| [Add, subtract dataframes](pandas_df_ops#add,-subtract-dataframes)| 
 | Columns | Create| [Append new column to the end](pandas_df_ops#append-new-column-to-the-end)| 
 | Columns | Create| [Insert new column at a specified position](pandas_df_ops#insert-new-column-at-a-specified-position)| 
 | Columns | Create| [Create a new column B based on values in column A](pandas_df_ops#create-a-new-column-b-based-on-values-in-column-a)| 
@@ -43,6 +42,7 @@ These are just some hopefully useful hints when working with Pandas dataframes.
 | Columns | Update Columns| [Add a suffix to all columns](pandas_df_ops#add-a-suffix-to-all-columns)| 
 | Columns | Update Cells| [Modify column values](pandas_df_ops#modify-column-values)| 
 | Columns | Update Cells| [Modify column values on condition](pandas_df_ops#modify-column-values-on-condition)| 
+| Columns | Update Cells| [Replace Strings](pandas_df_ops#replace-strings)| 
 | Columns | Update Cells| [Modify column B based on values in column A](pandas_df_ops#modify-column-b-based-on-values-in-column-a)| 
 | Columns | Update Cells| [Multipy selected columns with a value](pandas_df_ops#multipy-selected-columns-with-a-value)| 
 | Columns | Update Cells| [Multipy a column with another column](pandas_df_ops#multipy-a-column-with-another-column)| 
