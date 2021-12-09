@@ -5,7 +5,7 @@ permalink: /pandas_df_ops
 
 ---
 
-# Operations on the Entire Dataframe
+# Operations on the Dataframe
 
 Here are some selected operations on the entire dataframe.
 
@@ -42,6 +42,8 @@ The function 'describe' - to be used with parenthesis - returns some statistics 
 
 >
     someStatistics = df.describe()
+
+
 
 ## Application to all cells
 
@@ -112,11 +114,37 @@ Provided, all cells (outside the index) are numeric, they can simultaneously be 
     df = df * 17
     df = df / 18
 
-### Convert from long to wide format
+## From wide format to long format and vice versa
+
+As preparation, let's reduce the cars dataframe to a few columns and remove duplicates from the column 'Name'. 
+
+>
+    keepCols = ["Name", "Horsepower", "Cylinders"]
+    dfW = df[keepCols].copy()
+    dfW = dfW.drop_duplicates(subset=['Name'], keep='last')
 
 ### Convert from wide to long format
 
- 
+The long format is commonly needed in the Altair charts. For instance, for a scatter plot that shows horsepower per car, but the different number of cylinders shall be visualized as well. 
+
+You need to specify the column that holds the unique keys. Here, we take the column 'Name', after having removed duplicates. You can choose deliberately the column names for the columns holding the variables and the values.
+
+> 
+    dfL = dfW.melt(id_vars="Name", var_name="Variable", value_name="Value")
+
+
+### Convert from long to wide format
+
+The long format can be converted back to the wide format using the function 'pivot'. The index needs to be the unique key. The different values in the column 'Variable' are used to create new columns. The values are 'distributed' to these columns.
+
+>
+    dfW = dfL.pivot(index='Name', columns='Variable', values='Value')
+
+As a result, we get essentially the same dataframe as before melting it from wide to long format.
+
+
+## Concatenate or Merge Dataframes
+
 ### Vertically concatenate dataframes 
 
 As a preparation, let's spit the cars dataframe into one holding only cars from the USA and another one holding only cars from Europe.

@@ -192,6 +192,44 @@ Create a new column with values specified in a dictionary before.
 A new column with abbreviations was created.
 
 
+### Check for uniqueness
+
+
+First, you might want to check, if a column has only unique values. You can code a condition, or just print out the Boolean value
+
+>
+    print(dfU.Name.is_unique)
+
+which happens to be False in this case. Here, dfU shall be a copy of the cars dataframe.
+
+### Count non-unique values in columns
+
+Additionally, you might want to know how many of the total number of entries are unique.
+
+>
+    numberUniqueNames = dfU.Name.nunique()
+
+If you need a percentage of non-uniqueness, you get the total number of entries using
+>
+    numberNames = dfU.Name.count()
+
+Further, you might want to select those non-unique values. First, create a column that holds the Boolean value for uniqueness, then select for this Boolean value.
+
+>
+    dfU["MyDuplicates"] = dfU.Name.duplicated()
+    dfDup = dfU.loc[dfU.MyDuplicates == True]
+
+This is just one solution of possibly many.    
+
+### Keep unique values by dropping duplicates
+
+Typically, you want to remove the non-unique values to just keep one copy of the value and thus making the column unique. You do this when you drop the duplicates.
+
+>
+    dfU = dfU.drop_duplicates(subset=["Name"], keep='first')
+
+You can choose, if you want to keep the first or the last value.
+
 ## Delete
 
 Delete columns with the drop command:
