@@ -143,6 +143,23 @@ The long format can be converted back to the wide format using the function 'piv
 As a result, we get essentially the same dataframe as before melting it from wide to long format.
 
 
+
+### Split apply combine
+
+The split apply combine (SAC) pattern is essentially carried out using the group command.
+
+You might want to start with a copy of the original dataframe
+>
+    dfG = dfRaw.copy()
+
+Specify one or more column names for which you want to do the grouping
+>
+    groupFields = ["Origin", "Year"]
+    dfG = dfG.groupby(groupFields).mean()
+
+The first columns of dfG now contain the fields for which you grouped. 
+
+
 ## Concatenate or Merge Dataframes
 
 ### Vertically concatenate dataframes 

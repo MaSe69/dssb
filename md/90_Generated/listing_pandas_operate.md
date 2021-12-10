@@ -6,7 +6,9 @@ permalink: /listing_pandas_operate
 
 ## Pandas Listing on "Operate"
 
-These are just some hopefully useful hints when working with Pandas dataframes.
+This listing should include all 'building blocks' that are needed in the stories. The order follows CRUD (Create, Read, Update, Delete). 
+It is particularly designed to be used with searching (CTRL+F).
+
 
 |  Item |  Category |  Task |
 | :---            |    :--------   |  :--- |  :--- |  
@@ -21,20 +23,19 @@ These are just some hopefully useful hints when working with Pandas dataframes.
 | Dataframe | Application to all cells| [Multiply with a value](pandas_df_ops#multiply-with-a-value)| 
 | Dataframe | Application to all cells| [Convert from wide to long format](pandas_df_ops#convert-from-wide-to-long-format)| 
 | Dataframe | Application to all cells| [Convert from long to wide format](pandas_df_ops#convert-from-long-to-wide-format)| 
+| Dataframe | Application to all cells| [Split apply combine](pandas_df_ops#split-apply-combine)| 
 | Dataframe | More dataframes| [Vertically concatenate dataframes](pandas_df_ops#vertically-concatenate-dataframes)| 
 | Dataframe | More dataframes| [Horizontally concatenate dataframes](pandas_df_ops#horizontally-concatenate-dataframes)| 
 | Dataframe | More dataframes| [Merge dataframes](pandas_df_ops#merge-dataframes)| 
 | Dataframe | More dataframes| [Add another dataframe](pandas_df_ops#add-another-dataframe)| 
-| Dataframe | Group| [Group and sum](pandas_df_ops#group-and-sum)| 
-| Dataframe | Group| [Group mean](pandas_df_ops#group-mean)| 
-| Dataframe | Group| [Group and other functions](pandas_df_ops#group-and-other-functions)| 
 | Columns | Create| [Append new column to the end](pandas_columns#append-new-column-to-the-end)| 
-| Columns | Create| [Insert new column at a specified position](pandas_columns#insert-new-column-at-a-specified-position)| 
-| Columns | Create| [Create a new column B based on values in column A](pandas_columns#create-a-new-column-b-based-on-values-in-column-a)| 
+| Columns | Create| [Append a new column B based on values in column A](pandas_columns#append-a-new-column-b-based-on-values-in-column-a)| 
 | Columns | Create| [Append a column with the sum of other columns](pandas_columns#append-a-column-with-the-sum-of-other-columns)| 
-| Columns | Create| [Append a column with the cumulated sum](pandas_columns#append-a-column-with-the-cumulated-sum)| 
-| Columns | Read Columns| [Select columns by name](pandas_columns#select-columns-by-name)| 
-| Columns | Read Columns| [Select columns by position](pandas_columns#select-columns-by-position)| 
+| Columns | Create| [Insert new column at a specified position](pandas_columns#insert-new-column-at-a-specified-position)| 
+| Columns | Read Columns| [Read column names](pandas_columns#read-column-names)| 
+| Columns | Read Columns| [Select a subset of columns](pandas_columns#select-a-subset-of-columns)| 
+| Columns | Read Columns| [Keep a subset of columns](pandas_columns#keep-a-subset-of-columns)| 
+| Columns | Update Columns| [Convert the type of a column](pandas_columns#convert-the-type-of-a-column)| 
 | Columns | Update Columns| [Change the name of columns](pandas_columns#change-the-name-of-columns)| 
 | Columns | Update Columns| [Re-order column names](pandas_columns#re-order-column-names)| 
 | Columns | Update Columns| [Reverse the order of columns](pandas_columns#reverse-the-order-of-columns)| 

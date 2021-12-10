@@ -7,20 +7,90 @@ permalink: /pandas_columns
 
 # Pandas - Columns
 
-Columns
+## Create columns
 
-- [Address](#address-columns)
-- [Basic Arithmetics On Columns](#Basic-arithmetics-on-columns)
-- [Rename](#rename)
-- [Reorder](#reorder)
-- [Insert](#insert)
-- [Modify](#modify)
-- [Delete](#delete)
+### Append new column to the end
+
+A new column can be created by simply add its column name in square brackets and quotation marks after its dataframe variable. 
+
+In the cars example, Europeans might prefer the weight being measured in kilograms. A new column called "Weight_KG" holds the values of the existing column Weight_in_lbs divided by the respective conversion number.
+
+>
+    df["Weight_KG"] = df.Weight_in_lbs / 2.20462
+
+Mind:
+- A new column cannot be addressed by df.newColumn, it needs to be df["newColumn"].
+- A new column created in this way is appended at the end.
+
+#### Append a column with a numerical index
+
+Sometimes, the dataframe has no numerical index, but you need one, e.g. for a merge. Maybe, the numerical index should start with 1, e.g. for counting months.
+
+>
+    df["A_Numberical_Column"] = range(1, df.shape[0]+1)
+
+You can create a column with random integers.
+
+>
+    import numpy as np
+    df["Random_Number"] = np.random.randint(0, 100, size=df.shape[0])
 
 
-## Address Columns
+Some of the previous examples with obvious meaning.
 
-Address an existing column with its name in square brackets and quotes directly after the dataframe variable.
+>
+    df["Jul"] = df["Jun"] * 1.19
+    df["Jul"] = (df["May"] + df["Jun"]) / 2
+
+
+You can also use the name of the operations, e.g. add, subtract, multiply or divide. 
+If the two columns that you need are distributed in two dataframes, df1 and df2 say, then you still perform the operation.
+
+>
+    df1["Ratio"] = df1[["Weight_in_lbs"]].divide(df2["Acceleration"], axis=0)
+
+You do not need to merge dataframes first. 
+
+
+### Append a new column B based on values in existing column A
+
+You can create a new column and immediately set values dependent on values in another column.
+
+In the cars example, we add a column 'Region' and set it according to the value in the column 'Origin'. As a preparation, we create a dictionary that holds the mapping between the existing and the new values.
+
+>
+    newValues = {"United States": "America", "Europe": "Europe", "Japan": "Asia"}
+    for key, value in newValues.items():
+        dfS.loc[dfS["Origin"].str.contains(key, na=False), "Region"] = value
+
+
+### Append a column with the sum of other columns
+
+Provided all columns are numerical and the index is set, you can append a column holding the sum of each row. 
+
+>
+    df["Sum"] = df.sum(axis=1) 
+
+Pushing it a bit further, you can append another column holding the sum of these sums.
+>
+    df["CumSum"] = df.Sum.cumsum() 
+
+
+### Insert new column at a specified position
+
+For columns that should go to a specific position, you can directly insert a new column at a position.
+
+>
+    colPosition = 3
+    df.insert(colPosition, column='columns3', value=df.column1 * 0.7457)
+
+This is more efficient than to append at the end and then re-order the columns.
+
+
+
+## Read Columns
+
+Read an existing column with its name in square brackets and quotes directly after the dataframe variable.
 
 >
     df["myColName"]
@@ -29,58 +99,67 @@ Alternatively, an existing column with a suitable columnName can be addressed
 >
     df.myColName
 
-
-If you do not know the column names, get their names
-
->
-    columnNames = df.columns.values
-    listOfColumnNames = list(df.columns.values)
-
-
-## Basic Arithmetics On Columns
-
-Often, you cannot apply an operation on the complete dataframe, but only a set of selected rows. 
-Alternatively, you can create a new dataframe with the specified columns and merge the result back later.
-
-### Multiplying with a scalar
-
-For scalars, just use the normal symbols: 
+Specifying the column, you can perform basic operations.
 >
     df.Acceleration = df.Acceleration" / 17
-    df["Acceleration"] = df["Acceleration"] / 17
-
-Select a subset of columns and apply an operation on it. 
-
->
-    selectedColumns = ["colname1", "colname2"]
-    df[selectedColumns] = df[selectedColumns] * 100.0    
 
 
-You can also use the name of the operations, e.g. add, subtract, multiply or divide. 
+###  Read column names
+
+In a format efficient for further processing, you can get the column names.
 
 >
-    df["Ratio"] = df[["Weight_in_lbs"]].divide(df["Acceleration"], axis=0)
+    colNames = list(df.columns.values)
+
+For instance, you can print the column names and copy&paste them to your program.
 
 
-### Multiply a column with a column to get an additional column
+### Select and keep a subset of columns
 
-Particularly, multiplying two columns to yield a third one in the same dataframe.
+You can select ( or read or filter) a subset of the existing columns using an array of column names.
+For instance, you can print specified columns
 
 >
-    df2.C. = df2.A + df2.B
-    df2[C] = df2[A] * df2[B]
+    print(df[["Name", "Weight_KG", "Consumption_lper100km", "Origin"]])
 
-The result here is an additional column with column name C that is the row-wise product of columns A and B.
+### Select a subset of columns
 
-Such column-with-column-multiplications have a lot of practical use cases.
+You can select column names by position using an array of existing names.
+Alternatively, you can select column names by position using iloc
+>
+    dfS = df.iloc[:,2:7]
+    dfS = df.iloc[:,[0,1,3,6]]
+
+The figures are the positions of the columns. Certainly, you can compute them dynamically, if the position is not known at design time.
+
+### Keep a subset of columns
+
+Often people keep working on a too large dataframe, because they do not know how to reduce it. 
+You should keep the columns that you really need and copy them to a new dataframe.
+
+>
+    keepCols = ["Name", "Weight_KG", "Consumption_lper100km", "Origin"]
+    dfS = df[keepCols].copy()
+
+Mind the two brackets [["Name", "Origin"]] needed, when you put the column names directly after df.
 
 
-### Converting a type
+### Convert the type of a column
 
-Often used, round floats or convert floats to integers
+Round floats to 2 decimals.
 >
     df["Ratio"] = round(df["Ratio"],2)
+
+ Convert floats to integers
+ >
     df["Ratio"] = round(df["Ratio"],0).astype(int)  
+
+Reading dates from a file, some date formats are automatically converted to an integer. This can be fixed by this conversion.
+
+ >
+    df["Date"] = df["Date"].astype(str) 
+
+These are really often used conversions.
 
 
 ## Rename
@@ -119,36 +198,6 @@ You can reverse the sequence of the columns as follows
 
 - Mind the correct number of list elements. If you add too many items to the list for the new order, you get an error. However, adding fewer items executes without error.
 - Working with indices, e.g.  df = df[:, [2, 1]], does not work in Python (but in Julia)
-
-## Insert
-
-### Add a column at the end
-
-Specify a unique name in square brackets and quotes.
-
->
-    df["June"] = 500
-    df["July"] = random.randint(0, 100)
-
-You can use existing columns to create new ones. 
->
-    df["Jul"] = df["Jun"]
-
-More complex computations are possible.
-
->
-    df["Jul"] = df["Jun"] * 1.19
-    df["Jul"] = (df["May"] + df["Jun"]) / 2
-
-### Insert a new column at specific position
-
-For columns that should go to a specific position, you can directly insert a new column at a position.
-
->
-    colPosition = 3
-    df.insert(colPosition, column='columns3', value=df.column1 * 0.7457)
-
-This is more efficient than to append at the end and then re-order the columns.
 
 
 ## Special 
@@ -203,6 +252,7 @@ First, you might want to check, if a column has only unique values. You can code
 which happens to be False in this case. Here, dfU shall be a copy of the cars dataframe.
 
 ### Count non-unique values in columns
+
 
 Additionally, you might want to know how many of the total number of entries are unique.
 
