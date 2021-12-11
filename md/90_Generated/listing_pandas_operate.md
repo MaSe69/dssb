@@ -36,8 +36,8 @@ It is particularly designed to be used with searching (CTRL+F).
 | Columns | Read Columns| [Select a subset of columns](pandas_columns#select-a-subset-of-columns)| 
 | Columns | Read Columns| [Keep a subset of columns](pandas_columns#keep-a-subset-of-columns)| 
 | Columns | Update Columns| [Convert the type of a column](pandas_columns#convert-the-type-of-a-column)| 
-| Columns | Update Columns| [Change the name of columns](pandas_columns#change-the-name-of-columns)| 
-| Columns | Update Columns| [Re-order column names](pandas_columns#re-order-column-names)| 
+| Columns | Update Columns| [Rename columns](pandas_columns#rename-columns)| 
+| Columns | Update Columns| [Reorder existing columns](pandas_columns#reorder-existing-columns)| 
 | Columns | Update Columns| [Reverse the order of columns](pandas_columns#reverse-the-order-of-columns)| 
 | Columns | Update Columns| [Add a prefix to all columns](pandas_columns#add-a-prefix-to-all-columns)| 
 | Columns | Update Columns| [Add a suffix to all columns](pandas_columns#add-a-suffix-to-all-columns)| 

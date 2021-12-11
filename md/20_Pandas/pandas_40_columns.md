@@ -87,7 +87,6 @@ For columns that should go to a specific position, you can directly insert a new
 This is more efficient than to append at the end and then re-order the columns.
 
 
-
 ## Read Columns
 
 Read an existing column with its name in square brackets and quotes directly after the dataframe variable.
@@ -144,6 +143,42 @@ You should keep the columns that you really need and copy them to a new datafram
 Mind the two brackets [["Name", "Origin"]] needed, when you put the column names directly after df.
 
 
+### Rename columns
+
+Rename specific single columns.
+
+>
+    df = df.rename(columns={'Weight_KG':'Weight_EU', 'Sum':'Total'})
+
+
+Rename all columns, by specifying a list of unique values
+
+>
+    newColNames = ["Column_1", "Column_2", "Column_3", "Column_4"]
+    df.columns = newColNames    
+
+A dataframe is more beautiful, when all column names are in the same format, e.g. all start with a capital letter. Capitalize names (or lower, upper, etc.)
+>
+    columnNames = [x.capitalize() for x in columnNames]    
+
+
+### Reorder existing columns
+
+Use the of **existing column names** to re-order the columns, by specifying your sequence
+>
+    reorderCols = ['Name', 'Year', "Horsepower", 'Origin']
+    df = df[reorderCols]
+
+- Mind the correct number of list elements. If you add too many items to the list for the new order, you get an error. However, adding fewer items executes without error.
+- Working with indices, e.g.  df = df[:, [2, 1]], does not work in Python (but in Julia)
+
+As a special case, you can reverse the sequence of the columns.
+>
+    df = df.iloc[:, ::-1]
+
+
+## Update cells of a column
+
 ### Convert the type of a column
 
 Round floats to 2 decimals.
@@ -162,58 +197,48 @@ Reading dates from a file, some date formats are automatically converted to an i
 These are really often used conversions.
 
 
-## Rename
+### Update some numerical values
 
-Rename specific single columns, e.g. A to Alpha and B to Beta:
-
->
-    df = df.rename(columns={'A':'Alpha', 'B':'Beta'})
-
-
-Rename all columns, by specifying a list of unique values
+You update (or change) the value for a complete column by just setting a new value.
 
 >
-    newColNames = ["Column_1", "Column_2", "Column_3", "Column_4"]
-    df.columns = newColNames    
+    df["Random_Number"] = random.randint(0,100)
+    df["Name"] = "Just a car - doesn't matter which one."
 
+More commonly, you need to update the values in a column for specific rows. 
+You can do this change like in a normal matrix notation. Also, the notation with ".loc" before the row does work.
 
-A step in beautification is to convert all column names to a similar format, e.g. to start with a capital letter.
-
-Capitalize names (or lower, upper, etc.)
 >
-    columnNames = [x.capitalize() for x in columnNames]    
+    df["Random_Number"]["chevy s-10"] = 77
+    df["Random_Number"].loc["chevy s-10"] = 78
 
+The sequence is [column][row].
 
-## Reorder 
-
-Use the of **existing column names** to re-order the columns, by specifying your sequence
+You can also change values using the position of the column and the rows.
+First, you need to find out the index position(s) that you want to change.
 >
-    reorderCols = ['Column_2','Column_4','Column_3', 'Column_1']
-    df = df[reorderCols]
+    thisIndex = list(df.loc[df.Name == "chevy s-10"].index)[0]
 
-You can reverse the sequence of the columns as follows
+You can do the update using the column notation and just replace the 'loc' with the 'iloc' and the name of the row in the index with the position of the index.
+
 >
-    df = df.iloc[:, ::-1]
+    df.Random_Number.iloc[thisIndex] = 79
 
-
-- Mind the correct number of list elements. If you add too many items to the list for the new order, you get an error. However, adding fewer items executes without error.
-- Working with indices, e.g.  df = df[:, [2, 1]], does not work in Python (but in Julia)
-
-
-## Special 
-
-### Special case
-
-Append a column with the sum of all columns (that are not in the index)
+Finally, you can also replace the column with the position.
 >
-    df["Sum"] = df.sum(axis=1)  
+    df.iloc[thisIndex:thisIndex+1, 12:13] = 80
+
+Mind that in this case 
+- the notation is [rowLower:rowUpper,columnLower:columnUpper]. 
+- the upper boundary must be set appropriately.
 
 
-## Modify
+### Update some String values
 
-### Replace an existing value in a specific column
+You update (or change) the value for a complete column by just setting a new value.
 
-Name the column and replace the value in a row for a specified condition
+
+Select a column of type String and replace the value in each row for a specified condition.
 
 >
     df["Name"] = df["Name"].str.replace("myNewCar", "SportsCar")
