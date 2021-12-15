@@ -305,20 +305,43 @@ Typically, you want to remove the non-unique values to just keep one copy of the
 
 You can choose, if you want to keep the first or the last value.
 
-## Delete
+## Delete columns
+
+### Delete columns by name
 
 Delete columns with the drop command:
 
 >
-    df = df.drop(["Feb","Apr"], axis="columns")
+    dfS = dfS.drop(["Weight_EU","Consumption_EU"], axis='columns')
 
 Alternative notation,
 
 > 
-    deleteCols = ["Feb","Apr"]
+    deleteCols = ["Weight_EU","Consumption_EU"]
     df = df.drop(deleteCols, axis=1)
 
 
 Warning: If deletion reduces the Pandas dataframe to just one column, Pandas regards it as a vector. A vector can have different properties, possibly leading to error messages.
 
-Mind the alternative to continue to work on the relevant subset of columns instead of deleting the obsolete columns.
+
+### Delete columns by positions
+
+Just specify the position of the columns.
+>
+    dfS = dfS.drop(dfS.columns[2:4], axis=1)
+
+Mind Python beginning with 0 and mind the index.
+
+### Delete last column
+
+For instance, if you appended a column for the sum, but want to remove this column again before you plot the original columns.
+
+>
+    dfS = dfS.drop(dfS.columns[dfS.shape[1]-1], axis=1)
+
+Mind the alternative to deleting columns by filtering for the columns that you want to continue with.
+
+For a big number of columns, you can proceed as follows:
+- Move the columns to a list
+- Shorten that list by filtering for the columns that you want to keep, e.g. by applying a comprehension to that list.
+- Keep the columns in the short list.

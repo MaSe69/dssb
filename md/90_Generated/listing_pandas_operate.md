@@ -35,18 +35,15 @@ It is particularly designed to be used with searching (CTRL+F).
 | Columns | Read Columns| [Read column names](pandas_columns#read-column-names)| 
 | Columns | Read Columns| [Select a subset of columns](pandas_columns#select-a-subset-of-columns)| 
 | Columns | Read Columns| [Keep a subset of columns](pandas_columns#keep-a-subset-of-columns)| 
-| Columns | Update Columns| [Convert the type of a column](pandas_columns#convert-the-type-of-a-column)| 
 | Columns | Update Columns| [Rename columns](pandas_columns#rename-columns)| 
 | Columns | Update Columns| [Reorder existing columns](pandas_columns#reorder-existing-columns)| 
-| Columns | Update Columns| [Reverse the order of columns](pandas_columns#reverse-the-order-of-columns)| 
-| Columns | Update Columns| [Add a prefix to all columns](pandas_columns#add-a-prefix-to-all-columns)| 
-| Columns | Update Columns| [Add a suffix to all columns](pandas_columns#add-a-suffix-to-all-columns)| 
-| Columns | Update Cells| [Modify column values](pandas_columns#modify-column-values)| 
-| Columns | Update Cells| [Modify column values on condition](pandas_columns#modify-column-values-on-condition)| 
-| Columns | Update Cells| [Replace Strings](pandas_columns#replace-strings)| 
+| Columns | Update Columns| [Add a prefix or suffix to all columns](pandas_columns#add-a-prefix-or-suffix-to-all-columns)| 
+| Columns | Update Cells| [Convert the type of a column](pandas_columns#convert-the-type-of-a-column)| 
+| Columns | Update Cells| [Update some numerical values](pandas_columns#update-some-numerical-values)| 
+| Columns | Update Cells| [Update some string values](pandas_columns#update-some-string-values)| 
+| Columns | Update Cells| [Update column values on condition](pandas_columns#update-column-values-on-condition)| 
 | Columns | Update Cells| [Modify column B based on values in column A](pandas_columns#modify-column-b-based-on-values-in-column-a)| 
-| Columns | Update Cells| [Multipy selected columns with a value](pandas_columns#multipy-selected-columns-with-a-value)| 
-| Columns | Update Cells| [Multipy a column with another column](pandas_columns#multipy-a-column-with-another-column)| 
+| Columns | Update Cells| [Divide a column](pandas_columns#divide-a-column)| 
 | Columns | Update Cells| [Divide a column by another column](pandas_columns#divide-a-column-by-another-column)| 
 | Columns | Update Cells| [Check for uniqueness](pandas_columns#check-for-uniqueness)| 
 | Columns | Update Cells| [Keep unique values by dropping duplicates](pandas_columns#keep-unique-values-by-dropping-duplicates)| 
