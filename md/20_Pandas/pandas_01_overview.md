@@ -21,8 +21,6 @@ Let's distinguish the following options:
 - Working on columns
 - Working on rows
 
-:construction: Sorry, not all content online. Working on it ... 
-
 For the details, see [Listing on Operate on Pandas Dataframes](listing_pandas_operate)
 
 

@@ -18,6 +18,8 @@ Stories:
 Python
 - [Python - outside dataframes](python_overview) - How to complete tasks that cannot be addressed by dataframes?
 - [Using Python Dataframes - Pandas](pandas) - How to create, change, etc. Python dataframes?
+
+:construction: Sorry, not all content online. Working on it ... 
 - [Altair for Dataframes]() - How to plot dataframes in an up-to-date way?
 - [Models with Dataframes](models) - How to enhance knowledge about the content of a dataframe? 
 - [References on Python Dataframes](python_references) - Which other sources should be used as well?

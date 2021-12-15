@@ -129,7 +129,12 @@ Alternatively, you can select column names by position using iloc
     dfS = df.iloc[:,2:7]
     dfS = df.iloc[:,[0,1,3,6]]
 
-The figures are the positions of the columns. Certainly, you can compute them dynamically, if the position is not known at design time.
+The figures are the positions of the columns. 
+You can get the position of a specific column using 'get_loc'.
+>
+    colPosition = df.columns.get_loc("Horsepower")    
+
+Particularly in time series, the position of a specific column is not known at design time.
 
 ### Keep a subset of columns
 

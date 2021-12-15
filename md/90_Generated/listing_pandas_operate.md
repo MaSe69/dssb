@@ -33,8 +33,8 @@ It is particularly designed to be used with searching (CTRL+F).
 | Columns | Create| [Append a column with the sum of other columns](pandas_columns#append-a-column-with-the-sum-of-other-columns)| 
 | Columns | Create| [Insert new column at a specified position](pandas_columns#insert-new-column-at-a-specified-position)| 
 | Columns | Read Columns| [Read column names](pandas_columns#read-column-names)| 
-| Columns | Read Columns| [Select a subset of columns](pandas_columns#select-a-subset-of-columns)| 
-| Columns | Read Columns| [Keep a subset of columns](pandas_columns#keep-a-subset-of-columns)| 
+| Columns | Slice Columns| [Select a subset of columns](pandas_columns#select-a-subset-of-columns)| 
+| Columns | Slice Columns| [Keep a subset of columns](pandas_columns#keep-a-subset-of-columns)| 
 | Columns | Update Columns| [Rename columns](pandas_columns#rename-columns)| 
 | Columns | Update Columns| [Reorder existing columns](pandas_columns#reorder-existing-columns)| 
 | Columns | Update Columns| [Add a prefix or suffix to all columns](pandas_columns#add-a-prefix-or-suffix-to-all-columns)| 
@@ -52,21 +52,18 @@ It is particularly designed to be used with searching (CTRL+F).
 | Columns | Delete| [Delete columns by name](pandas_columns#delete-columns-by-name)| 
 | Columns | Delete| [Delete columns by position](pandas_columns#delete-columns-by-position)| 
 | Rows | Create| [Append a row at the end](pandas_rows#append-a-row-at-the-end)| 
-| Rows | Create| [Append a row with the sum of other columns](pandas_rows#append-a-row-with-the-sum-of-other-columns)| 
-| Rows | Create| [Insert a row at a specified position](pandas_rows#insert-a-row-at-a-specified-position)| 
-| Rows | Read row| [Select a row by index](pandas_rows#select-a-row-by-index)| 
-| Rows | Read rows| [Select rows by position](pandas_rows#select-rows-by-position)| 
-| Rows | Read rows| [Select first n rows](pandas_rows#select-first-n-rows)| 
-| Rows | Read rows| [Select last n rows](pandas_rows#select-last-n-rows)| 
-| Rows | Read rows| [Select rows by positions and stepsize](pandas_rows#select-rows-by-positions-and-stepsize)| 
-| Rows | Read rows| [Select rows by values in columns](pandas_rows#select-rows-by-values-in-columns)| 
-| Rows | Read cell| [Select a cell by columns and index](pandas_rows#select-a-cell-by-columns-and-index)| 
-| Rows | Read cell| [Convert a cell with a number to a Python integer](pandas_rows#convert-a-cell-with-a-number-to-a-python-integer)| 
-| Rows | Update Index| [Change the name of index column](pandas_rows#change-the-name-of-index-column)| 
+| Rows | Create| [Append a row with the sum of columns](pandas_rows#append-a-row-with-the-sum-of-columns)| 
+| Rows | Create| [Insert a new row at a specified position](pandas_rows#insert-a-new-row-at-a-specified-position)| 
+| Rows | Read row| [Read a row by index](pandas_rows#read-a-row-by-index)| 
+| Rows | Read rows| [Read rows by position](pandas_rows#read-rows-by-position)| 
+| Rows | Read rows| [Read first n rows](pandas_rows#read-first-n-rows)| 
+| Rows | Read cell| [Read a cell by columns and index](pandas_rows#read-a-cell-by-columns-and-index)| 
+| Rows | Read rows| [Read rows by values in columns](pandas_rows#read-rows-by-values-in-columns)| 
+| Rows | Slice rows| [Slice first or last rows](pandas_rows#slice-first-or-last-rows)| 
+| Rows | Slice rows| [Slice rows by positions and step size](pandas_rows#slice-rows-by-positions-and-step-size)| 
 | Rows | Update Cells| [Change the values of a row](pandas_rows#change-the-values-of-a-row)| 
 | Rows | Sort| [Sort by a column](pandas_rows#sort-by-a-column)| 
 | Rows | Sort| [Sort by several columns in mixed directions](pandas_rows#sort-by-several-columns-in-mixed-directions)| 
-| Rows | Delete| [Delete rows by index name](pandas_rows#delete-rows-by-index-name)| 
 | Rows | Delete| [Delete rows by position](pandas_rows#delete-rows-by-position)| 
 | Rows | Delete| [Delete rows by column values](pandas_rows#delete-rows-by-column-values)| 
 
