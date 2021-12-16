@@ -4,7 +4,7 @@ title: Beautiful Dataframes
 permalink: /index
 ---
 <br>
-Dataframes are the focus this webpage.<br>
+Dataframes are the focus this [webpage](about).<br>
 Dataframes are a corner stone of data science.<br>
 Dataframes are popular, because they can store all kinds of tabular data.<br>
 
