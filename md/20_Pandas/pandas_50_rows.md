@@ -77,13 +77,14 @@ Then, you can select the row for this index value.
 >
     row = df.loc["audi 100 ls"]
 
-You can also get a cell in that row.
+### Read a cell by columns and index    
+
+You can also get any cell in that row when you specify the column name and the index.
 >
     myHorsepower = df.loc["audi 100 ls"]["Horsepower"]    
     myHorsepower = list(df["Horsepower"]["MyCar2"])[0]
 
 The sequence of addressing a cell with 'loc' is [row][column], but without 'loc' is [column][row]. 
-
 
 ### Read rows by position
 
@@ -168,9 +169,10 @@ Alternatively, you can use the integer position with iloc.
 >
     df.iloc[rowPosition][colPositionm] = 78
 
+
 ## Sort
 
-### Single column
+### Sort by a column
 
 The syntax is a bit cumbersome. Don't worry, if you can't memorize.
 It comprises **sort_values** and - inside the parenthesis - **by=**
@@ -178,33 +180,60 @@ It comprises **sort_values** and - inside the parenthesis - **by=**
 > 
     df = df.sort_values(by="column1", ascending=True)
 
+### Sort by several columns in mixed directions
+
 For changing the direction of sorting, use the key word **ascending**.
 
 >
     sortColumns = ["column1", "column2"]
-    direction =[True, False]
-    df = df.sort_values(by=sortColumns, ascending=direction)    
+    directions = [True, False]
+    df = df.sort_values(by=sortColumns, ascending=directions)    
+
+The sequence of the column names in the list needs to match, of course.
 
 
 ## Rows - Delete
 
-### Delete rows by position
+### Delete rows on condition
 
-You would typically slice the existing dataframe and continue working with the remaining dataframe. Examples:
-
->
-    df = df.loc[df[df.column7] > 17]
-    df = df.tail(7)
-    df = df.iloc[3:7,:]
-
-
-### Delete rows by column values
-
-However, you can also drop specific rows, e.g. using the index
-
->
-    df = df.drop(df[df.Name == "myNewCar2"].index)
+You can drop specific rows using the index. <br>
+When you know the index of the row by name, you can directly delete (=drop) that row.
 
 >
     df = df.set_index("Name")
-    df = df.drop(index = 'myNewCar1')
+    df = df.drop(df[df.Name == "myNewCar2"].index)
+
+Certainly, you can specify conditions.
+>    
+    dfS = dfS.drop(dfS[dfS.index.isin(['mazda rx-4'])].index)
+    dfS = dfS.drop(dfS[dfS.index.str.contains('dodge')].index)    
+
+Certainly, you can specify conditions, e.g. on the index.
+>    
+    dfS = dfS.drop(dfS[dfS.index.isin(['mazda rx-4'])].index)
+    dfS = dfS.drop(dfS[dfS.index.str.contains('dodge')].index)    
+
+The condition can apply on any other field.
+>
+    dfS = dfS.drop(dfS[dfS.Cylinders == 8].index)
+    dfS = dfS.drop(dfS[dfS.Cylinders.isin([4, 6, 8])].index)
+
+
+### Remove rows by keeping other columns
+
+As an alternative to deletion, you can slice the existing dataframe on a condition. 
+If you have a condition for the rows that you want to keep, you use this condition to remove the other rows.
+
+>
+    dfS = dfS.loc[dfS["Cylinders"] != 4]
+
+The same result as above using the index can be achieved by keeping the inverse of the 'positive condition'.
+>
+    dfS = dfS.loc[~dfS["Cylinders"].isin([4,6,8])]
+
+Mind the tilde "~" that inverses the condition. In terms of performance, this might not be the optimal solution though.
+
+As a reminder, you can also use positions to keep some rows and thereby removing the other rows.
+>    
+    df = df.tail(7)
+    df = df.iloc[3:7,:]

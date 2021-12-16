@@ -47,16 +47,14 @@ It is particularly designed to be used with searching (CTRL+F).
 | Columns | Update Cells| [Divide a column by another column](pandas_columns#divide-a-column-by-another-column)| 
 | Columns | Update Cells| [Check for uniqueness](pandas_columns#check-for-uniqueness)| 
 | Columns | Update Cells| [Keep unique values by dropping duplicates](pandas_columns#keep-unique-values-by-dropping-duplicates)| 
-| Columns | Delete| [Slice the dataframe to keep only specified columns](pandas_columns#slice-the-dataframe-to-keep-only-specified-columns)| 
-| Columns | Delete| [Filter a dataframe on condition of columns](pandas_columns#filter-a-dataframe-on-condition-of-columns)| 
 | Columns | Delete| [Delete columns by name](pandas_columns#delete-columns-by-name)| 
 | Columns | Delete| [Delete columns by position](pandas_columns#delete-columns-by-position)| 
+| Columns | Delete| [Delete last column](pandas_columns#delete-last-column)| 
 | Rows | Create| [Append a row at the end](pandas_rows#append-a-row-at-the-end)| 
 | Rows | Create| [Append a row with the sum of columns](pandas_rows#append-a-row-with-the-sum-of-columns)| 
 | Rows | Create| [Insert a new row at a specified position](pandas_rows#insert-a-new-row-at-a-specified-position)| 
 | Rows | Read row| [Read a row by index](pandas_rows#read-a-row-by-index)| 
 | Rows | Read rows| [Read rows by position](pandas_rows#read-rows-by-position)| 
-| Rows | Read rows| [Read first n rows](pandas_rows#read-first-n-rows)| 
 | Rows | Read cell| [Read a cell by columns and index](pandas_rows#read-a-cell-by-columns-and-index)| 
 | Rows | Read rows| [Read rows by values in columns](pandas_rows#read-rows-by-values-in-columns)| 
 | Rows | Slice rows| [Slice first or last rows](pandas_rows#slice-first-or-last-rows)| 
@@ -64,8 +62,8 @@ It is particularly designed to be used with searching (CTRL+F).
 | Rows | Update Cells| [Change the values of a row](pandas_rows#change-the-values-of-a-row)| 
 | Rows | Sort| [Sort by a column](pandas_rows#sort-by-a-column)| 
 | Rows | Sort| [Sort by several columns in mixed directions](pandas_rows#sort-by-several-columns-in-mixed-directions)| 
-| Rows | Delete| [Delete rows by position](pandas_rows#delete-rows-by-position)| 
-| Rows | Delete| [Delete rows by column values](pandas_rows#delete-rows-by-column-values)| 
+| Rows | Delete| [Delete rows on condition](pandas_rows#delete-rows-on-condition)| 
+| Rows | Delete| [Remove rows by keeping other columns](pandas_rows#remove-rows-by-keeping-other-columns)| 
 
 This table was generated using a dataframe. 
 

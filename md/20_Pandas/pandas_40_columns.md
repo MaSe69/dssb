@@ -329,7 +329,7 @@ Alternative notation,
 Warning: If deletion reduces the Pandas dataframe to just one column, Pandas regards it as a vector. A vector can have different properties, possibly leading to error messages.
 
 
-### Delete columns by positions
+### Delete columns by position
 
 Just specify the position of the columns.
 >
