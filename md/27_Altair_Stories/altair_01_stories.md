@@ -1,6 +1,6 @@
 ---
-layout: 20_python
-title: Altair Listing
+layout: 26_altair
+title: Altair Stories
 permalink: /altair_stories
 ---
 

@@ -1,5 +1,5 @@
 ---
-layout: 20_python
+layout: 26_altair
 title: Altair Chart
 permalink: /altair_axis
 ---

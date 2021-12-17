@@ -6,10 +6,13 @@ permalink: /altair_overview
 
 ## Altair Overview
 
+You might want to start with the fundamental example below and expand it a bit to your needs.<br>
+When you create a lot of charts, you might want to use templates. Templates reduce the overall effort substantially.<br>
+Finally, you might benefit from some examples on putting the pieces together.
 
-### Altair Listing
-
-Find details on how to improve and beautify a chart in the [Altair listing](altair_listing).
+Find details on how to improve a chart in the [Altair listing](altair_listing).<br>
+Find details on using [Templates in Altair](altair_templates).
+Find full examples in the [Altair stories](altair_stories).
 
 
 ### Altair Fundamental example
@@ -35,7 +38,7 @@ This is an example for such a fundamental chart.
     )
     chart.show()
 
-This notation is a bit more complex than the 'bare minimum' notation, because it uses e.g. 'alt.X'. However, it is much easer to fit in the extra configurations described in the listings.
+This notation is tailored such that the solutions of the listings fit in easier. 
 
 The image should be shown in a browser and should look as shown below. 
 

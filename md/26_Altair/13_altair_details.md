@@ -1,5 +1,5 @@
 ---
-layout: 20_python
+layout: 26_altair
 title: Altair Chart
 permalink: /altair_details
 ---
@@ -24,14 +24,21 @@ Sometimes, you want to set specific colors. For instance, profits shall be green
 
 >
     alt.Color('Origin',
-        scale=alt.Scale(scheme='tableau10'),   
+        scale={"range": [blue","red", "green"] 
+        ]   
+    )
+
+You might want to pick colors from existing, color palettes.
+
+
+### Set specific shapes
+
+When using shapes, you can also set shapes.
+
+>
+    alt.Shape('Cylinders', 
+        scale=alt.Scale(range=['triangle-left','square', 'triangle-left','circle', 'cross'])
     ),
 
-### Set specific colors
 
-You can also set shapes.
-
-alt.Shape('Cylinders', 
-    scale=alt.Scale(range=['triangle-left','square', 'triangle-left','circle', 'cross'])
-),
     
