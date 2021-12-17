@@ -6,13 +6,9 @@ permalink: /altair_overview
 
 ## Altair Overview
 
-You might want to start with the fundamental example below and expand it a bit to your needs.<br>
-When you create a lot of charts, you might want to use templates. Templates reduce the overall effort substantially.<br>
-Finally, you might benefit from some examples on putting the pieces together.
-
-Find details on how to improve a chart in the [Altair listing](altair_listing).<br>
-Find details on using [Templates in Altair](altair_templates).
-Find full examples in the [Altair stories](altair_stories).
+You might want to start with the fundamental example below and expand it a bit to your needs, see [Altair listing](altair_listing).<br>
+When you create a lot of charts, you might want to use [Themes in Altair](altair_themes).<br>
+Finally, you might benefit from some examples on putting the pieces together, see [Altair stories](altair_stories).
 
 
 ### Altair Fundamental example
@@ -24,8 +20,8 @@ This is an example for such a fundamental chart.
 >
     from vega_datasets import data
     import altair as alt
-    cars = data.cars()      
-    chart = alt.Chart(cars).mark_point().encode(
+    df = data.cars()      
+    chart = alt.Chart(df).mark_point().encode(
         alt.X(
             'Horsepower', 
         ),
@@ -38,7 +34,7 @@ This is an example for such a fundamental chart.
     )
     chart.show()
 
-This notation is tailored such that the solutions of the listings fit in easier. 
+This notation is tailored such that the solutions of the listings fit in easier. df as usually denotes a dataframe. Mind that you always pass the correct dataframe to chart of Altair.
 
 The image should be shown in a browser and should look as shown below. 
 

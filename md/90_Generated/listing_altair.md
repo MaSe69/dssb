@@ -8,7 +8,6 @@ permalink: /altair_listing
 
 This listing should include all 'building blocks' that are needed in the stories.
 
-:construction: Sorry, not all content online. Working on it ... 
 
 |  Item |  Category |  Task |
 | :---            |    :--------   |  :--- |  :--- |  
@@ -18,14 +17,16 @@ This listing should include all 'building blocks' that are needed in the stories
 | Chart | Text| [Set subtitle text](altair_chart#set-subtitle-text)| 
 | Chart | Text| [Configure title](altair_chart#configure-title)| 
 | Chart | Colors| [Set background color](altair_chart#set-background-color)| 
-| Chart | Colors| [Set foreground color](altair_chart#set-foreground-color)| 
+| Chart | Colors| [Set view color](altair_chart#set-view-color)| 
 | Axis | Text| [Modify the axis label](altair_axis#modify-the-axis-label)| 
 | Axis | Text| [Modify the axis scale](altair_axis#modify-the-axis-scale)| 
+| Axis | Text| [Configure the ticks](altair_axis#configure-the-ticks)| 
 | Details | Colors| [Modify the color palette](altair_details#modify-the-color-palette)| 
 | Details | Colors| [Set specific colors](altair_details#set-specific-colors)| 
-| Type | Scatter| [Set point size](altair_types#set-point-size)| 
-| Type | Line| [Set line size](altair_types#set-line-size)| 
-| Type | Area| [Set line size](altair_types#set-line-size)| 
-| Type | Bar| [Set line size](altair_types#set-line-size)| 
+| Type | Scatter| [Configure the points](altair_types#configure-the-points)| 
+| Type | Line| [Configure the lines](altair_types#configure-the-lines)| 
+| Type | Area| [Configure the areas](altair_types#configure-the-areas)| 
+| Type | Bar| [Configure the bars](altair_types#configure-the-bars)| 
+| Type | Heat| [Configure the rectangles](altair_types#configure-the-rectangles)| 
 
-This table was generated using a dataframe. You find much more info on the pages linked to above.
+This table was generated using a dataframe. 

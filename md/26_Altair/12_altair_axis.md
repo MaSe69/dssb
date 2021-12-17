@@ -32,5 +32,23 @@ you can specify the minimum and maximum yourself.
         scale=alt.Scale(domain=[0, 717])
         ),
 
-If you do not want to show a text at all, simply set the title to no character at all, i.e. title="" .
-<br>This works the same for both x-axis and y-axis.
+Certainly, you can compute the end points yourself.
+
+>
+        scale=alt.Scale(domain=(xMin, xMax)),        
+
+
+Personally, I like a bit more space between the data points and the edges.
+
+>
+        xMax = df.Horsepower.max() * 1.1
+
+### Configure the ticks
+
+You can set the number of ticks, which you could of course compute with respect to the min and max values.
+
+>
+        axis=alt.Axis(tickCount=10),
+
+You can also set ticks at specified values.
+

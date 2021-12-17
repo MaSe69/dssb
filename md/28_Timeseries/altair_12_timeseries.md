@@ -139,9 +139,9 @@ The sorting is done along the columns of the dataframe.
 
 ### Format the Lines, Points
 
-Formatting of the lines is directly done as parameters of the mark_line command.
+Formatting of the lines is directly done as parameters of the mark_line command.<br>
 You can set there the opacity level of the line, which softens the colors.<br>
-You can change the lind from solid to dashed.<br>
+You can change the line from solid to dashed.<br>
 You can configure a point for the data.
 
 >
@@ -153,6 +153,7 @@ You can configure a point for the data.
             size=80, 
             fill='white',   
             ), 
+
 
 ### Change the line chart to an area chart
 

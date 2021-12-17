@@ -20,6 +20,22 @@ permalink: /altair_chart
 
 The other parameters just worked out to make the chart to behave more beautiful.
 
+### Set the background color
+
+>
+    chart = chart.properties(
+        ...
+        background="lightgrey", 
+        ... )
+
+      
+### Set the view color  
+>
+    chart = chart.properties(
+        ...
+    view={"fill": "white"},
+        ... )
+
 ### Set title text
 
 Insert to the chart properties a parameter for the title and add the text to it.
