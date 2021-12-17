@@ -3,6 +3,9 @@
 Please find here my first attempt to list some fundamental operations on dataframes in both Python and Julia.
 
 
+:construction: Sorry, not all content online. Working on it ... 
+
+
 |  Category   | Python | Julia |
 |-------------|--------|-------|
 | Dataframe   | [Meta Data](pandas_df_ops#meta-data) | [Meta Data](julia_df_ops#meta-data) |

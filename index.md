@@ -39,7 +39,7 @@ It is further grouped according to CRUD (Create, Read, Update, Delete)
 
 ### Python Dataframe Visualization
 
-After having worked on your dataframe, you might want to visualize some of its content using [Altair](altair_listing).<br>
+After having worked on your dataframe, you might want to visualize some of its content using [Altair](altair_overview).<br>
 
 The content on visualization is grouped into 3 categories.<br>
 
@@ -76,13 +76,13 @@ Examples:
 - Columns: Create new column, Delete columns, Rename, Re-order, ...
 - Rows: Add, Filter, Select, Sort, ...
 
+Find here [a comparison between Pandas and Julia Dataframes]().
 
 - [References on Julia Dataframes](julia_references) - Which other sources should be used for Julia as well?
-- [A comparison of Pandas to Julia Dataframes]() - Where are similarities and where are differences?
 
 ### Stories
 
-- [Dataframes for Starters]() - How to get started with the Vega Cars data set?
+- [Dataframes for Starters](altair_stories) - How to get started with the Vega Cars data set?
 - [Dataframes for Entrepreneurs](entrepreneurs) - How to model a business idea using dataframes?
 - [Dataframes for Time Series]() - How to use dataframes to create time series and how to work on them?
 
