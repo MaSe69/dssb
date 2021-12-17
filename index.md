@@ -11,10 +11,6 @@ Dataframes are popular, because they can store all kinds of tabular data.<br>
 Stories can make you to want to be involved. 
 Cheat sheets increase your efficiency when being involved.
 
-Stories:
-- [Dataframes for Entrepreneurs](entrepreneurs) - How to model essential business KPIs using dataframes?
-- [Dataframes for Knowledge]() - How to store content knowledge in dataframes?
-
 Python
 - [Python - outside dataframes](python_overview) - How to complete tasks that cannot be addressed by dataframes?
 - [Using Python Dataframes - Pandas](pandas) - How to create, change, etc. Python dataframes?
@@ -26,6 +22,10 @@ Julia
 - [Julia Dataframes](julia_df) - How to accomplish the same changes to dataframes in Julia?
 - [A comparison of Pandas to Julia Dataframes]() - Where are similarities and where are differences?
 - [References on Julia Dataframes](julia_references) - Which other sources should be used for Julia as well?
+
+Stories:
+- [Dataframes for Entrepreneurs](entrepreneurs) - How to model essential business KPIs using dataframes?
+- [Dataframes for Knowledge]() - How to store content knowledge in dataframes?
 
 
 Great dataframes are not just technical means, but also fulfill criteria of beauty, see [Beautiful Dataframes](beautiful_dataframes)
