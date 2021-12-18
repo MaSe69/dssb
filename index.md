@@ -4,9 +4,9 @@ title: Beautiful Dataframes
 permalink: /index
 ---
 <br>
-Dataframes are [popular]().<br>
+Dataframes are [popular](df_popularity).<br>
 Dataframes are essential to [data science]().<br>
-Dataframes are at heart and center of this [webpage](about).<br>
+Dataframes are at the main topic of this [webpage](about).<br>
 
 You might want to get involved when reading fascinating [stories](#stories).<br>
 You increase your imagination and efficiency substantially when using [cheat sheets]().
