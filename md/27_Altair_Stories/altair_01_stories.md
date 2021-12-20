@@ -5,20 +5,18 @@ permalink: /altair_stories
 ---
 
 
-Currently, I provide the following examples:
+# Altair Stories
 
-- [Vega Cars](vega_cars)
-- [Vega Cars Interactive](vega_cars_interactive)
-- [Time series](timeseries)
-- [Time series area](timeseriesarea)
+Starting from the fundamental 'Vega cars' example, Altair configurations are added.
+
+## List of Examples
+
+- Most common configurations are applied in [Story - Vega Cars - Expanded](vega_cars)
+- First interactive elements are applied in [Story - Vega Cars - Interactive](vega_cars_interactive)
+- Adoptions for time series are made in [Story - Time series](timeseries)
 
 
 ### Vega Car"
-
-"Vega cars" is a modification of the standard 'textbook' example.
-It is based on a data set provided by Vega. 
-
-I had used this data set previously for visualization using Seaborn and Matplotlib. Comparing effort and results, there was no doubt to continue with Altair.
 
 A point here is to make the transformations, e.g. lbs to kg, in the dataframe. It could be done in Altair using the transform operation. 
 

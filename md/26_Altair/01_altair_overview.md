@@ -34,6 +34,13 @@ This is an example for such a fundamental chart.
     )
     chart.show()
 
+
+There is a rich library of data within Vega, ready to be used in such example.
+- [GitHub: Vega Datasets Listing](https://github.com/vega/vega-datasets/tree/next/data)
+
+ The "cars.json" file found there is often used.
+ It can be downloaded and converted to a Pandas dataframe.
+
 This notation is tailored such that the solutions of the listings fit in easier. df as usually denotes a dataframe. Mind that you always pass the correct dataframe to chart of Altair.
 
 The image should be shown in a browser and should look as shown below. 
