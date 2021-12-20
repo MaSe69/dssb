@@ -8,7 +8,7 @@ permalink: /altair_overview
 
 You might want to start with the fundamental example below and expand it a bit to your needs, see [Altair listing](altair_listing).<br>
 When you create a lot of charts, you might want to use [Themes in Altair](altair_themes).<br>
-Finally, you might benefit from some examples on putting the pieces together, see [Altair Starter Story](altair_starter_story).
+Finally, you might benefit from some examples on putting the pieces together, see [Altair  Story](altair_story).
 
 
 ### Altair Fundamental example
