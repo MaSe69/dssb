@@ -22,3 +22,4 @@ permalink: /altair_references
 - [Altair Saver](https://github.com/altair-viz/altair_saver)
 - [Altair Recipes](https://altair-recipes.readthedocs.io/)
 
+- [Altair Intro by Jim Vallandingham](https://vallandingham.me/altair_intro.html)

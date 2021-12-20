@@ -22,14 +22,16 @@ The purpose of this graph with respect to content is the show the relationship b
 
 ## Define and Use a Theme
 
-Let's redo the previous example on [Vega Cars Expanded](vega_cars) using a theme.
+Let's redo the previous example on [Vega Cars Expanded](vega_cars) using a theme. The main difference is some work on the legend.
 
 ### Using a ‘Theme’
 
 You need to register and enable the theme such that it affects your chart.
 
-<>
+>
     from myTheme_file import myTheme
+
+>
     alt.themes.register('myTheme', myTheme)
     alt.themes.enable('myTheme')
 
@@ -46,12 +48,40 @@ You can outsource the theme to an extra file. This extra file essentially contai
     ...
     return {
         'config': {
-            "background": 'white', 
-                    },
-    }
+            "padding": {"left": 25, "top": 25, "right": 25, "bottom": 20},
+            "mark": {
+                "type": "area",
+                "color": "darkgreen", #"red",
+                "strokeWidth": 3.5,
+                "opacity": 0.9,
+                },
+            "view": {
+                "width": 800, 
+                "height": 550,  
+            ...
+            "legend": {
+                "cornerRadius": 5,                
+                "titleFontSize":18,  
+                "titleAlign":"center",           
+                "rowPadding":5,           
+                "titlePadding":10,           
+                "padding":5, 
+                "labelFontSize": 16,
+                "symbolSize":8,
+            },              
 
-However, you need to be careful about what to put into a theme, because you might not want all your chart to be identical. You can overwrite though a property set in the theme for your specific chart.
+You can overwrite though a property set in the theme for your specific chart.
 
+The configuration part in the 'main' program is now very lean and essentially contains the title and subtitle.
 
-
-
+>
+    myChart = myChart.properties(
+        title={
+            "text": myTitle, 
+            "subtitle": mySubtitle,
+        },  
+        autosize=alt.AutoSizeParams(
+            type='fit',
+            contains='padding'
+        ),
+    )  

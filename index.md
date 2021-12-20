@@ -82,9 +82,10 @@ Find here [a comparison between Pandas and Julia Dataframes]().
 
 ### Stories
 
-- [Dataframes for Starters](altair_stories) - How to get started with the Vega Cars data set?
-- [Dataframes for Entrepreneurs](entrepreneurs) - How to model a business idea using dataframes?
-- [Dataframes for Time Series]() - How to use dataframes to create time series and how to work on them?
+- Get started with dataframes and their [visualization](altair_story)
+- Use dataframes for [time series](time_series_story)
+- Use dataframes as an entrepreneurs to [model a potential business](entrepreneurs) - 
+
 
 Great dataframes are not just technical means, but also fulfill criteria of beauty, see [Beautiful Dataframes](beautiful_dataframes)
 
