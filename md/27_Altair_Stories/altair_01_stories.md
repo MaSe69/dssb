@@ -14,6 +14,7 @@ Starting from the fundamental 'Vega cars' example, Altair configurations are add
 - Most common configurations are applied in [Example - Vega Cars - Expanded](vega_cars)
 - Configurations are efficiently developed and stored in a theme [Example - Vega Cars - Theme](vega_cars_theme)
 - First interactive elements are applied in [Example - Vega Cars - Interactive](vega_cars_interactive)
+- Multi Selection [Example - Vega Cars - Multi Selection](vega_cars_multi_selection)
 
 
 ### External sources
