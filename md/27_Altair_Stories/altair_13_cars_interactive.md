@@ -8,10 +8,18 @@ permalink: /vega_cars_interactive
 
 This chart provides more information than its static predecessor, because you can zoom into each cloud of points and get the details, particularly the name of the car type.
 
-{% include altairhtml/vegacarsexpanded_interactive.html %}
-
+<center>
+<br>
+{% include altairhtml/vegacars_i_dropdown.html %}
+<br><br>
+Interactive Elements: Dropdown and Tooltip
+<br>
+</center>
+<br><br>
 
 The tooltip is defined within the chart configuration.
+
+
 
 >
     myChart = alt.Chart(df).mark_point(
@@ -42,4 +50,10 @@ The tooltip is defined within the chart configuration.
         ),    
         tooltip=['Name', 'Year', 'Weight_KG', 'Consumption_lper100km', 'Cylinders'],            
     )
+
+
+## Comments
+
+-  Unfortunately, the tooltip might look better in some contexts than in others. "There are no options within Altair to change tooltip styles.", see [Answer by Jake VanderPlas](https://github.com/altair-viz/altair/issues/1970]. 
+- In 2018, the possibility to code a tooltip as above might not have been available, as can be inferred from [Jim Vallandingham's Blog](https://vallandingham.me/altair_intro.html)
 

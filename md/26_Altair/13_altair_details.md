@@ -24,8 +24,9 @@ Sometimes, you want to set specific colors. For instance, profits shall be green
 
 >
     alt.Color('Origin',
-        scale={"range": [blue","red", "green"] 
-        ]   
+        ...
+        scale={"range": ["blue","red", "green"]},
+        ...
     )
 
 You might want to pick colors from existing, color palettes.
