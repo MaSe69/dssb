@@ -23,3 +23,4 @@ permalink: /altair_references
 - [Altair Recipes](https://altair-recipes.readthedocs.io/)
 
 - [Altair Intro by Jim Vallandingham](https://vallandingham.me/altair_intro.html)
+- [Altair Intro - Huppenkothen.org](https://huppenkothen.org/data-visualization-tutorial/)
