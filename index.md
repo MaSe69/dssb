@@ -9,7 +9,7 @@ Dataframes are essential to [data science]().<br>
 Dataframes are at the main topic of this [webpage](about).<br>
 
 You might want to get involved when reading fascinating [stories](#stories).<br>
-You increase your imagination and efficiency substantially when using [cheat sheets]().
+You might find some helpul solutions in these [cheat sheets](listing_pandas_operate).
 
 
 ## Python
@@ -37,20 +37,37 @@ The content here on working with dataframes is grouped into 3 categories.<br>
 
 It is further grouped according to CRUD (Create, Read, Update, Delete)
 
-### Python Dataframe Visualization
+## Python Dataframe Visualization
 
-After having worked on your dataframe, you might want to visualize some of its content using [Altair](altair_overview).<br>
+The content of a dataframe is usually clear to the person who has worked for it. Often, this content needs to be presented which is mostly done using visualization.
+
+Altair is a Python visualization that has a great interface to dataframes.<br> 
+Altair enables interactive charts. Click on the chart below or on the following link to get to the [interactive version for multiple selection](vega_cars_multi_selection). 
+
+<br>
+<center>
+<a href="vega_cars_multi_selection">
+{% include images/image.html imagePath = "../assets/images/img_blog/img_altair/vegacars_i_multiselect.png" imageCaption =  ""%}
+</a>
+
+<br><b>
+This chart uses the cars dataframe provided by Vega dataset which was worked on before using dataframe operations. <br>This chart is static, but you can click it to get to the interactive version. 
+</b><br>
+</center>
+<br>
+
+You can get here a brief [Altair overview](altair_overview).<br>
+You can find details directly in the [Altair listing](altair_listing).<br>
 
 The content on visualization is grouped into 3 categories.<br>
 
 - Charts: Types (Scatter, Line, Area, ...), Size, Titles, ...
-- Axis: Labels, Ticks, Scaling
-- Complex info: Color, Shape, Trellis, ... 
-
-Get an overview on the content, deep dive into coding, find some more details:
+- Axis: Labels, Ticks, Scaling, ...
+- Interactivity: Tooltips, Selections, ...
 
 
-### Python Dataframes and Models
+
+## Python Dataframes and Models
 
 Missing data might be approximated by models and added to the dataframe.<br>
 An interesting model is the Logistic function, see [Models with Dataframes](models) 
@@ -65,7 +82,7 @@ An interesting model is the Logistic function, see [Models with Dataframes](mode
 - [References on Python Dataframes](python_references) - Which other sources should be used as well?
 
 
-## Julia Dataframes 
+# Julia Dataframes 
 
 Dataframes are available in both Python and Julia. They share similarities, but they are not equal. 
 
