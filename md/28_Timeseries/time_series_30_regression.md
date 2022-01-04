@@ -1,7 +1,7 @@
 ---
 layout: 20_python
 title: Time Series
-permalink: /timeseries
+permalink: /time_series_regression
 ---
 
 # Altair: Time Series - Lines
