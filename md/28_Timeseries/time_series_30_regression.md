@@ -1,194 +1,70 @@
 ---
 layout: 20_python
-title: Time Series
+title: Time Series Regression
 permalink: /time_series_regression
 ---
 
-# Altair: Time Series - Lines
+# Time Series - Linear Regression
 
-A standard use case in accounting are the values of accounts over time. You see here three accounts - A, B and C - with artificial data (incl. trend and Gaussian noise)
+The task here is to **assess a regression model using with test data**. Particularly for the use case when at the beginning of a month the data of the previous month are available.
 
+The partiuclar problem here is to **compute the model only with the model data**. Further, the chart should clearly show which data belong to the model and which belong to the test.
+
+
+<br>
 <center>
-{% include images/image.html imagePath = "../assets/images/img_blog/img_altair/Timeseries.png" imageCaption =  ""%}
+{% include images/image.html imagePath = "../assets/images/img_blog/img_altair/TimeseriesUpdatesRegression.png" imageCaption =  ""%}
+<br><br><b>
+A Linear Regression was added to the 'model' data of the time series leading to a forecast. Afterwards, the chart was updated with test data.
+</b><br>
 </center>
+<br>
 
-The chart is based on a theme such that all charts have the same background, grid line width or dash, etc..
+## Solution idea and some details 
+
+### Create file with aggregated, monthly data
+
+The solution here is essentially an extension of the previous example on [Time Series Update](time_series_updates).
+The chart was re-used adding
+- the regression
+- a text chart to display a statistical parameter.
 
 
-### Define a 'Theme'
+### Regression
 
-Using a theme can make your main coding much more concise. A theme is a collection of your choice of recurring chart conigurations.
-You can further change the look of all your charts easily by just making the change once in your theme.
+For the regression, the library 'optimize.curve.fit' of Scipy was used. 
+For details, please go to [Scipy - Optimize Curve Fit](https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.curve_fit.html).
 
-You can outsource the theme to an extra file. 
-This extra file essentially contains a function. This function returs a 'configuration'. 
+Cleary, the library has to be imported. This is the only import needed here for the regression.
+>
+    from scipy.optimize import curve_fit
+
+The decisive call is to the function 'curve_fit'
 
 >
-    def myTheme():
-    ...
-    return {
-        'config': {
-            "background": 'white', 
-                    },
-    }
+    popt, pcov2 = curve_fit(LinearFunction, dfTL.X, dfTL.Y)
 
-However, you need to be careful about what to put into a theme, because you might not want all your chart to be identical. You can overwrite though a property set in the theme for your specific chart.
-
-
-### Using a 'Theme'
-
-You need to register and enable the theme such that it affects your chart.
+In this approach, you can freely define a function for the fit. For the linear fit, the function is quite simple.
 
 >
-    from myTheme_file import myTheme
-    alt.themes.register('myTheme', myTheme)
-    alt.themes.enable('myTheme')
+    def LinearFunction(x, a0, a1):
+        y = a0 + a1 * x
+        return y
 
-### Long Format (melt)
 
-I had created a file with time series before and had saved it as a csv file.
-After reading the data into a dataframe, it needs to be converted from wide format to long format.
+The fitting parameters can be obtained from the exported parameter of the optimization, i.e. 'popt'.
 
 >
-    df = df.reset_index().melt(id_vars="Month", var_name="Type", value_name="Measurement")
+    fittingPara = {}
+    fittingPara["a0"] = round(popt[0], 3)
+    fittingPara["a1"] = round(popt[1], 3)   
 
-Altair does not accept the index to be set, thus reset the index during this melt operation.
 
-
-### Height and Width
-
-I sometimes want to change the ratio of the chart depending on the content. This setting worked quite well.
+You get to the forecast using these parameters.
 
 >
-    chart = chart.properties(
-        height=600,   
-        width=900, 
-        autosize=alt.AutoSizeParams(
-            type='fit',
-            contains='padding'
-        ),
-    )    
+    fRL[column] = LinearFunction(dfRL.XF, *popt)
 
 
-### Title and Subtitle
-
-You can specify the text of the title and the subtitle in the chart properties. The formatting of them might mostly go to the theme.
-
->
-    subtitle = ["Subtitle1", "Subtitle2"]
-    title={
-      "text": title, 
-      "subtitle": subtitle,
-    }, 
-
-Great about subtitles: you can have more than one row!
-
-Depending on the specific text for the chart, the title or subtitle often needs to be smaller or larger.
-
->
-    myChart = myChart.configure_title(
-        fontSize=26,
-        subtitleFontSize=18,
-    )    
-
-Issue noted: When an automatically generated subtitle gets too long, the chart is not shown. 
-
-
-### Format the X-Axis for Month
-
-You can choose among different formats. yearmonth, for instance, displays both year and month.
-The data must be in a suitable format, e.g. 2022-01-01. 
-The axis can be scaled using a start date and an end date. 
-
->
-    alt.X(
-        'yearmonth(Month):T', 
-        title="Month",
-        scale=alt.Scale(domain=(startDate, endDate)),
-        ),
-
-
-### Format the Y-Axis
-
-On the y-axis, most importantly you might set manually the scale and the number of ticks.
-
->
-    alt.Y('Measurement:Q', 
-            title="Y-Axis",
-            axis=alt.Axis(tickCount=10),
-            scale=alt.Scale(domain=(0, 2000)),
-            ), 
-
-### Format the Coloring
-
-On the coloring, you might want to set the colors of your choice, e.g. you might want Account_A to be blue. You can enforce the sequence by sort.
-
->
-    alt.Color('Type:O', title="Type", 
-        sort=df.columns.values,
-        scale={"range": [
-            "blue"],
-            "red"],
-            "green"] 
-            ]
-            },
-        ),   
-
-
-The sorting is done along the columns of the dataframe.
-
-### Format the Lines, Points
-
-Formatting of the lines is directly done as parameters of the mark_line command.<br>
-You can set there the opacity level of the line, which softens the colors.<br>
-You can change the line from solid to dashed.<br>
-You can configure a point for the data.
-
->
-    mark_line(
-        opacity=0.85,
-        strokeDash=[4,2],
-        point=alt.OverlayMarkDef(
-            filled=False, 
-            size=80, 
-            fill='white',   
-            ), 
-
-
-### Change the line chart to an area chart
-
-
-All you need to do is to change the decisive command from **mark_line** to **mark_area**.
-
->
-    myChart = alt.Chart(df).mark_area(
-        opacity=0.55,
-        strokeDash=[4,2],
-        point=alt.OverlayMarkDef(
-        filled=False, 
-        size=80, 
-        fill='white',            
-        ), 
-    ).encode(...)
-
-
-All the other coding can remain. There are some specific line features though and some specific area features.
-
-<center>
-{% include images/image.html imagePath = "../assets/images/img_blog/img_altair/TimeseriesArea.png" imageCaption =  ""%}
-</center>
-
-
-The advantage of an area charge is particularly showing implicitely the sum when stacking the areas on top of each other.
-This stacking is done when setting the stack parameter to true.
-
->
-    alt.Y('Measurement:Q', 
-            ...
-            stack=True,
-            ), 
-
-By the way, this area chart is an independent chart from the line chart and it already profits from the re-used theme.            
-
-This concludes the timeseries here. <br>
-But wouldn't it be nice to see some values at the data points? Not all, but some. Interactively?
+Some statistical parameters are returned, e.g. the co-variance matrix. 
+Unfortunately, the value of 'RSquared' (R2) is not returned and you have to compute it manually.
