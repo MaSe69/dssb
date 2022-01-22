@@ -8,12 +8,21 @@ permalink: /time_series_regression
 
 The task here is to **assess a regression model using with test data**. Particularly for the use case when at the beginning of a month the data of the previous month are available.
 
-The partiuclar problem here is to **compute the model only with the model data**. Further, the chart should clearly show which data belong to the model and which belong to the test.
+The problem addressed here is to **compute the model only with the model data**. Further, the chart should clearly show which data belong to the model and which belong to the test.
 
 
 <br>
 <center>
 {% include images/image.html imagePath = "../assets/images/img_blog/img_altair/TimeseriesUpdatesRegression.png" imageCaption =  ""%}
+<br><br><b>
+A Linear Regression was added to the 'model' data of the time series leading to a forecast. Afterwards, the chart was updated with test data.
+</b><br>
+</center>
+<br>
+
+<br>
+<center>
+{% include images/image.html imagePath = "../assets/images/img_blog/Python/20_BDF_Alt/TimeseriesUpdatesRegression.png" imageCaption =  ""%}
 <br><br><b>
 A Linear Regression was added to the 'model' data of the time series leading to a forecast. Afterwards, the chart was updated with test data.
 </b><br>

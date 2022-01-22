@@ -10,7 +10,7 @@ This is the result of the steps described below.
 
 
 <center>
-{% include images/image.html imagePath = "../assets/images/img_blog/img_altair/vegacarsexpanded_theme.png" imageCaption =  ""%}
+{% include images/image.html imagePath = "../assets/images/img_blog/Python/BDF/20_BDF_ALT/vegacarsexpanded_theme.png"%}
 
 <br><b>
 The purpose of this graph with respect to content is the show the relationship between weight and fuel consumption. 
@@ -35,7 +35,6 @@ You need to register and enable the theme such that it affects your chart.
     alt.themes.register('myTheme', myTheme)
     alt.themes.enable('myTheme')
 
-    
 
 ### Define a ‘Theme’
 

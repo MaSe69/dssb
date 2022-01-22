@@ -8,7 +8,7 @@ permalink: /time_series_updates
 
 The task here is to **update an existing time series** with more data. Particularly for the use case when at the beginning of a month the data of the previous month are available.
 
-The partiuclar problem here is the **computational effort** when the aggregated data have to be re-computed from the raw data. Example: You just want to increase the size of the points in the chart, but for each re-run of the program, hundred of thousands of data have to be re-computed.
+The particular problem here is the **computational effort** when the aggregated data have to be re-computed from the raw data. Example: You just want to increase the size of the points in the chart, but for each re-run of the program, hundred of thousands of data have to be re-computed.
 
 The solution below uses two files with aggregated data:
 - For the past, aggregation for the year 2022

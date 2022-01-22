@@ -8,7 +8,7 @@ permalink: /python_visualization
 
 Several libraries can be used to visualize the content of a dataframe, see the [visualization library](visualization_python_references)
 
-## The Visualization Lifecylce
+## The Visualization Life Cycle
 
 Visualization Lifecycle can be roughly subdivided into 3 areas:
 - Explorative Data Analysis
@@ -20,11 +20,11 @@ Visualization Lifecycle can be roughly subdivided into 3 areas:
 The available plots are in practice dominated by 
 - [Scatter Plot](scatter_plot)
 - [Histogram Plot](hist_plot)
-- [Bar Plot](bar_plot) (both horizaontally and vertically)
+- [Bar Plot](bar_plot) (both horizontally and vertically)
 - [Line Plot](line_plot)
 
-There is an abandunce of other charts, which in practice are used rather rarely.
-- [Box Plot with Additonal Strip Plot](box_plot)
+There is an abundance of other charts, which in practice are used rather rarely.
+- [Box Plot with Additional Strip Plot](box_plot)
 - heat maps
 - violin charts
 - [Geo Plot]()
@@ -41,7 +41,7 @@ Aspect ratio is important. A 4:3 ratio is a good starting point, deviate only fo
 
 Surprises shall be pointed out, expected information should be softened.
 
-Texts should be readible by persons with normal eyesight.
+Texts should be readable by persons with normal eyesight.
 
 Colors should be limited to two to three.
 There are extensive theories on fitting colors, and many designers who already applied them successfully.
@@ -53,8 +53,6 @@ At least, do not mix pale and bright colors, except for good reason.
 ### The CARS Dataframe
 
 This dataframe "cars" can be easily found and downloaded.
-
-It con10_genericesumably available in the USA between 1970 and 1982.
 
 It has features that make it to a somehow beautiful dataframe, though there are also shortcomings.
 

@@ -8,10 +8,8 @@ permalink: /vega_cars
 
 This is the result of the steps described below.
 
-
 <center>
-{% include images/image.html imagePath = "../assets/images/img_blog/img_altair/vegacarsexpanded.png" imageCaption =  ""%}
-
+{% include images/image.html imagePath = "../assets/images/img_blog/Python/BDF/20_BDF_ALT/vegacarsexpanded.png"%}
 <br><b>
 The purpose of this graph with respect to content is the show the relationship between weight and fuel consumption. 
 </b><br>
@@ -153,7 +151,7 @@ Without setting the title font sizes, the description of the axis (also called '
             titleFontSize=18
             )   
 
-Changing one configuration often leads to the need to change another configuration. A dark the background color, makes the symbols of the 'Shape'-dimension hardly visible. Hence, the background color of the legend is changed here - together with some additional configurations to make the legend look nices.
+Changing one configuration often leads to the need to change another configuration. A dark the background color, makes the symbols of the 'Shape'-dimension hardly visible. Hence, the background color of the legend is changed here - together with some additional configurations to make the legend look nicer.
 
 >
     myChart = myChart.configure_legend(
