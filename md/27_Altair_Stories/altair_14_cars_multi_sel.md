@@ -13,10 +13,10 @@ A feature of this approach is to use an additional chart as both the 'legend' an
 
 <center>
 <br>
-{% include altairhtml/vegacars_i_multiselect.html %}
-<br><br>
-Multiple selection applied to the Vega Cars dataset.
-<br>
+{% include altairhtml/20_BDF_ALT/vegacars_i_multiselect.html %}
+<br><br><b>
+The Vega Cars dataset with interactive, multiple selection. Use SHFT+Click to select multiple items.
+</b><br>
 </center>
 <br><br>
 

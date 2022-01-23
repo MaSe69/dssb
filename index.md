@@ -44,6 +44,11 @@ The content of a dataframe is usually clear to the person who has worked for it.
 Altair is a Python visualization that has a great interface to dataframes.<br> 
 Altair enables interactive charts. Click on the chart below or on the following link to get to the [interactive version for multiple selection](vega_cars_multi_selection). 
 
+ <br><b>
+ The chart is static. Click it to get to the interactive version. 
+ </b>
+
+
 <br>
 <center>
 <a href="vega_cars_multi_selection">
@@ -51,7 +56,7 @@ Altair enables interactive charts. Click on the chart below or on the following 
 </a>
 
 <br><b>
-This chart uses the cars dataframe provided by Vega dataset which was worked on before using dataframe operations. <br>This chart is static, but you can click it to get to the interactive version. 
+This chart uses the cars dataframe provided by Vega dataset which was worked on before using dataframe operations.
 </b><br>
 </center>
 <br>

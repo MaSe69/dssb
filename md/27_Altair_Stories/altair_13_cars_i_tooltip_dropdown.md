@@ -20,9 +20,11 @@ Interactive Elements: Dropdown and Tooltip
 </b><br>
 </center>
 <br><br>
-Unfortunately, this solution does only enable the selection of exactly on item of the dropdown list. Further, once you selected an item, there is no (built-in) possibility to reset to all data. Here, you can reload the page to get back to all data, but that's not an acceptable solution. Finally, the dropdown box is not very beautiful. In the next step, these issues are addressed.
 
-Possibly, this solution is sufficient for you, hence, here are the necessary details.
+
+This solution does enable the selection of exactly on item of the dropdown list. Further, once you selected an item, there is no (built-in) possibility to reset to all data. Here, you can reload the page to get back to all data, but that's not an acceptable solution. Finally, the dropdown box is not very beautiful. In the next step, these issues are addressed.
+
+For many use cases, this solution might be sufficient. Here are selected details.
 
 
 ## Solution Approach
