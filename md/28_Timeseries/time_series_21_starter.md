@@ -12,7 +12,7 @@ This is the result of the steps described below.
 
 <br>
 <center>
-{% include images/image.html imagePath = "../assets/images/img_blog/img_altair/TimeseriesStarterLine.png" imageCaption =  ""%}
+{% include images/image.html imagePath = "../assets/images/img_blog/Python/BDF/20_BDF_ALT/TimeseriesStarterLine.png" imageCaption =  ""%}
 <br><br><b>
 Time series with random data.
 </b><br>
