@@ -16,9 +16,10 @@ The solution below uses two files with aggregated data:
 
 <br>
 <center>
-{% include images/image.html imagePath = "../assets/images/img_blog/img_altair/TimeseriesUpdates.png" imageCaption =  ""%}
+{% include images/image.html imagePath = "../assets/images/img_blog/Python/BDF/20_BDF_ALT/TimeseriesUpdates.png" imageCaption =  ""%}
 <br><br><b>
-Time series with a 'profit' computed from artificial raw data. Past data (green) and updated data (red).
+Time series with a 'profit' computed from artificial raw data. Past data 
+(green) and updated data (red).
 </b><br>
 </center>
 <br>
@@ -34,7 +35,7 @@ Such a recipe could be much more complex, e.g. using different weight factors or
 
 <br>
 <center>
-{% include images/image.html imagePath = "../assets/images/img_blog/Python/Files_for_timeseries_update.png" imageCaption =  ""%}
+{% include images/image.html imagePath = "../assets/images/img_blog/Python/BDF/20_BDF_ALT/Files_for_timeseries_update.png" imageCaption =  ""%}
 <br><br><b>
 The number of files to be handled might give you a better idea of problem.
 </b><br>

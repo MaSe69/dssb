@@ -1,10 +1,10 @@
 ---
 layout: 20_python
 title: Time Series Regression
-permalink: /time_series_regression
+permalink: /time_series_logistics
 ---
 
-# Time Series - Linear Regression
+# Time Series - Logistics Regression
 
 The task here is to **assess a regression model using with test data**. Particularly for the use case when at the beginning of a month the data of the previous month are available.
 
