@@ -9,7 +9,16 @@ Dataframes are essential to [data science]().<br>
 Dataframes are at the main topic of this [webpage](about).<br>
 
 You might want to get involved when reading fascinating [stories](#stories).<br>
-You might find some helpul solutions in these [cheat sheets](listing_pandas_operate).
+
+
+
+### Stories
+
+- Get started with dataframes and their [visualization](altair_story)
+- Use dataframes for continues data, particularly for [time series](time_series_story)
+- Use dataframes for categorical data, particularly for [classification](categorization_story)
+
+These 'stories' are currently only in Python.
 
 
 ## Python
@@ -20,7 +29,6 @@ Some plain [Python](python_overview)  is definitely needed, for instance to work
 - Arrays, Dictionaries, Comprehensions
 - Flow logic
 - Files
-
 
 
 ### Python Dataframes - Pandas
@@ -101,13 +109,6 @@ Examples:
 Find here [a comparison between Pandas and Julia Dataframes]().
 
 - [References on Julia Dataframes](julia_references) - Which other sources should be used for Julia as well?
-
-### Stories
-
-- Get started with dataframes and their [visualization](altair_story)
-- Use dataframes for [time series](time_series_story)
-- Use dataframes as an entrepreneurs to [model a potential business](entrepreneurs) - 
-
 
 Great dataframes are not just technical means, but also fulfill criteria of beauty, see [Beautiful Dataframes](beautiful_dataframes)
 
