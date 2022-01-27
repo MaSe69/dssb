@@ -27,6 +27,7 @@ The examples worked out for the 'Time Series Story' include
 - Fundamental time series - making use of Pandas and Altair, see [Time Series - Starter](time_series_starter)
 - Rolling updates to time series, see [Time Series - Updates](time_series_updates)
 - Fit a linear regression to model data and check with test data, see [Time Series - Linear Regression](time_series_regression)
+- Interactive tooltip for a linear regression, see [Time Series - Tooltip for Linear Regression](time_series_tooltip)
 - Fit a Logistics regression to model data and check with test data, see [Time Series - Logistics Regression](time_series_logistics)
 
 

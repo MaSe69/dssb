@@ -19,6 +19,7 @@ In this story on categorization, you get some details on how to apply Pandas and
 
 ### Decision Tree
 
+A decision tree is a flowchart-like structure in which each internal node represents a "test" on an attribute (e.g. whether a coin flip comes up heads or tails), each branch represents the outcome of the test, and each leaf node represents a class label (decision taken after computing all attributes). The paths from root to leaf represent classification rules.
 
 
 
@@ -35,5 +36,11 @@ The examples worked out for the 'Time Series Story' include
 
 
 ## Out of Scope
+
+## References for Categorization
+
+- [Tutorial on Decision-Trees - YouTube](https://github.com/codebasics/py/blob/master/ML/13_kmeans/13_kmeans_tutorial.ipynb)
+- [Wikipedia on Decision Trees](https://github.com/codebasics/py/blob/master/ML/13_kmeans/13_kmeans_tutorial.ipynb)
+- [Scikit-Learn on K-Means](https://scikit-learn.org/stable/modules/clustering.html#k-means)
 
 
