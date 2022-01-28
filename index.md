@@ -178,7 +178,7 @@ In the discussion, severe problems were pointed out. For a language developer, t
 
 ## Finally
 
-If this all here is too long to read and seems to be too complex, be reminded that somebody said:
+If this all here is too long to read and seems to be too complex, remember that somebody said:
 
 >
     "You don't need to know all solutions. Just one that works for you."
