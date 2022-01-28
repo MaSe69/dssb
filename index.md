@@ -13,12 +13,12 @@ Dataframes are at the main thing what this webpage is [about](about).<br>
 
 Many might notice dataframes only as a tool that helps on some topics. 
 
-- [Visualization](altair_story) - Starting with the Vega cars, introducing themes, exploring Altair interactivity, advancing to multi selection.
+- [Explorative Data Analysis](altair_story) - Starting with the Vega cars, introducing themes, exploring Altair interactivity, advancing to multi selection.
 - [Time series](time_series_story) - Data of a year are used to predict data of the next year leading to Logistics regression.
-- [Categorization](categorization_story) - Data are clustered and the clusters visualized.
+- [Categorization](cat_story) - Data are clustered and the clusters visualized.
 
 
-### Visualization of Pandas Dataframes using Altair
+### Explorative Data Analysis Using Pandas and Altair
 
 The chart below shows the static version of an interactive chart in which the legend can be used to select one or multiple items. Because this landing page should remain neat and fast, the interactive version and the explanation is on a separate page. Just click on the image to go there and you find the interactive chart.
 
@@ -35,6 +35,8 @@ This chart uses the 'standard' cars example provided by Vega and commonly used f
 
  Dataframe operations were used to work on the original data, e.g. European units are used here. <br>
  You notice that all charts here look similar, because they share the same theme.
+
+Start here with this [Explorative Data Analysis](vega_cars).
 
 
 ### Time Series, Regression and Interaction
@@ -54,10 +56,25 @@ You see here the actual value and the predicted value.
 <br>
 
 
+ Start here with this [Time Series Analysis](time_series_starter).
 
 ### Categorization
 
+First, there need to be categories, which might be retrieved from data. 
+A so-called model is then often used to assign test data to such categories.
 
+<br>
+<center>
+<a href="time_series_tooltip">
+{% include images/image.html imagePath = "../assets/images/img_blog/Python/BDF/30_BDF_CAT/alt_09_C_iris_kmeans.png" imageCaption =  ""%}
+</a>
+<br><b>
+A standard example for classification.
+</b><br>
+</center>
+<br>
+
+Start here with this [Categorization Analysis](categorization).
 
 
 

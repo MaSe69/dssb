@@ -1,7 +1,7 @@
 ---
 layout: 20_python
 title: Categorization
-permalink: /cat_story
+permalink: /cat_data_set
 ---
 
 
