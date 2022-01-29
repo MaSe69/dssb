@@ -14,6 +14,7 @@ Interestingly, new words are common in this context for things that have existed
 - label ( = y-value)
 - trained model (= model with fitted parameters)
 - 'hot encoding' (= values are binary, 0 or 1)
+- 'confusion matrix' (= counting how often the model predicted correctly or did not)
 
 
 ## Examples
@@ -29,7 +30,7 @@ You can find this model in many, many places.
 Using the dataframe skills on this site, it is easy to create own data.
 It is not so easy to create a data set though that makes some real-world sense and can be used in all categorization models.
 
-[Dedicated Data Set](cat_data_set) - Example used here: First Names and athletic results - given some discrete parameters.
+[Dedicated Data Set](cat_data_set) - First names, some attributes and a target value.
 
 
 ## Supervised models
@@ -78,6 +79,7 @@ Some of the content on this website is meant to make this transition from Python
 
 - [Tutorial on Decision-Trees - YouTube](https://github.com/codebasics/py/blob/master/ML/13_kmeans/13_kmeans_tutorial.ipynb)
 - [Wikipedia on Decision Trees](https://github.com/codebasics/py/blob/master/ML/13_kmeans/13_kmeans_tutorial.ipynb)
+- [Tutorial on Kaggle on Decision Trees](https://www.kaggle.com/faressayah/decision-trees-random-forest-for-beginners#1.-Decision-Tree)
 - [Scikit-Learn on K-Means](https://scikit-learn.org/stable/modules/clustering.html#k-means)
 
 

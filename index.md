@@ -74,7 +74,7 @@ A standard example for classification.
 </center>
 <br>
 
-Start here with this [Categorization Analysis](categorization).
+Start here with this [Categorization Analysis](cat_story).
 
 
 
