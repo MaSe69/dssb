@@ -39,5 +39,29 @@ The library sklearn offers an effective and efficient way to split a dataframe i
 
 ### Applying the model
 
+The decisive lines of coding here are to create the model and to fit the training data. <br>
+Afterwards, the a column in the main dataframe is added to hold the predicted values.
+
+>
+    myModel = tree.DecisionTreeClassifier()
+    myFit = myModel.fit(df[inputCols], df[targetCols])
+    ...
+    df["Prediction"] = myModel.predict(df[inputCols])
 
 
+### Quality of Model
+
+A 'score' gives a first indication of the quality of the model.
+The 'Gini' values can give you confidence about the distribution of the target values or put the distribution in doubt.
+
+>
+    myScore = myModel.score(df[inputCols], df[targetCols])
+    giniValues = myFit.tree_.impurity
+
+### Displaying the Decision Tree With Parameters
+
+A nice, optional feature is to have the decision tree visualized. The library graphviz can help on the visualization.
+
+>
+    from sklearn.tree import export_graphviz
+    from graphviz import Source
