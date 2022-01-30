@@ -65,6 +65,9 @@ As a model based on a decision tree is decisively influenced by the first decisi
 K-Means is meant to be the simplest unsupervised model. You can use it to get a first idea, when you have not sufficient knowledge on the underlying target structure.
 
 
+[K-Means Forest](cat_kmeans) - 
+
+
 ## Out of Scope
 
 Categorization is typically a topic on the path to artificial neurological networks, also titled as 'artificial intelligence (AI)' or 'machine learning (ML)'.

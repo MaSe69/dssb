@@ -26,7 +26,7 @@ Categorization Data Set
 <br>
 
 
-## Solution idea and some details 
+## Solution 
 
 ### Splitting the data set
  
