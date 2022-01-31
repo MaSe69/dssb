@@ -1,6 +1,6 @@
 ---
 layout: 20_python
-title: Categorization
+title: Random Forest
 permalink: /cat_random_forest
 ---
 

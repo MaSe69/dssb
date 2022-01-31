@@ -1,6 +1,6 @@
 ---
 layout: 26_altair
-title: Altair Themes
+title: Vega Cars Theme
 permalink: /vega_cars_theme
 ---
 

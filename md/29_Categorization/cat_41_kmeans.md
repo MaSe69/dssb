@@ -1,6 +1,6 @@
 ---
 layout: 20_python
-title: Categorization
+title: K-Means
 permalink: /cat_kmeans
 ---
 

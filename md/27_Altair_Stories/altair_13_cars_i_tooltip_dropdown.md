@@ -1,6 +1,6 @@
 ---
 layout: 26_altair
-title: Vega Cars
+title: Vega Cars Interactive
 permalink: /vega_cars_interactive
 ---
 

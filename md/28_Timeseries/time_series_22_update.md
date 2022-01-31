@@ -1,6 +1,6 @@
 ---
 layout: 20_python
-title: Time Series Updates
+title: Updates to Time Series
 permalink: /time_series_updates
 ---
 

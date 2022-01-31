@@ -1,6 +1,6 @@
 ---
 layout: 20_python
-title: Time Series Regression
+title: Regression Tooltip
 permalink: /time_series_tooltip
 ---
 

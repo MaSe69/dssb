@@ -1,6 +1,6 @@
 ---
 layout: 20_python
-title: Categorization
+title: Categorization Data Set
 permalink: /cat_data_set
 ---
 

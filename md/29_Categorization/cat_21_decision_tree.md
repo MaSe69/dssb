@@ -1,6 +1,6 @@
 ---
 layout: 20_python
-title: Categorization
+title: Decision Tres
 permalink: /cat_decision_tree
 ---
 
@@ -9,7 +9,7 @@ permalink: /cat_decision_tree
 
 ## Solution idea and some details 
 
- The algorithm 'decision tree' is here applied to the [categorization data set](cat_data_set) 
+The algorithm 'decision tree' is here applied to the [categorization data set](cat_data_set) 
 
 You see below the data set split into two parts: one part used for training the model, the other part used to test the model.
 
