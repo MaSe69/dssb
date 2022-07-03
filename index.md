@@ -3,10 +3,18 @@ layout: 01_landing
 title: Beautiful Dataframes
 permalink: /index
 ---
-<br>
-Dataframes are [popular](df_popularity).<br>
-Dataframes are essential to [data science]().<br>
-Dataframes are at the main thing what this webpage is [about](about).<br>
+
+<p>
+This website is in process to be re-structured and extended.
+Available content is meant to remain. Don't Panic!
+Temporary glitches though might occur. 
+</p>
+
+About this webpage [about](about).<br>
+
+# Python and Pandas
+
+
 
 
 ## Topics and Stories
