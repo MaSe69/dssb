@@ -12,21 +12,16 @@ Temporary glitches though might occur.
 
 About this webpage [about](about).<br>
 
-# Python and Pandas
+# Data Science in Python
+
+## Fundamentals
+
+- [Fundamentals](fundamentals) - Covering some Python, some Pandas, some Altair and some Dash.
+- [Time series](time_series_story) - Leading to to Logistics regression using Pandas, Altair, Dash.
+- [Categorization](cat_story) - Covering some Machine Learning Algorithms.
 
 
-
-
-## Topics and Stories
-
-Many might notice dataframes only as a tool that helps on some topics. 
-
-- [Explorative Data Analysis](altair_story) - Starting with the Vega cars, introducing themes, exploring Altair interactivity, advancing to multi selection.
-- [Time series](time_series_story) - Data of a year are used to predict data of the next year leading to Logistics regression.
-- [Categorization](cat_story) - Data are clustered and the clusters visualized.
-
-
-### Explorative Data Analysis Using Pandas and Altair
+### Fundamentals
 
 The chart below shows the static version of an interactive chart in which the legend can be used to select one or multiple items. Because this landing page should remain neat and fast, the interactive version and the explanation is on a separate page. Just click on the image to go there and you find the interactive chart.
 
@@ -86,61 +81,6 @@ Start here with this [Categorization Analysis](cat_story).
 
 
 
-# Dataframes in Python
-
-What was needed to complete the stories above should be described here.<br>
-Though it might look like a lot, it's only a tiny fraction of what is available.<br>
-If you don't find here, what you are looking for, you might want to deep dive here: [References on Python Dataframes](python_references) 
-
-
-### Python (Plain)
-
-Some plain [Python](python_overview)  is definitely needed, for instance to work with
-- Arrays, Dictionaries, Comprehensions
-- Flow logic
-- Files
-
-
-### Python Dataframes - Pandas
-
-First, you need to [get your dataframes](listing_pandas). There are several methods described.
-
-Then, you might want to [work on dataframes](listing_pandas_operate). This is a deep topic.<br>
-
-The content here on working with dataframes is grouped into 3 categories.<br>
-
-- Dataframes: ..., slice, merge, ...
-- Columns: Create new columns, Rename, Re-order, ... , Delete columns
-- Rows: Create new rows, Filter, Select, Sort, ..., Delete rows
-
-It is further grouped according to CRUD (Create, Read, Update, Delete)
-
-##  Visualization of Dataframe in Python
-
-The content of a dataframe is usually clear to the person who has worked for it. Often, this content needs to be presented which is mostly done using visualization.
-
-Altair is a Python visualization that has a great interface to dataframes.<br> 
-Altair enables interactive charts. Click on the chart below or on the following link to get to the [interactive version for multiple selection](vega_cars_multi_selection). 
-
-
-
-You can get here a brief [Altair overview](altair_overview).<br>
-You can find details directly in the [Altair listing](altair_listing).<br>
-
-The content on visualization is grouped into 3 categories.<br>
-
-- Charts: Types (Scatter, Line, Area, ...), Size, Titles, ...
-- Axis: Labels, Ticks, Scaling, ...
-- Interactivity: Tooltips, Selections, ...
-
-
-##  Cheat Sheets - Python - Summary
-
-- [Python - outside dataframes](python_overview) - How to complete tasks that cannot be addressed by dataframes?
-- [Create Python Dataframes - Pandas](listing_pandas) - How to get to Python dataframes?
-- [Work with Python Dataframes - Pandas](listing_pandas_operate) - How to create, read, update, delete (CRUD) dataframes, columns, rows?
-- [Altair for Dataframes](altair_listing) - How to plot dataframes in an up-to-date way?
-
 
 # Dataframes in Julia
 
@@ -160,16 +100,6 @@ Find here [a comparison between Pandas and Julia Dataframes]().
 Great dataframes are not just technical means, but also fulfill criteria of beauty, see [Beautiful Dataframes](beautiful_dataframes)
 
 
-# Top Pages
-
-In 2021:
-
-- [Pandas Dataframes](pandas)
-- [Pandas Columns](pandas_columns)
-- [Transpose Julia dataframes](julia_transpose)
-- [Julia Columns](julia_columns)
-- [Julia Dataframes](julia_df)
-
 
 ### Transpose function in Julia?
 
@@ -183,6 +113,8 @@ In Python, the solution to this problem is as easy as to apply the Pandas transf
 Find some more details on [Transpose a dataframe in Python](pandas_transpose)
 
 In the discussion, severe problems were pointed out. For a language developer, the problem to transpose a matrix might be remote. Possibly, when you 'own' the data, you can create the dataframe in the way you need it. When you have to combine information from many dataframes from other sources, however, chances are that you need to transpose at least one of them.
+
+
 
 ## Finally
 
