@@ -11,9 +11,10 @@ In this chart, you can select one or multiple 'Origins'.
 The interactivity, i.e. zooming and tooltip, is also available. The theme defined in previous examples is re-used with minor modifications.<br>
 A feature of this approach is to use an additional chart as both the 'legend' and as 'the tool for selection'.
 
+
 <center>
 <br>
-{% include altairhtml/20_BDF_ALT/vegacars_i_multiselect.html %}
+{% include altairhtml/20_BDF_ALT/20_VegaCars_Altair_IA.html %}
 <br><br><b>
 The Vega Cars dataset with interactive, multiple selection. Use SHFT+Click to select multiple items.
 </b><br>
