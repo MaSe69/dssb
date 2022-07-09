@@ -1,33 +1,22 @@
 ---
 layout: 20_python
-title: Python Visualization
+title: Seaborn
 permalink: /python_visualization
 ---
 
-# Visualizations
+# Matplotlib + Seaborn
 
 Several libraries can be used to visualize the content of a dataframe, see the [visualization library](visualization_python_references)
 
-## The Visualization Life Cycle
-
-Visualization Lifecycle can be roughly subdivided into 3 areas:
-- Explorative Data Analysis
-- Reporting
-- Forecast
-
-## Tooling
+## Examples
 
 The available plots are in practice dominated by 
 - [Scatter Plot](scatter_plot)
 - [Histogram Plot](hist_plot)
 - [Bar Plot](bar_plot) (both horizontally and vertically)
 - [Line Plot](line_plot)
-
-There is an abundance of other charts, which in practice are used rather rarely.
 - [Box Plot with Additional Strip Plot](box_plot)
-- heat maps
-- violin charts
-- [Geo Plot]()
+
 
 ## Beauty in Visualization
 
@@ -46,26 +35,5 @@ Texts should be readable by persons with normal eyesight.
 Colors should be limited to two to three.
 There are extensive theories on fitting colors, and many designers who already applied them successfully.
 At least, do not mix pale and bright colors, except for good reason.
-
-
-
-## Example: 
-### The CARS Dataframe
-
-This dataframe "cars" can be easily found and downloaded.
-
-It has features that make it to a somehow beautiful dataframe, though there are also shortcomings.
-
-{% include images/image.html imagePath = "../assets/images/img_blog/cars_dataframe.PNG" imageCaption =  ""%}
-
-This dataframe has
-- clear focus on a small set of cars
-- clearly named columns (in one word, starting with capital letters)
-- a unique key
-- appropriately formatted figures
-- a standard date format
-- a categorical attribute (=Origin)
-
-A shortcoming of this dataframe is to not contain info on the percentage of cars sold during this period. Without info outside of it, the coverage could be near to complete or too small to draw any conclusions. It also does not indicate the selection criteria for a car to be included.
 
 

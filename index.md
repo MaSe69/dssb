@@ -4,26 +4,24 @@ title: Beautiful Dataframes
 permalink: /index
 ---
 
-<p>
-This website is in process to be re-structured and extended.
-Available content is meant to remain. Don't Panic!
-Temporary glitches though might occur. 
-</p>
 
-About this webpage [about](about).<br>
 
-# Data Science in Python
+This is a web site on some Data Science topics.<br>
+You are welcome to browse through the many charts - ideally you will find something of your interest.<br>
+If you are a programmer, most of the coding is provided on pages linked below.<br>
 
-## Fundamentals
+
+# Some Data Science in Python
 
 - [Fundamentals](fundamentals) - Covering some Python, some Pandas, some Altair and some Dash.
 - [Time series](time_series_story) - Leading to to Logistics regression using Pandas, Altair, Dash.
 - [Categorization](cat_story) - Covering some Machine Learning Algorithms.
 
 
-### Fundamentals
+## Fundamentals
 
-The chart below shows the static version of an interactive chart in which the legend can be used to select one or multiple items. Because this landing page should remain neat and fast, the interactive version and the explanation is on a separate page. Just click on the image to go there and you find the interactive chart.
+This is a result after having completed the 'fundamentals section' here. 
+It shows data of the 'cars' in the Vega dataset. It is a screenshot of the interactive version.
 
 <br>
 <center>
@@ -36,10 +34,9 @@ This chart uses the 'standard' cars example provided by Vega and commonly used f
 </center>
 <br>
 
- Dataframe operations were used to work on the original data, e.g. European units are used here. <br>
- You notice that all charts here look similar, because they share the same theme.
+Click on the graph to find the interactive version of it.
 
-Start here with this [Explorative Data Analysis](vega_cars).
+Continue on [Fundamentals](fundamentals) ... 
 
 
 ### Time Series, Regression and Interaction

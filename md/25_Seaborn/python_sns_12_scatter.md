@@ -9,7 +9,7 @@ permalink: /scatter_plot
 We use the following approach here:
 - use the Seaborn call for the main graph
 - use the Seaborn parameters as much as possible
-- use the Matplot parameters to accomplish the remaning task
+- use the Matplotlib parameters to accomplish the remaining task
 
 Check the [Documentation on the Seaborn Scatter Plot](https://seaborn.pydata.org/generated/seaborn.scatterplot.html) for further parameters.
 
