@@ -5,11 +5,9 @@ permalink: /index
 ---
 
 
-
-This is a web site on some Data Science topics.<br>
+This is a web site on some Data Science topics.<p>
 You are welcome to browse through the many charts - ideally you will find something of your interest.<br>
 For programmers, most of the coding is provided on pages linked below.<br>
-
 
 # Some Data Science in Python
 
@@ -34,6 +32,20 @@ The visualization was done using Altair.
 </a>
 <br><b>
 The chart above shows data of the 'cars' dataset of Vega. This is a screenshot of the interactive version to which you can go when clicking on it.
+ </b><br>
+</center>
+<br>
+
+A dashboard created with the same data.<br>
+When selecting the number of cylinders in the drop down box, only the respective data are shown. The second graph shows the average fuel consumption.
+
+<br>
+<center>
+<a href="vega_cars_multi_selection">
+{% include images/image.html imagePath = "../assets/images/img_blog/mainpage22/Main22_Vega_Cars_Dash.png" imageCaption =  ""%}
+</a>
+<br><b>
+The 'cars' dataset of Vega shown in a Dashboard created with Dash.
  
 </b><br>
 </center>
@@ -58,8 +70,8 @@ You see here the actual value and the predicted value.
 </center>
 <br>
 
+Start here with this [Time Series Analysis](time_series_starter).
 
- Start here with this [Time Series Analysis](time_series_starter).
 
 ## Categorization
 
@@ -78,8 +90,6 @@ A standard example for classification.
 <br>
 
 Start here with this [Categorization Analysis](cat_story).
-
-
 
 
 # Dataframes in Julia
