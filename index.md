@@ -8,38 +8,41 @@ permalink: /index
 
 This is a web site on some Data Science topics.<br>
 You are welcome to browse through the many charts - ideally you will find something of your interest.<br>
-If you are a programmer, most of the coding is provided on pages linked below.<br>
+For programmers, most of the coding is provided on pages linked below.<br>
 
 
 # Some Data Science in Python
 
-- [Fundamentals](fundamentals) - Covering some Python, some Pandas, some Altair and some Dash.
-- [Time series](time_series_story) - Leading to to Logistics regression using Pandas, Altair, Dash.
-- [Categorization](cat_story) - Covering some Machine Learning Algorithms.
+The topics covered here are:
+
+- [Fundamentals](fundamentals) - Python, Pandas, and several visualization libraries for Data Science.
+- [Time Series](time_series_story) - Leading to to Logistics regression using Pandas, Altair, Dash.
+- [Categorization](cat_story) - Covering some Machine Learning Algorithms on discrete variables.
 
 
 ## Fundamentals
 
-This is a result after having completed the 'fundamentals section' here. 
-It shows data of the 'cars' in the Vega dataset. It is a screenshot of the interactive version.
+This is a result after having completed the 'fundamentals section' here. <br>
+The cars data of the Vega Dataset are often used for teaching.
+The data have been prepared using the Python library 'Pandas'.
+The visualization was done using Altair.
 
 <br>
 <center>
 <a href="vega_cars_multi_selection">
-{% include images/image.html imagePath = "../assets/images/img_blog/img_altair/vegacars_i_multiselect.png" imageCaption =  ""%}
+{% include images/image.html imagePath = "../assets/images/img_blog/mainpage22/Main22_Vega_Cars.png" imageCaption =  ""%}
 </a>
 <br><b>
-This chart uses the 'standard' cars example provided by Vega and commonly used for introductions.
+The chart above shows data of the 'cars' dataset of Vega. This is a screenshot of the interactive version to which you can go when clicking on it.
+ 
 </b><br>
 </center>
 <br>
 
-Click on the graph to find the interactive version of it.
-
 Continue on [Fundamentals](fundamentals) ... 
 
 
-### Time Series, Regression and Interaction
+## Time Series
 
 A common use case is to predict this year's data from last years data. <br>
 Once such a prediction was made, you might want to point out clearly the deviation of new value from the prediction. 
@@ -58,10 +61,10 @@ You see here the actual value and the predicted value.
 
  Start here with this [Time Series Analysis](time_series_starter).
 
-### Categorization
+## Categorization
 
-First, there need to be categories, which might be retrieved from data. 
-A so-called model is then often used to assign test data to such categories.
+Some Machine Learning algorithms are shown here.<br>
+The 'Iris' data is the standard data set used for clustering and classification.
 
 <br>
 <center>
