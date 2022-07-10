@@ -5,7 +5,7 @@ permalink: /index
 ---
 
 
-This is a web site on some Data Science topics.<p>
+This is a web site on some Data Science topics.<br>
 You are welcome to browse through the many charts - ideally you will find something of your interest.<br>
 For programmers, most of the coding is provided on pages linked below.<br>
 
@@ -41,7 +41,7 @@ When selecting the number of cylinders in the drop down box, only the respective
 
 <br>
 <center>
-<a href="vega_cars_multi_selection">
+<a href="dash_overview">
 {% include images/image.html imagePath = "../assets/images/img_blog/mainpage22/Main22_Vega_Cars_Dash.png" imageCaption =  ""%}
 </a>
 <br><b>
@@ -82,17 +82,30 @@ You see here the actual value and the predicted value.
 </center>
 <br>
 
-Continue on [Time Series](time_series_overview).
+Continue on [Time Series](time_series_overview) ...
 
 
 ## Categorization
 
 Some Machine Learning algorithms are shown here.<br>
+
+<br>
+<center>
+<a href="cat_overview">
+{% include images/image.html imagePath = "../assets/images/img_blog/mainpage22/51_PT5_Expectation.png" imageCaption =  ""%}
+</a>
+<br><b>
+A standard example for classification.
+</b><br>
+</center>
+<br>
+
+
 The 'Iris' data is the standard data set used for clustering and classification.
 
 <br>
 <center>
-<a href="time_series_tooltip">
+<a href="cat_kmeans">
 {% include images/image.html imagePath = "../assets/images/img_blog/Python/BDF/30_BDF_CAT/alt_09_C_iris_kmeans.png" imageCaption =  ""%}
 </a>
 <br><b>
@@ -101,7 +114,9 @@ A standard example for classification.
 </center>
 <br>
 
-Start here with this [Categorization Analysis](cat_story).
+Continue on [Categorization](cat_overview) ... 
+
+---
 
 
 # Dataframes in Julia

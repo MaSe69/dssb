@@ -1,11 +1,11 @@
 ---
 layout: 20_python
-title: Categorization Story
-permalink: /cat_story
+title: Categorization Overview
+permalink: /cat_overview
 ---
 
 
-# Categorization Story
+# Categorization Overview
 
 In this story on categorization, you get some details on how to apply Pandas and Altair to discrete problems.
 
