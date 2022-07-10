@@ -1,24 +1,24 @@
 ---
 layout: 20_python
-title: Regression
+title: Time Series Regression
 permalink: /time_series_regression
 ---
 
-# Time Series - Linear Regression
+# Time Series - Regression
 
 The task here is to **assess a regression model using with test data**. Particularly for the use case when at the beginning of a month the data of the previous month are available.
 
 The problem addressed here is to **compute the model only with the model data**. Further, the chart should clearly show which data belong to the model and which belong to the test.
 
-
-<br>
 <center>
-{% include images/image.html imagePath = "../assets/images/img_blog/Python/BDF/20_BDF_ALT/TimeseriesUpdatesRegression.png" imageCaption =  ""%}
+<br>
+{% include altairhtml/20_BDF_ALT/30_50_TS_Regression_Interactive.html %}
 <br><br><b>
-A Linear Regression was added to the 'model' data of the time series leading to a forecast. Afterwards, the chart was updated with test data.
+The Vega Cars dataset with interactive, multiple selection. Use SHFT+Click to select multiple items.
 </b><br>
 </center>
-<br>
+<br><br>
+
 
 ## Solution idea and some details 
 

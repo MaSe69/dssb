@@ -7,8 +7,22 @@ permalink: /time_series_starter
 
 # Time Series Starter
 
-This is the result of the steps described below.
 
+Applying Pandas and Altair to time series is quite straightforward.
+
+It is getting a bit more complex, when the time series is not 'immutable'. A particular strong use case is to add new data to an existing time series. Such an update of a time series can be done in more or less efficient ways.
+In this story on time series, you get some details on how to apply Pandas and Altair when the x-axis is semantically time.
+
+Time has some particular features:
+- It is 'unique', it is 'ordered' and it continues to 'flow'.
+- It has larger or smaller 'buckets'. 
+- It is quite familiar to the reader of a chart.
+
+These features imply consequences on presenting and programming time series.<br>
+When you fail on the uniqueness or ordering, you end up with zig-zag lines that might go forward and backwards. <br>
+Choosing an inappropriate granularity on the time scale can obscure the message or lead to performance issues.
+
+This is the result of the steps described below.
 
 <br>
 <center>

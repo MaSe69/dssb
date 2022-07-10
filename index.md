@@ -14,7 +14,7 @@ For programmers, most of the coding is provided on pages linked below.<br>
 The topics covered here are:
 
 - [Fundamentals](fundamentals) - Python, Pandas, and several visualization libraries for Data Science.
-- [Time Series](time_series_story) - Leading to to Logistics regression using Pandas, Altair, Dash.
+- [Time Series](time_series_overview) - Leading to to Logistics regression using Pandas, Altair, Dash.
 - [Categorization](cat_story) - Covering some Machine Learning Algorithms on discrete variables.
 
 
@@ -61,8 +61,8 @@ Once such a prediction was made, you might want to point out clearly the deviati
 
 <br>
 <center>
-<a href="time_series_tooltip">
-{% include images/image.html imagePath = "../assets/images/img_blog/img_altair/TooltipForRegressionStatic.png" imageCaption =  ""%}
+<a href="time_series_brush">
+{% include images/image.html imagePath = "../assets/images/img_blog/mainpage22/Main22_Stocks_Brush.png" imageCaption =  ""%}
 </a>
 <br><b>
 You see here the actual value and the predicted value. 
@@ -70,7 +70,19 @@ You see here the actual value and the predicted value.
 </center>
 <br>
 
-Start here with this [Time Series Analysis](time_series_starter).
+
+<br>
+<center>
+<a href="time_series_regression">
+{% include images/image.html imagePath = "../assets/images/img_blog/mainpage22/Main22_Stocks_Regression.png" imageCaption =  ""%}
+</a>
+<br><b>
+You see here the actual value and the predicted value. 
+</b><br>
+</center>
+<br>
+
+Continue on [Time Series](time_series_overview).
 
 
 ## Categorization
