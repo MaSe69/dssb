@@ -10,6 +10,11 @@ permalink: /julia_df
 
 For more see on this site [Julia (DataFrames) References](julia_references)
 
+Covered below:
+- Dataframes: Slice, Subset, Transpose, Concatenate, Merge, ...
+- Columns: Create new column, Delete columns, Rename, Re-order, ...
+- Rows: Add, Filter, Select, Sort, ...
+
 ## [Getting Started](julia_gettingStarted)
 
 - Setup Julia language

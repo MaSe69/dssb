@@ -116,26 +116,33 @@ A standard example for classification.
 
 Continue on [Categorization](cat_overview) ... 
 
+Machine Learning (i.e. no neuronal networks) concludes the part on Python. (No PyTorch here.)
+
 ---
 
 
-# Dataframes in Julia
+# Julia
 
-Dataframes are available in both Python and Julia. They share similarities, but they are not equal. 
+For Artificial Intelligence (i.e. neuronal networks), Julia might have some advantages. 
+[Flux.jl](https://fluxml.ai/Flux.jl/stable/) is often considered as the AI library to go to. Before using Flux, you might want to acquire good skills on Julia first.
+
+Migrating from Python to Julia is on one side simple but on the other side also at least time-consuming.
+Simplicity stems from two similarities in particular:
+- Dataframes
+- Vegalite
+
+## Dataframes in Julia
+
+Dataframes are also available in Julia. They share similarities, but they are not equal.  
 
 - [Julia Dataframes](julia_df) - How work on dataframes in Julia?
 
-Examples:
-- Dataframes: Slice, Subset, Transpose, Concatenate, Merge, ...
-- Columns: Create new column, Delete columns, Rename, Re-order, ...
-- Rows: Add, Filter, Select, Sort, ...
 
 Find here [a comparison between Pandas and Julia Dataframes]().
 
 - [References on Julia Dataframes](julia_references) - Which other sources should be used for Julia as well?
 
 Great dataframes are not just technical means, but also fulfill criteria of beauty, see [Beautiful Dataframes](beautiful_dataframes)
-
 
 
 ### Transpose function in Julia?
@@ -151,6 +158,9 @@ Find some more details on [Transpose a dataframe in Python](pandas_transpose)
 
 In the discussion, severe problems were pointed out. For a language developer, the problem to transpose a matrix might be remote. Possibly, when you 'own' the data, you can create the dataframe in the way you need it. When you have to combine information from many dataframes from other sources, however, chances are that you need to transpose at least one of them.
 
+## Vegalite
+
+The Altair library used for Python above is a wrapper of Vegalite. Vegalite is a common visualization package in Julia.
 
 
 ## Finally
