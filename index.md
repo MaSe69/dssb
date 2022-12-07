@@ -6,8 +6,17 @@ permalink: /index
 
 
 This is a web site on some Data Science topics.<br>
-You are welcome to browse through the many charts - ideally you will find something of your interest.<br>
-For programmers, most of the coding is provided on pages linked below.<br>
+It includes content that I taught during an academic course on 'Data science in Python' in 2022 leading to a bachelor degree.<br>
+
+Update (December 2022):<br>
+Preparing for the repetition of this course, I am working on new versions of some content.
+For regular users of this page, I try not to delete content. Though, if there is a better version, it will replace the existing one.<br>
+
+Some preview on changes:
+- A new [refresher on 'Python for Pandas'](python_refresher).
+- Focus on Plotly for graphs and dashboards.
+- Work mostly on a single data set, i.e. the Scottish first forenames.
+
 
 # Some Data Science in Python
 
@@ -120,8 +129,8 @@ Machine Learning (i.e. no neuronal networks) concludes the part on Python. (No P
 
 ---
 
-
 # Julia
+
 
 For Artificial Intelligence (i.e. neuronal networks), Julia might have some advantages. 
 [Flux.jl](https://fluxml.ai/Flux.jl/stable/) is often considered as the AI library to go to. Before using Flux, you might want to acquire good skills on Julia first.

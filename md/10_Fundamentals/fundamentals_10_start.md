@@ -9,7 +9,7 @@ permalink: /fundamentals
 
 ### Python (Plain)
 
-Some plain [Python](python_overview)  is definitely needed, for instance to work with
+Please find here a refresher for Python [Python Refresher](python_refresher)
 If you don't find here, what you are looking for, you might want to deep dive here: [References on Python Dataframes](python_references) 
 
 
@@ -39,7 +39,6 @@ You can find details directly in the [Altair listing](altair_listing).<br>
 
 ##  Cheat Sheets for Python
 
-- [Python - outside dataframes](python_overview) 
 - [Create Python Dataframes - Pandas](listing_pandas) 
 - [Work with Python Dataframes - Pandas](listing_pandas_operate) 
 - [Altair for Dataframes](altair_listing) 

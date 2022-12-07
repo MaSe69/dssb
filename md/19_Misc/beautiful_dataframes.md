@@ -1,7 +1,7 @@
 ---
 layout: 20_python
 title: Beautiful Dataframes
-permalink: /beautiful_dataframes
+permalink: /beautiful_dataframes_old
 ---
 
 
