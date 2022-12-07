@@ -65,6 +65,4 @@ It is particularly designed to be used with searching (CTRL+F).
 | Rows | Delete| [Delete rows on condition](pandas_rows#delete-rows-on-condition)| 
 | Rows | Delete| [Remove rows by keeping other columns](pandas_rows#remove-rows-by-keeping-other-columns)| 
 
-This table was generated using a dataframe. 
-
 This table was generated using a dataframe. You find much more info on the pages linked to above.
