@@ -13,7 +13,7 @@ Look up here, if you want a hint on, for instance,
 - How do I change a column in a Pandas dataframe on condition?
 - How do I insert a row in a Pandas datafram?
 
-[Pandas - How do I](pandas_how_do_I)
+[Pandas - How do I ... ?](pandas_how_do_I)
 
 ## Getting to Pandas Dataframes
 
