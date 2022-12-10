@@ -12,27 +12,29 @@ Update (December 2022):<br>
 Preparing for the repetition of this course, I am working on new versions of some content.
 For regular users of this page, I try not to delete content. Though, if there is a better version, it will replace the existing one.<br>
 
-Some preview on changes:
-- A new [refresher on 'Python for Pandas'](python_refresher).
-- Focus on Plotly for graphs and dashboards.
-- Work mostly on a single data set, i.e. the Scottish first forenames.
-
-
 # Some Data Science in Python
 
-The topics covered here are:
+Most of the work might be due to mastering Pandas and fine tuning the visualizations.
+For providing you an overview, I moved the details to the layer below this page.
 
-- [Fundamentals](fundamentals) - Python, Pandas, and several visualization libraries for Data Science.
-- [Time Series](time_series_overview) - Leading to to Logistics regression using Pandas, Altair, Dash.
-- [Categorization](cat_story) - Covering some Machine Learning Algorithms on discrete variables.
+I currently recommend to split a task into two steps:
+- [Data Wrangling](pandas_wrangling) - How to use Pandas for data wrangling?
+- [Visualization](pandas_visualization) - How to visualize the content of a Pandas dataframe?
 
+My favorite advanced topics:
+- [Time Series](time_series_overview) - How to work with time-dependent data?.
+- [Categorization](cat_story) - How to cluster and catagorize?
 
-## Fundamentals
+If you are new to the topic, you might want to start here:
+- ['Python for Data Science' - Refresher](python_refresher) - What to refresh from a potentially vast Python skill set?
 
-This is a result after having completed the 'fundamentals section' here. <br>
-The cars data of the Vega Dataset are often used for teaching.
-The data have been prepared using the Python library 'Pandas'.
-The visualization was done using Altair.
+## Visualization
+
+I had started with Matplotlib and Seaborn, before I moved to Altair. Currently, I am exploring Plotly.
+
+### Altair
+
+The library Altair offers nice features. Some of them are illustrated below.
 
 <br>
 <center>
@@ -45,7 +47,10 @@ The chart above shows data of the 'cars' dataset of Vega. This is a screenshot o
 </center>
 <br>
 
-A dashboard created with the same data.<br>
+### Plotly
+
+An alternative visualization using Plotly. Plotly also offers the possibility to extend graphs to a dashboard. <br>
+
 When selecting the number of cylinders in the drop down box, only the respective data are shown. The second graph shows the average fuel consumption.
 
 <br>
@@ -60,7 +65,6 @@ The 'cars' dataset of Vega shown in a Dashboard created with Dash.
 </center>
 <br>
 
-Continue on [Fundamentals](fundamentals) ... 
 
 
 ## Time Series

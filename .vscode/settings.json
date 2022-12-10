@@ -3,6 +3,8 @@
         "filestem",
         "fullpath",
         "readsave",
+        "skipfooter",
+        "skiprows",
         "timedelta",
         "usecols"
     ]

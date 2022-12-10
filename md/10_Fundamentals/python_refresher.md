@@ -166,3 +166,8 @@ If you are not happy with your dictionary anymore, you might want to go back to 
     myKeys = list(namesHeight.keys())
     myValues = list(namesHeight.values())
 
+## References
+
+For more info, please look at:
+- [References on Python Dataframes](python_references)     
+
