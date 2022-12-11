@@ -6,9 +6,10 @@ permalink: /pandas_how_do_I
 ---
 # Pandas - How do I ...?
 
-This page is meant as my personal favorites for basic functionality of the [Official Pandas documentation](https://pandas.pydata.org/docs/user_guide/index.html#user-guide), which you should check for a comprehensive overview.
+This page is meant as my personal favorites to get started with Pandas. 
+Please consult the [Official Pandas documentation](https://pandas.pydata.org/docs/user_guide/index.html#user-guide) for a comprehensive overview.
 
-Certainly, you need to import Pandas
+Obviously, you need to import Pandas
 >
     import pandas as pd
 
@@ -136,8 +137,6 @@ How do I add a column B based on condition in column A?
     df.loc[df["Score_4"] < 20, ["Comment"]] = "Try again!"    
 
 
-
-
 ## How do I work with rows on a Pandas dataframe?
 
  How do I append a row?
@@ -146,24 +145,16 @@ How do I add a column B based on condition in column A?
     df.loc["David"] = df.loc["Jack"].copy()
     df = df.reset_index()
 
-How do I check for uniqueness in a column?
->
-    myColumnUniqueness = df.Name.is_unique
-
-How do I remove duplicates?
->
-    df = df.drop_duplicates(subset=["Name"], keep="first")
-
 How do I sort by specified columns in various directions?
 >
     sortColumns = ["Score_3", "Score_4"]
     directions = [True, False]
     df = df.sort_values(by=sortColumns, ascending=directions)
 
-
 How do I delete a specific row?
 >
     dfReduced = df.drop(df[df.Name == "David"].index)
+
 
 How do I continue on a subset of rows?
 >
@@ -175,11 +166,10 @@ How do I filter for specific conditions?
     dfFilter = df[df.Score_4 > 20]
     dfFilter = df[df.Name.str.contains("i")]
 
+How do I check for uniqueness in a column?
+>
+    myColumnUniqueness = df.Name.is_unique
 
-
-
-
-
-
-
-
+How do I remove duplicates?
+>
+    df = df.drop_duplicates(subset=["Name"], keep="first")

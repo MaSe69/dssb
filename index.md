@@ -9,24 +9,27 @@ This is a web site on some Data Science topics.<br>
 It includes content that I taught during an academic course on 'Data science in Python' in 2022 leading to a bachelor degree.<br>
 
 Update (December 2022):<br>
-Preparing for the repetition of this course, I am working on new versions of some content.
-For regular users of this page, I try not to delete content. Though, if there is a better version, it will replace the existing one.<br>
+Preparing for the repetition of this course, I am working on new versions of some content. For regular users of this page, I try not to delete content. Though, if there is a better version, it will replace the existing one.<br>
 
 # Some Data Science in Python
 
 Most of the work might be due to mastering Pandas and fine tuning the visualizations.
 For providing you an overview, I moved the details to the layer below this page.
 
-I currently recommend to split a task into two steps:
-- [Data Wrangling](pandas_wrangling) - How to use Pandas for data wrangling?
+I currently recommend to split a task into steps:
+- [Wrangling](pandas_wrangling) - How to use Pandas for data wrangling?
+- [Modelling](pandas_modelling) - How to fit a model to the data?
 - [Visualization](pandas_visualization) - How to visualize the content of a Pandas dataframe?
 
-My favorite advanced topics:
+My favorite modelling topics:
 - [Time Series](time_series_overview) - How to work with time-dependent data?.
-- [Categorization](cat_story) - How to cluster and catagorize?
+- [Categorization](cat_story) - How to cluster and categorize?
 
 If you are new to the topic, you might want to start here:
 - ['Python for Data Science' - Refresher](python_refresher) - What to refresh from a potentially vast Python skill set?
+- ['Pandas - How do I ... work with one dataframe](pandas_how_do_I) - How to perform fundamental changes to a dataframe?
+- ['Pandas - How do I ... work with more than one dataframe](pandas_two_df) - How do I split and merge dataframes?
+
 
 ## Visualization
 

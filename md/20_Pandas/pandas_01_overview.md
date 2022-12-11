@@ -1,7 +1,7 @@
 ---
 layout: 20_python
-title: Pandas Wrangling
-permalink: /pandas_wrangling
+title: Pandas Overview
+permalink: /pandas_overview
 ---
 # Pandas and Wrangling
 
