@@ -138,51 +138,16 @@ Machine Learning (i.e. no neuronal networks) concludes the part on Python. (No P
 
 # Julia
 
+In 2022 and 2023, Python was sufficient for all my requirements. Hence, no updates on my pages on Julia dataframes.
 
-For Artificial Intelligence (i.e. neuronal networks), Julia might have some advantages. 
-[Flux.jl](https://fluxml.ai/Flux.jl/stable/) is often considered as the AI library to go to. Before using Flux, you might want to acquire good skills on Julia first.
+## Top pages on this site on Julia Dataframes 
 
-Migrating from Python to Julia is on one side simple but on the other side also at least time-consuming.
-Simplicity stems from two similarities in particular:
-- Dataframes
-- Vegalite
+Here are the pages on Julia dataframes you were interested in most until mid-2023, ordered in sequence of calls.
 
-## Dataframes in Julia
-
-Dataframes are also available in Julia. They share similarities, but they are not equal.  
-
-- [Julia Dataframes](julia_df) - How work on dataframes in Julia?
-
-
-Find here [a comparison between Pandas and Julia Dataframes]().
-
-- [References on Julia Dataframes](julia_references) - Which other sources should be used for Julia as well?
-
-Great dataframes are not just technical means, but also fulfill criteria of beauty, see [Beautiful Dataframes](beautiful_dataframes)
-
-
-### Transpose function in Julia?
-
-Many developers apparently have experienced a surprise when facing the task to transpose a dataframe in Julia. 
-Migrating from Python to Julia, you might expect something like df_Transposed = transpose(df), which however does not exist.
-In Python, the solution to this problem is as easy as to apply the Pandas transformation T to a dataframe df
-
->
-    df_Transposed = df.T
-
-Find some more details on [Transpose a dataframe in Python](pandas_transpose)
-
-In the discussion, severe problems were pointed out. For a language developer, the problem to transpose a matrix might be remote. Possibly, when you 'own' the data, you can create the dataframe in the way you need it. When you have to combine information from many dataframes from other sources, however, chances are that you need to transpose at least one of them.
-
-## Vegalite
-
-The Altair library used for Python above is a wrapper of Vegalite. Vegalite is a common visualization package in Julia.
-
-
-## Finally
-
-If this all here is too long to read and seems to be too complex, remember that somebody said:
-
->
-    "You don't need to know all solutions. Just one that works for you."
+- [Julia Dataframes - Columns](julia_columns) - How to work on columns of a Julia dataframe?
+- [Julia Dataframes - Transpose](julia_transpose) - How to transpose a Julia dataframe?
+- [Julia Dataframes - Operations](julia_df_ops) - How to operate on a Julia dataframes?
+- [Julia Dataframes - Rows](julia_rows) - How to work on rows of a Julia dataframes?
+- [Julia Dataframes - Visualization](julia_visualization) - How to visualize a Julia dataframe?
+- [Julia Dataframes - Dataframe](julia_df) - How to work on the complete Julia dataframe?
     
