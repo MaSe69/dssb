@@ -142,16 +142,15 @@ Machine Learning (i.e. no neuronal networks) concludes the part on Python. (No P
 
 # Julia
 
-In 2022 and 2023, Python was sufficient for all my requirements. Hence, no updates on my pages on Julia dataframes.
+In 2022 and 2023, Python was sufficient for all my requirements. 
+No updates hence on my pages on Julia dataframes. The content on Julia reflects my version and my knowledge of Julia as of 2021. 
 
-## Top pages on this site on Julia Dataframes 
-
-Here are the pages on Julia dataframes you were interested in most until mid-2023, ordered in sequence of calls.
+Here are the pages on Julia dataframes you were interested in 2023.
 
 - [Julia Dataframes - Columns](julia_columns) - How to work on columns of a Julia dataframe?
+- [Julia Dataframes - Rows](julia_rows) - How to work on rows of a Julia dataframes?
 - [Julia Dataframes - Transpose](julia_transpose) - How to transpose a Julia dataframe?
 - [Julia Dataframes - Operations](julia_df_ops) - How to operate on a Julia dataframes?
-- [Julia Dataframes - Rows](julia_rows) - How to work on rows of a Julia dataframes?
-- [Julia Dataframes - Visualization](julia_visualization) - How to visualize a Julia dataframe?
 - [Julia Dataframes - Dataframe](julia_df) - How to work on the complete Julia dataframe?
+- [Julia Dataframes - Visualization](julia_visualization) - How to visualize a Julia dataframe?
     
