@@ -23,7 +23,7 @@ For providing you an overview, I moved the details to the layer below this page.
 I currently recommend to split a task into steps:
 - [Wrangling](pandas_wrangling) - How to use Pandas for data wrangling?
 - [Modelling](pandas_modelling) - How to fit a model to the data?
-- [Visualization](pandas_visualization) - How to visualize the content of a Pandas dataframe?
+- [Visualization](plotly_overview) - How to visualize the content of a Pandas dataframe?
 
 My favorite modelling topics:
 - [Time Series](time_series_overview) - How to work with time-dependent data?.
@@ -34,10 +34,6 @@ If you are new to the topic, you might want to start here:
 - ['Pandas - How do I ... work with one dataframe](pandas_how_do_I) - How to perform fundamental changes to a dataframe?
 - ['Pandas - How do I ... work with more than one dataframe](pandas_two_df) - How do I split and merge dataframes?
 
-
-## Visualization
-
-I had started with Matplotlib and Seaborn, before I moved to Altair. Currently, I am exploring Plotly.
 
 ### Altair
 
