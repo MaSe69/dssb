@@ -22,8 +22,8 @@ For providing you an overview, I moved the details to the layer below this page.
 
 I currently recommend to split a task into steps:
 - [Wrangling](pandas_wrangling) - How to use Pandas for data wrangling?
-- [Modelling](pandas_modelling) - How to fit a model to the data?
 - [Visualization](plotly_overview) - How to visualize the content of a Pandas dataframe?
+- [Modelling](pandas_modelling) - How to fit a model to the data?
 
 My favorite modelling topics:
 - [Time Series](time_series_overview) - How to work with time-dependent data?.
