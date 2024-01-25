@@ -9,10 +9,15 @@ This is a web site on some Data Science topics.<br>
 It includes content that I taught during an academic course on 'Data science in Python' in 2022 and 2023 leading to a bachelor degree.<br>
 
 Update (January 2024):<br>
-Preparing for the repetition of this course, I am working on new versions of some content. 
-For regular users of this page, I try not to delete content. Though, if there is a better version, it will replace the existing one.<br>
+At this start of 2024, I am preparing for the repetition of this course.<ok>
 
-In 2023, I replaced in my programs the library Altair with Plotly. Hence, the current update will move pages using Altair to the back.
+Okay, let's get started with the [Setup 2024 for Plotly, Pandas on Ubuntu](setup_ubuntu_pandas_plotly)
+
+
+
+
+
+
 
 
 # Some Data Science in Python
