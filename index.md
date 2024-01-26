@@ -11,7 +11,7 @@ It includes content that I taught during an academic course on 'Data science in 
 Update (January 2024):<br>
 At this start of 2024, I am preparing for the repetition of this course.<ok>
 
-# Part I - Getting Started with Pandas
+# Getting Started with Pandas
 
 Okay, let's get started with the [Setup 2024 for Plotly, Pandas on Ubuntu](setup_ubuntu_pandas_plotly)
 
@@ -19,10 +19,10 @@ Okay, let's get started with the [Setup 2024 for Plotly, Pandas on Ubuntu](setup
 If you are new to the topic, you might want to start here:
 - [Python - A refresher dedicated on use with Pandas](python_refresher) - What to refresh from a potentially vast Python skill set?
 - ['Pandas - How do I ...](pandas_how_do_I) - How to perform fundamental changes to a dataframe?
-- ['Pandas - Rows](pandas_rows) - How to delete the last row of a Pandas dataframe?
+- ['Pandas - Rows](pandas_rows24) - How to delete the last row of a Pandas dataframe?
 
 
-# Part II - Exlanatory Data Analysis: First Names
+# Exploratory Data Analysis: First Names
 
 Let's start with a data set that is straightforward to consume and to visualize.
 
@@ -36,39 +36,20 @@ How does my first name compare to the currently most popular male first name?
 Total number of names per year in Scotland shown for tow specific first names.
 </center>
 
+Well, my first name has some potential for growth. However, considering the increasing diversity of names and hence the lower maximum values for the top names, the difference to the top names is getting smaller. 
 
-Most of the work might be due to mastering Pandas and fine tuning the visualizations.
-For providing you an overview, I moved the details to the layer below this page.
-
-I currently recommend to split a task into steps:
-- [Wrangling](pandas_wrangling) - How to use Pandas for data wrangling?
-- [Visualization](plotly_overview) - How to visualize the content of a Pandas dataframe?
+More on the technical part of this analysis and more on first names can be found here: [Pandas - Analysis  first names](Pandas_Analysis_First_Names)
 
 
 
-
-## Part III - Modelling - Time series
+## Modelling - Time series
 
 - [Time Series](time_series_overview) - How to work with time-dependent data?.
 
 
-## Part IV - Modelling - Categorizations
+## Modelling - Categorizations
 
 - [Categorization](cat_story) - How to cluster and categorize?
-
-
-
-<br>
-<center>
-<a href="cat_kmeans">
-<!-- {% include images/image.html imagePath = "../assets/images/img_blog/Python/BDF/30_BDF_CAT/alt_09_C_iris_kmeans.png" imageCaption =  ""%} -->
-BDF/30_BDF_CAT/alt_09_C_iris_kmeans.png" imageCaption =  ""%}
-</a>
-<br><b>
-A standard example for classification.
-</b><br>
-</center>
-<br>
 
 Continue on [Categorization](cat_overview) ... 
 
