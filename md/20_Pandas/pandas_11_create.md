@@ -1,6 +1,6 @@
 ---
 layout: 20_python
-title: Pandas
+title: Pandas - Create Dataframes
 permalink: /pandas_create
 ---
 

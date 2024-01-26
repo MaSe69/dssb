@@ -27,7 +27,6 @@ After having worked on the dataframe, it needs to be saved such to be efficientl
 
 If you are new to this topic, you might check:
 - [How do I work on one dataframe](pandas_how_do_I)
-- [How do I work with two dataframes](pandas_two_df)
 
 Before starting with the details of wrangling, it might be best to illustrate a possible result. The subsequent operations were necessary to achieve this result.
 

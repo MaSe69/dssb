@@ -1,7 +1,7 @@
 ---
 layout: 01_landing
-title: Beautiful Dataframes
-permalink: /index
+title: Beautiful Dataframes 2023
+permalink: /index_2023
 ---
 
 
@@ -22,20 +22,7 @@ If you are new to the topic, you might want to start here:
 - ['Pandas - Rows](pandas_rows) - How to delete the last row of a Pandas dataframe?
 
 
-# Part II - Exlanatory Data Analysis: First Names
-
-Let's start with a data set that is straightforward to consume and to visualize.
-
-The statistics department in Scotland has a great website from which a lot of interesting data can be downloaded, e.g. [Birth names](https://www.nrscotland.gov.uk/statistics-and-data/statistics/statistics-by-theme/vital-events/names/babies-first-names/babies-first-names-2022)
-<br>
-How does my first name compare to the currently most popular male first name?
-
-
-<center>
-{% include images/image.html imagePath = "../assets/images/img_blog/Python_2024/FirstNames/C_25_Line_Fixed_Names.png" imageCaption =  ""%}
-Total number of names per year in Scotland shown for tow specific first names.
-</center>
-
+# Part II - Case Study: First Names
 
 Most of the work might be due to mastering Pandas and fine tuning the visualizations.
 For providing you an overview, I moved the details to the layer below this page.
@@ -43,8 +30,6 @@ For providing you an overview, I moved the details to the layer below this page.
 I currently recommend to split a task into steps:
 - [Wrangling](pandas_wrangling) - How to use Pandas for data wrangling?
 - [Visualization](plotly_overview) - How to visualize the content of a Pandas dataframe?
-
-
 
 
 ## Part III - Modelling - Time series
@@ -57,12 +42,79 @@ I currently recommend to split a task into steps:
 - [Categorization](cat_story) - How to cluster and categorize?
 
 
+### Plotly
+
+An alternative visualization using Plotly. Plotly also offers the possibility to extend graphs to a dashboard. <br>
+
+When selecting the number of cylinders in the drop down box, only the respective data are shown. The second graph shows the average fuel consumption.
+
+<br>
+<center>
+<a href="dash_overview">
+{% include images/image.html imagePath = "../assets/images/img_blog/mainpage22/Main22_Vega_Cars_Dash.png" imageCaption =  ""%}
+</a>
+<br><b>
+The 'cars' dataset of Vega shown in a Dashboard created with Dash.
+ 
+</b><br>
+</center>
+<br>
+
+
+
+## Time Series
+
+A common use case is to predict this year's data from last years data. <br>
+Once such a prediction was made, you might want to point out clearly the deviation of new value from the prediction. 
+
+<br>
+<center>
+<a href="time_series_brush">
+{% include images/image.html imagePath = "../assets/images/img_blog/mainpage22/Main22_Stocks_Brush.png" imageCaption =  ""%}
+</a>
+<br><b>
+You see here the actual value and the predicted value. 
+</b><br>
+</center>
+<br>
+
+
+<br>
+<center>
+<a href="time_series_regression">
+{% include images/image.html imagePath = "../assets/images/img_blog/mainpage22/Main22_Stocks_Regression.png" imageCaption =  ""%}
+</a>
+<br><b>
+You see here the actual value and the predicted value. 
+</b><br>
+</center>
+<br>
+
+Continue on [Time Series](time_series_overview) ...
+
+
+## Categorization
+
+Some Machine Learning algorithms are shown here.<br>
+
+<br>
+<center>
+<a href="cat_overview">
+{% include images/image.html imagePath = "../assets/images/img_blog/mainpage22/51_PT5_Expectation.png" imageCaption =  ""%}
+</a>
+<br><b>
+A standard example for classification.
+</b><br>
+</center>
+<br>
+
+
+The 'Iris' data is the standard data set used for clustering and classification.
 
 <br>
 <center>
 <a href="cat_kmeans">
-<!-- {% include images/image.html imagePath = "../assets/images/img_blog/Python/BDF/30_BDF_CAT/alt_09_C_iris_kmeans.png" imageCaption =  ""%} -->
-BDF/30_BDF_CAT/alt_09_C_iris_kmeans.png" imageCaption =  ""%}
+{% include images/image.html imagePath = "../assets/images/img_blog/Python/BDF/30_BDF_CAT/alt_09_C_iris_kmeans.png" imageCaption =  ""%}
 </a>
 <br><b>
 A standard example for classification.

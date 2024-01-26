@@ -1,30 +1,32 @@
 ---
 layout: 20_python
-title: Plotly Overview
+title: Setup 2024 for Python
 permalink: /setup_ubuntu_pandas_plotly
 ---
 
-# Ubuntu
+# Setup 2024 for Python 
+
+## Ubuntu
 
 As of January 2024, I am using Ubuntu of version 23.10 as you can download it from here [Ubuntu download official](https://ubuntu.com/download/desktop)
 
 Once you have installed your IDE, e.g. Visual Studio Code, you might want to proceed with the package installations
 
-# Environemnts
+## Environemnts
 
-## How to install the capability to create environments?
+### How to install the capability to create environments?
 >
     ### Install pip3
     sudo apt install python3-pip
     ### Install environment capability
     sudo apt install python3.11-venv
 
-## How to create a specific environments?
+### How to create a specific environments?
 >    
     ## Create a specific environment
     sudo python3 -m venv env
 
-## How to activate your environment and grant it sufficient permission?
+### How to activate your environment and grant it sufficient permission?
 >
     ### Activate specific environment
     source env/bin/activate
@@ -32,11 +34,12 @@ Once you have installed your IDE, e.g. Visual Studio Code, you might want to pro
     sudo chown -R username:username env
 
 
-## Installations required in the following
+### Installations required in the following
 
 > 
      pip3 install pandas
      pip3 install plotly
+     pip3 install -U kaleido   ### save Plotly figures as png
 
 Note: you cannot (should not) install using sudo.
 
@@ -51,11 +54,3 @@ I will be using version  '5.18.0’
 
 
 Note: All this info here can be found and it is better explained elsewhere. It is just collected here for time-saving purposes.
-
-
-
-
-
-
-
-
