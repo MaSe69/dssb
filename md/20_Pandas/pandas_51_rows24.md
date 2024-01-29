@@ -7,10 +7,12 @@ permalink: /pandas_rows24
 
 # Pandas - Rows
 
-Because this page turned out to be the most popular on this website on Pandas in the year 2023, I partly re-wrote it. Please find the previous page here [Pandas Rows - Previous Version](pandas_rows).
-<br>
+Because this page turned out to be the most popular on this website on Pandas in the year 2023, I re-worked it in January 2024.
+<br><br>
 Surpringlingly, there were so many searchs on "How to delete the last row of a Pandas dataframe", though this question was already answered in 2014, see ["How to delete the last row of data of a pandas dataframe"](https://stackoverflow.com/questions/26921651/how-to-delete-the-last-row-of-data-of-a-pandas-dataframe). Please find my summary on that question at the bottom of this page. 
 
+Pandas verion used here: 2.2 .
+<br>
 Let's start with a dataframe that looks like this:
 
 >
@@ -20,182 +22,111 @@ Let's start with a dataframe that looks like this:
     2   C   166
     3   Z   6
 
+It comprises how often a letter occurred in the previous version of this page.
 
+The oprations are ordered in the CRUD sequence:
+- Create
+- Read
+- Update
+- Delete
 
+I would categorize 'slicing' as update, but it also can be used for deletion (by slicing the part that you want to keep).
 
-## Rows - Create
+# Create rows
 
-
-### Append a row at the end
+## Append a row at the end
 
 A new row must have the same format as all the other rows which can be achieved by copying an existing row.
 
 >
-    df = df.set_index("Name")
-    df.loc["MyCar"] = df.loc["ford ranger"].copy()
+    df = df.set_index("Letter")
+    df.loc["X"] = df.loc["Z"].copy()
 
-The new row is the last row in the dataframe.
+The new row is the last row in the dataframe. You might now want to update the values in the columns or sort the table (see in the respective section).
 
-You can then change any cell value in that row.
-
->    
-    df["Horsepower"]["MyCar"] = 123
-
-The sequence of addressing a cell is [column][row].
 
 ### Append a row with the sum of columns
 
-As a special case, you can append a row with the mean 
-
->    
-    df.loc["Mean"] = df.mean()
-
-or the sum of the columns. 
+As a special case, you can append a row with the sum of the columns
 >
-    df.loc["Sum"] = df.sum()
+    df.loc["Sum"] = df.sum(numeric_only=True)
 
-When you need both, be careful to not sum up the mean or to include the sum in the average.
-
-In later versions of Pandas, you need to prepare df such that all columns are numeric.
-
-### Insert a new row at a specified position
-
-As a preparation, ensure that the index is reset.
->
-    df = df.reset_index()
-
-You can copy any row that exists at a certain position. 
->
-    row = df.iloc[27].copy()
-
-And then move the row to the position of your choice. 
-
->
-    df.loc[404] = row
-
-If it shall be the last position, 'shape' can help.
->
-    df.loc[df.shape[0]] = row
-
-
-As before, you can change any field in the row.
->
-    df = df.set_index("Name")
-    row.Name = "MyCar2"
-
+You can also have such an additonal row with the mean value. When you need both, be careful to not sum up the mean or to include the sum in the average.
+In later versions of Pandas, you should add the parameter 'numeric_only'.
 
 
 ## Read rows
 
-### Read a row by index
+'Read' in this context is often known as 'filter'.
 
-As a preparation, ensure that the index is set to the appropriate field.<br>
-Then, you can select the row for this index value.
+### Read a row on condition
+
+You can filter specific row by specifiying conditions
+
 >
-    row = df.loc["audi 100 ls"]
+    df = df.loc[df.Letter == "C"]
+    df = df[df.Occurrences > 100]
 
-### Read a cell by columns and index    
+As a result, you get a dataframe that is reduced to the rows meeting the condition.
 
-You can also get any cell in that row when you specify the column name and the index.
+### Read rows by index
+
+You can also access a row using the index. 
 >
-    myHorsepower = df.loc["audi 100 ls"]["Horsepower"]    
-    myHorsepower = list(df["Horsepower"]["MyCar2"])[0]
+    position = list(df.loc[df.Letter == "C"].index)[0]
+    row = df.iloc[position] 
 
-The sequence of addressing a cell with 'loc' is [row][column], but without 'loc' is [column][row]. 
+As a result here, you get a series.
 
-### Read rows by position
 
-As a preparation, ensure that the index is reset.
+# Update Rows
+
+## Update a specific cell value
+
+Any cell value can be updated using 'at'. The first entry in the list is the index. Hence, I set the index to "Letter" first.
 >
-    df = df.reset_index()
-
-You can address a row with its position given as an integer
->
-    n = 27
-    row = df.iloc[n]
-
-If you need the specific position of an index, get it using the function 'index'. 
->
-    position = list(df.loc[df.Name == "audi 100 ls"].index)[0]
-
-You can also get a cell in that row.
->
-    n = 27
-    m = 3
-    cell = df.iloc[n][m]    
-
-The sequence of addressing a cell with iloc is [row][column].    
+    df = df.set_index("Letter")
+    df.at["C","Occurrences"] = 17
 
 
 ## Slices
 
 ### Slice first or last rows
 
-For a set of rows from the beginning the existing dataframe, you can create a new dataframe:
+You can use 'head' or 'tail'. 
 
 >
     dfFirst_7_Rows = df.head(7)
-
-Respectively, for the last rows    
-
->
     dfLast_4_Rows = df.tail(4)
+
+You can get a random sample
+>    
+    dfRandom_3Rows = df.sample(3)
+
+Be aware that it is not sorted like the underlyling dataframe.
 
 
 ### Slice rows by positions and step size
 
-Take a slice between a start row and an end row.
+Take a slice between a start row and an end row with a step size inbetween.
 
 >
-    start = 10
-    stop = 17
-    dfSample = df.iloc[start:stop]  
-
-
-If you do not want all rows, but just every nth row, add a step size.
-
->
-    start = 10
-    stop = 380
-    step = 37
-    dfSample = df.iloc[start:stop:step]    
-
-For instance, for very long files, you might want to get an impression of the data by getting some representative data.
-
->
-    mySample = df.sample(7)
-
-This is more efficient than to create random integers and take their row positions.
-
-## Rows Update
-
-### Update a specific cell value
-
-
-You can update a specific cell value using the index and the column name.
->    
-    df["Horsepower"]["MyCar2"] = 234    
-
-
-Alternatively, you can use the integer position with iloc. 
-
->
-    rowPosition = list(df.loc[df.Name == "audi 100 ls"].index)[0]
-    colPosition = df.columns.get_loc("Horsepower")
-
->
-    df.iloc[rowPosition][colPositionm] = 78
+    start = 1
+    stop = 5
+    step = 2
+    dfPart = df.iloc[start:stop:step]    
 
 
 ## Sort
 
-### Sort by a column
+### Sort the rows of a dataframe by columns
 
-The syntax is a bit cumbersome. Don't worry, if you can't memorize.
-It comprises **sort_values** and - inside the parenthesis - **by=**
+You can sort It comprises **sort_values** and - inside the parenthesis - **by=**
 
 > 
-    df = df.sort_values(by="column1", ascending=True)
+    df = df.sort_values(by="Letter", ascending=True)
+
+    
 
 ### Sort by several columns in mixed directions
 
@@ -209,9 +140,9 @@ For changing the direction of sorting, use the key word **ascending**.
 The sequence of the column names in the list needs to match, of course.
 
 
-## Rows - Delete
+# Delete rows
 
-### Delete rows on condition
+## Delete rows on condition
 
 You can drop specific rows using the index. <br>
 When you know the index of the row by name, you can directly delete (=drop) that row.
@@ -236,7 +167,7 @@ The condition can apply on any other field.
     dfS = dfS.drop(dfS[dfS.Cylinders.isin([4, 6, 8])].index)
 
 
-### Remove rows by keeping other columns
+### Delete rows by keeping other columns
 
 As an alternative to deletion, you can slice the existing dataframe on a condition. 
 If you have a condition for the rows that you want to keep, you use this condition to remove the other rows.
