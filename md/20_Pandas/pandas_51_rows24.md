@@ -8,10 +8,11 @@ permalink: /pandas_rows24
 # Pandas - Rows
 
 Because this page turned out to be the most popular on this website on Pandas in the year 2023, I re-worked it in January 2024.
-<br><br>
-Surpringlingly, there were so many searchs on "How to delete the last row of a Pandas dataframe", though this question was already answered in 2014, see ["How to delete the last row of data of a pandas dataframe"](https://stackoverflow.com/questions/26921651/how-to-delete-the-last-row-of-data-of-a-pandas-dataframe). Please find my summary on that question at the bottom of this page. 
+<br>
+You might found this page, because you searched for "How to delete the last row of a Pandas dataframe". This is surprising, because this question was already answered in 2014, see ["How to delete the last row of data of a pandas dataframe"](https://stackoverflow.com/questions/26921651/how-to-delete-the-last-row-of-data-of-a-pandas-dataframe). Please find my recommendations on that question at the bottom of this page. 
 
-Pandas verion used here: 2.2 .
+<br>
+Pandas version used to test the example on this page was: 2.2 .
 <br>
 Let's start with a dataframe that looks like this:
 
@@ -24,13 +25,14 @@ Let's start with a dataframe that looks like this:
 
 It comprises how often a letter occurred in the previous version of this page.
 
-The oprations are ordered in the CRUD sequence:
+The operations are ordered in the CRUD sequence:
 - Create
 - Read
 - Update
 - Delete
 
-I would categorize 'slicing' as update, but it also can be used for deletion (by slicing the part that you want to keep).
+Slicing is a fundamental technique that can be used in many CRUD operations. I describe the slicing in the context in which I typically use it myself.
+
 
 # Create rows
 
@@ -51,7 +53,7 @@ As a special case, you can append a row with the sum of the columns
 >
     df.loc["Sum"] = df.sum(numeric_only=True)
 
-You can also have such an additonal row with the mean value. When you need both, be careful to not sum up the mean or to include the sum in the average.
+You can also have such an additional row with the mean value. When you need both, be careful to not sum up the mean or to include the sum in the average.
 In later versions of Pandas, you should add the parameter 'numeric_only'.
 
 
@@ -61,7 +63,7 @@ In later versions of Pandas, you should add the parameter 'numeric_only'.
 
 ### Read a row on condition
 
-You can filter specific row by specifiying conditions
+You can filter specific row by specifying conditions
 
 >
     df = df.loc[df.Letter == "C"]
@@ -103,12 +105,12 @@ You can get a random sample
 >    
     dfRandom_3Rows = df.sample(3)
 
-Be aware that it is not sorted like the underlyling dataframe.
+Be aware that it is not sorted like the underlying dataframe.
 
 
 ### Slice rows by positions and step size
 
-Take a slice between a start row and an end row with a step size inbetween.
+Take a slice between a start row and an end row with a step size in-between.
 
 >
     start = 1
