@@ -44,8 +44,4 @@ The coding used here is available as Jupyter lab:
 See [Altair References](altair_references)
 
 
-### Seaborn 
-
-
-- [Michael Waskom - Seaborn: Statistical Data Visualization - YouTube](https://www.youtube.com/watch?v=wCKHT4BQkqA)
 

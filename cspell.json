@@ -3,7 +3,11 @@
     "ignorePaths": [],
     "dictionaryDefinitions": [],
     "dictionaries": [],
-    "words": [],
+    "words": [
+        "ipynb",
+        "stackoverflow",
+        "Stackoverflow"
+    ],
     "ignoreWords": [],
     "import": []
 }
