@@ -3,7 +3,7 @@ layout: 20_python
 title: Pandas Overview
 permalink: /pandas_overview
 ---
-# Pandas and Wrangling
+# Pandas Overview
 
 A Pandas dataframe is essentially a matrix with headers and a unique index.
 My most common use case is to create a Pandas dataframe from a csv file.
@@ -11,7 +11,7 @@ My most common use case is to create a Pandas dataframe from a csv file.
 Look up here, if you want a hint on, for instance,
 - How do I create a Pandas dataframe from lists?
 - How do I change a column in a Pandas dataframe on condition?
-- How do I insert a row in a Pandas datafram?
+- How do I insert a row in a Pandas dataframe?
 
 [Pandas - How do I ... ?](pandas_how_do_I)
 

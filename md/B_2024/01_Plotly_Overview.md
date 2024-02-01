@@ -1,7 +1,7 @@
 ---
 layout: 20_python
-title: Plotly Overview
-permalink: /plotly_overview
+title: Plotly Configurations
+permalink: /plotly_configurations
 ---
 
 # Plotly

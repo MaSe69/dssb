@@ -1,6 +1,6 @@
 ---
 layout: 20_python
-title: Pandas
+title: Pandas Read
 permalink: /pandas_read
 ---
 
@@ -17,22 +17,6 @@ Though different file formats are supported, here only csv and Excel formats are
 
 ## Read a dataframe from a csv file
 
-You need to specify the name of the full path to the file holding the data and the name of the file including the extension.
-After having installed Pandas and imported it, you can read the comma separated data using the command "read_csv".
-
->
-    import pandas as pd
-    ...
-    fullPathName = <your path> + "cars.csv"
-    df = pd.read_csv(fullPathName)
-
-This works for simple file formats right out of the box.
-The imported dataframe can be checked, for instance, by looking at the first and last rows.
-
->
-    print(df.head(3))
-    print(df.tail(3))
-
 If the columns of your data are not delimited by a comma, but by an other sign, e.g. a semi-colon, then you need to specify this delimiter. 
 
 >
@@ -41,19 +25,7 @@ If the columns of your data are not delimited by a comma, but by an other sign, 
 
 ## Read a dataframe from an Excel file
 
-For working with Microsoft Excel, you need to install a library  called 'xlrd'.
->
-    pip3 install xlrd
 
-
-Reading an external table available in Excel-Format is a common use case.
-
->
-    fullPathName = <your path> + "cars.xlsx"
-    df = pd.read_excel(fileAbsPath, index_col=0)
-
-External References:
-- ["Datatofish - Read Excel"](https://datatofish.com/read_excel/)
 
 
 ## Read with conditions on columns

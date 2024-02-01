@@ -11,18 +11,20 @@ It includes content that I taught during an academic course on 'Data science in 
 Update (January 2024):<br>
 At this start of 2024, I am preparing for the repetition of this course.<ok>
 
-# Getting Started with Pandas
+# Setup and Coding
 
-Okay, let's get started with the [Setup 2024 for Plotly, Pandas on Ubuntu](setup_ubuntu_pandas_plotly)
+Okay, let's get started with the [Setup 2024 for Pandas and Plotly on Ubuntu](setup_ubuntu_pandas_plotly)
 
+Mostly, I use Python, Pandas and Plotly here.
+- [Python - Some Python for use with Pandas](python_refresher) - Lists, dictionaries, comprehensions, ...
+- [Pandas - Overview](pandas_overview) - Create, work on columns, ... 
+- [Plotly - Configurations](plotly_configurations) - Configure graphs, ... 
 
-If you are new to the topic, you might want to start here:
-- [Python - A refresher dedicated on use with Pandas](python_refresher) - What to refresh from a potentially vast Python skill set?
-- ['Pandas - How do I ...](pandas_how_do_I) - How to perform fundamental changes to a dataframe?
-- ['Pandas - Rows](pandas_rows24) - How to delete the last row of a Pandas dataframe?
+Special topic of interest:
+- [Pandas - Rows](pandas_rows24) - How to delete the last row of a Pandas dataframe?
 
-
-# Exploratory Data Analysis: First Names
+# Results 
+## First Names
 
 Let's start with a data set that is straightforward to consume and to visualize.
 
