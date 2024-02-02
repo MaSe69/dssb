@@ -6,6 +6,8 @@ permalink: /plotly_configurations
 
 # Plotly Configurations
 
+The Plotly for Python version used here is 5.18.0, which is the latest version at the time of writing. Pandas version is 2.2.0.
+
 ## References
 
 For the details, please go to
