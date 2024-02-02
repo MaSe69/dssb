@@ -7,9 +7,10 @@ permalink: /index
 
 This is a web site on some Data Science topics.<br>
 It includes content that I taught during an academic course on 'Data science in Python' in 2022 and 2023 leading to a bachelor degree.<br>
+The value proposition of this page is to show how the various techniques are applied to get to a meaningful analysis of data. For each detail, I recommend to look it up on the respective page or forum.
 
-Update (January 2024):<br>
-At this start of 2024, I am preparing for the repetition of this course.<ok>
+At this start of 2024, I am preparing for the repetition of this course on 'Data Science in Python'.<ok>
+
 
 # Setup and Coding
 
@@ -41,7 +42,6 @@ Total number of names per year in Scotland shown for tow specific first names.
 Well, my first name has some potential for growth. However, considering the increasing diversity of names and hence the lower maximum values for the top names, the difference to the top names is getting smaller. 
 
 More on the technical part of this analysis and more on first names can be found here: [Pandas - Analysis  first names](Pandas_Analysis_First_Names)
-
 
 
 ## Modelling - Time series

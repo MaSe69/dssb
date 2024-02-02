@@ -12,7 +12,7 @@ As of January 2024, I am using Ubuntu of version 23.10 as you can download it fr
 
 Once you have installed your IDE, e.g. Visual Studio Code, you might want to proceed with the package installations
 
-## Environemnts
+## Environments
 
 ### How to install the capability to create environments?
 >
@@ -32,6 +32,8 @@ Once you have installed your IDE, e.g. Visual Studio Code, you might want to pro
     source env/bin/activate
     ### Add permissions to this environment
     sudo chown -R username:username env
+    ### List what is inside 
+    pip list --local
 
 
 ### Installations required in the following
