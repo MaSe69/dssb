@@ -4,9 +4,12 @@
     "dictionaryDefinitions": [],
     "dictionaries": [],
     "words": [
+        "Environemnts",
         "ipynb",
+        "kaleido",
         "stackoverflow",
-        "Stackoverflow"
+        "Stackoverflow",
+        "venv"
     ],
     "ignoreWords": [],
     "import": []
