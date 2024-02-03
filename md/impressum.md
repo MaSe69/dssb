@@ -10,14 +10,17 @@ Angaben gem. § 5 TMG:
 
 Dr. Marcus Semling
 
-
 <br/>
 Kontaktaufnahme:
 <br/>
 
-Telefon: 07667 / 7529
 <br/>
-E-Mail: regit@gmail.com
+Bevorzugte Kontaktaufnahme bitte über diese Email:
+<br>
+<img src="./assets/images/img_layout/email.jpg" alt="Email" width="400"/>
+
+Telefon: 07667 / 7529
+
 
 # Haftungsausschluss - Disclaimer:
  
