@@ -54,26 +54,19 @@ Programming typically means 'making incremental changes'. I do not want to downl
 
 > 
     FROM python:3-alpine3.18
-
     WORKDIR /usr/app/src
-
     COPY requirements.txt /usr/app/src
-
     RUN pip install --no-cache-dir -r requirements.txt
-
     COPY requirements.txt /usr/app/src/requirements.txt
-
     COPY . ./
-
     CMD ["python3", "docker_pandas.py"]
 
 
 Further, I do not want to have more than the image of the current coding. Hence, I delete all old images before creating the new one.
 
 A script to remove the old image(s) and build the new one.
+
 >
-    clear
-    echo "Build Image mypandas"
     docker rmi -f $(docker images -aq)
     docker build -t mypandas .
 
