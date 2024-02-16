@@ -77,5 +77,12 @@ A script to remove the old image(s) and build the new one.
     docker rmi -f $(docker images -aq)
     docker build -t mypandas .
 
+Terminal output after some iterations:
+>
+    Pandas running in a Docker container
+        Col_0  Col_1
+    Row_0     88     12
+    Row_1     21     99
+
 
 

@@ -19,7 +19,8 @@
 # in the templates via {{ site.myvariable }}.
 title: beautifuldataframes.com
 email: your-email@example.com
-description: Beautiful dataframes lead to great insights! Dataframes. Python. Altair. Julia. Rows. Columns. Create. Change. Delete. Merge. Group. SAC. Beauty. Visualization. Bar plot. Scatter plot. Histogram. Line Plot. Authenticity. Relevance. Comprehensiveness. Balance. Readability. Appearance. Consistency. Robustness.
+description: Beautiful dataframes lead to great insights! Dataframes. Python. Altair. Julia. Plotly. Docker. Container with Pandas.
+Rows. Columns. Create. Change. Delete. Merge. Group. SAC. Beauty. Visualization.
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
