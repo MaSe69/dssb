@@ -23,6 +23,8 @@ Mostly, I use Python, Pandas and Plotly here.
 
 Special topic of interest:
 - [Pandas - Rows](pandas_rows24) - How to delete the last row of a Pandas dataframe?
+Special topic of interest:
+- [Pandas running in a Docker container](pandas_docker) - How run a Python program using Pandas in a Docker container?
 
 # Results 
 ## First Names
