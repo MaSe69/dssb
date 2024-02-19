@@ -100,18 +100,36 @@ An obvious disadvantage of this method is the need to re-build the complete cont
 ## Using a mounted volume
 
 The recommended way to provide data to a container is to use a mounted volume.
+In practice, this is easily done by adding an option when running the container. As I use a small script anyway, this is a one time effort to program. 
+
+>
+    import pandas as pd
+    print("Pandas in a Docker container reading from a mounted volume")
+    df = pd.read_csv("/app/data/myDataOnAMountedVolume.csv")
+    print(df)
 
 
+The dockerfile remains essentially unchanged
+Dockerfile
+>
+    FROM python:3-alpine3.18
+    WORKDIR /usr/app/src
+    COPY requirements.txt /usr/app/src/
+    RUN pip install --no-cache-dir -r requirements.txt
+    COPY . /usr/app/src
+    CMD ["python3", "mountedvolume.py"]
 
 
+The important part is to add the option -v and both paths when running the container. The two parts are separated by a colon ":". The first part is the full path (of the folder only) to the location of the csv-file. The second part is the path inside the container.
 
+Running the container from the command line
+>
+    docker run --rm -v <fullPathOnMyVMToTheProgram>/app/data:/app/data mountedvolume    
 
+Now, you can change the data in the csv-File. Without re-building the container, you get the updated data as output when running the container.
 
+## Conclusion
 
-
-
-
-
-
-
+That's it essentially. Now you can program in using Pandas - or migrate exiting coding using Pandas to - a container. Once done, you can benefit from all the benefits of running in a container. These benefits are in particular to run 'almost anywhere' nowadays. If it runs on your machine, it should run on any platform that supports containers.
+Based on this feature, you can profit from much short development cycles when developing locally and deploying afterwards for more public visibility or usage.
 
