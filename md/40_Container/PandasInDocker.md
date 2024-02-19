@@ -79,3 +79,39 @@ Terminal output after some iterations:
 
 
 
+## Reading a local data file
+
+Copy the data, e.g. a csv-file to the work directory.
+If you copy everything anyway, you don't have to change the dockerfile. Just for sake of clarity here, it is necessary have a copy of the data in the work directory of your container.
+
+Dockerfile
+>
+    COPY myData.csv ./usr/app/src
+
+Then, you can access the file from within the container.
+
+>
+    df = pd.read_csv("myData.csv")
+
+
+An obvious disadvantage of this method is the need to re-build the complete container every time the data change.
+
+
+## Using a mounted volume
+
+The recommended way to provide data to a container is to use a mounted volume.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
