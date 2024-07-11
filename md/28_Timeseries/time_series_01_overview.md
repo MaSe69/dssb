@@ -4,16 +4,13 @@ title: Time Series Story
 permalink: /time_series_overview
 ---
 
-
 # Time Series 
-
 
 ## List of Examples
 
 ### Main page examples
 
-
-- Zooming in on a time window and multple selects from the legenda, see [Time Series Brush](time_series_brush)
+- Zooming in on a time window and multiple selects from the legend, see [Time Series Brush](time_series_brush)
 - Fit a linear regression to model data and check with test data, see [Time Series - Linear Regression](time_series_regression)
 
 
@@ -25,7 +22,6 @@ Examples that might be helpful to get the more advanced charts:
 - Rolling updates to time series, see [Time Series - Updates](time_series_updates)
 - Interactive tooltip for a linear regression, see [Time Series - Tooltip for Linear Regression](time_series_tooltip)
 - Fit a Logistics regression to model data and check with test data, see [Time Series - Logistics Regression](time_series_logistics)
-
 
 
 ## Data Science for Entrepreneurs
