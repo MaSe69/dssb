@@ -6,10 +6,16 @@ permalink: /index
 
 
 This is a web site on some Data Science topics.<br>
-It includes content that I taught during an academic course on 'Data science in Python' in 2022 and 2023 leading to a bachelor degree.<br>
-The value proposition of this page is to show how the various techniques are applied to get to a meaningful analysis of data. For each detail, I recommend to look it up on the respective page or forum.
+My focus in 2024 shifted back to time series. 
 
-At this start of 2024, I am preparing for the repetition of this course on 'Data Science in Python'.<ok>
+It includes still some content that I taught during an academic course on 'Data science in Python' leading to a bachelor degree.<br>
+
+
+## Modelling - Time series
+
+I had started using the library Altair. Currently, I am using Plotly only. 
+
+- [Time Series](time_series_overview) - How to work with time-dependent data?.
 
 
 # Setup and Coding
@@ -24,7 +30,9 @@ Mostly, I use Python, Pandas and Plotly here.
 Special topic of interest:
 - [Pandas - Rows](pandas_rows24) - How to delete the last row of a Pandas dataframe?
 
-# Results 
+
+# Some results 
+
 ## First Names
 
 Let's start with a data set that is straightforward to consume and to visualize.
@@ -44,27 +52,12 @@ Well, my first name has some potential for growth. However, considering the incr
 More on the technical part of this analysis and more on first names can be found here: [Pandas - Analysis  first names](Pandas_Analysis_First_Names)
 
 
-## Modelling - Time series
-
-- [Time Series](time_series_overview) - How to work with time-dependent data?.
-
-
-## Modelling - Categorizations
-
-- [Categorization](cat_story) - How to cluster and categorize?
-
-Continue on [Categorization](cat_overview) ... 
-
-Machine Learning (i.e. no neuronal networks) concludes the part on Python. (No PyTorch here.)
-
 ---
 
 # Julia
 
-In 2022 and 2023, Python was sufficient for all my requirements. 
-No updates hence on my pages on Julia dataframes. The content on Julia reflects my version and my knowledge of Julia as of 2021. 
-
-Here are the pages on Julia dataframes you were interested in 2023.
+There is no update on the Julia content since about 2021.
+If you need the content on Julia, please copy it. I will remove at least the links from the landing page soon. 
 
 - [Julia Dataframes - Columns](julia_columns) - How to work on columns of a Julia dataframe?
 - [Julia Dataframes - Rows](julia_rows) - How to work on rows of a Julia dataframes?
