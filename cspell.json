@@ -7,9 +7,13 @@
         "Environemnts",
         "ipynb",
         "kaleido",
+        "mypandas",
+        "newgrp",
         "stackoverflow",
         "Stackoverflow",
-        "venv"
+        "usermod",
+        "venv",
+        "WORKDIR"
     ],
     "ignoreWords": [],
     "import": []
