@@ -1,11 +1,12 @@
 ---
-layout: 26_altair
+layout: 20_python
 title: Time Series Story
 permalink: /time_series_overview
 ---
 
 
 # Time Series 
+
 
 ## List of Examples
 
@@ -30,5 +31,15 @@ Examples that might be helpful to get the more advanced charts:
 ## Data Science for Entrepreneurs
 
 A particular application of time series is for entrepreneurs. For an established business, there are plenty of almost finished solutions available, which mostly need some configuration or enhancements. For a new business, however, a lot of flexibility is needed to get to the true business point, see this [Entrepreneur Story](entrepreneur_story).
+
+## Assisting functions for working with time
+
+### Single dates
+
+ [Time Series - Single Dates](time_series_single_dates)
+
+### Dataframes with dates
+
+ [Time Series - Dataframes with dates](time_series_df_with_dates)
 
 

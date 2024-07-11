@@ -11,12 +11,11 @@ My focus in 2024 shifted back to time series.
 It includes still some content that I taught during an academic course on 'Data science in Python' leading to a bachelor degree.<br>
 
 
-## Modelling - Time series
+## Time series
 
 I had started using the library Altair. Currently, I am using Plotly only. 
 
-- [Time Series](time_series_overview) - How to work with time-dependent data?.
-
+- [Time Series](time_series_overview) - How to work with time-dependent data?
 
 # Setup and Coding
 
