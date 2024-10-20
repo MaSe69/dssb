@@ -6,9 +6,9 @@ permalink: /index
 
 
 This is a web site on some Data Science topics.<br>
-My focus in 2024 shifted back to time series. 
-
 It includes still some content that I taught during an academic course on 'Data science in Python' leading to a bachelor degree.<br>
+
+In 2024, I started to analyze pop music. <br>
 
 
 ## Time series
