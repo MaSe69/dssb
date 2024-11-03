@@ -13,7 +13,7 @@ In 2024, I started to analyze pop music. <br>
 
 ## Time series
 
-I had started using the library Altair. Currently, I am using Plotly only. 
+In the examples below, I am using Plotly only. 
 
 - [Time Series](time_series_overview) - How to work with time-dependent data?
 
