@@ -6,10 +6,10 @@ permalink: /index
 
 
 This is a web site on some Data Science topics.<br>
-It includes still some content that I taught during an academic course on 'Data science in Python' leading to a bachelor degree.<br>
 
-In 2024, I started to analyze pop music. <br>
+## Changes in the times of AI
 
+AI has eliminated to need for a web page to look up code. 
 
 ## Time series
 
